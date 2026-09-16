@@ -271,6 +271,10 @@ html:not(.js) .sh-panel[hidden] { display: block !important; margin-top: 16px; }
 .p-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
 .p-pill { padding: 4px 11px; border-radius: 999px; background: var(--hx-pill-bg); color: var(--hx-pill-ink); font-size: 14px; font-weight: 700; }
 .p-hero h1 { margin-top: 14px; font-size: 38px; line-height: 1.3; }
+/* 제도 이름의 괄호 설명(theme.py name_html): 앞뒤를 띄우고 옅게, 상세 머리에선 끝 괄호 설명을 제목 아래 작은 줄로 */
+.nm-p { font-weight: 500; color: var(--sub); }
+.p-hero h1 .nm-p { color: var(--on-deep-sub); }
+.nm-sub { display: block; margin-top: 8px; font-size: 20px; font-weight: 600; line-height: 1.45; color: var(--on-deep-sub); }
 .p-hero .p-org { margin-top: 10px; font-size: 17px; color: var(--on-deep-sub); }
 .p-hero .cta { justify-content: center; margin-top: 28px; }
 .p-hero .btn-primary { min-width: 200px; background: var(--hx-btn); color: var(--hx-btn-ink); }
@@ -309,7 +313,8 @@ html:not(.js) .sh-panel[hidden] { display: block !important; margin-top: 16px; }
 .sticky-cta.on .sc-in { pointer-events: auto; }
 .sc-in { display: flex; align-items: center; gap: 16px; max-width: 880px; margin: 0 auto; padding: 10px 10px 10px 22px; border-radius: 14px; background: #121A16; color: #FFFFFF; box-shadow: 0 8px 28px rgba(0, 0, 0, .25); }
 .sc-t { flex: 1; min-width: 0; overflow: hidden; font-size: 16px; font-weight: 700; white-space: nowrap; text-overflow: ellipsis; }
-.sc-t span { margin-left: 10px; font-size: 15px; font-weight: 400; color: #A9BDB3; }
+.sc-t .sc-k { margin-left: 10px; font-size: 15px; font-weight: 400; color: #A9BDB3; }
+.sc-t .nm-p { color: #A9BDB3; }
 .sc-in .btn-primary { flex: none; min-height: 48px; background: var(--cta); color: var(--cta-ink); }
 body:has(.sticky-cta) main { padding-bottom: 120px; }
 
@@ -472,6 +477,7 @@ body:has(.sticky-cta) main { padding-bottom: 120px; }
   .p-hero-in { text-align: left; }
   .p-hero .crumb, .p-pills, .p-hero .cta { justify-content: flex-start; }
   .p-hero h1 { font-size: 26px; }
+  .nm-sub { margin-top: 6px; font-size: 16px; }
   .p-hero .p-org { font-size: 16px; }
   .p-hero .cta { margin-top: 20px; }
   .p-hero .cta a { flex: 1 1 140px; min-width: 0; }
@@ -484,6 +490,6 @@ body:has(.sticky-cta) main { padding-bottom: 120px; }
   .sticky-cta { padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)); }
   .sc-in { padding: 8px 8px 8px 16px; gap: 10px; }
   .sc-t { font-size: 15px; }
-  .sc-t span { display: none; }
+  .sc-t .sc-k, .sc-t .nm-p { display: none; }
   body:has(.sticky-cta) main { padding-bottom: 96px; }
 }

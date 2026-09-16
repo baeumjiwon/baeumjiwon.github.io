@@ -17,6 +17,12 @@
     var n = Math.round((new Date(d + 'T00:00:00') - today) / 86400000);
     return n < 0 ? '' : (n === 0 ? '오늘 마감' : '마감 D-' + n);
   }
+  // 제도 이름: 괄호 앞뒤를 띄우고 괄호 속은 옅게(theme.py name_html과 같은 규칙)
+  function nameHtml(n, toks) {
+    return n.split(/(\s*[(（][^()（）]+[)）]\s*)/).map(function (part, i) {
+      return i % 2 ? ' <span class="nm-p">' + BJ.marked(part.trim(), toks) + '</span> ' : BJ.marked(part, toks);
+    }).join('').trim();
+  }
   function close() {
     list.hidden = true;
     input.setAttribute('aria-expanded', 'false');
@@ -49,7 +55,7 @@
         // 이름에 검색어가 없으면 한 줄 설명으로 왜 걸렸는지 보여 준다
         var why = h.sc < toks.length * 3 && p.ol ? '<span class="sx-w">' + BJ.marked(p.ol, toks) + '</span>' : '';
         html += '<li role="option" id="sx-o-' + (i + 1) + '" aria-selected="false" data-href="p/' + encodeURIComponent(p.id) + '.html">' +
-          '<span class="sx-t">' + BJ.marked(p.n, toks) + '</span>' + why +
+          '<span class="sx-t">' + nameHtml(p.n, toks) + '</span>' + why +
           '<span class="sx-m">' + BJ.esc(kind) + (dd ? ' · <em>' + dd + '</em>' : '') + '</span></li>';
       });
     }

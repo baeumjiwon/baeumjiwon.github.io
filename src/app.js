@@ -120,9 +120,19 @@
   function paintRow(li, p, toks) {
     var a = li.querySelector('.r-title a');
     if (a) {
-      if (!a.hasAttribute('data-t')) a.setAttribute('data-t', a.textContent);
-      var t0 = a.getAttribute('data-t');
-      if (toks.length) a.innerHTML = marked(t0, toks); else if (a.textContent !== t0 || a.children.length) a.textContent = t0;
+      // 이름은 괄호 설명을 옅게 따로 싼 구조(theme.py name_html)라, 통째로 바꾸지 않고 글자 조각마다 칠한다
+      if (!a.hasAttribute('data-h')) a.setAttribute('data-h', a.innerHTML);
+      if (a.hasAttribute('data-m')) { a.innerHTML = a.getAttribute('data-h'); a.removeAttribute('data-m'); }
+      if (toks.length) {
+        var walk = document.createTreeWalker(a, NodeFilter.SHOW_TEXT), texts = [], tn;
+        while ((tn = walk.nextNode())) texts.push(tn);
+        texts.forEach(function (t) {
+          var s = document.createElement('span');
+          s.innerHTML = marked(t.nodeValue, toks);
+          t.parentNode.replaceChild(s, t);
+        });
+        a.setAttribute('data-m', '');
+      }
     }
     var sn = li.querySelector('.r-snip');
     var html = toks.length ? snippet(p, toks) : '';

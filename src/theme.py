@@ -12,6 +12,20 @@ import urllib.parse
 _A_home_body = home_body
 _B_credits_html = credits_html
 
+# 제도 이름 읽기 쉽게(9/17 사용자 "일학습병행(신규 채용 학습근로자) 이 부분도 띄어쓰기라던가 가독성이 부족해"):
+# 괄호 앞뒤를 띄우고 괄호 속 설명은 옅게. 상세 머리 제목은 끝에 붙은 괄호 설명을 제목 아래 작은 줄로 내린다.
+# 검색 추천(search.js nameHtml)도 같은 규칙, 목록 줄 검색어 칠하기(app.js paintRow)는 이 구조를 지킨다
+_NAME_PAREN = re.compile(r'\s*[(（]([^()（）]+)[)）]\s*')
+_NAME_TAIL = re.compile(r'^(.+?)\s*[(（]([^()（）]+)[)）]\s*$')
+
+
+def name_html(name, split_tail=False):
+    if split_tail:
+        m = _NAME_TAIL.match(name)
+        if m:
+            return f'{name_html(m.group(1))}<span class="nm-sub">{E(m.group(2))}</span>'
+    return _NAME_PAREN.sub(lambda m: f' <span class="nm-p">({m.group(1)})</span> ', E(name)).strip()
+
 # ---------- 아이콘(선 아이콘, 글자 색을 따른다) ----------
 SVG = {
     'cal': '<rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
@@ -124,7 +138,7 @@ def card(p, used, eager=False):
     badge = '<span class="c-badge">모집 중</span>' if _open_now(p) else ''
     return (f'<li class="card"><a class="c-a" href="{{{{ROOT}}}}p/{E(p["id"])}.html">'
             f'<span class="c-thumb">{card_media(p, used, eager)}{badge}</span>'
-            f'<span class="c-body"><span class="c-kind">{E(kinds)}</span><span class="c-title">{E(p["name"])}</span>{lines}'
+            f'<span class="c-body"><span class="c-kind">{E(kinds)}</span><span class="c-title">{name_html(p["name"])}</span>{lines}'
             f'<span class="c-foot"><span class="c-reg">{ico("pin")}{E(region_short(p))}</span>{dday_badge(p)}</span></span></a></li>')
 
 
@@ -491,7 +505,7 @@ def row(p, root, static=False):
     attrs = f' data-dk="{_dk(p)}" data-fx="{_facts(p)}"' + (' data-open="1"' if _always_open(p) else '')
     return f'''<li class="row" id="r-{E(p["id"])}" data-id="{E(p["id"])}"{attrs}>
   <p class="r-top"><span class="r-kind">{E(kinds)}</span>{st}</p>
-  <h3 class="r-title"><a href="{root}p/{E(p["id"])}.html">{E(p["name"])}</a></h3>
+  <h3 class="r-title"><a href="{root}p/{E(p["id"])}.html">{name_html(p["name"])}</a></h3>
   {dur}{money}{one}
   <p class="r-org" title="{E(p["operator"])}">{ico("pin")}<span>{E(_org_short(p))} · {E(region_short(p))}</span></p>
   {dl}{ph}
@@ -562,7 +576,7 @@ def _hero_demo():
         if p.get('cost_type') in COST_SHOW and '무료교육' not in p['kinds']:
             bits.append(f'내는 돈 {p["cost_type"]}')
         return (f'<div class="hx-demo"><p class="hd-q">{ico("search")}<span>‘{E(w)}’ 찾으면</span></p>'
-                f'<p class="hd-t">{E(p["name"])}</p><p class="hd-m">{E(" · ".join(bits))}</p></div>')
+                f'<p class="hd-t">{name_html(p["name"])}</p><p class="hd-m">{E(" · ".join(bits))}</p></div>')
     return ''
 
 
@@ -899,13 +913,13 @@ def program_body(p):
     return f'''<div class="p-hero"><div class="p-hero-in">
   <nav class="crumb" aria-label="위치"><a href="{{{{ROOT}}}}index.html">찾기</a><span aria-hidden="true">›</span><a href="{{{{ROOT}}}}c/{KIND_SLUG[first_kind]}.html">{E(KIND_LABEL[first_kind])}</a></nav>
   <p class="p-pills">{pills}</p>
-  <h1>{E(p["name"])}</h1>
-  <p class="p-org">{E(p["operator"])}</p>
+  <h1>{name_html(p["name"], split_tail=True)}</h1>
+  <p class="p-org">{name_html(p["operator"])}</p>
   <div class="cta">{cta}</div>
 </div></div>
 <div class="p-cards{one}">{cards}</div>
 {ad_rails(body_html, p)}
-<div class="sticky-cta" id="sticky-cta"><div class="sc-in"><p class="sc-t">{E(p["name"])}<span>{E(kinds_txt)}</span></p><a class="btn-primary" href="{E(href)}" target="_blank" rel="noopener">{sticky_label}</a></div></div>
+<div class="sticky-cta" id="sticky-cta"><div class="sc-in"><p class="sc-t">{name_html(p["name"])}<span class="sc-k">{E(kinds_txt)}</span></p><a class="btn-primary" href="{E(href)}" target="_blank" rel="noopener">{sticky_label}</a></div></div>
 <script src="{{{{ROOT}}}}assets/dl.js" defer></script>'''
 
 
