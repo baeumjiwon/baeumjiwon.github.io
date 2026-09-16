@@ -9,7 +9,7 @@
   var WIDE = 1536, PC = 861, SIDE = [160, 600], END_PC = [728, 90], END_MO = [320, 100];
   var wide = window.matchMedia('(min-width: ' + WIDE + 'px)').matches;
   var pc = window.matchMedia('(min-width: ' + PC + 'px)').matches;
-  var kakao = false, n = 0;
+  var kakao = false, n = 0, waiting = [];
 
   function adsense(slot, id, size) {
     var box = slot.querySelector('.ad-box');
@@ -20,6 +20,8 @@
       (size ? '' : ' data-ad-format="auto" data-full-width-responsive="true"') + '></ins>';
     slot.hidden = false;
     (window.adsbygoogle = window.adsbygoogle || []).push({});
+    // 애드센스 스크립트가 막혀 안 들어오면(광고 차단 등) 빈 칸이 남지 않게 접는다
+    setTimeout(function () { if (!(window.adsbygoogle && window.adsbygoogle.loaded)) slot.hidden = true; }, 5000);
   }
 
   function fill(slot, unit, size, sense, senseSize) {
@@ -27,6 +29,7 @@
     // NO-AD 콜백 이름은 한 쪽 안에서 광고 단위마다 달라야 한다(가이드)
     var cb = 'bjAdNoAd' + (++n);
     window[cb] = function () { adsense(slot, sense, senseSize); };
+    waiting.push(window[cb]);
     var box = slot.querySelector('.ad-box');
     box.style.minHeight = size[1] + 'px';   // 크기가 정해진 광고라 자리를 미리 잡는다
     box.innerHTML = '<ins class="kakao_ad_area" style="display:none;width:100%;" data-ad-unit="' + unit +
@@ -57,6 +60,8 @@
     sc.async = true;
     sc.charset = 'utf-8';
     sc.src = 'https://t1.kakaocdn.net/kas/static/ba.min.js';
+    // 애드핏 스크립트를 못 받으면(광고 차단·연결 실패) NO-AD와 똑같이 넘긴다 — '광고' 글자만 있는 빈 칸이 남지 않게
+    sc.onerror = function () { waiting.forEach(function (f) { f(); }); };
     document.body.appendChild(sc);
   }
 })();
