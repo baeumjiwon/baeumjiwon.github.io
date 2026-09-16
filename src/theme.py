@@ -10,7 +10,6 @@ import urllib.parse
 # 보고도 "3이 제일 낫긴 해"). 값은 d.css
 
 _A_home_body = home_body
-_A_program_body = program_body
 _B_credits_html = credits_html
 
 # ---------- 아이콘(선 아이콘, 글자 색을 따른다) ----------
@@ -754,22 +753,91 @@ def privacy_body():
 
 
 # ---------- 상세(내일배움캠프 과정 상세 구성: 색 띠 머리 → 큰 숫자 칸 → 본문 → 아래 고정 신청 줄) ----------
-def _bullets(t):
-    t = (t or '').strip()
-    parts = [x.strip() for x in re.split(r'\.\s+|;\s*|\n+', t) if x.strip(' .')]
-    if len(parts) <= 1:
-        return _tx(t)
-    return '<ul class="bul">' + ''.join(f'<li>{_tx(x.rstrip("."))}</li>' for x in parts) + '</ul>'
+def _sentences(t):
+    return [x.strip().rstrip('.') for x in re.split(r'\.\s+|;\s*|\n+', (t or '').strip()) if x.strip(' .')]
+
+
+# 본문은 핵심만 한눈에(9/17 사용자: '공고에 나이 조건 없음'을 보고 "나이 - 조건 없음, 이런 식으로. 너무 주저리주저리, 핵심만 딱딱 한눈에").
+# 칸에는 짧은 값만 두고, 설명 문장·그 밖의 조건·돈과 기간 상세는 눌러서 펼치게 한다.
+EDU_SHORT = {'제한없음': '조건 없음', '확인필요': '공고 확인', '기타': '따로 있음',
+             '고졸이상': '고졸 이상', '대졸이상': '대졸 이상', '대학재학': '대학 재학생'}
+INC_SHORT = {'제한없음': '조건 없음', '기준있음': '기준 있음', '확인필요': '공고 확인'}
+# '신청자격에 학력 조건 없음(학력 '제한없음' 표기)'처럼 값을 되풀이할 뿐인 괄호
+_RESTATE_PAREN = re.compile(r"\((?:학력|소득)?\s*'?제한\s*없음'?\s*표기\)|\(학력요건 제한없음\)")
+
+
+def _only_says_none(note):
+    """'신청자격에 소득 조건 없음'처럼 '없다'는 말뿐인 설명인가. 괄호·문장이 더 붙으면(예: '(카드 발급자 대상)',
+    '. 대학생은 졸업학기생만 가능') 조건이 들어 있을 수 있어서 남긴다"""
+    t = _RESTATE_PAREN.sub('', note).strip()
+    return len(t) <= 25 and '(' not in t and '. ' not in t and re.search(r'없음|무관|누구나', t) is not None
+
+
+def _elig_rows(p):
+    age = age_text(p)
+    age = '조건 없음' if age == '공고에 나이 조건 없음' else ('공고 확인' if age.startswith('나이 제한 있음') else age)
+    rows = [('나이', E(age))]
+    if p.get('target_groups'):
+        rows.append(('대상', E(', '.join(p['target_groups'])) + '만'))
+    rows += [('사는 곳', E('전국' if '전국' in p['regions'] else region_text(p) + ' 주민')),
+             ('학력', E(EDU_SHORT.get(p['education'], p['education']))),
+             ('가구소득', E(INC_SHORT[p['income']]))]
+    works = [('구직자', p['allow_job_seeker']), ('재직자', p['allow_employed']), ('사업자', p['allow_business']), ('학생', p['allow_student'])]
+    ws = ''
+    for v, lbl, cls in (('가능', '가능', 'ok'), ('확인필요', '확인 필요', 'warn'), ('불가', '불가', 'no')):
+        names = [n for n, x in works if x == v]
+        if names:
+            ws += f'<span class="ws"><b class="mk {cls}">{lbl}</b> {E(" · ".join(names))}</span>'
+    rows.append(('일 상태', ws))
+    return rows
+
+
+def _more_conditions(p):
+    """접어 둘 '그 밖의 조건': 조건이 담긴 학력·소득 설명 + 그 밖의 조건 문장"""
+    items = []
+    for key, val_key, label in (('education_note', 'education', '학력'), ('income_note', 'income', '소득')):
+        note = (p.get(key) or '').strip()
+        if note and not (p[val_key] == '제한없음' and _only_says_none(note)):
+            items.append(f'{label}: {note}')
+    return items + _sentences(p.get('other_conditions'))
+
+
+def _prog_inner(p):
+    kv = lambda rows: '<ul class="kv">' + ''.join(f'<li><span class="k">{k}</span><span class="v">{v}</span></li>' for k, v in rows) + '</ul>'
+    more = _more_conditions(p)
+    more_html = (f'<details class="src p-more"><summary>그 밖의 조건 {len(more)}개 보기</summary>'
+                 f'<ul class="bul">{"".join(f"<li>{_tx(x)}</li>" for x in more)}</ul></details>') if more else ''
+
+    detail = [('받는 돈', _tx(p.get('money'))), ('내는 돈', _tx(p.get('cost')))]
+    du = p.get('duration') or {}
+    if duration_label(p) is not None:
+        parts = _dur_parts(p)
+        v = E(' · '.join(parts)) if parts else '<span class="dim">공고에 적혀 있지 않음</span>'
+        extra = [x for x in (f'교육 날짜 {du["dates_text"]}' if du.get('dates_text') else '',
+                             f'수업 시간 {du["hours_text"]}' if du.get('hours_text') else '') if x]
+        if extra:
+            v += f'<span class="note">{E(" · ".join(extra))}</span>'
+        if du.get('quote'):
+            v += f'<span class="note">공고 표현 “{E(du["quote"])}”</span>'
+        detail.append(('교육 기간', v))
+    if p.get('schedule') not in (None, '', '해당없음', '확인필요'):
+        detail.append(('일정', E(SCHED_SHOW.get(p['schedule'], p['schedule']))))
+    detail += [('방식', _tx(p.get('format'))), ('모집', _tx(p.get('recruit')))]
+
+    quotes = ''.join(
+        f'<li><blockquote>{E(s["quote"])}</blockquote><a href="{E(s["url"])}" target="_blank" rel="noopener">{E(urlparse(s["url"]).netloc or s["url"])}</a></li>'
+        for s in p['sources'][:3])
+    return f'''<p class="lede">{E(p["summary"])}</p>
+  <section class="sec"><h2>누가 신청할 수 있나</h2>{kv(_elig_rows(p))}{more_html}</section>
+  <section class="sec sec-more">
+    <details class="src p-more"><summary>돈·기간·모집 자세히 보기</summary>{kv(detail)}</details>
+    <details class="src"><summary>공고에서 옮긴 문장 {len(p["sources"][:3])}개 보기</summary><ol class="quotes">{quotes}</ol></details>
+    <p class="checked">확인일 {E(p["checked_at"])} · 조건은 해마다 바뀔 수 있습니다.</p>
+  </section>'''
 
 
 def program_body(p):
-    a = _A_program_body(p)
-    found = re.search(r'<p class="lede">.*?</article>', a, re.S)
-    inner = found.group(0)[:-len('</article>')] if found else ''
-    inner = re.sub(r'<section class="sec"><h2>비슷한 제도</h2>.*?</section>', '', inner, flags=re.S)
-    if p.get('other_conditions'):
-        old = f'<span class="k">그 밖에</span><span class="v">{_tx(p["other_conditions"])}</span>'
-        inner = inner.replace(old, f'<span class="k">그 밖에</span><span class="v">{_bullets(p["other_conditions"])}</span>')
+    inner = _prog_inner(p)
 
     first_kind = p['kinds'][0]
     kinds_txt = ' · '.join(KIND_LABEL[k] for k in p['kinds'])

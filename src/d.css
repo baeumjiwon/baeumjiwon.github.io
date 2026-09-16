@@ -295,6 +295,14 @@ html:not(.js) .sh-panel[hidden] { display: block !important; margin-top: 16px; }
 .prog .p-note { margin-top: 0; }
 .bul { margin: 0; padding-left: 1.1em; }
 .bul li { margin-bottom: 4px; }
+/* 상세 본문은 핵심만 한눈에(9/17 사용자 "너무 주저리주저리, 핵심만 딱딱"): 칸 이름과 짧은 값을 휴대폰에서도 한 줄에 두고,
+   설명 문장·그 밖의 조건·돈과 기간 상세는 접어 둔다(theme.py _prog_inner) */
+.prog .kv > li { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; padding: 12px 0; }
+.prog .kv .v { font-weight: 600; }
+.prog .p-more .kv .v { font-weight: 400; }
+.prog details.p-more .bul { padding: 12px 0 4px 1.1em; }
+.prog details.p-more .bul li { margin-bottom: 8px; font-size: 16px; line-height: 1.7; }
+.prog .sec-more { margin-top: 0; }
 .prog + .shelf { max-width: 1112px; margin: 56px auto 0; }
 .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 10px 16px calc(12px + env(safe-area-inset-bottom, 0px)); transform: translateY(120%); transition: transform .2s ease; pointer-events: none; }
 .sticky-cta.on { transform: none; }
