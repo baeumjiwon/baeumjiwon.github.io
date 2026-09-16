@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-intern-card" x="122" y="38" width="72" height="104" rx="8"/>
+    <path id="line-intern-band" d="M122 66V46Q122 38 130 38H186Q194 38 194 46V66Z"/>
+    <rect id="line-intern-photo" x="138" y="78" width="40" height="32" rx="3"/>
+    <rect id="line-intern-book" x="-29" y="-35" width="58" height="70" rx="4"/>
+    <rect id="line-intern-clip" x="148" y="30" width="20" height="14" rx="3"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 148H30M42 148H198M210 148H226"/>
+
+    <g transform="translate(60 102) rotate(-8)">
+      <use href="#line-intern-book" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(60 102) rotate(-8)">
+      <use href="#line-intern-book" fill="#FFCD3C" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(60 102) rotate(-8)">
+      <path d="M-13 -35H25Q29 -35 29 -31V31Q29 35 25 35H-25Q-29 35 -29 31V-31Q-29 -35 -25 -35H-21"/>
+      <path d="M-17 -31V31"/>
+      <path d="M-5 -10H19M-5 4H9"/>
+    </g>
+
+    <path d="M133 0Q142 20 158 40Q174 20 183 0"/>
+
+    <use href="#line-intern-card" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-intern-band" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M150 38H186Q194 38 194 46V134Q194 142 186 142H130Q122 142 122 134V46Q122 38 130 38H140"/>
+    <path d="M122 66H194"/>
+    <use href="#line-intern-photo" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-intern-photo" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-intern-photo"/>
+    <path d="M132 120H184M140 132H176"/>
+
+    <use href="#line-intern-clip" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-intern-clip"/>
+
+    <path d="M36 30V44M29 37H43" stroke="#FF6A4D"/>
+    <circle cx="82" cy="26" r="4.5" fill="#FFCD3C" stroke="none"/>
+    <path d="M204 96H216M206 110H214" stroke="#FF6A4D"/>
+  </g>
+</svg>

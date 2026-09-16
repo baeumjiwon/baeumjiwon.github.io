@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <rect id="ui-q-it-screen" x="18" y="20" width="60" height="44" rx="5"/>
+    <path id="ui-q-it-base" d="M18 64H78L85 73Q86.5 78 81 78H15Q9.5 78 11 73Z"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#ui-q-it-screen" fill="#FFFCF5" stroke="none"/>
+    <use href="#ui-q-it-screen" fill="#FFCD3C" stroke="none" transform="translate(4 -4)" style="mix-blend-mode:multiply"/>
+    <path d="M32 20H73Q78 20 78 25V59Q78 64 73 64H23Q18 64 18 59V25Q18 20 23 20H24"/>
+    <path d="M35.5 34L28 42L35.5 50M51 32L45 52M60.5 34L68 42L60.5 50"/>
+
+    <use href="#ui-q-it-base" fill="#FFFCF5" stroke="none"/>
+    <use href="#ui-q-it-base"/>
+  </g>
+</svg>

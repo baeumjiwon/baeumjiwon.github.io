@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <defs>
+    <rect id="h-lap-screen" x="-40" y="-34" width="80" height="50" rx="5"/>
+    <rect id="h-note" x="-44" y="-40" width="80" height="40" rx="5"/>
+    <circle id="h-coin" cx="26" cy="13" r="25"/>
+    <rect id="h-fk-box" x="4" y="40" width="38" height="42" rx="5"/>
+    <rect id="h-fk-mast" x="52" y="6" width="16" height="114" rx="5"/>
+    <rect id="h-fk-roof" x="88" y="12" width="66" height="12" rx="5"/>
+    <path id="h-fk-body" d="M68 74Q68 70 72 70H140Q172 70 172 100V106Q172 116 162 116H72Q68 116 68 112Z"/>
+    <rect id="h-pc" x="-78.0" y="-100.0" width="156" height="200" rx="6"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M214 19V41M203 30H225" stroke="#FF6A4D"/><circle cx="24" cy="44" r="7" fill="#FFCD3C" stroke="none"/>
+  <g transform="translate(118 132) rotate(-6)">
+    <use href="#h-pc" fill="#FFFCF5" stroke="none"/>
+    <path d="M78.0 54V94.0Q78.0 100.0 72.0 100.0H-72.0Q-78.0 100.0 -78.0 94.0V-94.0Q-78.0 -100.0 -72.0 -100.0H72.0Q78.0 -100.0 78.0 -94.0V40"/>
+    <path d="M-52 62H40"/>
+    <path transform="translate(-66 -96) rotate(-34)" d="M-26.0 -10.0H26.0L22.0 -5.0L26.0 0L22.0 5.0L26.0 10.0H-26.0L-22.0 5.0L-26.0 0L-22.0 -5.0Z" fill="#FF6A4D"/>
+  </g>
+  
+  <g transform="translate(6 -6)"><g transform="translate(102 94) rotate(45)">
+    <rect x="84" y="-15.0" width="54" height="30" rx="15.0" fill="#FF6A4D" stroke="none"/>
+  </g></g>
+  <g transform="translate(102 94) rotate(45)">
+    <rect x="84" y="-15.0" width="54" height="30" rx="15.0" fill="none"/>
+    <rect x="66" y="-12.0" width="20" height="24" rx="3" fill="#FFFCF5"/>
+  </g>
+  <circle cx="102" cy="94" r="55" fill="#FFFCF5" stroke="none"/>
+  <g clip-path="url(#h-lens)">
+    <g transform="translate(102 94) scale(0.58) translate(-84 -72)" stroke-width="12">
+    <path d="M-20 130H0M14 130H176M190 130H206"/>
+    <path d="M92 70L98 20M146 70V20"/>
+    <use href="#h-fk-roof" fill="#FFFCF5" stroke="none"/>
+    <use href="#h-fk-roof" fill="#FFCD3C" stroke="none" transform="translate(10.344827586206897 -10.344827586206897)"/>
+    <use href="#h-fk-roof"/>
+    <path d="M128 70V52Q128 48 132 48H140"/>
+    <use href="#h-fk-body" fill="#FFFCF5" stroke="none"/>
+    <use href="#h-fk-body" fill="#FF6A4D" stroke="none" transform="translate(10.344827586206897 -10.344827586206897)"/>
+    <path d="M96 70H140Q172 70 172 100V106Q172 116 162 116H72Q68 116 68 112V74Q68 70 72 70H82"/>
+    <use href="#h-fk-mast" fill="#FFFCF5" stroke="none"/>
+    <use href="#h-fk-mast"/>
+    <path d="M47 50V88H4"/>
+    <use href="#h-fk-box" fill="#FFFCF5" stroke="none"/>
+    <use href="#h-fk-box" fill="#FFCD3C" stroke="none" transform="translate(10.344827586206897 -10.344827586206897)"/>
+    <path d="M22 40H37Q42 40 42 45V77Q42 82 37 82H9Q4 82 4 77V45Q4 40 9 40H12"/>
+    <path d="M23 40V54"/>
+    <circle cx="96" cy="114" r="16" fill="#FFFCF5"/>
+    <circle cx="96" cy="114" r="4.5" fill="#1F2340" stroke="none"/>
+    <circle cx="152" cy="117" r="13" fill="#FFFCF5"/>
+    <circle cx="152" cy="117" r="4" fill="#1F2340" stroke="none"/>
+    </g>
+  </g>
+  <path d="M172 94A70 70 0 1 0 32 94A70 70 0 1 0 172 94ZM157 94A55 55 0 1 0 47 94A55 55 0 1 0 157 94Z" fill="#FFFCF5" fill-rule="evenodd" stroke="none"/>
+  <path d="M172 94A70 70 0 1 0 32 94A70 70 0 1 0 172 94ZM157 94A55 55 0 1 0 47 94A55 55 0 1 0 157 94Z" fill="#FFCD3C" fill-rule="evenodd" stroke="none" transform="translate(6 -6)"/>
+  <path d="M172 94A70 70 0 1 0 32 94A70 70 0 0 0 137.0 154.62"/>
+  <circle cx="102" cy="94" r="55"/>
+  <defs><clipPath id="h-lens" clipPathUnits="userSpaceOnUse"><circle cx="102" cy="94" r="53"/></clipPath></defs>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <path id="ui-t-free-low" d="M24 52H82Q85 52 85 55V83Q85 86 82 86H24Q9 86 9 69Q9 52 24 52Z"/>
+    <path id="ui-t-free-ribbon" d="M51 44V69.5L58.5 65.5L66 69.5V44Z"/>
+    <path id="ui-t-free-top" d="M-20 -16H31Q34 -16 34 -13V13Q34 16 31 16H-20Q-34 16 -34 0Q-34 -16 -20 -16Z"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#ui-t-free-low" fill="#FFFCF5" stroke="none"/>
+    <use href="#ui-t-free-low" fill="#FFCD3C" stroke="none" transform="translate(4 -4)" style="mix-blend-mode:multiply"/>
+    <path d="M40 86H82Q85 86 85 83V55Q85 52 82 52H24Q9 52 9 69Q9 86 24 86H31"/>
+    <path d="M27 62H85V76H27Q21 76 21 69Q21 62 27 62Z" fill="#FFFCF5"/>
+
+    <use href="#ui-t-free-ribbon" fill="#FFFCF5" stroke="none"/>
+    <use href="#ui-t-free-ribbon" fill="#FF6A4D" stroke="none" transform="translate(4 -4)" style="mix-blend-mode:multiply"/>
+    <use href="#ui-t-free-ribbon"/>
+
+    <g transform="translate(46 34) rotate(-5)">
+      <use href="#ui-t-free-top" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(4 -4) translate(46 34) rotate(-5)">
+      <use href="#ui-t-free-top" fill="#FF6A4D" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(46 34) rotate(-5)">
+      <use href="#ui-t-free-top"/>
+      <path d="M-17 -6H34V6H-17Q-22 6 -22 0Q-22 -6 -17 -6Z" fill="#FFFCF5"/>
+    </g>
+  </g>
+</svg>

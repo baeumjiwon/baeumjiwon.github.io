@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+{{CANON}}
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<script>document.documentElement.className += ' js';</script>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="{{ROOT}}assets/style.css">
+<link rel="stylesheet" href="{{ROOT}}assets/d.css">
+<link rel="icon" href="{{ROOT}}assets/favicon.svg" type="image/svg+xml">
+{{HEAD_EXTRA}}
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="{{ROOT}}index.html">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6"/><path d="m7.5 12.5 3 3 6-7"/></svg>
+      <span class="brand-name">{{SITE}}</span>
+      <span class="brand-tag">민간 안내 사이트</span>
+    </a>
+    <form class="top-sx" role="search" action="{{ROOT}}index.html#finder-sec" method="get">
+      <label class="sr" for="top-q">제도 검색</label>
+      <input id="top-q" name="q" type="search" placeholder="지게차, 코딩처럼 찾기" autocomplete="off" spellcheck="false" enterkeyhint="search">
+      <button type="submit" aria-label="검색"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button>
+    </form>
+    <a class="top-sx-m" href="{{ROOT}}index.html#sx-q" aria-label="제도 검색"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a>
+    <nav class="nav" aria-label="주 메뉴">
+      <a href="{{ROOT}}index.html"{{NAV_HOME}}>찾기</a>
+      <a href="{{ROOT}}c/index.html"{{NAV_CAT}}>분류</a>
+      <a href="{{ROOT}}g/index.html"{{NAV_GUIDE}}>안내 글</a>
+    </nav>
+  </div>
+</header>
+{{BANNER}}
+<main id="main" class="wrap">
+{{BODY}}
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p><b>{{SITE}}</b>는 정부·공공기관의 공식 사이트가 아닌 민간 안내 사이트입니다. 공고 원문을 요약한 정보이니 신청하기 전에 반드시 공식 안내를 확인하세요.</p>
+    <p class="foot-links"><a href="{{ROOT}}about.html">소개</a><a href="{{ROOT}}privacy.html">개인정보처리방침</a>{{CONTACT}}</p>
+    <p class="foot-meta">마지막 갱신 {{TODAY}} · 사진은 Unsplash·Pexels 무료 사진이며 출처는 <a href="{{ROOT}}about.html#photos">소개</a>에 있습니다.</p>
+  </div>
+</footer>
+{{SCRIPTS}}
+<script src="{{ROOT}}assets/d.js" defer></script>
+</body>
+</html>

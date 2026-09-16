@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <path id="line-book-mark" d="M130 70V18L141 32L152 18V70Z"/>
+    <path id="line-book-lpage" d="M120 62Q68 34 18 42V110Q68 102 120 132Z"/>
+    <path id="line-book-rpage" d="M120 62Q172 34 222 42V110Q172 102 120 132Z"/>
+    <path id="line-book-ledge" d="M18 110Q68 102 120 132V140Q68 110 18 118Z"/>
+    <path id="line-book-redge" d="M222 110Q172 102 120 132V140Q172 110 222 118Z"/>
+    <path id="line-book-pencil" d="M-52 0L-36 -8H44Q52 -8 52 0Q52 8 44 8H-36Z"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 148H30M42 148H198M210 148H226"/>
+
+    <use href="#line-book-mark" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-book-mark" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-book-mark"/>
+
+    <use href="#line-book-lpage" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-book-rpage" fill="#FFFCF5" stroke="none"/>
+    <path d="M120 132V62Q68 34 18 42V84M18 96V110"/>
+    <path d="M120 62Q172 34 222 42V110"/>
+    <path d="M30 60L104 74M30 92L88 103M136 72L206 58M136 86L182 77"/>
+    <path d="M30 76L104 90" stroke="#FF6A4D"/>
+
+    <use href="#line-book-ledge" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-book-redge" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-book-ledge" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-book-redge" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-book-ledge"/>
+    <use href="#line-book-redge"/>
+
+    <g transform="translate(164 104) rotate(-26)">
+      <use href="#line-book-pencil" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(164 104) rotate(-26)">
+      <use href="#line-book-pencil" fill="#FFCD3C" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(164 104) rotate(-26)">
+      <use href="#line-book-pencil"/>
+      <path d="M-36 -8V8M36 -8V8M44 -8V8"/>
+      <path d="M-52 0L-42 -5V5Z" fill="#1F2340" stroke="none"/>
+    </g>
+
+    <path d="M40 22V36M33 29H47" stroke="#FF6A4D"/>
+    <circle cx="82" cy="26" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

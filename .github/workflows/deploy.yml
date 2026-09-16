@@ -1,0 +1,44 @@
+name: build-and-deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 18 * * *'   # 매일 03:00 (한국 시간)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'   # 로컬 빌드와 같은 판(3.11.9)
+      - name: 공공데이터 갱신
+        if: env.DATA_GO_KR_KEY != '' && hashFiles('tools/fetch_api.py') != ''
+        run: python tools/fetch_api.py
+      - name: 빌드
+        run: python build.py
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v5

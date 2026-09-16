@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <rect id="ui-g-allowance-note" x="-28" y="-18" width="56" height="36" rx="3"/>
+    <rect id="ui-g-allowance-wallet" x="10" y="46" width="68" height="40" rx="9"/>
+    <rect id="ui-g-allowance-tab" x="56" y="58" width="30" height="18" rx="6"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(42 34) rotate(-8)">
+      <use href="#ui-g-allowance-note" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(4 -4) translate(42 34) rotate(-8)">
+      <use href="#ui-g-allowance-note" fill="#FFCD3C" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(42 34) rotate(-8)">
+      <use href="#ui-g-allowance-note"/>
+      <circle cx="0" cy="-4.5" r="4.5" fill="#FFFCF5"/>
+    </g>
+
+    <use href="#ui-g-allowance-wallet" fill="#FFFCF5" stroke="none"/>
+    <use href="#ui-g-allowance-wallet" fill="#FF6A4D" stroke="none" transform="translate(4 -4)" style="mix-blend-mode:multiply"/>
+    <path d="M30 86H69Q78 86 78 77V55Q78 46 69 46H19Q10 46 10 55V77Q10 86 19 86H21"/>
+    <use href="#ui-g-allowance-tab" fill="#FFFCF5"/>
+    <circle cx="75" cy="67" r="3.5" fill="#1F2340" stroke="none"/>
+  </g>
+</svg>

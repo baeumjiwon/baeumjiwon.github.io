@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <path id="ui-q-service-body" d="M20 51H76V73Q76 83 66 83H30Q20 83 20 73Z"/>
+    <path id="ui-q-service-lid" d="M15 51C15 42 29 38 48 38C67 38 81 42 81 51Z"/>
+    <path id="ui-q-service-knob" d="M42.5 38.5V33Q42.5 29.5 46 29.5H50Q53.5 29.5 53.5 33V38.5Z"/>
+    <path id="ui-q-service-lh" d="M20 56H15Q11 56 11 60V61Q11 65 15 65H20Z"/>
+    <path id="ui-q-service-rh" d="M76 56H81Q85 56 85 60V61Q85 65 81 65H76Z"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#ui-q-service-lh" fill="#FFFCF5"/>
+    <use href="#ui-q-service-rh" fill="#FFFCF5"/>
+
+    <use href="#ui-q-service-body" fill="#FFFCF5" stroke="none"/>
+    <use href="#ui-q-service-body" fill="#FFCD3C" stroke="none" transform="translate(4 -4)" style="mix-blend-mode:multiply"/>
+    <path d="M38 83H66Q76 83 76 73V51H20V73Q20 83 30 83"/>
+
+    <use href="#ui-q-service-knob" fill="#FFFCF5"/>
+    <use href="#ui-q-service-lid" fill="#FFFCF5"/>
+
+    <path d="M31 29Q26 24.5 31 20T31 11M65 29Q60 24.5 65 20T65 11" stroke="#FF6A4D"/>
+  </g>
+</svg>

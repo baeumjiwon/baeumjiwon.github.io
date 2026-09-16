@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-coin-note" x="-64" y="-32" width="128" height="64" rx="6"/>
+    <path id="line-coin-s1" d="M34 88V127A32 9 0 0 0 98 127V88Z"/>
+    <path id="line-coin-s2" d="M146 101V127A32 9 0 0 0 210 127V101Z"/>
+    <circle id="line-coin-won" cx="122" cy="106" r="32"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 142H24M36 142H206M218 142H232"/>
+    <g transform="translate(120 48) rotate(-8)">
+      <use href="#line-coin-note" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(120 48) rotate(-8)">
+      <use href="#line-coin-note" fill="#FF6A4D" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(120 48) rotate(-8)">
+      <path d="M-44 -32H58Q64 -32 64 -26V26Q64 32 58 32H-58Q-64 32 -64 26V-26Q-64 -32 -58 -32H-54"/>
+      <circle cx="4" cy="-2" r="12" fill="#FFFCF5"/>
+      <path d="M-50 16H-38M38 -16H50"/>
+    </g>
+    <use href="#line-coin-s1" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-coin-s1" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-coin-s1"/>
+    <path d="M34 101A32 9 0 0 0 98 101M34 114A32 9 0 0 0 98 114"/>
+    <ellipse cx="66" cy="88" rx="32" ry="9" fill="#FFFCF5"/>
+    <use href="#line-coin-s2" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-coin-s2" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-coin-s2"/>
+    <path d="M146 114A32 9 0 0 0 210 114"/>
+    <ellipse cx="178" cy="101" rx="32" ry="9" fill="#FFFCF5"/>
+    <use href="#line-coin-won" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-coin-won" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M103.6 79.8A32 32 0 1 1 91.9 95.1"/>
+    <path d="M106 92L114 122L122 100L130 122L138 92M102 104H142M102 114H142"/>
+    <path d="M222 30V46M214 38H230" stroke="#FF6A4D"/>
+    <circle cx="24" cy="54" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

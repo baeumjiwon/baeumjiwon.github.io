@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-book2-one" x="26" y="52" width="44" height="91" rx="3"/>
+    <rect id="line-book2-one-band" x="26" y="66" width="44" height="18"/>
+    <rect id="line-book2-two" x="84" y="34" width="34" height="109" rx="3"/>
+    <rect id="line-book2-two-band" x="84" y="106" width="34" height="18"/>
+    <rect id="line-book2-three" x="0" y="-98" width="52" height="98" rx="3"/>
+    <rect id="line-book2-three-band" x="0" y="-80" width="52" height="18"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 148H30M42 148H198M210 148H226"/>
+
+    <use href="#line-book2-one" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-book2-one-band" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-book2-one"/>
+    <path d="M26 66H70M26 84H70"/>
+    <path d="M26 122H70"/>
+
+    <use href="#line-book2-two" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-book2-two-band" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-book2-two"/>
+    <path d="M84 106H118M84 124H118"/>
+
+    <g transform="translate(155 143) rotate(-22)">
+      <use href="#line-book2-three" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(155 143) rotate(-22)">
+      <use href="#line-book2-three-band" fill="#FF6A4D" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(155 143) rotate(-22)">
+      <use href="#line-book2-three"/>
+      <path d="M0 -80H52M0 -62H52"/>
+      <path d="M40 -52V-20"/>
+    </g>
+
+    <path d="M44 30V44M37 37H51" stroke="#FF6A4D"/>
+    <circle cx="214" cy="62" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

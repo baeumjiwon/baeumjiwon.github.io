@@ -1,0 +1,1965 @@
+[
+ {
+  "name": "aircon-unsplash-Al9lWh3XKGM",
+  "set": "aircon",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/close-up-of-an-air-conditioning-unit-on-a-sunny-day-Al9lWh3XKGM",
+  "photographer": "Khanh Do",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "Close-up of an air conditioning unit on a sunny day",
+  "size": [
+   2000,
+   1361
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "로고·글자·사람 없음. 자를 것 없음 / 검증: 한국 사용자에게 익숙한 에어컨 실외기 팬 그릴이라 냉동공조 과목에 바로 맞음. 옆면 라벨 자리는 3배 확대에서도 흐린 사각형일 뿐 글자·로고가 안 읽힘. 사람 없음. 다소 어둡지만 햇빛 줄무늬 덕분에 92px에서도 형태가 또렷함.",
+  "order": 37,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "beauty-pexels-7253877",
+  "set": "beauty",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-holding-scissors-and-green-comb-7253877/",
+  "photographer": "cottonbro studio",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a hairdresser trimming blonde hair using scissors and a comb. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음(미용사 손과 손님 머리카락만). 빗 위의 아주 작은 각인은 흐려서 읽히지 않는다. / 검증: 얼굴 없음(손과 머리카락만). 빗 끝의 'MADE IN JAPAN'·'375' 각인은 원본 확대에서만 보이고, 크롭에서는 900→296px로 줄어 글자 3~4px라 안 읽힌다. 상표도 알아볼 수 없다. 가위(흐림)·빗·머리카락 쥔 손으로 '미용 커트'가 읽힌다. 다만 톤이 어둡고 탁하며 금발이고 손마디가 붉어, 더 밝은 대안이 있으면 교체를 권한다.",
+  "order": 32,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "bio-unsplash-HQM5jm12etE",
+  "set": "bio",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/person-holding-test-tube-HQM5jm12etE",
+  "photographer": "Trust \"Tru\" Katsande",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "person holding test tube",
+  "size": [
+   2000,
+   1335
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음(장갑 손과 흰 실험복 소매만). 튜브의 작은 라벨은 읽히지 않는다. / 검증: 얼굴 없음(파란 장갑 손과 실험복 소매만). 튜브의 빨간 라벨 글씨는 2배에서도 안 읽힌다. 파란 장갑·빨간 뚜껑·흰 거치대의 대비가 강해 92px에서도 '실험실·바이오'가 분명하다. 기존 사진과 겹치지 않는다.",
+  "order": 33,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "book-pexels-13278839",
+  "set": "book",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/books-in-the-library-13278839/",
+  "photographer": "Ayşe İpek",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Long shelves filled with books in a warmly lit library interior, ideal for reading enthusiasts. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "책등 제목이 크게 읽히는 왼쪽 앞부분이 들어오지 않게 safe를 x 0.3부터 잡았다. 통로 끝의 사람은 몇 픽셀 크기라 알아볼 수 없다. / 검증: 큰 튀르키예어 책등 제목(왼쪽 앞)은 safe 밖이다. x 0.3~0.45의 작은 책등 글씨는 원본 3배 확대에서나 읽히고 2배 미리보기(글자 약 5px)에서는 안 읽힌다. 통로 끝 사람은 2배에서도 30px 크기에 옆모습이라 알아볼 수 없다. 따뜻한 원근 서가라 92px에서도 '도서관·책'이 분명하다.",
+  "order": 28,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "book-pexels-30752162",
+  "set": "book",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/organized-bookshelf-in-a-library-setting-30752162/",
+  "photographer": "Moussa Idrissi",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Well-organized bookshelf filled with colorful academic books in a library. Stock Photo",
+  "size": [
+   2000,
+   1281
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "사람·간판 없음. 책등 글씨는 작아서 2배 확대에서도 읽히지 않는다. / 검증: 사람·간판 없음. 책등 글씨는 2배 확대에서도 안 읽힌다. 92px에서는 조금 빽빽하지만 밝은 나무 서가 칸이 반복돼 '책장'이 바로 읽힌다. 어두운 통로 사진(#5)과 색·구도가 달라 겹치지 않는다.",
+  "order": 29,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "care-pexels-7551634",
+  "set": "care",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/close-up-of-pills-on-a-table-7551634/",
+  "photographer": "Kampus Production",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of hands sorting medicine and pill organizer on a wooden table. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "원본 900x600(3:2). 16:9(900x506)는 '하단 2/3'가 불가능하다(84%를 남겨야 함). 위에서 약 60px, 아래에서 약 34px만 잘라 약통·블리스터·어르신 손(y170~520)을 모두 넣는다. 3:2는 원본 그대로 쓴다. 4:3은 전체 높이를 두고 x80~880을 잘라, 약통과 양쪽 손이 가운데 오게 한다.",
+  "downloaded": "2026-09-15",
+  "order": 38
+ },
+ {
+  "name": "care-pexels-8127501",
+  "set": "care",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/couple-holding-each-other-s-hands-8127501/",
+  "photographer": "Ivan S",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Supportive interaction between caregiver and wheelchair user, showing compassion. Stock Photo",
+  "size": [
+   2000,
+   2998
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "원본 세로 900x1349. 4:3(900x675)은 y120~795로 잘라 맞잡은 손, 무릎, 파란 휠체어 프레임까지 넣는다. 3:2(900x600)는 y150~750. 발판 아래 프레임(y≈880~960)에 손글씨가 있으니 반드시 잘라낸다. hero로는 쓰지 않는다.",
+  "downloaded": "2026-09-15",
+  "order": 40
+ },
+ {
+  "name": "care-pexels-8415981",
+  "set": "care",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/woman-with-man-on-wheelchair-in-park-8415981/",
+  "photographer": "SHVETS production",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A caring woman supports a man in a wheelchair overlooking a serene lakeside view. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "원본 900x600. 16:9는 하늘을 위에서 약 40px, 데크를 아래에서 약 54px 잘라 신발이 남게 한다. 인물은 왼쪽이고 글씨는 오른쪽 호수 위에 둔다(x≈840에 난간 기둥이 있으니 피한다). 3:2는 원본 그대로 쓴다. card로는 쓰지 않는다.",
+  "downloaded": "2026-09-15",
+  "order": 42
+ },
+ {
+  "name": "care-unsplash-9MTqeBaAOlU",
+  "set": "care",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/person-wearing-silver-round-analog-watch-9MTqeBaAOlU",
+  "photographer": "Dulcey Lima",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "person wearing silver round analog watch",
+  "size": [
+   2000,
+   1500
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "원본 900x675는 이미 4:3이다. 카드는 가운데 x150~750, y112~562 비율로 조금 당겨 손 네 개가 꽉 차게 한다. 3:2는 위아래를 약 37px씩 잘라 900x600으로 만든다.",
+  "downloaded": "2026-09-15",
+  "order": 41
+ },
+ {
+  "name": "care-unsplash-VUOiQW4OeLI",
+  "set": "care",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/woman-standing-next-to-woman-riding-wheelchair-VUOiQW4OeLI",
+  "photographer": "Dominik Lange",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "woman standing next to woman riding wheelchair",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "원본 900x600. 16:9는 하늘을 위에서 약 60px, 잔디를 아래에서 약 34px 잘라 발끝(y≈490)이 남게 한다. 인물은 왼쪽 1/3에 둔다. 글씨는 오른쪽 위 하늘 말고 오른쪽 아래 그늘진 잔디에 두거나 어두운 그라데이션을 깐다(오른쪽 위는 해가 날아가 흰 글씨가 안 보인다). card로는 쓰지 않는다.",
+  "downloaded": "2026-09-15",
+  "order": 39
+ },
+ {
+  "name": "chip-unsplash-qOx9KsvpqcM",
+  "set": "chip",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/silicon-wafer-with-iridescent-microchip-grid-qOx9KsvpqcM",
+  "photographer": "Laura Ockel",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "A silicon wafer with a grid of iridescent microchip dies under shallow focus",
+  "size": [
+   2000,
+   1309
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴·로고·글자 없음, 자를 필요 없음 / 검증: 얼굴·로고·글자 없음. 무지갯빛 웨이퍼 격자라 92px에서도 선명하고 반도체 분야로 바로 읽힘. 다른 사진과 겹치지 않음",
+  "order": 8,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "classroom-unsplash-7hxOWrk-8RI",
+  "set": "classroom",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-group-of-people-sitting-in-chairs-in-a-room-7hxOWrk-8RI",
+  "photographer": "Juli Kosolapova",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "a group of people sitting in chairs in a room",
+  "size": [
+   2000,
+   2996
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "The original is portrait, 2400x3595, so every crop has enough resolution. Hero 16:9: a full-width band from y=40% to 77.5% (roughly 1438 to 2787 px), running from the lower screen through the audience's heads and shoulders, with the presenter at the far left. Category 3:2: full width, y=37% to 81.5%. Card 4:3: full width, y=35% to 85% (1250 to 3050 px). Leave out the empty skylight ceiling above. The small wall plaque behind the presenter and the brand strip at the bottom of the screen cannot be read at any of these sizes.",
+  "downloaded": "2026-09-15",
+  "order": 5
+ },
+ {
+  "name": "classroom-unsplash-YRMWVcdyhmI",
+  "set": "classroom",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/people-sitting-on-chair-in-front-of-computer-YRMWVcdyhmI",
+  "photographer": "Dom Fou",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "people sitting on chair in front of computer",
+  "size": [
+   2000,
+   1500
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "A condition applies. At 2400 px the slide can be read: its title is Finnish, 'Mandelan johtajuusopetukset 2 minuutissa', and it shows a clearly recognizable photo of Nelson Mandela. The picker's claim that the slide is 'not legible' is wrong for hero sizes. So the screen must be excluded. For hero or category, crop from x=33% to 100% of the width (792 px onward) and y=30% to 80%. That keeps the tiered seats full of audience, the wooden doors with green exit lights, and a sliver of the stage on the far left, and trims the gray partition on the right to under a third of the frame. If the stage and screen must stay in, the slide area has to be blurred or flattened before use. Do not use the full frame as-is. Not for card: after the no-screen crop, the partition dominates at small sizes.",
+  "downloaded": "2026-09-15",
+  "order": 6
+ },
+ {
+  "name": "classroom-unsplash-oc_XTqWezp4",
+  "set": "classroom",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/woman-writing-on-table-oc_XTqWezp4",
+  "photographer": "Monica Melton",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "woman writing on table",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card"
+  ],
+  "crop": "Card use only, with a crop that removes every face. In original px (2400x1600), use x=648-1651 and y=848-1600 for 4:3, or x=600-1728 and y=848-1600 if a slightly wider frame is needed. The top edge must sit below the woman's chin: keep her pen hand and the sequined neckline, the open notebook, the man's pointing hand and the phone. That drops the EXIT sign, the mural, the cursive wall lettering and every background person. Do not use the picker's proposed crop centered on the two faces.",
+  "downloaded": "2026-09-15",
+  "order": 7
+ },
+ {
+  "name": "cnc-pexels-11951233",
+  "set": "cnc",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-water-washing-a-round-steel-machine-11951233/",
+  "photographer": "alex",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Precision metal lathe in action with metal being machined, indoors workshop. Stock Photo",
+  "size": [
+   2000,
+   1331
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "글자·사람 없음. 첫 CNC 사진과 색(회색 대 황동)과 기계(밀링 대 선반)가 달라 중복 아님 / 검증: 선반 척 회전과 절삭유 노즐, 황동빛 따뜻한 톤. 왼쪽 뒤 병의 라벨은 3배 확대에서도 흐린 얼룩이라 못 읽음. 공작물 끝면 무늬는 가공 자국이지 로고가 아님. 사람 없음. 92px에서도 원형 척과 노즐이 읽힘.",
+  "order": 41,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "cnc-pexels-8956445",
+  "set": "cnc",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/close-up-of-machine-splashing-milk-8956445/",
+  "photographer": "Daniel Smyth",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Dynamic close-up of CNC machine with coolant splashing during metalwork operation. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "글자·사람 없음. 오른쪽 흐린 배경만 덜어냄 / 검증: 밀링 스핀들이 절삭유를 튀기며 가공하는 모습이 크게 확대해도 선명함. 글자·로고·사람 없음. 절삭유가 우유처럼 보이는 점은 약간 걸리지만 스핀들과 공작물이 분명해 기계가공으로 읽힘. 선반 사진(cnc B)과 색·기계 종류가 달라 중복 아님.",
+  "order": 40,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "code-pexels-36497969",
+  "set": "code",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/close-up-of-developer-typing-code-on-keyboard-36497969/",
+  "photographer": "Jakub Zerdzicki",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up view of a developer typing code on a keyboard with a computer screen showing scripts. Stock Photo",
+  "size": [
+   2000,
+   1125
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음(손과 손목만). 브랜드 로고 안 보임. 왼쪽 화분 가장자리는 잘려 나가도 무방 / 검증: 얼굴 없이 손과 손목만 나옴. 키보드·시계에 로고 없음. 화면 코드는 148px에서 1~2px 줄로 뭉개져 안 읽힘. 밝고 따뜻해서 92px에서도 '코딩'이 바로 읽힘",
+  "order": 0,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "code-pexels-4682189",
+  "set": "code",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/patch-cables-plugged-in-patch-panel-4682189/",
+  "photographer": "Brett Sayles",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "From below of long thin blue cables connected to row of small white connectors on system block in data center Stock Photo",
+  "size": [
+   2000,
+   1331
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴·로고 없음. 케이블 라벨 글자는 너무 작아서 2배 확대본에서도 안 읽힘 / 검증: 얼굴·로고 없음. 케이블 라벨은 2배 확대본에서도 안 읽힘. 청록색 광케이블이 92px에서도 선명하고, 네트워크·서버 계열 IT 과정에 잘 맞음. 기존 사진과 겹치지 않음",
+  "order": 1,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "code-unsplash-QckxruozjRg",
+  "set": "code",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/group-of-people-using-laptop-computer-QckxruozjRg",
+  "photographer": "Annie Spratt",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "group of people using laptop computer",
+  "size": [
+   2000,
+   1334
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "위쪽의 주황 후드 남성 얼굴과 오른쪽 회색 티셔츠 남성(옆얼굴·티셔츠 글자)은 safe 밖(y<0.35, x>0.63)으로 잘라냄. 남는 건 뒷모습과 손뿐 / 검증: 확대해 보니 safe 안에는 헤드폰 쓴 남성의 뒷머리, 왼쪽 여성의 뒷머리와 손만 남음. 주황 후드 남성 얼굴과 회색 티셔츠 남성의 옆얼굴·셔츠 글자는 safe 밖. 노트북 뒷면에 사과 로고 없음, 화면 코드는 흐림. 색이 다소 칙칙하지만 92px에서 '코딩 교육'이 읽힘. 기존 people 사진과는 장면이 다름",
+  "order": 2,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "coin-unsplash-5OUMf1Mr5pU",
+  "set": "coin",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/pink-pig-coin-bank-on-brown-wooden-table-5OUMf1Mr5pU",
+  "photographer": "Andre Taissin",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "pink pig coin bank on brown wooden table",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "잘라낼 것 없음. 사람·글자·로고가 없다. 동전은 작고 흐려서 액면 글자를 읽을 수 없다. / 검증: 사람·글자·로고 없음. 동전은 흐려서 어느 나라 돈인지 알 수 없다. 148·92px 둘 다 돼지저금통 하나가 또렷해서 '저축·돈'이 바로 읽힌다. 따뜻한 조명이고 기존 사진과 겹치지 않는다. 흔한 소재지만 연출이 과하지 않다.",
+  "order": 24,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "coin-unsplash-OApHds2yEGQ",
+  "set": "coin",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/stacked-round-gold-colored-coins-on-white-surface-OApHds2yEGQ",
+  "photographer": "Ibrahim Rifath",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "stacked round gold-colored coins on white surface",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴·로고 없음. 동전 면의 숫자는 2배 확대에서도 읽히지 않는다. 정사각형에서 동전 더미가 반씩 잘리지 않게 초점을 왼쪽 네 더미로 옮겼다. / 검증: 원래 박스는 4:3에서 오른쪽 끝 금색 더미를 반으로, 1:1에서 금색 더미를 가장자리에서 잘랐다. 초점을 x 0.245~0.92로 옮기니 구리색 둘·금색 둘이 온전히 보이고 색 대비도 좋아졌다. 동전은 유로센트지만 '10 EURO CENT' 각인은 원본에서도 흐리고 2배 확대에서도 안 읽힌다. 92px에서는 그냥 동전 더미로만 보인다.",
+  "order": 25,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "culture-unsplash-rixN0q0IamQ",
+  "set": "culture",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/paintbrushes-on-colorful-wooden-palette-rixN0q0IamQ",
+  "photographer": "Jennie Razumnaya",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "Six paintbrushes resting on a wooden palette covered in colorful oil paint",
+  "size": [
+   2000,
+   2667
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "잘라낼 것 없음. 사람·글자·로고가 없다. / 검증: 사람·글자·로고가 전혀 없다. 분홍·주황 물감 팔레트와 붓이 크고 선명해 92px에서도 '미술·문화예술'이 즉시 읽힌다. 밝고 따뜻하며 기존 사진(태블릿 디지털 아트)과 소재가 다르다.",
+  "order": 31,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "data-unsplash-ykgLX_CwtDw",
+  "set": "data",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/person-using-stylus-on-tablet-with-charts-ykgLX_CwtDw",
+  "photographer": "Jakub Żerdzicki",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "person using stylus on tablet with charts",
+  "size": [
+   2000,
+   1334
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음(손만). 차트 숫자는 너무 작아 안 읽힘. 로고 없음 / 검증: 원래 크롭은 오른쪽 아래 계산기와 서류가 크게 들어가 기존 '계산기와 서류 위의 손' 사진과 겹침. focus를 손·스타일러스·차트로 좁히고 safe를 y<0.66으로 둬 계산기를 뺌. 미리보기로 확인함. 얼굴 없음, 차트 숫자 안 읽힘",
+  "order": 5,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "drone-pexels-1336211",
+  "set": "drone",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/person-holding-white-and-black-quadcopter-drone-1336211/",
+  "photographer": "Pok Rie",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a hand holding a drone on a beach during daytime, showcasing modern technology. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음(팔과 손만). 드론 윗면에 로고 없음. 배경 해안은 흐림 / 검증: 확대해도 기체 윗면·팔에 로고나 글자 없음. 팔과 손만 나오고 얼굴 없음. 흐린 바닷가 배경이라 외국 느낌 요소도 없음. 흰 기체와 프로펠러가 92px에서도 드론으로 바로 읽힘",
+  "order": 11,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "elec-pexels-33531832",
+  "set": "elec",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/technician-testing-electrical-motor-wires-33531832/",
+  "photographer": "Bulat843 🌙",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of hands using multimeter on motor wires. Precision in electrical testing. Stock Photo",
+  "size": [
+   2000,
+   3556
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "오른쪽 위 계측기에 '20A' 글자가 있어 safe 위쪽을 0.12로 잘라 제외. 얼굴 없음 / 검증: 맨손으로 모터 단자대를 재는 따뜻한 톤 클로즈업. 오른쪽 위 '20A' 글자는 safe 위쪽 0.12로 확실히 빠짐(실제 자르기 y 0.30~0.75). 얼굴·로고 없음, 92px에서도 손과 빨간 리드선이 분명함.",
+  "order": 36,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "elec-unsplash-PkHf7BUWbtk",
+  "set": "elec",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/electrician-testing-electrical-panel-with-multimeter-PkHf7BUWbtk",
+  "photographer": "Toolmash Expo",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "Electrician testing electrical panel with multimeter",
+  "size": [
+   2000,
+   1500
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음. 차단기 라벨은 작아 2배 미리보기에서도 읽히지 않아 자를 것 없음 / 검증: 장갑 낀 손과 테스터로 배전반을 재는 장면이라 전기 과목이 바로 읽힘. 얼굴 없음. 차단기 라벨(KM1 등)은 크게 확대해도 흐려서 148/92 크기와 2배에서 못 읽음. 원본 화질이 약간 뭉개졌지만 썸네일 크기에서는 문제없음. elec B와 '테스터 탐침' 소재가 같은 점은 아쉬우나 색(차가운 흰 배전반 대 따뜻한 갈색 모터)과 구도가 달라 허용.",
+  "order": 35,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "exam-pexels-31115182",
+  "set": "exam",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/student-taking-exam-in-classroom-setting-31115182/",
+  "photographer": "This And No Internet 25",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of student answering a test in a classroom environment. Stock Photo",
+  "size": [
+   2000,
+   1500
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "16:9 hero: take the horizontal band y 125–631 of the 900x675 preview. This removes the red chair at the top entirely and keeps the desk, the eraser, the hand, the pink OMR sheet and the black cuff. The empty right side (cabinet and floor) is space for text. 3:2 category: y about 100–700 equivalent, with the chair edge cut off. 4:3 card: x 110–560, y 180–517, filled with the hand and the OMR sheet. I rendered a 240x180 preview and it still reads as marking an exam answer sheet.",
+  "downloaded": "2026-09-15",
+  "order": 45
+ },
+ {
+  "name": "exam-pexels-6683391",
+  "set": "exam",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/white-paper-on-a-desk-6683391/",
+  "photographer": "Andy Barbour",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A close-up of an empty classroom desk with exam papers and a pencil, highlighting education and testing environment. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "category",
+   "card",
+   "hero"
+  ],
+  "crop": "4:3 card: x 100–780, y 90–600, putting the two sheets and the pencil at center. At 240x180 the sheets and pencil still read as an exam paper. 3:2 category: close to the full frame, with a little cut from the top. 16:9 hero: y 50–556, with the blurred back desks and green chairs kept as a soft background.",
+  "downloaded": "2026-09-15",
+  "order": 46
+ },
+ {
+  "name": "exam-pexels-6683673",
+  "set": "exam",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-writing-on-a-paper-using-pencil-6683673/",
+  "photographer": "Andy Barbour",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of student's hands writing on exam sheet, indoors with blurred background. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "16:9 hero: y 60–566, cutting a little of the blinds at the top and keeping the answer sheet at the bottom and both hands. Put the blurred test-taker in the back at upper center, with the headline over the blinds on the left. 3:2 category: full frame. Not recommended as a card: shrunk down it is mostly hands, and the answer sheet sits at the bottom edge and gets lost.",
+  "downloaded": "2026-09-15",
+  "order": 47
+ },
+ {
+  "name": "exam-pexels-6684265",
+  "set": "exam",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-writing-on-white-paper-using-pencil-6684265/",
+  "photographer": "Andy Barbour",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a student writing answers on a test sheet with a pencil and smartwatch. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card"
+  ],
+  "crop": "4:3 card only: x 150–830, y 90–600. This removes the 'EXAM FORM' printing at the upper left and most of the blurred cheek at the upper right, keeping the watch, both hands, the pencil tip and the OMR bubbles. I checked a 240x180 preview and it reads immediately as marking a test. I removed category and hero: at 3:2 or 16:9 the English printing ('EXAM FORM', 'SECTION 2', 'SECTION 3') shows large and makes it look like a foreign exam.",
+  "downloaded": "2026-09-15",
+  "order": 48
+ },
+ {
+  "name": "exam-unsplash-w-1ydxmB7hQ",
+  "set": "exam",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-person-writing-on-a-piece-of-paper-w-1ydxmB7hQ",
+  "photographer": "Billy Albert",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "a person writing on a piece of paper",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "4:3 card: x 230–780, y 120–532, putting the tablet-arm desk, the form and the hand holding the pen at center, and removing the masked face and long hair on the right. The rendered preview reads as filling out a form. 3:2 category: x 0–820 or so, cutting off at least the right-hand hair and mask edge. Keep only half of the lime-and-orange clothing on the left. Not suitable for a hero because of low sharpness and muddy color.",
+  "downloaded": "2026-09-15",
+  "order": 49
+ },
+ {
+  "name": "exam2-unsplash-cbEvoHbJnIE",
+  "set": "exam2",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/pencil-on-multiple-choice-answer-sheet-cbEvoHbJnIE",
+  "photographer": "Nguyen Dang Hoang Nhu",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "A pencil resting on a multiple choice answer sheet with pink sticky notes",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "연필대에 인쇄된 TOEIC·SAT·GRE 상표 글자(x 0.49부터)가 들어오지 않게 safe를 x 0.47까지로 잡아 연필 끝만 보인다. 답안지의 작은 번호는 읽히지 않는다. / 검증: 원래 4:3 크롭의 오른쪽 아래에 영어 인쇄 글자 'RESPONSES'가 걸렸고, 윗부분 머리글 글자도 가까웠다. 1:1에서는 연필이 가장자리에 조금만 보였다. safe를 y 0.18~0.63으로 좁혀 두 글자 영역을 모두 뺐다. 이제 연필 끝이 크롭 중앙을 가로지르고 분홍 메모지 모서리가 색을 더한다. TOEIC 연필 상표(x 0.49부터)는 여전히 밖이다. 남는 것은 칸 번호(12 등)뿐이고 뜻 있는 글자가 아니다.",
+  "order": 30,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "farm-pexels-32146752",
+  "set": "farm",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/modern-hydroponic-greenhouse-with-lush-spinach-32146752/",
+  "photographer": "Jonathan David",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Expansive view of a hydroponic greenhouse growing fresh spinach under controlled environment. Stock Photo",
+  "size": [
+   2000,
+   1500
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "사람·글자 없음. 위쪽 지붕 구조 일부만 덜어냄 / 검증: 비닐온실 수경재배 줄과 환풍기가 스마트팜으로 바로 읽히고 밝고 선명함. 먼 배경의 장비는 확대해도 글자가 안 읽힘. 사람 없음. 흙에 모종 심는 farm B와 색·구도가 달라 중복 아님.",
+  "order": 44,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "farm-unsplash-MdA-AwgUYy0",
+  "set": "farm",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/hands-planting-a-small-green-seedling-in-rich-soil-MdA-AwgUYy0",
+  "photographer": "Ana Jovanovski",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "Hands planting a small green seedling in rich soil",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음(원본 맨 위에 머리카락 끝만 있고 자르면 안 보임). 온실 사진과 색·구도가 달라 중복 아님 / 검증: 맨손으로 모종을 심는 따뜻한 장면이라 농업으로 읽힘. 얼굴은 원래도 없음. 하지만 원래 상자에서는 오른쪽 손목의 작은 별 문신(원본 x 0.68~0.71, y 0.50~0.55)이 두 자르기 모두에 보여서 개인을 알아볼 수 있는 표지가 됨. safe 오른쪽을 0.66으로 줄여 문신을 빼고 맨발·머리카락도 밖에 둠. 수정 후 원본에서 쓰는 폭이 약 280px라 2배 화면에서도 화질은 괜찮음.",
+  "order": 45,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "finance-pexels-5900135",
+  "set": "finance",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/hands-holding-receipt-and-notes-5900135/",
+  "photographer": "https://kaboompics.com/",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Top view of person organizing finances with calculator, receipts, and notes at desk. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음(손과 팔만). 왼쪽 끝 지폐(5, 10 숫자)가 들어오지 않게 safe를 x 0.12부터 잡았다. 영수증 글씨는 작아서 184px에서도 읽히지 않는다. / 검증: 원래 박스에는 파란 계산기가 들어와 금지 목록의 기존 사진 '계산기와 서류를 든 손'과 겹쳤다. 지폐(5, 10)까지 가장자리에 붙어 있었다. safe를 x 0.32부터로 바꿔 계산기·지폐·노트북을 모두 뺐다. 주황·흰 영수증을 든 손과 나무 책상만 남는다. 영수증 글씨(폴란드어 PLN)는 184px에서 읽히지 않고 얼굴도 없다.",
+  "order": 26,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "finance-unsplash-Q_vhJv5im-8",
+  "set": "finance",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/stock-chart-indicates-growth-and-potential-profit-Q_vhJv5im-8",
+  "photographer": "Arturo Añez",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "Stock chart indicates growth and potential profit",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "오른쪽 가격 눈금(48.8, 46.0 등)과 초록 가격표를 빼려고 safe를 x 0.9까지로 잡았다. 앱 이름·브랜드 없음. / 검증: 실제 크롭은 x 0.1~0.8이라 오른쪽 가격 눈금과 초록 48.8 가격표가 들어오지 않는다. 앱 이름·로고도 없다. 어두운 바탕에 봉차트가 또렷해 92px에서도 '주식·금융'이 바로 보인다. 흠이라면 초록=상승인 서양식 색이다(한국은 빨강=상승). 작은 크기에서는 거슬리지 않을 정도라 유지한다.",
+  "order": 27,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "fire-unsplash-wjHdeYmI-XU",
+  "set": "fire",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/hard-hats-and-safety-vests-wjHdeYmI-XU",
+  "photographer": "Tanya Paquet",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "Four orange hard hats and neon yellow safety vests hanging on a wall",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "사람 없음. 왼쪽 안전모 챙의 작은 스티커는 크롭에서 거의 안 보이고 읽히지 않는다. 형광 조끼가 산업안전을 더 분명히 보여 줘서 노란 안전모 사진 대신 이것을 골랐다. / 검증: 사람 없음. 왼쪽 안전모 챙의 노란 스티커(작은 로고 모양)는 원본 3배 확대에서도 뭉개져 있다. 형광 조끼와 같은 노란색이라 2배 크롭(약 20px)에서는 구분도 안 된다. 주황 안전모와 형광 조끼 대비가 강해 92px에서 '안전'이 바로 읽힌다. 다만 '소방'이라면 불·소화기가 아니라 건설·산업안전 느낌이라는 점은 유의해야 한다.",
+  "order": 34,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "food-pexels-16140004",
+  "set": "food",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/close-up-of-cooks-working-16140004/",
+  "photographer": "Doğu Tuncer",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of chefs chopping carrots in a modern kitchen setting. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "card(4:3): 가로 11%~82%, 세로 20%~100%. 왼쪽 사람의 펼친 손, 칼, 당근이 중심이다. category(3:2): 가로 7%~100%, 세로 8%~100%. 이렇게 자르면 오른쪽 위(가로 49~52%, 세로 0~7%)의 흐린 붉은 글자 조각과 왼쪽 끝(세로 55~60%) 노란 앞치마의 'd.' 글자 조각이 함께 빠진다. hero는 쓰지 않는다",
+  "downloaded": "2026-09-15",
+  "order": 33
+ },
+ {
+  "name": "food-pexels-4349954",
+  "set": "food",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/crop-young-woman-whipping-milk-using-professional-machine-in-coffee-shop-4349954/",
+  "photographer": "Ketut Subiyanto",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Crop faceless young female barista in apron steaming milk at modern coffee machine while preparing delicious latte Stock Photo",
+  "size": [
+   2000,
+   1169
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "card(4:3): 가로 22%~100%(원본 900x526에서 왼쪽 약 200px의 흰 머신 몸체를 잘라냄), 세로 전체. 스팀 피처, 두 손, 스팀 노즐이 중심이다. category(3:2): 가로 12%~100%, 세로 전체",
+  "downloaded": "2026-09-15",
+  "order": 37
+ },
+ {
+  "name": "food-pexels-6937464",
+  "set": "food",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-group-of-sous-chef-working-in-the-kitchen-6937464/",
+  "photographer": "Anna Tarazevich",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Chefs in a professional kitchen preparing and plating gourmet dishes with precision and teamwork. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "category(3:2): 원본(900x600)이 이미 3:2라 그대로 쓴다. hero(16:9): 위쪽 약 12%(후드)와 아래쪽 약 4%를 잘라 세로 12%~96% 띠를 쓴다. 모자 윗부분이 10%쯤에서 시작하므로 위를 더 자르면 안 된다. card(4:3): 가로 20%~89%, 세로 17%~94%. 가운데 두 사람과 녹색 접시 두 개가 중심이고 양옆 사람은 반쯤 잘린다. 900px 파일은 미리보기용이므로 hero는 img_base에서 큰 원본(w=1920 이상)을 받아 쓴다",
+  "downloaded": "2026-09-15",
+  "order": 32
+ },
+ {
+  "name": "food-unsplash-XiyR0BXRIsI",
+  "set": "food",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/person-pouring-coffee-on-coffee-cup-XiyR0BXRIsI",
+  "photographer": "Choi sungwoo",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "person pouring coffee on coffee cup",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card",
+   "category",
+   "hero"
+  ],
+  "crop": "모든 쓰임에서 왼쪽 약 33%를 반드시 잘라낸다. 앞치마의 핀 배지와 가죽끈이 있는 곳이다. card(4:3): 가로 33%~100%, 세로 0%~75%. 주전자, 첫 드리퍼와 서버, 둘째 드리퍼, 스테인리스 컵이 들어간다. category(3:2): 가로 33%~100%, 세로 3%~70%. hero(16:9): 가로 33%~100%, 세로 6%~62%. 주전자 손잡이 끝이 조금 잘려도 된다. 에이전트 안처럼 '주전자·드리퍼를 가운데 왼쪽에' 두고 원본 가로를 거의 다 쓰면 핀 배지가 배너 크기로 크게 들어가므로 채택하지 않는다",
+  "downloaded": "2026-09-15",
+  "order": 34
+ },
+ {
+  "name": "food-unsplash-h_s7AUBPss8",
+  "set": "food",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/person-slicing-tomatoes-h_s7AUBPss8",
+  "photographer": "Louis Hansel",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "person slicing tomatoes",
+  "size": [
+   2000,
+   1334
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "card(4:3): 가로 11%~78%, 세로 8%~83%. 손, 칼, 빨간 도마, 토마토 세 개가 중심이고 아래 흐린 전경은 최소로만 남긴다. category(3:2): 가로 7%~93%, 세로 3%~90%. hero는 쓰지 않는다",
+  "downloaded": "2026-09-15",
+  "order": 35
+ },
+ {
+  "name": "food-unsplash-y-XZf_TNRms",
+  "set": "food",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/chef-chopping-vegetables-in-restaurant-kitchen-y-XZf_TNRms",
+  "photographer": "Pylyp Sukhenko",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "A chef in a white coat chopping vegetables on a green board in a kitchen",
+  "size": [
+   2000,
+   1125
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "hero(16:9): 원본(900x506)이 정확히 16:9라 그대로 쓴다. 왼쪽 약 25%의 흐리고 어두운 기둥 영역이 글자 올릴 자리다. category(3:2): 왼쪽 약 16%를 잘라 가로 16%~100%만 쓴다. card에는 쓰지 않는다. 인물이 작아 썸네일에서는 알아보기 어렵다",
+  "downloaded": "2026-09-15",
+  "order": 36
+ },
+ {
+  "name": "fork-unsplash-OnbSOhz0oig",
+  "set": "fork",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-large-warehouse-filled-with-lots-of-pallets-OnbSOhz0oig",
+  "photographer": "AFINIS Group ® - AFINIS GASKET® Production",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "a large warehouse filled with lots of pallets",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "지게차 몸체에 브랜드 글자가 보이지 않음(2배 확인). 선반 흰 라벨은 작아 읽히지 않음. 사람 없음 / 검증: 지게차가 분명하고 사람이 없어 과목에 맞음. 다만 원래 4:3 자르기(x 0.154부터)는 왼쪽 가장자리에 흰 글자가 있을 수 있는 파란 안내판을 반쯤 담아서 safe 왼쪽을 0.19로 좁혀 뺌(수정 후 4:3 x 0.19~0.652, 1:1은 그대로). 차체 뒤쪽의 작은 모델 글자는 크게 확대해도 흐린 얼룩이라 못 읽음. 선반의 'B' 한 글자는 통로 표시일 뿐 브랜드 아님.",
+  "order": 42,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "game-unsplash-XC3fq-ffXRI",
+  "set": "game",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/black-laptop-computer-beside-controller-on-brown-wooden-surface-XC3fq-ffXRI",
+  "photographer": "orva studio",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "black laptop computer beside controller on brown wooden surface",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴 없음. 노트북 로고는 안 보이고 화면은 흐릿해서 글자가 안 읽힘. 패드 가운데 버튼은 작고 흐려서 상표로 식별되지 않음 / 검증: 확대해도 게임패드 가운데 버튼 무늬가 번져 로고로 식별되지 않고, 노트북 로고도 없음. 화면 코드와 게임 그래픽은 흐림. 얼굴 없음. 나무 책상에 픽셀 게임 화면이라 92px에서 '게임 개발'이 명확함",
+  "order": 7,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "house-unsplash-Ebj87ehFNNU",
+  "set": "house",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-person-holding-a-bunch-of-keys-in-their-hand-Ebj87ehFNNU",
+  "photographer": "Jakub Żerdzicki",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "A person holding a bunch of keys in their hand",
+  "size": [
+   2000,
+   1334
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "열쇠에 각인이나 글자가 없고 사람은 손만 나온다. 오른쪽의 흐린 배경은 줄였다 / 검증: 손과 열쇠만 나오고 각인·글자·얼굴이 없다. 흐린 따뜻한 배경 앞에 열쇠가 또렷해 집·주거 주제가 바로 읽힌다. 92px에서도 알아볼 수 있다.",
+  "order": 23,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "internb-pexels-6036671",
+  "set": "internb",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/person-using-pliers-6036671/",
+  "photographer": "Arthur Krijgsman",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of hands using pliers for crafting in a workshop environment. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "손과 팔만 나오고 얼굴·글자·로고가 없다. 아래쪽 작업대와 빨간 펜치가 살짝 보이게 했다 / 검증: 손과 팔만 나오고 얼굴·글자·로고가 없다. 파란 바이스와 두 사람이 함께 펜치를 다루는 손이 '현장에서 배우는 실습'으로 읽힌다. 92px에서는 조금 복잡하지만 손과 도구가 가운데 있어 알아볼 수 있다.",
+  "order": 17,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "internb-pexels-6457478",
+  "set": "internb",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/crop-colleagues-browsing-laptop-at-table-6457478/",
+  "photographer": "Alexander Suhorucov",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "From above of unrecognizable coworkers with pen surfing netbook while sitting at wooden desk with documents during work together in modern workspace Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴은 원본에 없다. 아래쪽 종이의 작은 인쇄 글자는 safe 아래(y 0.85)로 밀어냈다. 노트북 로고는 보이지 않는다 / 검증: 오른쪽 위 서류를 확대해 봐도 흐린 줄뿐이고 읽히는 글자가 없다. 아래쪽 인쇄 종이는 safe 밖이라 잘린다. 노트북 로고도 없다. 기존 노트북 사진 두 장과 소재는 같지만, 두 사람이 펜으로 짚어 주는 구도가 달라 겹치지 않는다.",
+  "order": 16,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "it-pexels-4974912",
+  "set": "it",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/person-coding-on-a-macbook-pro-4974912/",
+  "photographer": "olia danilevich",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A developer working on a laptop, typing code, showcasing programming and technology skills. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card"
+  ],
+  "crop": "card(4:3)만 쓴다. 원본 가로 약 20~73%, 세로 약 40~100%(900px 원본 기준 x180~660, y240~600). 미리 잘라 확인한 결과 오른쪽 노트북 화면 속 실존 인물 사진은 완전히 빠지고, 오른쪽 노트북은 키보드 모서리만 남는다. 이보다 넓게 자르면 인물 사진이 들어오니, 넓은 쓰임(hero·category)은 금지. 잘린 폭이 좁으니 900px 파일 대신 img_base 원본 고해상도로 받아서 자를 것.",
+  "downloaded": "2026-09-15",
+  "order": 16
+ },
+ {
+  "name": "it-pexels-7988087",
+  "set": "it",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-man-sitting-in-front-of-the-computer-while-working-7988087/",
+  "photographer": "Mikhail Nilov",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A software developer working on code with multiple screens in a modern office setting. Stock Photo",
+  "size": [
+   2000,
+   1335
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "category(3:2)는 원본 그대로. hero(16:9)는 세로 약 8~93% 띠만 남긴다(모니터 윗테두리는 조금 잘려도 되고, 오른손은 남긴다). card(4:3)는 가로 약 11~100%로 왼쪽 의자 끝만 덜어낸다. 뒷머리와 흰 셔츠가 조금 걸치게 둔다.",
+  "downloaded": "2026-09-15",
+  "order": 12
+ },
+ {
+  "name": "it-unsplash-6DfEbkqsTiA",
+  "set": "it",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/person-holding-a-computer-mouse-in-a-room-6DfEbkqsTiA",
+  "photographer": "Patrick Amoy",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "person holding a computer mouse in a room",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "category(3:2)는 원본 그대로. hero(16:9)는 위에서부터 약 84%까지만 남기고 아래 키보드 끝을 잘라낸다. hero와 category 모두 가운데 모니터 받침 테두리의 ASUS 글자(원본 약 x235~265, y318~328)와 왼쪽 모니터 옆면의 ASUS 글자(약 x15~30, y375~400)는 반드시 흐리게 처리한다.",
+  "downloaded": "2026-09-15",
+  "order": 13
+ },
+ {
+  "name": "it-unsplash-Hl1stIQkVRw",
+  "set": "it",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/black-laptop-computer-beside-white-ceramic-mug-Hl1stIQkVRw",
+  "photographer": "John Salzarulo",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "black laptop computer beside white ceramic mug",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "category(3:2)는 원본 그대로. hero(16:9)는 아래쪽 약 84%를 남기고 블라인드 윗부분을 조금 자른다. 남은 블라인드와 벽은 제목 여백으로 쓴다. card(4:3)는 노트북을 가운데 두고 원본 가로 약 20~80%, 세로 약 35~100%. 커피 드리퍼와 머그가 양옆에 걸치게 한다.",
+  "downloaded": "2026-09-15",
+  "order": 14
+ },
+ {
+  "name": "it-unsplash-l2y1QVap188",
+  "set": "it",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/two-men-sitting-at-a-table-with-a-laptop-l2y1QVap188",
+  "photographer": "phyo min",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "two men sitting at a table with a laptop",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "card(4:3)는 세로 원본의 위에서 약 30~80%(900x675) 구간. 미리 잘라 확인했더니 두 사람 머리부터 손·마우스·노트북까지 들어간다. 고른 에이전트가 제안한 32%에서 시작하면 앞사람 정수리가 잘리니 30%부터. category(3:2)는 위에서 약 31~76%로, 머리 위 여백이 좁아지는 것만 감수한다.",
+  "downloaded": "2026-09-15",
+  "order": 15
+ },
+ {
+  "name": "job-pexels-295480",
+  "set": "job",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/empty-piled-chairs-295480/",
+  "photographer": "Alexsandro Rosa de Mello",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of sleek orange office chairs in a waiting area with focus on design. Stock Photo",
+  "size": [
+   2000,
+   1330
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "사람 없음. 배경의 주황색 물체는 초점이 나가 글자가 읽히지 않는다. 오른쪽 모니터 가장자리는 좁게만 걸린다 / 검증: 오른쪽 끝의 검은 모니터가 1:1 자르기에 걸려 지저분했다. safe 오른쪽을 0.88로 줄여 뺐고, 미리보기에서 주황 의자 줄만 깔끔하게 남는 것을 확인했다. 배경의 사람은 흐려서 알아볼 수 없다.",
+  "order": 13,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "job-pexels-33175650",
+  "set": "job",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/professional-handshake-in-business-meeting-33175650/",
+  "photographer": "Bia Limova",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of two businessmen shaking hands, symbolizing agreement and partnership. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "원본에 얼굴·로고·글자 없음. 손과 소매만 나오게 가운데로 잘랐다 / 검증: 원본 전체에 얼굴·로고·글자가 없다. 148px·92px 모두 악수하는 손이 또렷하다. 흔한 연출 사진이긴 해도 억지 웃음은 없어 괜찮다.",
+  "order": 12,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "job-pexels-9623649",
+  "set": "job",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/back-view-of-man-in-full-suit-9623649/",
+  "photographer": "Lara Jameson",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Rear view of a businessman in a formal suit walking up steps in a city environment. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴이 보이지 않는 뒷모습. 머리 윗부분은 잘리고 등·다리·계단 위주로 보인다. 멀리 있는 행인은 2배 확대(184px)에서도 알아볼 수 없을 만큼 작다 / 검증: 주인공은 뒷모습이고 머리는 잘려 나간다. 왼쪽의 회색 정장 행인과 먼 사람들은 원본을 2배 확대하면 옆얼굴이 흐리게 보이지만, 실제 크기와 2배 미리보기에서는 몇 px뿐이라 알아볼 수 없다. 서양 도시 광장 느낌이 약간 있지만 간판이나 글자는 없다.",
+  "order": 14,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "jobb-pexels-7580909",
+  "set": "jobb",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/man-in-blue-suit-holding-a-folder-7580909/",
+  "photographer": "RDNE Stock project",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A professionally dressed man holding a pink folder in an office setting. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "원본 위쪽이 이미 셔츠 깃에서 잘려 얼굴이 없다. safe 위쪽을 조금 내려 턱선이 들어올 여지를 막았다. 커프스 무늬는 아주 작아 읽을 수 없다 / 검증: 원본 맨 위 0~5%에 수염 난 목과 턱 밑 그림자가 있다. 1:1 자르기가 2% 지점부터 시작해 이 부분이 걸리므로 safe 위쪽을 0.06으로 내렸다. 미리보기에서 셔츠 깃부터만 보인다. 커프스 무늬는 읽을 수 없다.",
+  "order": 15,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "lang-pexels-5185082",
+  "set": "lang",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/person-writing-on-a-notebook-5185082/",
+  "photographer": "cottonbro studio",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Overhead shot of a person organizing notes and study materials on a cluttered desk with a laptop. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "키보드를 반드시 잘라낸다. 위쪽 경계는 트랙패드 아래(600높이 기준 y≈230) 이하. card 4:3은 x 310-803, y 230-600 정도로 빨간 첨삭 공책과 두 손을 가운데 둔다. category 3:2는 x 260-815, y 230-600. 두 크롭 모두 테스트해 보니 키릴 문자가 남지 않았다. hero에는 쓰지 않는다(16:9로 넓히면 키보드가 다시 들어간다).",
+  "downloaded": "2026-09-15",
+  "order": 28
+ },
+ {
+  "name": "lang-pexels-5676663",
+  "set": "lang",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/men-reading-books-5676663/",
+  "photographer": "Ivan S",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Two young men studying together, focusing on English grammar books in a modern indoor setting. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "얼굴과 재킷 글씨를 모두 빼는 크롭만 허용한다. category 3:2: x 290-890, y 190-590. card 4:3: x 360-880, y 250-590. 두 크롭 모두 테스트해 보니 손, 형광펜, 펼친 책, 'ENGLISH GRAMMAR' 책등만 남았다. 앞사람의 흰 줄무늬 소매는 들어가도 되지만, 왼쪽 x<290의 등판 글씨는 절대 넣지 않는다. 안경 쓴 사람의 얼굴이 들어가는 원래 구도는 쓰지 않는다.",
+  "downloaded": "2026-09-15",
+  "order": 31
+ },
+ {
+  "name": "lang-pexels-7156135",
+  "set": "lang",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/man-pointing-on-a-white-board-7156135/",
+  "photographer": "Gustavo Fring",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A male teacher pointing at words on a whiteboard during a classroom session. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "card 4:3: x 60-520, y 150-495. 가리키는 손, 단어(Teacher·pen·books·copy book·hands·eyes·nose), 팔만 넣고 얼굴은 뺀다. 테스트해 보니 썸네일로 줄여도 '영어 단어 수업'이 읽혔다. category 3:2: x 0-810, y 60-600으로 칠판과 상반신을 넣을 수 있으나, 가능하면 얼굴 없는 card 크롭을 우선한다.",
+  "downloaded": "2026-09-15",
+  "order": 30
+ },
+ {
+  "name": "lang-pexels-771317",
+  "set": "lang",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/man-in-black-shirt-sitting-and-writing-771317/",
+  "photographer": "Min An",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A young man concentrates on studying at his desk, taking notes indoors. Stock Photo",
+  "size": [
+   2000,
+   1181
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "hero 16:9: 전체 폭 사용, 위에서부터 약 95% 높이(0-506/532)만 남겨 하단 바구니 테두리를 잘라낸다. 왼쪽 빈 벽은 텍스트 자리. category 3:2: 인물과 공책을 오른쪽 2/3에 두고 왼쪽 벽을 조금 남긴다. card 4:3: 왼쪽 끝을 계산기 오른쪽 끝(900폭 기준 x≈370)에 맞추고 머리부터 공책까지 넣는다. 계산기가 가장자리 일부로만 남아 '수학 공부'로 읽힐 여지가 줄어든다.",
+  "downloaded": "2026-09-15",
+  "order": 27
+ },
+ {
+  "name": "lang-unsplash-QVrBu1MqJYU",
+  "set": "lang",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/person-reading-book-on-brown-wooden-table-QVrBu1MqJYU",
+  "photographer": "Melanie Deziel",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "person reading book on brown wooden table",
+  "size": [
+   2000,
+   1331
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "hero 16:9: 전체 폭, y 60-566 정도로 펼친 책과 손을 오른쪽 가운데에 둔다. 왼쪽 흐린 머리카락은 텍스트 자리로 쓴다. category 3:2와 card 4:3: 책과 오른손 중심(x 200-840). 페이지를 과하게 키우지 않는다.",
+  "downloaded": "2026-09-15",
+  "order": 29
+ },
+ {
+  "name": "lawb-pexels-6358834",
+  "set": "lawb",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-using-a-wooden-stamp-6358834/",
+  "photographer": "Anna Tarazevich",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a person using a wooden stamp on white paper indoors. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "원본 맨 위 검은 티셔츠에 영문 프린트가 있어 safe를 y 0.2부터 잡아 뺐다. 종이에 글자가 없고 얼굴도 없다 / 검증: 맨 위 티셔츠의 영문 프린트는 safe 밖이라 미리보기에 나오지 않는다. 종이에 글자가 없고 얼굴도 없다. 빨간 인주가 묻은 둥근 나무 도장이 92px에서도 '도장 찍기·계약'으로 읽힌다.",
+  "order": 22,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "marketing-pexels-4247766",
+  "set": "marketing",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/crop-man-sealing-box-with-scotch-tape-4247766/",
+  "photographer": "Ketut Subiyanto",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Unrecognizable man sealing box with duck tape while preparing for moving out Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴은 원본에 없다. 상자에 글자가 없다. 테이프 커터 날의 각인은 아주 작아 읽을 수 없다. 위쪽 셔츠는 잘랐다 / 검증: 상자에 글자가 없고 손목시계 숫자판과 테이프 커터 각인은 실제 크기에서 읽히지 않는다. 노란 테이프 커터와 택배 상자가 92px에서도 뚜렷해 온라인 판매·배송이 떠오른다.",
+  "order": 21,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "media-pexels-15713296",
+  "set": "media",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/man-editing-a-film-on-the-computer-15713296/",
+  "photographer": "Nicolás Rueda",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A creative professional editing video content on dual screens in a dark room. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "3:2 = 세로 0.43~0.87 전폭(뒷머리 윗부분부터 모니터·노트북 상단까지). 4:3 = 세로 0.42~0.92 전폭(노트북 키보드까지 포함). 위쪽 검은 부분은 버림.",
+  "downloaded": "2026-09-15",
+  "order": 18
+ },
+ {
+  "name": "media-pexels-16313664",
+  "set": "media",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/man-putting-wacom-intuos-pro-m-into-box-16313664/",
+  "photographer": "Kawê  Rodrigues",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a digital artist working with a graphics tablet indoors. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "3:2 = 원본 그대로. 4:3 = 가로 0.11~1.00 전체 높이(좌측 머리 일부 제거, 태블릿·일러스트 중심).",
+  "downloaded": "2026-09-15",
+  "order": 21
+ },
+ {
+  "name": "media-pexels-39005351",
+  "set": "media",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/professional-video-camera-on-outdoor-set-39005351/",
+  "photographer": "Caleb Oquendo",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a professional video camera setup outdoors, ready for filming. Stock Photo",
+  "size": [
+   2000,
+   1070
+  ],
+  "uses": [
+   "hero",
+   "card"
+  ],
+  "crop": "16:9 = 가로 0.04~0.99 전체 높이(카메라가 중앙 약간 오른쪽). 4:3 = 가로 0.19~0.90 전체 높이(카메라 본체·뷰파인더·삼각대 헤드 중심).",
+  "downloaded": "2026-09-15",
+  "order": 20
+ },
+ {
+  "name": "media-pexels-7014943",
+  "set": "media",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/anonymous-woman-writing-on-graphic-tablet-7014943/",
+  "photographer": "George Milton",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Crop unrecognizable female with stylus drawing on modern black graphic tablet while sitting at wooden table with external hard drive Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "4:3 = 세로 0.22~0.72 전폭(펜 끝~태블릿 하단, 주황 드라이브 본체 제외). 3:2 = 세로 0.28~0.72 전폭(펜 윗끝이 살짝 잘려도 무방). 드라이브 본체(세로 0.77 이하)는 반드시 제외.",
+  "downloaded": "2026-09-15",
+  "order": 19
+ },
+ {
+  "name": "media-pexels-7865064",
+  "set": "media",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/photo-of-a-studio-set-up-7865064/",
+  "photographer": "SHAHBAZ ZAMAN",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A TV studio setup featuring cameras and a green screen for production purposes. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "3:2 = 원본 그대로, 1200px 이하로만 서빙. 4:3 = 가로 0.11~1.00 전체 높이(좌측 커튼 일부 제거). 히어로 사용 금지. 초록 채도 낮출 것.",
+  "downloaded": "2026-09-15",
+  "order": 22
+ },
+ {
+  "name": "media-unsplash-br2HgQuvq6I",
+  "set": "media",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/film-crew-on-soundstage-workspace-br2HgQuvq6I",
+  "photographer": "Brands&People",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "A film crew working on a large soundstage with lighting equipment and cameras",
+  "size": [
+   2000,
+   1334
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "16:9 = 원본 위 16% 천장 격자 잘라내고 세로 0.16~1.00 전폭(2400x1350 기준). 3:2 = 원본 그대로. 카드로는 쓰지 말 것(작게 줄이면 사람·장비가 뭉개져 무엇인지 흐려짐). 글자 올릴 때 스크림 필수.",
+  "downloaded": "2026-09-15",
+  "order": 17
+ },
+ {
+  "name": "moto-pexels-8550664",
+  "set": "moto",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-working-on-a-motorcycle-engine-8550664/",
+  "photographer": "Kindel Media",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a mechanic's hands using a wrench to repair a motorcycle engine. Stock Photo",
+  "size": [
+   2000,
+   1500
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴·번호판 없음. 파란 프레임의 흐린 각인은 2배에서도 읽히지 않음 / 검증: 두 손이 몽키스패너로 오토바이 엔진을 정비하는 장면이라 이륜차 정비로 읽힘. 얼굴·번호판 없음. 그런데 원래 상자는 전체 화면에 가까워 오른쪽 아래 크롬 부품에 새겨진 영문 글자('DB' 비슷, 원본 x 0.60~0.67, y 0.81~0.87)가 들어가서 safe 아래를 0.8로 잘라 뺌. 수정 후에도 손과 스패너가 중앙에 남아 92px에서 잘 읽힘. 파란 스윙암의 각인은 흐려서 못 읽음.",
+  "order": 43,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "office-pexels-8278905",
+  "set": "office",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-man-and-woman-having-a-meeting-in-the-office-8278905/",
+  "photographer": "ANTONI SHKRABA production",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Two colleagues engaged in a focused discussion in a modern office setting with plants and documents. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category"
+  ],
+  "crop": "원본 900x600 기준. hero(16:9): x 60~900, y 55~528. 이마 위 정수리 머리카락만 조금 잘리고, 오른쪽 위 천장 조명은 거의 빠진다. 제안된 '가로 전체 폭 + 조명 제거'는 16:9에서 불가능하다. 전체 폭으로 자르면 조명을 빼려다 여성의 머리가 잘린다. category(3:2): 원본 비율 그대로 쓰되 위를 약간 올려 조명을 줄인다.",
+  "downloaded": "2026-09-15",
+  "order": 23
+ },
+ {
+  "name": "office-pexels-8297220",
+  "set": "office",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-working-on-the-documents-using-a-calculator-8297220/",
+  "photographer": "Mikhail Nilov",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Accountant calculates finances with a calculator and documents on a desk. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "원본 900x1350(세로) 기준. card(4:3): x 0~900, y 675~1350. category(3:2): x 0~900, y 750~1350. 반지 낀 두 손, 계산기, 수첩, 서류철이 들어가고 얼굴은 원래 없다. hero에는 쓰지 않는다.",
+  "downloaded": "2026-09-15",
+  "order": 25
+ },
+ {
+  "name": "office-pexels-8691820",
+  "set": "office",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/an-employee-typing-on-his-keyboard-8691820/",
+  "photographer": "Ron Lach",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Asian man in business attire typing on a keyboard at a modern office desk. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "원본 900x600 기준. hero(16:9): 가로 전체, y 0~506(윗띠). 머리·손·키보드·전화기가 들어가고 모니터 받침은 윗부분만 남는다. category(3:2): 원본 그대로. card(4:3): x 0~800, y 0~600. 받침 원형을 완전히 빼려면 x 520 이하로 잘라야 하는데, 그러면 전화기가 빠지고 너무 좁아지므로 받침은 남겨도 된다(규칙 위반 요소가 아니다).",
+  "downloaded": "2026-09-15",
+  "order": 24
+ },
+ {
+  "name": "office-unsplash-O2GCr83qCdg",
+  "set": "office",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-few-people-sitting-at-a-table-O2GCr83qCdg",
+  "photographer": "sarah b",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "a few people sitting at a table",
+  "size": [
+   2000,
+   1339
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "원본 900x602 기준. 오른쪽 끝 부분 얼굴(x 약 855 이상, 코와 입술)과 위쪽 가장자리 턱선(y 0~20)은 반드시 뺀다. hero(16:9): x 0~835, y 25~495. category(3:2): x 0~835, y 45~602. card(4:3): x 260~835, y 100~531. 펜 쥔 손 셋과 노트가 중심이 된다. '왼쪽 2/3'까지 좁힐 필요는 없다. x 835에서 끊어도 얼굴이 빠지고 앞사람 팔과 시계까지 살릴 수 있다.",
+  "downloaded": "2026-09-15",
+  "order": 26
+ },
+ {
+  "name": "online-pexels-7120900",
+  "set": "online",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-holding-a-pencil-7120900/",
+  "photographer": "Pavel Danilyuk",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Woman with headphones working on laptop analyzing graphs in cozy home office setting. Perfect for remote work visuals. Stock Photo",
+  "size": [
+   2000,
+   1335
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "뒤돌아 있고 머리카락이 얼굴을 가려 얼굴을 알아볼 수 없음. 화면엔 도표만 있고 로고 없음 / 검증: 완전히 뒤돌아 있음. 확대해도 귀·볼 가장자리만 보이고 눈·코는 머리카락과 헤드폰에 가려 알아볼 수 없음. 성인. 헤드폰·노트북 로고 없음, 화면 도표 글자는 안 읽힘. 밝은 창가라 따뜻하고 #6과 구도·색이 다름",
+  "order": 4,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "online-unsplash-q3zZHY5GHu0",
+  "set": "online",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/macbook-pro-on-brown-wooden-table-q3zZHY5GHu0",
+  "photographer": "Samantha Borges",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "macbook pro on brown wooden table",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "화면 속 강사는 작고 흐릿해서 알아볼 수 없음. 노트북 로고는 안 보임. 원본이 세로라 4:3은 가로 전체를 쓰고 노트북 윗부분이 살짝 잘림 / 검증: 화면 속 강사는 초점이 나가 알아볼 수 없음. 브라우저 글자와 타이머도 번져서 안 읽힘. 노트북 로고나 베젤 글자 없음. 동영상 강의 화면과 빈 공책이 92px에서 '온라인 강의'로 읽힘. 기존 '노트북+흰 머그'와는 화면 속 강의라는 점이 다름",
+  "order": 3,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "people-pexels-5757210",
+  "set": "people",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/man-in-blue-button-up-shirt-sitting-at-the-table-using-laptop-5757210/",
+  "photographer": "RDNE Stock project",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Middle-aged man studying on laptop at wooden table with books and plant indoors. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "card"
+  ],
+  "crop": "Change the picker's crop. A middle band that includes the man's face (y 250 to 925) cuts the stack of books in half, while starting lower cuts through his face. Use card 4:3 at full width, y 41.5 to 91.5% (560 to 1235): shoulders down only, so the face is fully out of frame, leaving his gesturing hands, the laptop, the notebook, the book stack and the plant. Checked at 240px: it reads as a study desk, and dropping the face also lowers the portrait-rights risk.",
+  "downloaded": "2026-09-15",
+  "order": 4
+ },
+ {
+  "name": "people-pexels-7983549",
+  "set": "people",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-man-teaching-elderlies-to-use-a-laptop-7983549/",
+  "photographer": "Kampus Production",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A young mentor guides senior adults using laptops in a modern library setting, fostering digital literacy. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "hero 16:9: full width, top 8.3% to 92.7% (y 50 to 556 at 900x600). Keeps the young man's bun, all three people and both laptops, with the edge of the table slightly trimmed. category 3:2: use the original as is. card 4:3: cut 11% from the left (x 100 to 900, full height). Checked at 240px wide: all three people and the laptops are clearly readable.",
+  "downloaded": "2026-09-15",
+  "order": 0
+ },
+ {
+  "name": "people-pexels-8450236",
+  "set": "people",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/elderly-man-busy-studying-8450236/",
+  "photographer": "MART  PRODUCTION",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Elderly man with eyeglasses studying at a desk with books and magnifying glass. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "category 3:2: use the original 900x600 as is. card 4:3: x 10 to 90%, y 10 to 100% (90 to 810, 60 to 600). The top of the hair is cut; hands, notebook, book and magnifying glass stay. Checked at 240px wide: it reads as studying.",
+  "downloaded": "2026-09-15",
+  "order": 3
+ },
+ {
+  "name": "people-unsplash-BzJaluGzsSw",
+  "set": "people",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/two-men-sitting-at-a-table-looking-at-a-laptop-BzJaluGzsSw",
+  "photographer": "Centre for Ageing Better",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "two men sitting at a table looking at a laptop",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "Cropping is required. In the original, the HP circle logo on the laptop hinge (about x 8%, y 83%) is clearly visible, and the black mug in the bottom right (x 78 to 89%, y 82% down) has blurred printed text that may be an institution name. Always cut off the bottom 18% or more. hero 16:9: x 4 to 100%, y 0 to 81% (38 to 900, 0 to 485). category 3:2: x 11 to 92%, y 0 to 80.5% (100 to 825, 0 to 483). card 4:3: x 28 to 99%, y 7 to 87% (250 to 890, 40 to 520). Checked: no logo or mug in any of the three crops.",
+  "downloaded": "2026-09-15",
+  "order": 1
+ },
+ {
+  "name": "people-unsplash-caxmtPvM0QE",
+  "set": "people",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/an-older-man-works-on-his-laptop-caxmtPvM0QE",
+  "photographer": "Sweet Life",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "An older man works on his laptop",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "card",
+   "category"
+  ],
+  "crop": "Portrait 900x1350. The picker's plan to keep the face, both hands and the window light in one 3:2 frame is not possible: the face and the hands are 820px apart but a 3:2 frame is only 600px tall. card 4:3: full width, y 24 to 74% (330 to 1005). The top of the head is cut but the eyes, typing hands and window light remain, and it reads clearly at 240px. category 3:2: full width, y 28 to 73% (380 to 980). The forehead is cut and only the edge of the keyboard shows, so use it as a category banner only when needed. Not suitable for a hero.",
+  "downloaded": "2026-09-15",
+  "order": 2
+ },
+ {
+  "name": "print3d-pexels-31137405",
+  "set": "print3d",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/close-up-of-a-3d-printer-extruding-orange-plastic-31137405/",
+  "photographer": "Jakub Zerdzicki",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Detailed view of a 3D printer in action, extruding orange plastic components. Stock Photo",
+  "size": [
+   2000,
+   1334
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "로고·글자·얼굴 없음, 자를 필요 없음 / 검증: 확대해도 프린터 헤드에 로고·글자 없음. 얼굴 없음. 주황 출력물과 팬이 92px에서도 또렷하고, 청록과 주황 대비가 강함",
+  "order": 10,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "robot-unsplash-8gr6bObQLOI",
+  "set": "robot",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-factory-filled-with-lots-of-orange-machines-8gr6bObQLOI",
+  "photographer": "Simon Kadula",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "a factory filled with lots of orange machines",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "확대해서 확인했더니 로봇에 제조사 로고가 안 보임. 사람 없음. 92px에서 복잡해 보여서 focus를 오른쪽 로봇팔 하나로 좁히고, 왼쪽 앞쪽의 흐린 주황 덩어리는 잘라냄 / 검증: 확대해도 로봇팔에 제조사 로고나 글자가 없음. 뒤쪽 작은 번호 표지는 92px·2배에서 몇 픽셀이라 안 읽힘. 사람 없음. 밝은 공장에 주황 로봇팔 하나가 뚜렷함. 기존 '주황 기계 수리 정비사'와는 사람 없는 자동화 장면이라 다름",
+  "order": 9,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "security-unsplash-QP7RBa5r8HM",
+  "set": "security",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-padlock-rests-on-a-computer-keyboard-QP7RBa5r8HM",
+  "photographer": "Sasun Bughdaryan",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "A padlock rests on a computer keyboard",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "아래쪽 'caps lock'·'shift' 키 글자는 safe 밖(y>0.76)으로 제외. 남는 건 W·A·S 같은 한 글자 키와 자물쇠 번호뿐. 얼굴·로고 없음 / 검증: 원래 safe 아래 경계(0.76)가 'caps lock' 글자 바로 위라 여유가 없어서 0.74로 올림. 미리보기에서 한 글자 키(W·A·S)와 자물쇠 번호만 남음. 얼굴·로고 없음. 따뜻한 갈색 배경에 92px에서도 '보안'이 바로 읽힘",
+  "order": 6,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "shop-pexels-8004028",
+  "set": "shop",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/a-person-holding-a-sticky-note-8004028/",
+  "photographer": "Darina Belonogova",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Hand placing colorful sticky notes on a minimalist white wall for home office organization. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "포스트잇이 비어 있어 글자가 없다. 사람은 팔만 나온다 / 검증: 빈 포스트잇이라 글자가 없고 팔만 나온다. 92px에서도 색 사각형 세 개와 손이 깔끔하다. 다만 가게보다는 '창업 계획·아이디어'로 읽히니 소상공인 운영 과정보다 창업 과정 쪽에 쓰는 편이 맞다.",
+  "order": 19,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "shopb-pexels-6912870",
+  "set": "shopb",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/florist-with-bouquet-of-fresh-lush-sunflowers-6912870/",
+  "photographer": "Teona Swift",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Crop anonymous female seller in floral shop with bunch of blooming sunflowers standing near table with green plants Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "원본 위쪽이 가슴에서 잘려 얼굴이 없다. 해바라기와 손을 가운데 두고 왼쪽 밀 화병은 대부분 뺐다 / 검증: 얼굴·글자·로고가 없다. 앞치마와 해바라기 다발이 밝고 따뜻해 작은 가게 운영이 바로 떠오른다. 148px·92px 모두 또렷하다.",
+  "order": 18,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "shopb-pexels-7309307",
+  "set": "shopb",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/healthy-marketing-woman-creative-7309307/",
+  "photographer": "RDNE Stock project",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A woman packing a brown paper bag with colorful tissue alongside blue cups on a table. Stock Photo",
+  "size": [
+   2000,
+   1334
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "원본이 몸통에서 잘려 얼굴이 없다. 쇼핑백과 컵에 글자·로고가 없다. 왼쪽 벽 그림과 충전재는 일부만 걸린다 / 검증: 원래 자르기는 맨 위에 벌어진 셔츠 사이 가슴 피부가 걸렸다. safe 위쪽을 0.12로 내려 뺐다. 가로 폭도 좁혀 1:1에서는 컵 세 개와 쇼핑백이 온전히 보이게 했다(4:3에서는 네 번째 컵 가장자리만 살짝 잘린다). 얼굴·로고는 없다.",
+  "order": 20,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "startup-pexels-31892097",
+  "set": "startup",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/woman-in-seoul-street-market-with-korean-script-signs-31892097/",
+  "photographer": "Theodore Nguyen",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A woman works in a Seoul street market, surrounded by Korean script signs. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "900x600 기준. hero 16:9: x0-900, y0-506. 오른쪽 아래 원산지 표시판(y≥555)을 잘라내고, 표시판에 적힌 상호 '북촌손만두'가 반드시 빠져야 함. category 3:2: x0-825, y0-550으로 표시판을 빼고, 영수증 프린터 윗면의 'POSBANK' 로고(x825-845, y≈371) 바로 앞에서 자름. POS 화면 오른쪽 가장자리가 조금 잘림. card 4:3: x150-870, y0-540. 이 크기에서 POSBANK는 11px 안팎이라 안 읽힘. hero처럼 크게 쓸 때는 POSBANK 글자를 살짝 흐리게 처리할 것.",
+  "downloaded": "2026-09-15",
+  "order": 43
+ },
+ {
+  "name": "startup-pexels-33895896",
+  "set": "startup",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/street-vendor-under-colorful-umbrella-in-south-korea-33895896/",
+  "photographer": "Mohammed  Mehdaoui",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A street vendor in Seoul, South Korea, stands under a vibrant umbrella selling leather belts. Urban scene. Stock Photo",
+  "size": [
+   2000,
+   3000
+  ],
+  "uses": [
+   "category",
+   "card"
+  ],
+  "crop": "900x1350 세로 원본 기준. category 3:2: x0-900, y540-1140. 위로는 '동묘파출소, 동묘시장 상인회' 현수막(y≈490-530)이 빠지고 초록 우산 끝만 조금 남는다. 아래로는 '고성능 보청기' 간판 글자(y≈1150부터)가 빠지고 틀 윗부분만 남는다. card 4:3: x100-900, y540-1140(800x600). 남자와 벨트 진열대가 함께 들어온다.",
+  "downloaded": "2026-09-15",
+  "order": 44
+ },
+ {
+  "name": "tech-pexels-4281613",
+  "set": "tech",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/man-in-green-uniform-holding-a-machine-4281613/",
+  "photographer": "Rizky Rafael",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Two technicians in a workshop in Indonesia operating a CNC machine, focused on precision engineering. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "원본 900x600(3:2)이라 category는 그대로 쓴다. hero 16:9(900x506)는 위를 약 20px, 아래를 약 74px 잘라 두 사람의 머리와 밀링 스핀들을 살린다. 오른손 끝이 조금 잘리는 건 괜찮다. card 4:3(800x600)은 오른쪽 약 100px(케이블 뭉치)만 잘라낸다. 앞사람 가슴 명찰의 'trade…' 글자는 잘라낼 수 없는 위치라 흐리게 처리한다",
+  "downloaded": "2026-09-15",
+  "order": 8
+ },
+ {
+  "name": "tech-unsplash-E15BQufHzJs",
+  "set": "tech",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/a-man-wearing-a-blue-protective-gear-working-on-a-machine-E15BQufHzJs",
+  "photographer": "Heber Davis",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "a man wearing a blue protective gear working on a machine",
+  "size": [
+   2000,
+   1123
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "원본이 900x505로 약 16:9라 hero는 그대로 쓰고, 제목 글씨는 왼쪽 어두운 공구 벽 쪽에 올린다. category 3:2(약 758x505)는 왼쪽을 약 140px 잘라낸다. card 4:3(약 673x505)은 가로 200~873px 구간으로 불꽃과 용접면이 함께 들어가게 한다",
+  "downloaded": "2026-09-15",
+  "order": 10
+ },
+ {
+  "name": "tech-unsplash-kBKOaghy8mU",
+  "set": "tech",
+  "source": "unsplash",
+  "page_url": "https://unsplash.com/photos/shallow-focus-photo-of-man-fixing-steel-cable-kBKOaghy8mU",
+  "photographer": "Anton Dmitriev",
+  "license": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "alt_en": "shallow focus photo of man fixing steel cable",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "hero",
+   "category",
+   "card"
+  ],
+  "crop": "category는 원본 3:2 그대로 쓴다. hero 16:9는 위아래를 약 47px씩 잘라 900x506으로 만든다. 안전모 위쪽 여백이 남으니 제목 글씨는 왼쪽 위 하늘 쪽에 올린다. card 4:3은 가로 60~860px 구간(800x600)으로 작업자와 오른쪽 도르래·고정 장치를 함께 넣는다",
+  "downloaded": "2026-09-15",
+  "order": 9
+ },
+ {
+  "name": "tile-pexels-11806477",
+  "set": "tile",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/close-up-of-working-with-cement-on-pavement-11806477/",
+  "photographer": "Vladimir Srajber",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "Close-up of a gloved hand applying mortar for ceramic tile installation outdoors. Stock Photo",
+  "size": [
+   2000,
+   1510
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "장갑에 로고 없음, 얼굴 없음. 자를 것 없음 / 검증: 장갑 낀 손이 흙손으로 타일 접착 모르타르를 퍼 바르고 줄눈 레벨러와 타일 가장자리가 함께 보여 타일 시공으로 읽힘. 장갑에 로고 없음, 얼굴 없음, 밝고 깨끗해 92px에서도 분명함.",
+  "order": 39,
+  "downloaded": "2026-09-16"
+ },
+ {
+  "name": "weld-pexels-3158651",
+  "set": "weld",
+  "source": "pexels",
+  "page_url": "https://www.pexels.com/photo/person-welding-wearing-a-prootective-metal-mask-3158651/",
+  "photographer": "Kateryna Babaieva",
+  "license": "Pexels License",
+  "license_url": "https://www.pexels.com/license/",
+  "alt_en": "A welder in a workshop using safety gear to weld metal, surrounded by blue smoke and atmospheric lighting. Stock Photo",
+  "size": [
+   2000,
+   1333
+  ],
+  "uses": [
+   "row"
+  ],
+  "crop": "얼굴은 마스크로 완전히 가려짐. 아래쪽 쇠판에 칠해진 큰 영문 글자가 있어 safe 아래를 0.87로 잘라 제외. 기존 파란 작업복 용접 사진과 색·구도가 다름 / 검증: 얼굴은 용접 마스크로 완전히 가려짐. 아래 쇠판의 큰 영문 글자(y 0.9 이하)는 safe 0.87로 빠지고, 실제 자르기(4:3 y≤0.85, 1:1 y≤0.87)를 크게 확대해 봐도 글자 없음. 주황 마스크와 파란 연기의 대비가 92px에서도 강하게 읽힘. 기존 '파란 작업복 용접공' 사진과 색·구도가 달라 중복 아님.",
+  "order": 38,
+  "downloaded": "2026-09-16"
+ }
+]

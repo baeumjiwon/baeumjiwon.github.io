@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-job-sheet" x="-42" y="-56" width="84" height="112" rx="6"/>
+    <rect id="line-job-photo" x="-30" y="-44" width="32" height="34" rx="3"/>
+    <rect id="line-job-case" x="12" y="84" width="146" height="58" rx="8"/>
+    <rect id="line-job-clasp" x="68" y="90" width="34" height="20" rx="4"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 146H28M40 146H200M212 146H228"/>
+
+    <g transform="translate(170 76) rotate(8)">
+      <use href="#line-job-sheet" fill="#FFFCF5" stroke="none"/>
+      <path d="M-20 -56H36Q42 -56 42 -50V50Q42 56 36 56H-36Q-42 56 -42 50V-50Q-42 -56 -36 -56H-30"/>
+      <use href="#line-job-photo" fill="#FFFCF5" stroke="none"/>
+      <use href="#line-job-photo" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+      <use href="#line-job-photo"/>
+      <path d="M12 -38H30M-30 6H30M-30 24H30M-30 42H22"/>
+      <path d="M12 -22H26" stroke="#FF6A4D"/>
+    </g>
+
+    <path d="M61 88V76Q61 68 69 68H101Q109 68 109 76V88"/>
+    <use href="#line-job-case" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-job-case" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M36 84H150Q158 84 158 92V134Q158 142 150 142H20Q12 142 12 134V92Q12 84 20 84H26"/>
+    <path d="M12 100H66M104 100H158"/>
+    <use href="#line-job-clasp" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-job-clasp" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-job-clasp"/>
+
+    <path d="M28 30V44M21 37H35" stroke="#FF6A4D"/>
+    <circle cx="46" cy="56" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

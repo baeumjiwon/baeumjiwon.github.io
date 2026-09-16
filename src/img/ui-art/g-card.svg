@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <rect id="ui-g-card-card" x="-33" y="-21" width="66" height="42" rx="6"/>
+    <circle id="ui-g-card-badge" cx="68" cy="62" r="16"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(45 40) rotate(-8)">
+      <use href="#ui-g-card-card" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(4 -4) translate(45 40) rotate(-8)">
+      <use href="#ui-g-card-card" fill="#FF6A4D" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(45 40) rotate(-8)">
+      <path d="M-17 -21H27Q33 -21 33 -15V15Q33 21 27 21H-27Q-33 21 -33 15V-15Q-33 -21 -27 -21H-26"/>
+      <rect x="-24" y="-12" width="14" height="11" rx="3" fill="#FFFCF5"/>
+      <path d="M-24 9H0"/>
+    </g>
+
+    <use href="#ui-g-card-badge" fill="#FFFCF5" stroke="none"/>
+    <use href="#ui-g-card-badge" fill="#FFCD3C" stroke="none" transform="translate(4 -4)" style="mix-blend-mode:multiply"/>
+    <use href="#ui-g-card-badge"/>
+    <path d="M61 62.5L66 67.5L75.5 57"/>
+  </g>
+</svg>

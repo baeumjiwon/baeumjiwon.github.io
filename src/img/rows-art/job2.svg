@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-job2-board" x="-58" y="-53" width="116" height="106" rx="9"/>
+    <rect id="line-job2-paper" x="-44" y="-40" width="88" height="82" rx="3"/>
+    <rect id="line-job2-photo" x="-34" y="-30" width="30" height="34" rx="3"/>
+    <rect id="line-job2-clip" x="-19" y="-61" width="38" height="25" rx="5"/>
+    <path id="line-job2-pen" d="M-56 0L-42 -8H40Q48 -8 48 0Q48 8 40 8H-42Z"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 146H28M40 146H200M212 146H228"/>
+
+    <g transform="translate(90 78) rotate(-5)">
+      <use href="#line-job2-board" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(90 78) rotate(-5)">
+      <use href="#line-job2-board" fill="#FF6A4D" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(90 78) rotate(-5)">
+      <use href="#line-job2-paper" fill="#FFFCF5" stroke="none"/>
+      <path d="M-24 -53H49Q58 -53 58 -44V44Q58 53 49 53H-49Q-58 53 -58 44V-44Q-58 -53 -49 -53H-36"/>
+      <path d="M-41 -40H41Q44 -40 44 -37V39Q44 42 41 42H-41Q-44 42 -44 39V12M-44 0V-37Q-44 -40 -41 -40"/>
+      <use href="#line-job2-photo" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(90 78) rotate(-5)">
+      <use href="#line-job2-photo" fill="#FFCD3C" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(90 78) rotate(-5)">
+      <use href="#line-job2-photo"/>
+      <path d="M12 -6H34M-34 18H2M-34 32H-6"/>
+      <path d="M12 -22H30" stroke="#FF6A4D"/>
+      <use href="#line-job2-clip" fill="#FFFCF5" stroke="none"/>
+      <use href="#line-job2-clip"/>
+    </g>
+
+    <g transform="translate(164 74) rotate(-20)">
+      <use href="#line-job2-pen" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(164 74) rotate(-20)">
+      <use href="#line-job2-pen" fill="#FFCD3C" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(164 74) rotate(-20)">
+      <use href="#line-job2-pen"/>
+      <path d="M-42 -8V8M30 -8V8"/>
+      <path d="M-56 0L-46 -5V5Z" fill="#1F2340" stroke="none"/>
+    </g>
+
+    <path d="M200 20V34M193 27H207" stroke="#FF6A4D"/>
+    <circle cx="176" cy="118" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

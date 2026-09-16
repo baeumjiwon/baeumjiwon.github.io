@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-coin2-bill" x="-34" y="-30" width="68" height="60" rx="4"/>
+    <rect id="line-coin2-env" x="100" y="68" width="112" height="58" rx="8"/>
+    <circle id="line-coin2-c1" cx="82" cy="110" r="26"/>
+    <circle id="line-coin2-c2" cx="28" cy="118" r="15"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 148H30M42 148H198M210 148H226"/>
+
+    <g transform="translate(152 54) rotate(-8)">
+      <use href="#line-coin2-bill" fill="#FFFCF5" stroke="none"/>
+      <use href="#line-coin2-bill"/>
+    </g>
+    <g transform="translate(164 72) rotate(-8)">
+      <use href="#line-coin2-bill" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(164 72) rotate(-8)">
+      <use href="#line-coin2-bill" fill="#FFCD3C" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(164 72) rotate(-8)">
+      <use href="#line-coin2-bill"/>
+    </g>
+
+    <use href="#line-coin2-env" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-coin2-env" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M108 68H204Q212 68 212 76V118Q212 126 204 126H162M150 126H108Q100 126 100 118V76Q100 68 108 68"/>
+    <path d="M108 68L156 94L204 68"/>
+
+    <use href="#line-coin2-c2" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-coin2-c2" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-coin2-c2"/>
+
+    <use href="#line-coin2-c1" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-coin2-c1" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M67 89A26 26 0 1 1 57.5 101"/>
+    <path d="M69 99L75.5 123L82 105L88.5 123L95 99M66 108H98M66 117H98"/>
+
+    <path d="M220 23V37M213 30H227" stroke="#FF6A4D"/>
+    <circle cx="62" cy="40" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

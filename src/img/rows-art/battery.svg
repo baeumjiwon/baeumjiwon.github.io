@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <path id="line-battery-cellA" d="M16 46V126A33 10 0 0 0 82 126V46Z"/>
+    <path id="line-battery-capA" d="M16 46V64A33 10 0 0 0 82 64V46Z"/>
+    <path id="line-battery-cellB" d="M150 58V126A33 10 0 0 0 216 126V58Z"/>
+    <path id="line-battery-capB" d="M150 58V76A33 10 0 0 0 216 76V58Z"/>
+    <rect id="line-battery-nubA" x="33" y="24" width="32" height="24" rx="7"/>
+    <rect id="line-battery-nubB" x="167" y="36" width="32" height="24" rx="7"/>
+    <path id="line-battery-bolt" d="M150 38L74 106H94L82 138L162 74H134Z"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 148H28M40 148H200M212 148H228"/>
+
+    <use href="#line-battery-cellA" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-battery-cellA" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-battery-capA" fill="#FFFCF5" stroke="none"/>
+    <path d="M16 46V78M16 90V126A33 10 0 0 0 82 126V46"/>
+    <path d="M16 64A33 10 0 0 0 82 64"/>
+    <path d="M16 98A33 10 0 0 0 82 98" stroke="#FF6A4D"/>
+    <ellipse cx="49" cy="46" rx="33" ry="10" fill="#FFFCF5"/>
+    <use href="#line-battery-nubA" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-battery-nubA" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M33 48V31Q33 24 40 24H58Q65 24 65 31V48"/>
+
+    <use href="#line-battery-cellB" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-battery-cellB" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-battery-capB" fill="#FFFCF5" stroke="none"/>
+    <path d="M150 58V92M150 104V126A33 10 0 0 0 216 126V58"/>
+    <path d="M150 76A33 10 0 0 0 216 76"/>
+    <path d="M150 108A33 10 0 0 0 216 108" stroke="#FF6A4D"/>
+    <ellipse cx="183" cy="58" rx="33" ry="10" fill="#FFFCF5"/>
+    <use href="#line-battery-nubB" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-battery-nubB" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M167 60V43Q167 36 174 36H192Q199 36 199 43V60"/>
+
+    <use href="#line-battery-bolt" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-battery-bolt" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-battery-bolt"/>
+
+    <path d="M86 20V36M78 28H94" stroke="#FF6A4D"/>
+    <circle cx="116" cy="22" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

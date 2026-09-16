@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-trade-upper" x="40" y="30" width="126" height="44" rx="5"/>
+    <rect id="line-trade-lower" x="20" y="80" width="192" height="46" rx="5"/>
+    <rect id="line-trade-box" x="44" y="102" width="54" height="38" rx="4"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 148H28M40 148H200M212 148H228"/>
+
+    <use href="#line-trade-upper" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-trade-upper" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M58 30H161Q166 30 166 35V69Q166 74 161 74H45Q40 74 40 69V35Q40 30 45 30H48"/>
+    <path d="M40 42H134M40 52H134M40 62H134"/>
+    <path d="M134 36V68"/>
+    <path d="M144 42V62M156 42V62"/>
+
+    <use href="#line-trade-lower" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-trade-lower" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M42 80H207Q212 80 212 85V121Q212 126 207 126H25Q20 126 20 121V85Q20 80 25 80H32"/>
+    <path d="M20 92H174M20 103H174M20 114H174"/>
+    <path d="M174 86V120"/>
+    <path d="M186 92V114M200 92V114"/>
+
+    <use href="#line-trade-box" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-trade-box" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-trade-box"/>
+    <path d="M44 114H98"/>
+    <path d="M71 102V140" stroke="#FF6A4D"/>
+
+    <path d="M196 34V50M188 42H204" stroke="#FF6A4D"/>
+    <circle cx="24" cy="30" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

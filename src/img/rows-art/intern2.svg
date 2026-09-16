@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-intern2-card" x="-62" y="-38" width="124" height="76" rx="8"/>
+    <rect id="line-intern2-photo" x="-50" y="-25" width="36" height="50" rx="3"/>
+    <rect id="line-intern2-name" x="-2" y="-19" width="50" height="18" rx="5"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 148H30M42 148H198M210 148H226"/>
+
+    <path d="M78 60C46 62 40 86 34 104C29 118 36 128 52 130"/>
+
+    <g transform="translate(124 62) rotate(-7)">
+      <use href="#line-intern2-card" fill="#FFFCF5" stroke="none"/>
+      <use href="#line-intern2-card"/>
+      <use href="#line-intern2-photo" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(124 62) rotate(-7)">
+      <use href="#line-intern2-photo" fill="#FFCD3C" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(124 62) rotate(-7)">
+      <use href="#line-intern2-photo"/>
+      <circle cx="-32" cy="-9" r="7" fill="#1F2340" stroke="none"/>
+      <path d="M-45 22A13 13 0 0 1 -19 22Z" fill="#1F2340" stroke="none"/>
+      <use href="#line-intern2-name" fill="#FFFCF5" stroke="none"/>
+    </g>
+    <g transform="translate(6 -6) translate(124 62) rotate(-7)">
+      <use href="#line-intern2-name" fill="#FF6A4D" stroke="none" style="mix-blend-mode:multiply"/>
+    </g>
+    <g transform="translate(124 62) rotate(-7)">
+      <use href="#line-intern2-name"/>
+      <path d="M-2 15H32"/>
+    </g>
+
+    <path d="M28 19V33M21 26H35" stroke="#FF6A4D"/>
+    <circle cx="176" cy="122" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>

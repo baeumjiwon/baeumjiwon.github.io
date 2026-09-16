@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160">
+  <defs>
+    <rect id="line-drive-body" x="14" y="42" width="214" height="76" rx="16"/>
+    <path id="line-drive-glass" d="M82 56H58Q50 56 47 63L36 86Q32 92 41 92H82Z"/>
+    <rect id="line-drive-win1" x="100" y="56" width="46" height="36" rx="6"/>
+    <rect id="line-drive-win2" x="164" y="56" width="46" height="36" rx="6"/>
+    <circle id="line-drive-wheelA" cx="70" cy="124" r="20"/>
+    <circle id="line-drive-wheelB" cx="182" cy="124" r="20"/>
+  </defs>
+  <g fill="none" stroke="#1F2340" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 148H28M40 148H200M212 148H228"/>
+
+    <use href="#line-drive-body" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-drive-body" fill="#FFCD3C" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <path d="M40 42H212Q228 42 228 58V102Q228 118 212 118H30Q14 118 14 102V58Q14 42 30 42H34"/>
+    <path d="M26 100H216" stroke="#FF6A4D"/>
+
+    <use href="#line-drive-glass" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-drive-glass"/>
+    <use href="#line-drive-win1" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-drive-win1"/>
+    <use href="#line-drive-win2" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-drive-win2"/>
+
+    <use href="#line-drive-wheelA" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-drive-wheelA" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-drive-wheelA"/>
+    <circle cx="70" cy="124" r="8" fill="#FFFCF5"/>
+    <use href="#line-drive-wheelB" fill="#FFFCF5" stroke="none"/>
+    <use href="#line-drive-wheelB" fill="#FF6A4D" stroke="none" transform="translate(6 -6)" style="mix-blend-mode:multiply"/>
+    <use href="#line-drive-wheelB"/>
+    <circle cx="182" cy="124" r="8" fill="#FFFCF5"/>
+
+    <path d="M34 14V30M26 22H42" stroke="#FF6A4D"/>
+    <circle cx="66" cy="18" r="4.5" fill="#FFCD3C" stroke="none"/>
+  </g>
+</svg>
