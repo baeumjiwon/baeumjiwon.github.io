@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+    outputs:
+      changed: ${{ steps.changes.outputs.urls }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -31,6 +33,18 @@ jobs:
         run: python tools/fetch_api.py
       - name: 빌드
         run: python build.py
+      # 지난 배포와 내용을 비교해 사이트맵 lastmod를 실제로 바뀐 날로 고치고, 바뀐 쪽 목록을 넘긴다.
+      # 실패해도 배포는 한다(사이트맵은 빌드한 그대로 남는다).
+      - name: 바뀐 쪽 가리기
+        id: changes
+        continue-on-error: true
+        run: |
+          python tools/page_changes.py --out changed-urls.txt
+          {
+            echo 'urls<<URLS_END'
+            cat changed-urls.txt
+            echo 'URLS_END'
+          } >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
@@ -42,3 +56,14 @@ jobs:
       name: github-pages
     steps:
       - uses: actions/deploy-pages@v5
+      # 배포가 끝난 뒤 바뀐 쪽만 IndexNow(빙·네이버)로 알린다. 실패해도 경고만 남긴다.
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: tools   # 맨 위 파일(config.json)은 늘 함께 받는다
+      - name: IndexNow로 바뀐 쪽 알리기
+        continue-on-error: true
+        env:
+          CHANGED: ${{ needs.build.outputs.changed }}
+        run: |
+          echo "$CHANGED" > changed-urls.txt
+          python3 tools/indexnow_ping.py changed-urls.txt

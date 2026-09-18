@@ -666,5 +666,10 @@ if BASE_URL:
 if cfg.get('adsense_client'):
     pub = cfg['adsense_client'].replace('ca-', '')
     open(os.path.join(OUT, 'ads.txt'), 'w', encoding='utf-8').write(f'google.com, {pub}, DIRECT, f08c47fec0942fa0\n')
+# IndexNow 키 파일(빙·네이버가 알림을 보낸 사이트 주인인지 확인한다). 배포 뒤 tools/indexnow_ping.py가 바뀐 쪽을 알린다
+if cfg.get('indexnow_key'):
+    if not re.fullmatch(r'[A-Za-z0-9-]{8,128}', cfg['indexnow_key']):
+        sys.exit('config.json indexnow_key 형식이 틀렸습니다(영문·숫자·- 8~128자)')
+    open(os.path.join(OUT, f'{cfg["indexnow_key"]}.txt'), 'w', encoding='utf-8').write(cfg['indexnow_key'])
 
 print(f'programs {len(programs)} sample={SAMPLE} pages {len(written)} guides {len(guides)} today {TODAY}')
