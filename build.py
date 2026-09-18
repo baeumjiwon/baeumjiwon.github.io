@@ -329,6 +329,8 @@ if cfg.get('google_site_verification'):
     ads_head += f'<meta name="google-site-verification" content="{E(cfg["google_site_verification"])}">'
 if cfg.get('naver_site_verification'):
     ads_head += f'<meta name="naver-site-verification" content="{E(cfg["naver_site_verification"])}">'
+if cfg.get('bing_site_verification'):
+    ads_head += f'<meta name="msvalidate.01" content="{E(cfg["bing_site_verification"])}">'
 if cfg.get('adsense_client') and not AD_PREVIEW:
     ads_head += (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={E(cfg["adsense_client"])}" '
                  'crossorigin="anonymous"></script>')
