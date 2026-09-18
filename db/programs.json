@@ -215,7 +215,7 @@
    "end": "",
    "days_min": 90,
    "days_max": null,
-   "hours_min": null,
+   "hours_min": 350,
    "hours_max": null,
    "quote": "53 개 직종에서 3 개월 (350 시간 ) 이상의 직업훈련을 받아 관련된 직무능력을 키울 수 있습니다",
    "source": "official_page",
@@ -223,7 +223,7 @@
    "band": "",
    "text": "3개월 이상",
    "dates_text": "",
-   "hours_text": ""
+   "hours_text": "350시간 이상"
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
@@ -4535,7 +4535,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "타일·도장·방수·목공 등 건설 기능 훈련",
   "duration": {
    "kind": "range",
@@ -4546,15 +4546,15 @@
    "end": "",
    "days_min": 20,
    "days_max": 40,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 120,
+   "hours_max": 120,
    "quote": "주간 1일 6시간 20일(120시간) 야간 1일 3시간 40일(120시간)",
    "source": "official_page",
    "source_url": "https://eum.cw.or.kr/web/job/WEBJOB160M00",
    "band": "단기~중기",
    "text": "20~40일",
    "dates_text": "",
-   "hours_text": ""
+   "hours_text": "총 120시간"
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
@@ -4690,7 +4690,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "전기 배선·배전 이론과 실습, 전기 기능사 준비",
   "duration": {
    "kind": "range",
@@ -4701,15 +4701,15 @@
    "end": "",
    "days_min": 150,
    "days_max": 180,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 700,
+   "hours_max": 700,
    "quote": "교육기간 5~6개월(700시간) 집체교육",
    "source": "official_page",
    "source_url": "https://edu.keca.or.kr/html/2026CCCD0001850.html",
    "band": "중기",
    "text": "5~6개월",
    "dates_text": "",
-   "hours_text": ""
+   "hours_text": "총 700시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -5311,7 +5311,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "폐업 소상공인의 취업 준비 교육",
   "duration": {
    "kind": "range",
@@ -5322,7 +5322,7 @@
    "end": "",
    "days_min": 14,
    "days_max": 21,
-   "hours_min": null,
+   "hours_min": 30,
    "hours_max": null,
    "quote": "심화교육 (방식) 대면교육 / 2~3주, 30h 이상",
    "source": "db_source_quote",
@@ -5330,7 +5330,7 @@
    "band": "단기",
    "text": "2~3주",
    "dates_text": "",
-   "hours_text": ""
+   "hours_text": "30시간 이상"
   },
   "schedule": "혼합",
   "cost_type": "무료",
@@ -7085,7 +7085,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "클라우드 기반 AI 엔지니어링 실무 과정",
   "duration": {
    "kind": "fixed",
@@ -7096,15 +7096,15 @@
    "end": "2027-04-28",
    "days_min": 196,
    "days_max": 196,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 1080,
+   "hours_max": 1080,
    "quote": "교육일정 2026.10.15.(목)~2027.4.28.(수) 135일 / 1080시간(약 6.5개월)",
    "source": "official_page",
    "source_url": "https://edu.rapa.or.kr/recruitment/29143",
    "band": "장기",
    "text": "약 6개월",
    "dates_text": "10.15~4.28",
-   "hours_text": ""
+   "hours_text": "총 1,080시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -7162,7 +7162,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "클라우드 위에서 생성형 AI 서비스 개발",
   "duration": {
    "kind": "fixed",
@@ -7173,15 +7173,15 @@
    "end": "",
    "days_min": 195.0,
    "days_max": 195.0,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 1080,
+   "hours_max": 1080,
    "quote": "교육일정 2026년 9월말 예정 135일 / 1080시간(약 6.5개월)",
    "source": "official_page",
    "source_url": "https://edu.rapa.or.kr/recruitment/28942",
    "band": "장기",
    "text": "6.5개월",
    "dates_text": "",
-   "hours_text": ""
+   "hours_text": "총 1,080시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -7239,7 +7239,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "머신러닝·LLM 모델 개발과 배포 실무",
   "duration": {
    "kind": "fixed",
@@ -7250,15 +7250,15 @@
    "end": "2027-03-19",
    "days_min": 131,
    "days_max": 131,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 720,
+   "hours_max": 720,
    "quote": "교육 기간: 4개월 (720시간 · 90일)",
    "source": "official_page",
    "source_url": "https://www.mlaicampus.com/",
    "band": "중기",
    "text": "약 4개월",
    "dates_text": "11.9~3.19",
-   "hours_text": ""
+   "hours_text": "총 720시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -7619,7 +7619,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "age_unknown": true,
   "one_liner": "온디바이스 AI·로봇 SW·반도체 설계 과정",
   "duration": {
@@ -7631,15 +7631,15 @@
    "end": "2027-06-03",
    "days_min": 213,
    "days_max": 213,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 980,
+   "hours_max": 980,
    "quote": "훈련기간 2026.11.03~2027.06.03 교육일정 980시간(7개월)",
    "source": "official_page",
    "source_url": "https://www.kccistc.net/",
    "band": "장기",
    "text": "약 7개월",
    "dates_text": "11.3~6.3",
-   "hours_text": ""
+   "hours_text": "총 980시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -8152,7 +8152,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "직무·교양·자격증·외국어 온라인 강좌",
   "duration": {
    "kind": "self_paced",
@@ -10061,17 +10061,21 @@
   "money": "훈련 장려금(해당자만, 금액 원문 미기재)",
   "format": "3개월 또는 6개월 기간제",
   "recruit": "6개월 과정 매년 6월·12월, 3개월 과정 상시",
-  "other_conditions": "미취업자 또는 영세 자영업자만(영세 자영업자 기준 원문 미기재). 계열: 기계, 전기, 정보 통신 IT, 자동차, 산업 설비, 섬유 패션, 건축, 조리, 보건 의료",
+  "other_conditions": "미취업자 또는 영세 자영업자만(영세 자영업자 기준 원문 미기재, 자세한 자격은 캠퍼스 문의). 서울은 서울정수·서울강서 캠퍼스. 계열: 기계, 전기, 정보 통신 IT, 자동차, 산업 설비, 섬유 패션, 건축, 조리, 보건 의료",
   "summary": "40세 이상 미취업자나 영세 자영업자가 3~6개월 동안 기술을 무료로 배워 재취업을 준비하는 과정입니다. 학력은 따지지 않고 기숙사비·식비까지 지원됩니다.",
   "sources": [
    {
     "url": "https://ipsi.kopo.ac.kr/poly/m_147/content.do",
     "quote": "만40세 이상의 미취업자, 영세자영업자(학력제한 없음)"
+   },
+   {
+    "url": "https://ipsi.kopo.ac.kr/poly/m_147/content.do",
+    "quote": "※ 자세한 지원 자격은 각 캠퍼스 문의"
    }
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "중장년 적합 직종 기술을 배우는 재취업 과정",
   "duration": {
    "kind": "range",
@@ -10144,7 +10148,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "기계 등 뿌리·신성장 산업 기술과 자격증 준비",
   "duration": {
    "kind": "fixed",
@@ -10155,15 +10159,15 @@
    "end": "2026-12-11",
    "days_min": 284,
    "days_max": 284,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 1252,
+   "hours_max": 1252,
    "quote": "○ 교육기간 : '26.3.3.( 화 ) ~ '26.12.11.( 금 ) / 총 1,252 시간",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202343",
    "band": "장기",
    "text": "약 9개월",
    "dates_text": "3.3~12.11",
-   "hours_text": ""
+   "hours_text": "총 1,252시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -10171,83 +10175,6 @@
   "mode": "오프라인",
   "mode_quote": "○ 교육장소 : 경기도기술학교 내 교육장(기계기술관)",
   "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202343"
- },
- {
-  "id": "x-87c28792",
-  "name": "경기도기술학교 북부 시스템 냉난방기 설치",
-  "operator": "경기도일자리재단 경기도기술학교 북부캠퍼스",
-  "official_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202692",
-  "apply_url": "https://apply.jobaba.net",
-  "kinds": [
-   "무료교육",
-   "돈받는교육"
-  ],
-  "fields": [
-   "기술·현장"
-  ],
-  "regions": [
-   "경기"
-  ],
-  "age_min": 15,
-  "age_max": null,
-  "education": "제한없음",
-  "education_note": "신청 자격에 학력 조건 없음",
-  "income": "제한없음",
-  "income_note": "장애인·기초 생활 수급자·차상위 계층 등은 면접 3점 가점",
-  "allow_job_seeker": "가능",
-  "allow_employed": "확인필요",
-  "allow_business": "확인필요",
-  "allow_student": "확인필요",
-  "cost": "0원(교육비 전액 무료)",
-  "money": "훈련 지원금 일 2만원, 월 최대 40만원(월별 출석률 80% 이상)",
-  "money_monthly_max_manwon": 40,
-  "format": "약 2개월 주간 월~금 9~16시(1기 2026.7.1~9.7, 282시간)",
-  "recruit": "기수제. 1기 2026.6.1~6.22 모집(마감·교육 종료), 다음 기수 공고 확인필요",
-  "other_conditions": "공고일 기준 경기도 거주자. 교육장 고양시 고양대로 1415 창조혁신캠퍼스 A동 9층. 정원 20명 이내",
-  "summary": "경기도민이 두 달 남짓 시스템 에어컨 설치 기술을 무료로 배우는 과정입니다. 출석하면 하루 2만원씩, 한 달 최대 40만원을 받습니다.",
-  "sources": [
-   {
-    "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202692",
-    "quote": "공고일 기준, 만 15세 이상인 자"
-   },
-   {
-    "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202692",
-    "quote": "공고일 기준, 경기도 거주자"
-   },
-   {
-    "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202692",
-    "quote": "훈련지원금 일 2만원, 월 최대 40만 원 지급 (월별 출석률 80% 이상)"
-   }
-  ],
-  "income_pct_max": null,
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "시스템 에어컨 설치·배관·시운전 실무",
-  "duration": {
-   "kind": "fixed",
-   "min": null,
-   "max": null,
-   "unit": "",
-   "start": "2026-07-01",
-   "end": "2026-09-07",
-   "days_min": 69,
-   "days_max": 69,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "○ 교육기간 : `26.7.1.( 수 ) ~ `26.9.7.( 월 ) / 총 282 시간",
-   "source": "official_page",
-   "source_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202692",
-   "band": "중기",
-   "text": "약 2개월",
-   "dates_text": "7.1~9.7",
-   "hours_text": ""
-  },
-  "schedule": "주간",
-  "cost_type": "무료",
-  "money_short": "훈련 지원금 월 최대 40만원",
-  "mode": "오프라인",
-  "mode_quote": "○ 교육장소 : 경기도일자리재단 경기도기술학교 북부캠퍼스",
-  "mode_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202692"
  },
  {
   "id": "x-f825acb2",
@@ -10278,7 +10205,7 @@
   "allow_business": "확인필요",
   "allow_student": "확인필요",
   "cost": "0원(교육비·재료비 등 전액 지원)",
-  "money": "훈련 지원금 지원(금액 원문 미기재)",
+  "money": "훈련 지원금(금액 원문 미기재, 교육 기간 중 실업 급여 수급자는 제외), 필기시험 응시료 지원, 중식 무료, 통학 버스(화성 병점·수원 망포)",
   "money_monthly_max_manwon": null,
   "format": "2026.10.6~11.19(27일), 월~목 10:00~16:00, 총 162시간",
   "recruit": "2026.9.1 9시~9.22 16시, 20명",
@@ -10297,10 +10224,22 @@
    {
     "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025",
     "quote": "교육비, 재료비 등 교육 소요비용 전액 지원"
+   },
+   {
+    "url": "https://www.gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22827&key=403AECB057D373D",
+    "quote": "훈련지원금 지원 ※ 교육기간 중 실업급여 수급자는 훈련지원금 지급 대상 제외"
+   },
+   {
+    "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025",
+    "quote": "필기시험 응시료 지원"
+   },
+   {
+    "url": "https://www.gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22827&key=403AECB057D373D",
+    "quote": "통학버스 운행(화성 병점/수원 망포 노선) / 중식 무료 제공"
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "오토바이(이륜자동차) 정비 기술 교육",
   "duration": {
    "kind": "fixed",
@@ -10849,7 +10788,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "산업용 로봇·PLC·ROS 제조 자동화 실무",
   "duration": {
    "kind": "fixed",
@@ -10860,15 +10799,15 @@
    "end": "2027-04-28",
    "days_min": 212,
    "days_max": 212,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 960,
+   "hours_max": 960,
    "quote": "교육기간 2026.09.29~2027.04.28 7개월(960시간)",
    "source": "official_page",
    "source_url": "https://www.korchamhrd.net/education/professionalSkillEduDetail.do?gaebalwon_cd=07000&gwajeong_no=M2026023",
    "band": "장기",
    "text": "약 7개월",
    "dates_text": "9.29~4.28",
-   "hours_text": ""
+   "hours_text": "총 960시간"
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
@@ -11419,7 +11358,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "target_groups": [
    "산재 근로자"
   ],
@@ -11433,15 +11372,15 @@
    "end": "",
    "days_min": 150,
    "days_max": 150,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 500,
+   "hours_max": 500,
    "quote": "[근로복지공단] 전기공사기초과정 3회차 훈련기간 2026.04.20~2026.09.17 교육일정 500시간(5개월)",
    "source": "official_page",
    "source_url": "https://ic.korchamhrd.net/",
    "band": "중기",
    "text": "5개월",
    "dates_text": "",
-   "hours_text": ""
+   "hours_text": "총 500시간"
   },
   "schedule": "주간",
   "cost_type": "확인필요",
@@ -11948,84 +11887,6 @@
   "mode_url": ""
  },
  {
-  "id": "x-bf87d218",
-  "name": "폴리텍 중장년(신중년) 특화 과정",
-  "operator": "한국폴리텍대학(고용노동부)",
-  "official_url": "https://ipsi.kopo.ac.kr/poly/m_97/content.do",
-  "apply_url": "http://www.jinhakapply.com/",
-  "kinds": [
-   "무료교육",
-   "돈받는교육"
-  ],
-  "fields": [
-   "기술·현장"
-  ],
-  "regions": [
-   "전국"
-  ],
-  "age_min": 40,
-  "age_max": null,
-  "education": "제한없음",
-  "education_note": "원문: 학력 제한 없음",
-  "income": "제한없음",
-  "income_note": "신청 자격에 소득 조건 없음",
-  "allow_job_seeker": "가능",
-  "allow_employed": "불가",
-  "allow_business": "확인필요",
-  "allow_student": "확인필요",
-  "cost": "0원(교육비·실습 재료비·기숙사비·식비 전액 국가 지원)",
-  "money": "훈련 장려금(해당자에 한함), 금액은 원문 미기재",
-  "money_monthly_max_manwon": null,
-  "format": "3개월 또는 6개월 과정, 원서 접수→면접→합격",
-  "recruit": "6개월 과정은 매년 6월·12월, 3개월 과정은 상시 모집",
-  "next_deadline": null,
-  "other_conditions": "만 40세 이상 미취업자 또는 영세 자영업자(일반 사업자는 불명확 → 사업자 확인필요). 자세한 자격은 캠퍼스 문의. 서울은 서울정수·서울강서 캠퍼스",
-  "summary": "만 40세 이상 미취업자나 영세 자영업자가 폴리텍 캠퍼스에서 3~6개월 기술을 배우는 과정입니다. 교육비와 기숙사·식비를 나라가 내주고, 해당자는 훈련 장려금도 받습니다.",
-  "sources": [
-   {
-    "url": "https://ipsi.kopo.ac.kr/poly/m_97/content.do",
-    "quote": "만40세 이상의 미취업자, 영세자영업자(학력제한 없음)"
-   },
-   {
-    "url": "https://ipsi.kopo.ac.kr/poly/m_97/content.do",
-    "quote": "교육비, 실습재료비, 기숙사비, 식비 등 전액 국가 지원"
-   },
-   {
-    "url": "https://ipsi.kopo.ac.kr/poly/m_97/content.do",
-    "quote": "6개월 과정 : 매년 6월 및 12월"
-   }
-  ],
-  "income_pct_max": null,
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "중장년 적합 직종 맞춤 기술 교육과 취업 지원",
-  "duration": {
-   "kind": "range",
-   "min": 3,
-   "max": 6,
-   "unit": "개월",
-   "start": "",
-   "end": "",
-   "days_min": 90,
-   "days_max": 180,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "6개월 과정 : 매년 6월 및 12월 · 3개월, 6개월 3개월 과정 : 상시모집",
-   "source": "official_page",
-   "source_url": "https://ipsi.kopo.ac.kr/poly/m_97/content.do",
-   "band": "중기",
-   "text": "3~6개월",
-   "dates_text": "",
-   "hours_text": ""
-  },
-  "schedule": "확인필요",
-  "cost_type": "무료",
-  "money_short": "훈련 장려금 해당자 지급",
-  "mode": "오프라인",
-  "mode_quote": "교육비, 실습재료비, 기숙사비, 식비 등 전액 국가 지원",
-  "mode_url": ""
- },
- {
   "id": "x-9e91fb1d",
   "name": "중장년내일센터 생애 경력 설계·전직 스쿨·재도약",
   "operator": "고용노동부 중장년내일센터",
@@ -12127,9 +11988,9 @@
   "money": "없음",
   "money_monthly_max_manwon": null,
   "format": "탐색반(원데이 직무 체험·특강)·속성반(2개월 이내)·정규반(80~300시간)",
-  "recruit": "과정별 수시 모집(탐색반 사회 복지사 취업 성공 로드맵 ~2026-09-16, 속성반 건강 동행 매니저 3기 ~09-17, 속성반 반도체 현장 안전 인력 2기 ~09-20)",
-  "next_deadline": "2026-09-16",
-  "other_conditions": "취업 의지가 있는 서울시 중장년. 정규반·속성반은 1인당 유형별 1개 과정만 참여 가능",
+  "recruit": "과정별 수시 모집(예: 속성반 반도체 현장 안전 인력 취업 과정 2기 2026.8.17~9.20, 20명)",
+  "next_deadline": "2026-09-20",
+  "other_conditions": "취업 의지가 있는 서울시 중장년. 정규반·속성반은 1인당 유형별 1개 과정만 참여 가능. 과정마다 조건이 따로 있음(예: 반도체 현장 안전 인력 과정은 1962~1986년 출생, 채용 기업 건강 검진·현장 배치 기준에 결격 사유가 없고 수료 후 바로 취업할 수 있는 사람)",
   "summary": "취업하려는 서울 40~64세 중장년이 채용 수요에 맞춘 실습형 취업 훈련을 무료로 받는 사업입니다. 하루짜리 직무 체험부터 300시간 정규반까지 있습니다.",
   "sources": [
    {
@@ -12143,11 +12004,23 @@
    {
     "url": "https://www.50plus.or.kr",
     "quote": "속성반 「반도체 현장 안전인력 취업과정(2기)」"
+   },
+   {
+    "url": "https://rpt.50plus.or.kr/index.do",
+    "quote": "속성반 「반도체 현장 안전인력 취업과정(2기)」참여자 모집 공고 모집인원 : 20명 모집기간 : 2026-08-17-2026-09-20"
+   },
+   {
+    "url": "https://rpt.50plus.or.kr/in_appView.do?ANN_NO=2019",
+    "quote": "1962-01-01 ~ 1986-12-31 (40~64세)"
+   },
+   {
+    "url": "https://rpt.50plus.or.kr/in_appView.do?ANN_NO=2019",
+    "quote": "채용기업의 건강검진 및 현장 배치 기준에 결격사유가 없고, 훈련 수료 후 안전보조원·장비화재감시자로 즉시 취업이 가능한 자"
    }
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "중장년 채용 수요 맞춤 실습형 취업 훈련",
   "duration": {
    "kind": "varies",
@@ -14758,81 +14631,6 @@
   "mode_url": ""
  },
  {
-  "id": "x-9346fd50",
-  "name": "경기도기술학교 이륜자동차 정비 과정",
-  "operator": "경기도일자리재단(경기도기술학교)",
-  "official_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025",
-  "apply_url": "https://apply.jobaba.net/",
-  "kinds": [
-   "무료교육",
-   "돈받는교육",
-   "응시료"
-  ],
-  "fields": [
-   "기술·현장"
-  ],
-  "regions": [
-   "경기"
-  ],
-  "age_min": 15,
-  "age_max": null,
-  "education": "제한없음",
-  "education_note": "신청 자격에 학력 조건 없음",
-  "income": "제한없음",
-  "income_note": "신청 자격에 소득 조건 없음",
-  "income_pct_max": null,
-  "allow_job_seeker": "가능",
-  "allow_employed": "확인필요",
-  "allow_business": "확인필요",
-  "allow_student": "확인필요",
-  "cost": "0원(교육비·재료비 등 전액 지원)",
-  "money": "훈련 지원금(금액은 첨부 공고문), 필기시험 응시료 지원, 중식 무료, 등하교 통학 버스",
-  "money_monthly_max_manwon": null,
-  "format": "기간제 대면 교육(교육 기간·시간은 첨부 공고문)",
-  "recruit": "2026.9.1 9시~9.22 16시, 20명",
-  "next_deadline": "2026-09-22",
-  "summary": "경기도민이 오토바이 정비를 무료로 배우는 기술학교 과정입니다. 훈련 지원금과 필기시험 응시료, 점심, 통학 버스가 지원되며 9월 22일 16시까지 접수합니다.",
-  "other_conditions": "공고일 기준 만 15세 이상 경기도민. 재직자·학생 참여 가능 여부 등 세부 조건은 첨부 공고문(PDF) 확인",
-  "sources": [
-   {
-    "url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025",
-    "quote": "공고일 기준 만 15세 이상 경기도민"
-   },
-   {
-    "url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025",
-    "quote": "2026년 9월 1일(화) 9시 ~ 2026년 9월 22일(화) 16시"
-   }
-  ],
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "이륜자동차 점검·정비 실무, 기능사 준비",
-  "duration": {
-   "kind": "fixed",
-   "min": null,
-   "max": null,
-   "unit": "",
-   "start": "2026-10-06",
-   "end": "2026-11-19",
-   "days_min": 45,
-   "days_max": 45,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "이륜자동차 정비20명10.6.(화) ~ 11.19.(목)(27일, 162H)월~목10:00~16:00 / 총 162H",
-   "source": "official_page",
-   "source_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22827&key=403AECB057D373D",
-   "band": "중기",
-   "text": "약 6주",
-   "dates_text": "10.6~11.19",
-   "hours_text": ""
-  },
-  "schedule": "주간",
-  "cost_type": "무료",
-  "money_short": "훈련 지원금 지원",
-  "mode": "오프라인",
-  "mode_quote": "경기도기술학교 : 경기도 화성시 병점구 기산로 31-6 첨단기술관",
-  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025"
- },
- {
   "id": "x-76d888f5",
   "name": "경기도기술학교 북부 시스템 냉난방기 설치 과정",
   "operator": "경기도일자리재단(경기도기술학교 북부캠퍼스)",
@@ -14840,7 +14638,8 @@
   "apply_url": "https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=5878",
   "kinds": [
    "무료교육",
-   "돈받는교육"
+   "돈받는교육",
+   "응시료"
   ],
   "fields": [
    "기술·현장"
@@ -14859,12 +14658,12 @@
   "allow_business": "확인필요",
   "allow_student": "확인필요",
   "cost": "교육비·교재비·실습 재료 전액 무료",
-  "money": "훈련 지원금 1일 2만원, 월 최대 40만원(출석 80% 이상)",
+  "money": "훈련 지원금 1일 2만원, 월 최대 40만원(월별 출석률 80% 이상), 자격증 취득 시 응시료 지원",
   "money_monthly_max_manwon": 40,
-  "format": "기간제 2026.9.21~11.30",
-  "recruit": "2기 2026.8.24~9.11(마감). 기수제",
+  "format": "주간 월~금 9~16시, 2기 2026.9.21~11.30(총 282시간). 교육장 고양시 고양대로 1415 창조혁신캠퍼스 A동 9층",
+  "recruit": "기수제. 2기 2026.8.24~9.11 18시 모집(마감, 20명 이내), 교육 9.21~11.30. 다음 기수는 공고 확인필요",
   "next_deadline": null,
-  "other_conditions": "공고일 기준 만 15세 이상 미취업 경기도민. 사업자 등록자가 미취업으로 인정되는지는 게시 글에 없음",
+  "other_conditions": "공고일 기준 만 15세 이상 미취업 경기도민. 기수마다 20명 이내. 사업자 등록자가 미취업으로 인정되는지는 공고에 없음",
   "summary": "에어컨·냉난방기 설치를 두 달 넘게 무료로 배우는 과정입니다. 출석률이 80% 이상이면 하루 2만원씩, 한 달에 최대 40만원을 받습니다.",
   "sources": [
    {
@@ -14874,11 +14673,27 @@
    {
     "url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202998",
     "quote": "훈련지원금 1일 20,000원, 월 최대 400,000원 지급 (단, 출석일수의 80% 이상 교육에 참석한 경우에 한함)"
+   },
+   {
+    "url": "https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=5878",
+    "quote": "(붙임 공고문) 모집기간 : 2026년 8월 24일(월) ~ 9월 11일(금) 18시까지"
+   },
+   {
+    "url": "https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=5878",
+    "quote": "(붙임 공고문) 교육시간 : 월~금 9시~16시"
+   },
+   {
+    "url": "https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=5878",
+    "quote": "(붙임 공고문) 교육장소 : 경기도일자리재단 경기도기술학교 북부캠퍼스 ※ 주소 : 고양시 고양대로 1415 창조혁신캠퍼스 A동 9층"
+   },
+   {
+    "url": "https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=5878",
+    "quote": "(붙임 공고문) 자격증 취득 시 응시료 지원"
    }
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "시스템 냉난방기 설치 실무와 안전 교육",
   "duration": {
    "kind": "fixed",
@@ -14889,15 +14704,15 @@
    "end": "2026-11-30",
    "days_min": 71,
    "days_max": 71,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 282,
+   "hours_max": 282,
    "quote": "○ 교육기간 : `26.9.21.(월) ~ `26.11.30.(월) / 총 282시간",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22810&key=47F630E11151552",
    "band": "중기",
    "text": "약 2개월",
    "dates_text": "9.21~11.30",
-   "hours_text": ""
+   "hours_text": "총 282시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -15343,7 +15158,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "생성형 AI 실무와 AI-POT 자격 대비",
   "duration": {
    "kind": "fixed",
@@ -15354,15 +15169,15 @@
    "end": "2026-10-16",
    "days_min": 19,
    "days_max": 19,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 48,
+   "hours_max": 48,
    "quote": "3. 교육기간 2026. 9. 28.(월) ~ 10. 16.(금) [대면교육] ※ 매주 월~금 13:00~17:00 운영 (총 12회 / 48시간, 공휴일 및 10. 8.(목) 휴강)",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22796&key=0DB49F0E88F3146",
    "band": "단기",
    "text": "약 3주",
    "dates_text": "9.28~10.16",
-   "hours_text": ""
+   "hours_text": "총 48시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -15499,7 +15314,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "생성형 AI 활용 데이터 분석·시각화 입문",
   "duration": {
    "kind": "fixed",
@@ -15510,15 +15325,15 @@
    "end": "2026-09-15",
    "days_min": 28,
    "days_max": 28,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 80,
+   "hours_max": 80,
    "quote": "3. 교육기간 2026. 8. 19.(수) ~ 9. 15.(화) [대면교육] ※ 매주 월~금 13:00~17:00 운영 (총 20회 / 80시간)",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22653&key=D27350E14FF4E2C",
    "band": "단기",
    "text": "약 4주",
    "dates_text": "8.19~9.15",
-   "hours_text": ""
+   "hours_text": "총 80시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -15654,7 +15469,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "경력을 살린 강의 기획·교안 제작·스피치 실무",
   "duration": {
    "kind": "fixed",
@@ -15665,15 +15480,15 @@
    "end": "2026-10-12",
    "days_min": 43,
    "days_max": 43,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 84,
+   "hours_max": 84,
    "quote": "교육기간 2026. 8. 31.(월) ~ 10. 12.(월) [대면교육] ※ 매주월·화·목· 금13:00~17:00 운영( 총21 회/ 84시간)",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22674&key=2BCC11F12E41EE1",
    "band": "중기",
    "text": "약 6주",
    "dates_text": "8.31~10.12",
-   "hours_text": ""
+   "hours_text": "총 84시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -15727,7 +15542,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "생성형 AI로 코딩 없이 서비스 만드는 실무",
   "duration": {
    "kind": "fixed",
@@ -15738,15 +15553,15 @@
    "end": "2026-07-20",
    "days_min": 15,
    "days_max": 15,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 60,
+   "hours_max": 60,
    "quote": "교육기간 : 2026.07.06.(월) ~ 2026.07.20.(월), 공휴일 제외 ○ 교육시간 - 월~금 9:30~16:30 (1일 6시간, 총60시간)",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202766",
    "band": "단기",
    "text": "약 2주",
    "dates_text": "7.6~7.20",
-   "hours_text": ""
+   "hours_text": "총 60시간"
   },
   "schedule": "혼합",
   "cost_type": "확인필요",
@@ -15805,7 +15620,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "데이터 분석 준전문가(ADsP) 자격증 취득 준비",
   "duration": {
    "kind": "fixed",
@@ -15816,15 +15631,15 @@
    "end": "2026-10-23",
    "days_min": 22,
    "days_max": 22,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 48,
+   "hours_max": 48,
    "quote": "▶교육기간 : 2026.10.02.(금)~10.23.(금) [총 8일/월, 목, 금 09:00~16:00 1일 6h 총 48h]",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202967",
    "band": "단기",
    "text": "약 3주",
    "dates_text": "10.2~10.23",
-   "hours_text": ""
+   "hours_text": "총 48시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
@@ -15893,15 +15708,15 @@
    "end": "2026-09-19",
    "days_min": 15,
    "days_max": 15,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 18,
+   "hours_max": 18,
    "quote": "교육시간 매주 토요일 09:30 ~ 16:30( 총3일, 18시간)",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22716&key=0606A92B1A4F1B5",
    "band": "단기",
    "text": "약 2주",
    "dates_text": "9.5~9.19",
-   "hours_text": ""
+   "hours_text": "총 18시간"
   },
   "schedule": "야간·주말",
   "cost_type": "확인필요",
@@ -16059,85 +15874,6 @@
   "money_short": "자격 취득 시 최대 30만원",
   "mode": "해당없음",
   "mode_quote": "인턴십 3개월(4대보험 가입)",
-  "mode_url": ""
- },
- {
-  "id": "x-f8ba201c",
-  "name": "GSEEK(경기도 평생 학습 포털) 온라인 강좌",
-  "operator": "경기도·경기도평생교육진흥원",
-  "official_url": "https://www.gseek.kr/",
-  "apply_url": "https://www.gseek.kr/",
-  "kinds": [
-   "무료교육"
-  ],
-  "fields": [
-   "전 분야",
-   "외국어",
-   "IT·AI"
-  ],
-  "regions": [
-   "전국"
-  ],
-  "age_min": null,
-  "age_max": null,
-  "education": "제한없음",
-  "education_note": "신청 자격에 학력 조건 없음(온라인 학습은 누구나)",
-  "income": "제한없음",
-  "income_note": "신청 자격에 소득 조건 없음",
-  "allow_job_seeker": "가능",
-  "allow_employed": "가능",
-  "allow_business": "가능",
-  "allow_student": "가능",
-  "cost": "무료",
-  "money": "없음",
-  "money_monthly_max_manwon": null,
-  "format": "온라인. 수강 신청일로부터 30일 학습(자격 취득·외국어 60일)",
-  "recruit": "상시. 홈페이지 코드에 '리뉴얼 테스트 중(회원가입·교육신청 불가)' 안내문이 들어 있음",
-  "next_deadline": null,
-  "other_conditions": "오프라인 강좌 정보는 도민 대상. 2026년 강좌 1,853개",
-  "summary": "자격증·외국어·컴퓨터 같은 강좌를 인터넷으로 무료로 듣는 경기도 학습 사이트입니다. 소개 페이지에는 회원 가입이나 로그인 없이 누구나 들을 수 있다고 적혀 있습니다.",
-  "sources": [
-   {
-    "url": "https://www.gseek.kr/user/service/intro",
-    "quote": "온라인 학습은 회원가입이나 로그인 없이도 누구나 무료로 바로 학습할 수 있습니다."
-   },
-   {
-    "url": "https://www.gseek.kr/user/homepage/notice/view?seq=1105",
-    "quote": "신규 강좌는 2026년 2월 13일(금)까지 순차적으로 개설될 예정"
-   },
-   {
-    "url": "https://www.gseek.kr/",
-    "quote": "본 사이트는 지식(GSEEK) 플랫폼 리뉴얼을 위해 테스트 중 입니다."
-   }
-  ],
-  "income_pct_max": null,
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "자격증·외국어·컴퓨터 등 온라인 강좌 수강",
-  "duration": {
-   "kind": "self_paced",
-   "min": null,
-   "max": null,
-   "unit": "",
-   "start": "",
-   "end": "",
-   "days_min": null,
-   "days_max": null,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "온라인 학습은 회원가입이나 로그인 없이도 누구나 무료로 바로 학습할 수 있습니다.",
-   "source": "official_page",
-   "source_url": "https://www.gseek.kr/user/service/intro",
-   "band": "자유 수강",
-   "text": "",
-   "dates_text": "",
-   "hours_text": ""
-  },
-  "schedule": "온라인",
-  "cost_type": "무료",
-  "money_short": "",
-  "mode": "온라인",
-  "mode_quote": "온라인 학습은 회원가입이나 로그인 없이도 누구나 무료로 바로 학습할 수 있습니다.",
   "mode_url": ""
  },
  {
@@ -16748,84 +16484,6 @@
   "mode": "혼합",
   "mode_quote": "교육생은 먼저 온라인 입문과정(14시간)을 통해 금융 기본지식을 습득한 뒤, 공통과정(30시간) 및 전문과정(34시간) 집합교육을 수강한다.",
   "mode_url": "https://mediahub.seoul.go.kr/archives/2018471"
- },
- {
-  "id": "x-1dd320cf",
-  "name": "서울시50플러스 중장년 취업 훈련",
-  "operator": "서울시50플러스재단",
-  "official_url": "https://rpt.50plus.or.kr/index.do",
-  "apply_url": "https://rpt.50plus.or.kr/index.do",
-  "kinds": [
-   "무료교육"
-  ],
-  "fields": [
-   "돌봄·보건",
-   "기술·현장"
-  ],
-  "regions": [
-   "서울"
-  ],
-  "age_min": 39,
-  "age_max": 64,
-  "education": "확인필요",
-  "education_note": "반도체 과정 기준 학력 조건 없음, 과정별 확인필요",
-  "income": "확인필요",
-  "income_note": "",
-  "allow_job_seeker": "가능",
-  "allow_employed": "확인필요",
-  "allow_business": "확인필요",
-  "allow_student": "확인필요",
-  "cost": "과정별 확인필요(건강 동행 매니저 과정은 교육비 '해당없음' 표기)",
-  "money": "없음(원문 기준)",
-  "money_monthly_max_manwon": null,
-  "format": "탐색반·속성반(예: 중장년 사회 복지사 취업 로드맵, 서울시 건강 동행 매니저 3기, 반도체 현장 안전 인력 2기)",
-  "recruit": "과정별 수시. 예: 건강 동행 매니저 3기 2026.9.2~9.17, 반도체 현장 안전 인력 2기 2026.8.17~9.20(교육 10.6~10.13)",
-  "next_deadline": null,
-  "other_conditions": "반도체 과정 기준 1962.1.1~1986.12.31 출생, 모집 공고일 기준 서울 주민 등록. 건강 검진·현장 배치 결격 사유 없고 수료 후 즉시 취업 가능한 자. 과정별 조건 상이",
-  "summary": "서울에 사는 40~64세가 새 직업을 준비하도록 짧은 취업 훈련 과정을 엽니다. 건강 동행 매니저, 반도체 현장 안전 인력 같은 과정이 수시로 모집됩니다.",
-  "sources": [
-   {
-    "url": "https://www1.50plus.or.kr/org/index.do",
-    "quote": "이·전직을 고민하는 40대, 새로운 일을 찾는 50대를 위한 직업교육"
-   },
-   {
-    "url": "https://rpt.50plus.or.kr/index.do",
-    "quote": "반도체 현장 안전인력 취업과정(2기)"
-   },
-   {
-    "url": "https://rpt.50plus.or.kr/in_appView.do?ANN_NO=2019",
-    "quote": "채용기업의 건강검진 및 현장 배치 기준에 결격사유가 없고, 훈련 수료 후 안전보조원·장비화재감시자로 즉시 취업이 가능한 자"
-   }
-  ],
-  "income_pct_max": null,
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "중장년 재취업을 위한 직무별 단기 취업 훈련",
-  "duration": {
-   "kind": "varies",
-   "min": null,
-   "max": null,
-   "unit": "",
-   "start": "",
-   "end": "",
-   "days_min": null,
-   "days_max": null,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "행사일정 일시 2026-10-06 ~ 2026-10-13",
-   "source": "official_page",
-   "source_url": "https://rpt.50plus.or.kr/in_appView.do?ANN_NO=2019",
-   "band": "과정마다 다름",
-   "text": "",
-   "dates_text": "",
-   "hours_text": ""
-  },
-  "schedule": "과정마다 다름",
-  "cost_type": "확인필요",
-  "money_short": "",
-  "mode": "오프라인",
-  "mode_quote": "서울시50플러스서부캠퍼스",
-  "mode_url": "https://rpt.50plus.or.kr/in_appView.do?ANN_NO=2062"
  },
  {
   "id": "x-cdae43bb",
@@ -18072,7 +17730,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "게임 제작 장비·공간과 사업화·인력 양성 지원",
   "duration": {
    "kind": "fixed",
@@ -18083,15 +17741,15 @@
    "end": "2026-11-13",
    "days_min": 64,
    "days_max": 64,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 60,
+   "hours_max": 60,
    "quote": "운영기간 - 1차 : ‘26. 9. 11.(금)~11. 13.(금), 매주 금, 총60H",
    "source": "official_page",
    "source_url": "https://www.uipa.or.kr/webuser/business/view.html?bd_id=24824",
    "band": "중기",
    "text": "약 2개월",
    "dates_text": "9.11~11.13",
-   "hours_text": ""
+   "hours_text": "총 60시간"
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
@@ -18817,7 +18475,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "바이오·향장·의료 산업 이해와 제품 개발 실무",
   "duration": {
    "kind": "fixed",
@@ -18828,15 +18486,15 @@
    "end": "2026-11-11",
    "days_min": 29,
    "days_max": 29,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 120,
+   "hours_max": 120,
    "quote": "2026년 10월 14일(수) ~ 11월 11일(수) 주 5일(평일), 10:00~17:00 (1일 6시간, 총 120시간)",
    "source": "official_page",
    "source_url": "https://gwep.or.kr/data/editor/2609/309d878d04d14c0a3a47487b480297a4_1788309453_1664.jpg",
    "band": "단기",
    "text": "약 4주",
    "dates_text": "10.14~11.11",
-   "hours_text": ""
+   "hours_text": "총 120시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
