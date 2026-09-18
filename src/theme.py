@@ -24,7 +24,8 @@ def name_html(name, split_tail=False):
         m = _NAME_TAIL.match(name)
         if m:
             return f'{name_html(m.group(1))}<span class="nm-sub">{E(m.group(2))}</span>'
-    return _NAME_PAREN.sub(lambda m: f' <span class="nm-p">({m.group(1)})</span> ', E(name)).strip()
+    out = _NAME_PAREN.sub(lambda m: f' <span class="nm-p">({m.group(1)})</span> ', E(name)).strip()
+    return re.sub(r'</span> (?=[,·.;:])', '</span>', out)   # 괄호 뒤 쉼표·가운뎃점 앞은 띄우지 않는다('(SBA), 캠퍼스별')
 
 # ---------- 아이콘(선 아이콘, 글자 색을 따른다) ----------
 SVG = {
@@ -175,12 +176,11 @@ def _dur_line(p):
         return ''
     parts = _dur_parts(p)
     if not parts:
-        return f'<p class="r-dur dim">{ico("cal")}<span>기간 공고 확인</span></p>'
+        return f'<p class="r-dur dim">{ico("cal")}<span>{" · ".join(["기간 공고 확인"] + [E(x) for x in _how(p)])}</span></p>'
     out = [f'<b>{E(parts[0])}</b>'] + [E(x) for x in parts[1:]]
     if _dur_dates(p):
         out.append(E(_dur_dates(p)))
-    if p.get('schedule') in SCHED_SHOW:
-        out.append(E(SCHED_SHOW[p['schedule']]))
+    out += [E(x) for x in _how(p)]   # 수업 방식·시간대('오프라인 · 주간')
     return f'<p class="r-dur">{ico("cal")}<span>{" · ".join(out)}</span></p>'
 
 
@@ -856,7 +856,9 @@ def _prog_inner(p):
         if du.get('quote'):
             v += f'<span class="note">공고 표현 “{E(du["quote"])}”</span>'
         detail.append(('교육 기간', v))
-    if p.get('schedule') not in (None, '', '해당없음', '확인필요'):
+    if p.get('mode') in MODE_SHOW or p.get('mode') == '과정마다 다름':
+        detail.append(('수업 방식', E(MODE_SHOW.get(p['mode'], p['mode']))))
+    if p.get('schedule') in TIME_SHOW or (p.get('mode') is None and p.get('schedule') not in (None, '', '해당없음', '확인필요')):
         detail.append(('일정', E(SCHED_SHOW.get(p['schedule'], p['schedule']))))
     detail += [('방식', _tx(p.get('format'))), ('모집', _tx(p.get('recruit')))]
 
@@ -910,9 +912,9 @@ def program_body(p):
         if dates:
             v += f'<small>{E(dates)}</small>'
         facts.append(('cal', '교육 기간', v))
-    sched = SCHED_SHOW.get(p.get('schedule'))
-    if sched:
-        facts.append(('laptop', '수업', E(sched)))
+    how = _how(p) or (['과정마다 다름'] if p.get('mode') == '과정마다 다름' else [])
+    if how:
+        facts.append(('laptop', '수업', E(' · '.join(how))))
     facts.append(('clock', '마감', _dl_html(p, 'span', 'dlv') or '<span class="dim">공고에서 확인</span>'))
     who = [_age_short(p)] + ([', '.join(p['target_groups'])] if p.get('target_groups') else []) + \
           ['전국' if '전국' in p['regions'] else region_short(p) + ' 주민']

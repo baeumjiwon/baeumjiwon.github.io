@@ -105,13 +105,14 @@ def date_range_from_quote(q, default_year):
 
 
 def hours_text(lo, hi, open_ended=False):
+    g = lambda v: f'{int(v):,}' if float(v).is_integer() else str(v)  # 화면 글은 천 단위 쉼표('1,000시간')
     if lo is None and hi is None:
         return ''
     if open_ended:
-        return f'{num_text(lo)}시간 이상'
+        return f'{g(lo)}시간 이상'
     if lo is None or lo == hi:
-        return f'총 {num_text(hi if lo is None else lo)}시간'
-    return f'총 {num_text(lo)}~{num_text(hi)}시간'
+        return f'총 {g(hi if lo is None else lo)}시간'
+    return f'총 {g(lo)}~{g(hi)}시간'
 
 
 def finish(d):

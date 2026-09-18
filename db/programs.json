@@ -71,11 +71,14 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": "훈련비 최대 300만원 지원"
+  "money_short": "훈련비 최대 300만원 지원",
+  "mode": "과정마다 다름",
+  "mode_quote": "카드 발급 제도(수강 과정은 온라인·오프라인 다양)",
+  "mode_url": ""
  },
  {
   "id": "training-allowance",
-  "name": "훈련 장려금·특별 훈련 수당",
+  "name": "훈련 장려금·특별 훈련 수당(국민 내일배움카드)",
   "operator": "고용노동부(지방고용노동관서)",
   "official_url": "https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systId=SI00000351",
   "apply_url": "",
@@ -101,12 +104,12 @@
   "allow_student": "확인필요",
   "other_conditions": "140시간 이상 카드 과정에서 단위 기간(1개월) 출석률 80% 이상일 때 지급. 원격 훈련·실업 급여 수급 중이면 미지급. 사업자 등록증 보유자는 원칙 제외이나 자영업자 고용 보험 피보험자면 훈련 장려금 대상(특별 훈련 수당은 제외). 특별 훈련 수당은 350시간 이상 지정 과정만",
   "cost": "무료",
-  "money": "미취업자: 일반·과정 평가형 1일 5,800원(월 최대 11.6만원), KDT·국기·산대특 1일 1만원(월 최대 20만원). 특별 훈련 수당 수도권 1일 5,000원(월 최대 10만원), KDT AI 캠퍼스 월 최대 20만원. 자영업자 피보험자는 일반 과정 월 최대 36만원. 하루 5시간 미만 과정은 더 적음",
-  "money_monthly_max_manwon": 40,
+  "money": "미취업자: 일반·과정 평가형 1일 5,800원(월 최대 11.6만원), KDT·국기·산대특 1일 1만원(월 최대 20만원). 특별 훈련 수당(350시간 이상 지정 과정)은 1일 수도권 5,000원(월 최대 10만원)·비수도권 1만원(월 최대 20만원)·인구 감소 지역 15,000원(월 최대 30만원), KDT AI 캠퍼스는 월 최대 수도권 20만원·비수도권 40만원·인구 감소 지역 60만원. 자영업자 피보험자는 1일 18,000원(월 최대 36만원). 하루 5시간 미만 과정은 더 적음",
+  "money_monthly_max_manwon": 80,
   "format": "카드 과정 수강 중 매달 본인 계좌 입금",
   "recruit": "상시(카드 과정 수강 중 매달 자동 산정)",
   "next_deadline": null,
-  "summary": "내일배움카드로 140시간 이상 과정을 듣고 한 달 출석률 80%를 넘기면 매달 받는 수당입니다. 과정 종류에 따라 월 11.6만원에서 최대 40만원까지 받습니다.",
+  "summary": "내일배움카드로 140시간 이상 과정을 듣고 한 달 출석률 80%를 넘기면 매달 받는 수당입니다. 하루 5시간 이상 과정이면 과정 종류와 지역에 따라 월 최대 11.6만원에서 80만원(인구 감소 지역 AI 캠퍼스)까지 받습니다.",
   "sources": [
    {
     "url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000279150",
@@ -122,7 +125,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "훈련 출석률을 채우면 매달 받는 장려금",
   "duration": {
    "kind": "not_applicable",
@@ -145,7 +148,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "훈련 장려금 매월 지급"
+  "money_short": "훈련 장려금 매월 지급",
+  "mode": "해당없음",
+  "mode_quote": "내일배움카드로 140시간 이상 과정을 듣고 한 달 출석률 80%를 넘기면 매달 받는 수당입니다.",
+  "mode_url": ""
  },
  {
   "id": "national-key-industry-training",
@@ -177,9 +183,9 @@
   "allow_student": "불가",
   "other_conditions": "내일배움카드 필요(카드 발급 제외 조건 그대로 적용: 사업 기간 1년 미만·매출 4억원 이상 사업자는 자영업자 고용 보험 가입 시에만 가능, 재학생 제외). 카드 유효 기간 중 1회, 카드 잔액에서 200만원 일괄 차감. 3개월·350시간 이상 과정. 결석 20% 초과 시 제적",
   "cost": "자부담 10%(최대 60만원). 훈련비 300만원 이하 10%, 300~600만원 30만원, 600~1,200만원 40만원, 1,200~1,800만원 50만원, 1,800만원 초과 60만원",
-  "money": "훈련 장려금 월 최대 20만원(1일 1만원, 출석률 80% 이상) + 우대 직종이면 특별 훈련 수당 수도권 월 최대 10만원. 자영업자 피보험자는 특별 훈련 수당 제외",
-  "money_monthly_max_manwon": 30,
-  "format": "오프라인, 주로 평일 주간 하루 5~8시간, 3개월~1년",
+  "money": "훈련 장려금 월 최대 20만원(1일 1만원, 출석률 80% 이상) + 우대 직종이면 특별 훈련 수당 월 최대 수도권 10만원·비수도권 20만원·인구 감소 지역 30만원. 자영업자 피보험자는 특별 훈련 수당 제외",
+  "money_monthly_max_manwon": 50,
+  "format": "대부분 오프라인(일부 과정은 온·오프라인 혼합), 주로 평일 주간 하루 5~8시간, 3개월~1년",
   "recruit": "상시 개강(고용24 훈련 유형 '국가기간전략산업직종')",
   "next_deadline": null,
   "summary": "건설·제조·정보 통신 등 국가가 정한 53개 직종을 3개월 이상 배우는 과정으로, 훈련비의 90% 이상을 지원합니다. 출석을 잘하면 매달 훈련 장려금도 받습니다.",
@@ -198,7 +204,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "기계·건설·전기 등 기간산업 직종 기술 훈련",
   "duration": {
    "kind": "range",
@@ -221,7 +227,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 월 최대 20만원"
+  "money_short": "훈련 장려금 월 최대 20만원",
+  "mode": "과정마다 다름",
+  "mode_quote": "(게임콘텐츠제작) (비대면+집체) 게임그래픽 디자이너 양성과정 (2D원화,3D모델링,UI)",
+  "mode_url": "https://www.work24.go.kr/hr/a/a/1100/trnnCrsInf2.do?pageId=2&crseTracseSe=nlg_jsfc_yn%7C%EA%B5%AD%EA%B0%80%EA%B8%B0%EA%B0%84%EC%A0%84%EB%9E%B5%EC%82%B0%EC%97%85%EC%A7%81%EC%A2%85&keyword=%EB%B9%84%EB%8C%80%EB%A9%B4"
  },
  {
   "id": "k-digital-training",
@@ -249,7 +258,7 @@
   "allow_employed": "가능",
   "allow_business": "확인필요",
   "allow_student": "불가",
-  "other_conditions": "내일배움카드 필요(카드 발급 제외 조건 적용). 카드 유효 기간 중 1회, 카드 잔액 최대 300만원 차감(잔액 0원이면 불가, 단기 과정은 무관). 장려금은 350시간 이상·출석률 80% 이상. 자영업자 피보험자는 특별 훈련 수당 제외",
+  "other_conditions": "내일배움카드 필요(카드 발급 제외 조건 적용). 카드 유효 기간 중 1회, 카드 잔액 최대 300만원 차감(잔액 0원이면 불가, 단기 과정은 무관). 훈련 장려금은 140시간 이상, 특별 훈련 수당은 350시간 이상 과정에서 출석률 80% 이상일 때. 자영업자 피보험자는 특별 훈련 수당 제외",
   "cost": "수강료 90% 이상 지원, 자부담 최대 60만원(AI 캠퍼스 과정은 자부담 면제)",
   "money": "훈련 장려금 월 최대 20만원 + 특별 훈련 수당 유형별 월 10만~60만원(단기 과정 제외)",
   "money_monthly_max_manwon": 80,
@@ -272,7 +281,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "AI·클라우드 등 디지털 기술 프로젝트형 훈련",
   "duration": {
    "kind": "fixed",
@@ -295,7 +304,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "장려금·특별 수당 매월 지급"
+  "money_short": "장려금·특별 수당 매월 지급",
+  "mode": "과정마다 다름",
+  "mode_quote": "오프라인·비대면 실시간, 평일 주간 하루 8시간, 평균 6개월",
+  "mode_url": ""
  },
  {
   "id": "kdt-ai-campus",
@@ -326,12 +338,12 @@
   "allow_student": "불가",
   "other_conditions": "내일배움카드 필요(카드 발급 제외 조건 적용). 자영업자 고용 보험 피보험자는 특별 훈련 수당 제외. 비대면 실시간 훈련은 수도권 실시로 간주",
   "cost": "무료(자기 부담금 면제)",
-  "money": "훈련 장려금 월 최대 20만원 + 특별 훈련 수당 수도권 월 최대 20만원 = 월 최대 40만원(1일 5시간 이상 훈련일 출석 기준)",
-  "money_monthly_max_manwon": 40,
+  "money": "훈련 장려금 월 최대 20만원 + 특별 훈련 수당 월 최대 수도권 20만원·비수도권 40만원·인구 감소 지역 60만원 = 합계 월 최대 수도권 40만원·비수도권 60만원·인구 감소 지역 80만원(훈련 기관 소재지 기준, 1일 5시간 이상 훈련일 출석 기준)",
+  "money_monthly_max_manwon": 80,
   "format": "주간 장기 과정(예: 대전 과정 약 8개월)",
   "recruit": "과정별 수시 모집",
   "next_deadline": null,
-  "summary": "K-디지털 트레이닝 가운데 AI 인재를 기르는 과정으로, 누구나 자기 부담금 없이 무료로 듣습니다. 출석하면 수도권 기준 매달 최대 40만원을 받습니다.",
+  "summary": "K-디지털 트레이닝 가운데 AI 인재를 기르는 과정으로, 누구나 자기 부담금 없이 무료로 듣습니다. 출석하면 훈련 기관 소재지에 따라 매달 최대 40만원(수도권)·60만원(비수도권)·80만원(인구 감소 지역)을 받습니다.",
   "sources": [
    {
     "url": "https://statics.goorm.io/ktb/2026_NTLC_Updates.pdf",
@@ -347,7 +359,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "AI 인재를 기르는 K-디지털 트레이닝 과정",
   "duration": {
    "kind": "varies",
@@ -370,7 +382,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "장려금 월 최대 40만원"
+  "money_short": "장려금·수당 월 최대 40만~80만원",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "k-digital-credit",
@@ -399,14 +414,14 @@
   "allow_employed": "가능",
   "allow_business": "확인필요",
   "allow_student": "불가",
-  "other_conditions": "내일배움카드 필요(카드 발급 제외 조건 적용). 카드 한도와 별도로 50만원 1회 추가 지원. 크레딧 유효 기간은 첫 수강 개시일부터 1년. 학습 진도율 80% 미만이면 제적, 한 번 수강한 과정은 재수강 불가",
+  "other_conditions": "내일배움카드 필요(카드 발급 제외 조건 적용). 카드 한도와 별도로 50만원 1회 추가 지원(카드 유효 기간이 끝난 뒤 재발급하면 새로 지급). 크레딧 유효 기간은 첫 수강 개시일부터 1년. 학습 진도율 80% 미만이면 제적, 한 번 수강한 과정은 재수강 불가",
   "cost": "자부담 10%(훈련비 지원율 90%). 나머지는 추가 크레딧 50만원에서 먼저 차감",
   "money": "없음(원격 훈련이라 훈련 장려금 미지급)",
   "money_monthly_max_manwon": null,
   "format": "100% 온라인, 시간 자유",
   "recruit": "상시",
   "next_deadline": null,
-  "summary": "파이썬 기초, 빅 데이터, 웹 디자인, 영상 편집, ChatGPT 활용 같은 디지털 기초를 100% 온라인으로 배우는 과정입니다. 카드 한도와 별도로 50만원을 한 번 더 지원하고 본인은 10%만 냅니다.",
+  "summary": "파이썬 기초, 빅 데이터, 웹 디자인, 영상 편집, ChatGPT 활용 같은 디지털 기초를 100% 온라인으로 배우는 과정입니다. 카드 한도와 별도로 50만원을 한 번 더 지원하고(카드 유효 기간이 끝나 다시 발급받으면 새로 지원) 본인은 10%만 냅니다.",
   "sources": [
    {
     "url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000279150",
@@ -422,7 +437,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "파이썬·데이터·영상 편집 등 디지털 기초 강의",
   "duration": {
    "kind": "self_paced",
@@ -445,7 +460,10 @@
   },
   "schedule": "온라인",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "100% 인터넷 원격으로 시간과 장소 제한 없이 수강할 수 있습니다",
+  "mode_url": ""
  },
  {
   "id": "course-based-qualification",
@@ -519,7 +537,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 매월 지급"
+  "money_short": "훈련 장려금 매월 지급",
+  "mode": "오프라인",
+  "mode_quote": "오프라인, 주로 주간, 수백 시간",
+  "mode_url": ""
  },
  {
   "id": "industry-transition-training",
@@ -549,8 +570,8 @@
   "allow_student": "불가",
   "other_conditions": "내일배움카드 필요(만 75세 미만, 카드 발급 제외 조건 적용). 사업자 등록증 보유자는 훈련 장려금·특별 훈련 수당 원칙 제외. 140시간 미만 단기 과정은 장려금 없음. 결석 20% 초과 시 제적. 지자체 지원 훈련에 참여 중이면 카드 지원 제외",
   "cost": "일반 과정 1회 훈련비 90% 이상 지원: 300만원 이하 10%, 300~600만원 30만원, 600~1,200만원 40만원, 1,200~1,800만원 50만원, 1,800만원 초과 60만원. 카드 최대 200만원 차감. 단기 과정은 횟수 제한 없이 90% 이상 지원, 카드 최대 100만원 차감",
-  "money": "훈련 장려금(140시간 이상, 출석률 80% 이상): 하루 5시간 이상이면 1일 1만원 월 최대 20만원, 5시간 미만이면 1일 4,300원 월 최대 8.6만원. 특별 훈련 수당(지정 과정 350시간 이상): 수도권 월 최대 10만원",
-  "money_monthly_max_manwon": 30,
+  "money": "훈련 장려금(140시간 이상, 출석률 80% 이상): 하루 5시간 이상이면 1일 1만원 월 최대 20만원, 5시간 미만이면 1일 4,300원 월 최대 8.6만원. 특별 훈련 수당(육성 산업·직종 등 지정 과정 350시간 이상): 월 최대 수도권 10만원·비수도권 20만원·인구 감소 지역 30만원",
+  "money_monthly_max_manwon": 50,
   "format": "오프라인 위주, 일반 과정 140시간 이상(대부분 주간 장기), 단기 과정 140시간 미만",
   "recruit": "지역별 공모로 선정된 과정이 인정일부터 1년간 수시 개설(서울은 매년 1월 말경 1차 공모)",
   "next_deadline": null,
@@ -570,7 +591,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "지역 산업 수요에 맞춘 카드 직업 훈련",
   "duration": {
    "kind": "varies",
@@ -593,7 +614,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 월 최대 20만원"
+  "money_short": "훈련 장려금 월 최대 20만원",
+  "mode": "오프라인",
+  "mode_quote": "집체과정(547)",
+  "mode_url": "https://www.work24.go.kr/hr/a/a/1100/trnnCrsInf2.do?pageId=2&crseTracseSe=vist_octr_trng_yn%7C%EC%82%B0%EC%97%85%EA%B5%AC%EC%A1%B0%EB%B3%80%ED%99%94%EB%8C%80%EC%9D%91"
  },
  {
   "id": "work-study-dual",
@@ -667,7 +691,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "학습 기업 임금 지급"
+  "money_short": "학습 기업 임금 지급",
+  "mode": "오프라인",
+  "mode_quote": "현장과 분리된 별도의 장소에서 전문 교육강사에 의해 실시되는 집체훈련",
+  "mode_url": "https://pdms.ncs.go.kr/cmn/com/content/workStudy.do"
  },
  {
   "id": "national-employment-support",
@@ -741,7 +768,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "무료",
-  "money_short": "구직 촉진 수당 월 60만원"
+  "money_short": "구직 촉진 수당 월 60만원",
+  "mode": "해당없음",
+  "mode_quote": "구직자에게 취업 상담과 직업 훈련·일 경험 연계를 해주고 활동비를 주는 제도입니다.",
+  "mode_url": ""
  },
  {
   "id": "seoul-tech-regular",
@@ -817,7 +847,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자 훈련 수당 월 25만원"
+  "money_short": "우선 선발자 훈련 수당 월 25만원",
+  "mode": "오프라인",
+  "mode_quote": "오프라인, 주간 09:00~16:30(5개월) 또는 야간 18:30~21:40(6개월) 월~금",
+  "mode_url": ""
  },
  {
   "id": "seoul-tech-youth-special",
@@ -891,7 +924,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "오프라인 단기 실습, 대부분 월~금 09:00~16:30(용접사는 화·목 야간), 70~340시간",
+  "mode_url": ""
  },
  {
   "id": "seoul-tech-local-industry",
@@ -924,7 +960,7 @@
   "cost": "무료(교재·실습 재료 제공)",
   "money": "훈련 장려금 월 20만원 + 식비 제공",
   "money_monthly_max_manwon": 20,
-  "format": "서울 캠퍼스 대면 수업, 주 4~5일 주간(과정별 약 5~10개월). 중부 컴퓨터 그래픽 디자인, 북부 그린 에너지 설비·전기 기계 설비 보전, 동부 냉동 공조 설비",
+  "format": "서울 캠퍼스 대면 수업, 주 4~5일 주간(과정별 6~10개월). 중부 컴퓨터 그래픽 디자인, 북부 그린 에너지 설비·전기 기계 설비 보전, 동부 냉동 공조 설비",
   "recruit": "매년 1~2월 모집(북부 전기 기계 설비 보전은 6~7월 추가 모집)",
   "next_deadline": null,
   "summary": "서울시 기술교육원에서 디자인·설비 분야를 무료로 배우고 취업까지 연결해 주는 과정입니다. 수업을 들으면 매달 훈련 장려금 20만원과 식비를 받습니다.",
@@ -956,7 +992,7 @@
    "days_max": 300,
    "hours_min": null,
    "hours_max": null,
-   "quote": "그린에너지설비 10개월 전기기계설비보전 6개월",
+   "quote": "컴퓨터그래픽디자인 7개월 … 그린에너지설비 10개월 전기기계설비보전 6개월 6개월 … 지능형 냉동공조설비 컨트롤 엔지니어 10개월",
    "source": "official_page",
    "source_url": "https://www.sitedu.or.kr/apply/local.do",
    "band": "중기~장기",
@@ -966,7 +1002,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금 월 20만원"
+  "money_short": "훈련 장려금 월 20만원",
+  "mode": "오프라인",
+  "mode_quote": "서울 캠퍼스 대면 수업, 주 4~5일 주간(과정별 약 5~10개월)",
+  "mode_url": ""
  },
  {
   "id": "seoul-tech-work-experience",
@@ -1042,7 +1081,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "1~2일(8~16시간) 대면 직무 체험",
+  "mode_url": ""
  },
  {
   "id": "sesac-youth-academy",
@@ -1118,7 +1160,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "자치구 캠퍼스 대면, 주간 2~6개월 부트캠프(AI 개발·AI 기획·마케팅·영상 콘텐츠 등)",
+  "mode_url": ""
  },
  {
   "id": "seoul-youth-intern-jobcamp",
@@ -1194,7 +1239,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "생활 임금 월 약 250만원"
+  "money_short": "생활 임금 월 약 250만원",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "seoul-attractive-jobs-public",
@@ -1272,7 +1320,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "생활 임금 월 약 252만원"
+  "money_short": "생활 임금 월 약 252만원",
+  "mode": "혼합",
+  "mode_quote": "2) ‘집합·라이브-근무중교육’에서 개설 강의 확인",
+  "mode_url": "https://job.seoul.go.kr/hmpg/chjb/pjed/pjedInfo.do"
  },
  {
   "id": "seoul-attractive-jobs-private",
@@ -1347,7 +1398,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "생활 임금 월 약 252만원"
+  "money_short": "생활 임금 월 약 252만원",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "seoul-youngtech",
@@ -1421,7 +1475,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "서울 청년에게 1:1 재무 상담과 온라인·오프라인 금융 교육을 무료로 제공합니다.",
+  "mode_url": ""
  },
  {
   "id": "seoul-citizens-university-online",
@@ -1496,7 +1553,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온라인 동영상 강좌(파이썬 기초·프리미어 프로·유튜브 쇼츠·Gemini 실무 등)",
+  "mode_url": ""
  },
  {
   "id": "seoul-ai-foundation-edu",
@@ -1571,7 +1631,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "상암 서울AI스마트시티센터(마포구 매봉산로 31) 토요일 단회 대면 특강 2~3시간",
+  "mode_url": ""
  },
  {
   "id": "seoul-campustown-edu",
@@ -1604,7 +1667,7 @@
   "cost": "무료(공고별 확인)",
   "money": "없음(창업 팀 지원금은 별도 선발)",
   "money_monthly_max_manwon": null,
-  "format": "대학 캠퍼스 대면 단기 교육(주말 2일 12시간, 주 1회 8회 32시간 등)",
+  "format": "대학마다 다름(대부분 캠퍼스 대면, 일부는 온·오프라인 병행이나 Zoom), 단기 교육(주말 2일 12시간, 주 1회 8회 32시간 등)",
   "recruit": "대학별 수시 모집(캠퍼스타운 대학 소식 게시판 공지)",
   "next_deadline": "2026-09-20",
   "summary": "서울 여러 대학의 캠퍼스타운이 여는 무료 AI·창업 단기 교육입니다. 대학마다 대상과 일정이 달라 게시판 공고를 보고 신청합니다.",
@@ -1623,7 +1686,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "대학 캠퍼스에서 여는 AI·창업 단기 교육",
   "duration": {
    "kind": "varies",
@@ -1646,7 +1709,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "운영방식: 온·오프라인 병행 진행",
+  "mode_url": "https://campustown.seoul.go.kr/site/main/board/university_news/3108"
  },
  {
   "id": "qnet-youth-exam-fee-50",
@@ -1720,7 +1786,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 50% 감면"
+  "money_short": "응시료 50% 감면",
+  "mode": "해당없음",
+  "mode_quote": "만 34세 이하 청년이 한국산업인력공단 국가 기술 자격시험을 볼 때 응시료를 절반만 내게 해 줍니다.",
+  "mode_url": ""
  },
  {
   "id": "seocho-youth-exam-fee",
@@ -1794,7 +1863,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 연 최대 20만원 환급"
+  "money_short": "응시료 연 최대 20만원 환급",
+  "mode": "해당없음",
+  "mode_quote": "서초구에 사는 미취업 청년이 올해 이미 본 자격증·어학 시험 응시료를 연 20만원까지 돌려주는 제도입니다.",
+  "mode_url": ""
  },
  {
   "id": "future-tomorrow-work-experience-intern",
@@ -1868,81 +1940,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "참여 수당 8주 총 300만원"
- },
- {
-  "id": "training-allowance-card",
-  "name": "훈련 장려금·특별 훈련 수당(국민 내일배움카드)",
-  "operator": "고용노동부(지방고용노동관서가 훈련생 계좌로 지급)",
-  "official_url": "https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20251201795",
-  "apply_url": "https://m.work24.go.kr/cm/c/f/1100/selecSystInfo.do?currentPageNo=1&recordCountPerPage=10&systId=SI00000351&systClId=SC00000004",
-  "kinds": [
-   "지원금"
-  ],
-  "fields": [
-   "전 분야"
-  ],
-  "regions": [
-   "전국"
-  ],
-  "age_min": null,
-  "age_max": null,
-  "education": "제한없음",
-  "education_note": "수당 자체에는 학력 조건 없음. 수강할 훈련 과정별 모집 요건은 따로 있음",
-  "income": "제한없음",
-  "income_note": "운영 규정 제49조에 소득 조항 없음",
-  "income_pct_max": null,
-  "allow_job_seeker": "가능",
-  "allow_employed": "확인필요",
-  "allow_business": "불가",
-  "allow_student": "확인필요",
-  "cost": "수당 자체는 본인 부담 없음(과정 훈련비 자부담은 별도)",
-  "money": "일 5시간 이상 과정: 일반 과정 출석일×5,800원(월 최대 11.6만원), 국가 기간·전략 산업 직종·KDT 등 출석일×1만원(월 최대 20만원). 일 5시간 미만은 월 5만원/8.6만원. 350시간 이상 국기·KDT 등은 특별 훈련 수당 추가(수도권 출석일×5,000원, 월 최대 10만원)",
-  "money_monthly_max_manwon": 30,
-  "recruit": "상시(내일배움카드 과정 개강에 맞춰 자동 적용)",
-  "next_deadline": null,
-  "format": "140시간 이상 내일배움카드 훈련 과정 수강, 단위 기간 출석률 80% 이상 시 매월 지급. 원격·법정 직무·외국어 과정은 제외",
-  "other_conditions": "국민 내일배움카드 발급자여야 함. 사업자 등록증을 발급받은 사람이나 사업자 등록 법인 이사는 장려금 제외. 카드 발급 자체도 개업 1년 미만이거나 최근 1년 매출 4억원 이상 사업자는 제한. 중앙 행정 기관·지자체로부터 훈련비를 지원받는 다른 훈련(사업)에 참여 중이면 카드 지원 제외. 총 결석 일수가 소정 훈련 일수의 20% 초과 시 제적",
-  "summary": "내일배움카드로 140시간 이상 과정을 듣고 출석률 80%를 넘기면 매달 교통비 성격의 훈련 장려금을 받는 제도입니다. 국가 기간·전략 산업 같은 긴 과정은 수당이 더 많고 수도권은 특별 훈련 수당이 추가됩니다.",
-  "sources": [
-   {
-    "url": "https://www.moel.go.kr/common/downloadFile.do?file_seq=20251203355&bbs_seq=20251201795&bbs_id=19&file_ext=hwpx",
-    "quote": "「부가가치세법」에 따른 사업자등록증을 발급받은 사람 또는 사업자등록증을 발급받은 법인의 이사가 아닐 것"
-   },
-   {
-    "url": "https://www.moel.go.kr/common/downloadFile.do?file_seq=20251203355&bbs_seq=20251201795&bbs_id=19&file_ext=hwpx",
-    "quote": "국가기간·전략산업직종 훈련과정(제19조제1항제1호)단위기간 출석일수 ×10,000원월 200,000원"
-   },
-   {
-    "url": "https://www.moel.go.kr/common/downloadFile.do?file_seq=20251203355&bbs_seq=20251201795&bbs_id=19&file_ext=hwpx",
-    "quote": "원격훈련과정, 법정직무훈련과정, 외국어훈련과정을 수강한 사람 또는 혼합훈련과정을 수강한 사람의 원격훈련에 대하여는 훈련장려금을 지원하지 아니한다."
-   }
-  ],
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "카드 훈련 출석 시 매달 받는 장려금·특별 수당",
-  "duration": {
-   "kind": "not_applicable",
-   "min": null,
-   "max": null,
-   "unit": "",
-   "start": "",
-   "end": "",
-   "days_min": null,
-   "days_max": null,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "",
-   "source": "none",
-   "source_url": "",
-   "band": "",
-   "text": "",
-   "dates_text": "",
-   "hours_text": ""
-  },
-  "schedule": "해당없음",
-  "cost_type": "해당없음",
-  "money_short": "훈련 장려금 매월 지급"
+  "money_short": "참여 수당 8주 총 300만원",
+  "mode": "과정마다 다름",
+  "mode_quote": "④ 일경험 참여 시 ① 선수교육(온라인) ② 사전직무 교육(실시간 온라인) ③간담회(대면) 필수 참여",
+  "mode_url": "https://hwaseongcci.korcham.net/file/dext5uploaddata/2026/%EB%B6%99%EC%9E%841.%2026%EB%85%84%203%EA%B8%B0%20%EC%B2%AD%EB%85%84%20%EB%AA%A8%EC%A7%91%20%EA%B3%B5%EA%B3%A0%EB%AC%B8.pdf"
  },
  {
   "id": "kuk-type2-youth",
@@ -1972,7 +1973,7 @@
   "allow_business": "가능",
   "allow_student": "불가",
   "cost": "무료",
-  "money": "취업 활동 비용 및 취업 지원 서비스. 2026년 참여 장려 수당 2만원×5회(총 10만원)로 개편, 기존 훈련 참여 수당 폐지(2차 자료). 취업 활동 비용 정확한 금액은 공식 원문 미확인",
+  "money": "취업 활동 비용 및 취업 지원 서비스. 참여 수당 1회 기본 15만원(프로그램 참여에 따라 18만원 또는 20만원), 참여 장려 수당 월 2만원(최대 5회, 총 10만원). 예전 훈련 참여 지원 수당은 2026년에 없어져 2025년 신청자까지만 지급. 청년 빈 일자리 특화: 훈련 수료 후 해당 업종 취업·6개월 근속 시 훈련 참여 지원 수당(월 최대 20만원, 6개월)+취업 성공 수당 40만원 사후 지급",
   "money_monthly_max_manwon": null,
   "recruit": "상시(연중 신청)",
   "next_deadline": null,
@@ -2017,7 +2018,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "무료",
-  "money_short": "참여 장려 수당 2만원×5회"
+  "money_short": "참여 수당 기본 15만원",
+  "mode": "해당없음",
+  "mode_quote": "소득과 재산에 상관없이 청년 구직자가 고용센터에서 최대 1년간 상담·훈련·취업 알선을 받는 제도입니다.",
+  "mode_url": ""
  },
  {
   "id": "youth-challenge-support",
@@ -2091,7 +2095,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "이수 시 참여 수당 지급"
+  "money_short": "이수 시 참여 수당 지급",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "seoul-future-youth-job",
@@ -2167,7 +2174,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "월 2,533,290원 급여"
+  "money_short": "월 2,533,290원 급여",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "seoul-youth-allowance",
@@ -2241,7 +2251,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "월 50만원×최대 6개월"
+  "money_short": "월 50만원×최대 6개월",
+  "mode": "해당없음",
+  "mode_quote": "서울에 사는 미취업 청년에게 월 50만원을 최대 6개월 주고 멘토링·특강 같은 프로그램을 함께 제공합니다.",
+  "mode_url": ""
  },
  {
   "id": "kuk-type1",
@@ -2315,7 +2328,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "구직 촉진 수당 월 60만원"
+  "money_short": "구직 촉진 수당 월 60만원",
+  "mode": "해당없음",
+  "mode_quote": "소득이 낮은 구직자에게 취업 상담과 함께 월 60만원 구직 촉진 수당을 6개월간 주는 제도입니다.",
+  "mode_url": ""
  },
  {
   "id": "seoul-youth-rent",
@@ -2389,7 +2405,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "월세 월 최대 20만원"
+  "money_short": "월세 월 최대 20만원",
+  "mode": "해당없음",
+  "mode_quote": "서울에서 월세로 사는 무주택 청년에게 월 20만원을 최대 12개월 지원하는 제도입니다.",
+  "mode_url": ""
  },
  {
   "id": "codyssey-ai-allinone",
@@ -2422,7 +2441,7 @@
   "money_monthly_max_manwon": 100,
   "recruit": "연 1~2회 모집(2026년 2월·6월 선착순). 다음 기수 공고 미발표",
   "next_deadline": null,
-  "format": "서울 강남구 개포로 416 오프라인 캠퍼스(24시간 개방), 자기 주도 과제형으로 월 80시간 이상, 입학 연수 1개월+본과정 17개월",
+  "format": "웹 플랫폼으로 어디서나 학습하고 서울 강남구 개포로 416 교육장(24시간 개방)도 이용. 입학 연수 1개월은 오프라인, 본과정 17개월은 자기 주도 과제형으로 월 80시간 이상",
   "other_conditions": "대한민국 국적. 교육 기간 중 정부 지원 취·창업 프로그램에 참여 중이지 않아야 함. 4대 보험 가입자는 장학금 대상 제외. 공고에 사업자 제외 문구 없음(사업자의 장학금 수령 명시 문구도 없음)",
   "summary": "강의 없이 동료와 과제를 풀며 AI 도구 활용부터 AI 서비스 개발까지 최대 18개월 배우는 무료 과정입니다. 학습 기준을 채우면 매달 장학금 100만원을 받습니다.",
   "sources": [
@@ -2440,7 +2459,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "동료 학습으로 AI 활용부터 서비스 개발까지",
   "duration": {
    "kind": "fixed",
@@ -2463,7 +2482,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "장학금 매월 100만원"
+  "money_short": "장학금 매월 100만원",
+  "mode": "혼합",
+  "mode_quote": "온·오프라인 연계 개방형 학습 플랫폼",
+  "mode_url": "https://codyssey.kr/guide/recruitmentNotice"
  },
  {
   "id": "codyssey-ai-native",
@@ -2537,7 +2559,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "장학금 매월 100만원"
+  "money_short": "장학금 매월 100만원",
+  "mode": "오프라인",
+  "mode_quote": "- 24시간 개방 캠퍼스: 서울 강남구 개포로 416 교육장을 연중무휴 24시간 개방하여 오프라인 몰입형 학습 환경 제공",
+  "mode_url": "https://www.innovationacademy.kr/academy/board/read?boardManagementNo=1&boardNo=380&level=2&menuNo=15"
  },
  {
   "id": "swmaestro",
@@ -2569,7 +2594,7 @@
   "cost": "무료",
   "money": "예비 연수 2개월 월 30만원(세전), 본연수 6개월 월 100만원, IT 기기 구입비 300만원(1회), 자기 주도 학습비 50만원, 팀별 프로젝트 활동비 1,200만원(17기 공고 기준)",
   "money_monthly_max_manwon": 100,
-  "format": "선발(코딩 테스트·심화·대면 평가) 후 예비 연수 4~5월, 본연수 6~11월 오프라인(서울센터 마포구 등)",
+  "format": "선발(코딩 테스트·심화·대면 평가) 후 예비 연수 4~5월, 본연수 6~11월 서울센터(마포구 등) 오프라인, 멘토링은 온·오프라인 병행",
   "recruit": "매년 1~2월 모집(18기는 2027년 1월 공고 예상)",
   "next_deadline": null,
   "other_conditions": "17기 기준 2010.12.31 이전 출생. 본연수 기간 중 재직자·취업자·창업자·군 복무 중인 사람은 제외(예비 연수 기간엔 재직 중에도 지원 가능, 본연수 시작 전까지 조건 충족 필요). 매출 없는 개인 사업자가 '창업자'에 해당하는지는 원문에 정의 없음. 본연수 중 정부 취·창업 프로그램 참여(예정) 불가.",
@@ -2589,7 +2614,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "멘토링 받으며 AI·SW 팀 프로젝트와 창업 준비",
   "duration": {
    "kind": "fixed",
@@ -2612,7 +2637,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "본연수 월 100만원"
+  "money_short": "본연수 월 100만원",
+  "mode": "혼합",
+  "mode_quote": "멘토링은 온오프라인으로 운영되며, 온라인 멘토링의 경우 별도의 화상시스템이 제공됩니다.",
+  "mode_url": "https://www.swmaestro.ai/sw/bbs/B0000004/list.do?menuNo=200021"
  },
  {
   "id": "lg-aimers",
@@ -2686,7 +2714,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "본 교육은 온라인으로 총 2개월 동안 이뤄지며 “AI교육 (이론) + 해커톤 (실습)\" 으로 구성",
+  "mode_url": ""
  },
  {
   "id": "ict-innovation-square",
@@ -2718,7 +2749,7 @@
   "money": "없음(2023년 기준 자격증 취득 지원·NIPA 수료증)",
   "money_monthly_max_manwon": null,
   "format": "온라인반(예: 19:00~23:00) + 오프라인 저녁·주말반(서울 마포구 공덕)",
-  "recruit": "연중 기수별 모집(2026년 1기 4월, 2기 6월, 4기 8월 공지). 2023년 기준 개강 7일 전 마감",
+  "recruit": "연중 기수별 모집(2026년 1기 4월, 2기 6월, 4기 8월 공지, 3기 공지는 게시판에 없음). 2023년 기준 개강 7일 전 마감",
   "next_deadline": null,
   "other_conditions": "2026년 기수별 교육 대상·기간·마감일은 공지 포스터 이미지에만 있음. 나이 제한 문구 확인 안 됨.",
   "summary": "AI·블록체인·데이터 같은 디지털 신기술을 이론·실습·프로젝트로 배우는 정부 지원 무료 교육입니다. 온라인반과 저녁·주말 오프라인반이 기수별로 열립니다.",
@@ -2756,7 +2787,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "온라인반과 저녁·주말 오프라인반이 기수별로 열립니다.",
+  "mode_url": ""
  },
  {
   "id": "woowacourse",
@@ -2830,7 +2864,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "5주 온라인 미션과 최종 코딩 테스트로 뽑은 뒤 약 10개월 동안 웹 백엔드·프런트엔드·안드로이드 개발을 오프라인으로 가르치는 과정입니다.",
+  "mode_url": ""
  },
  {
   "id": "kdt-bootcamp",
@@ -2864,7 +2901,7 @@
   "format": "대부분 평일 주간 실시간 온라인, 4~6개월",
   "recruit": "상시(과정별 수시 개강)",
   "next_deadline": null,
-  "other_conditions": "국민 내일배움카드 발급 필요(카드 운영 규정상 개업 1년 미만 사업자 등 발급 제외 대상 있음). 훈련 장려금은 사업자 등록증 보유자 제외. 내일배움캠프 예시는 만 75세 미만, 월~금 12시간 참여·타 교육 및 직장 병행 불가. 중도 포기 시 K-디지털 트레이닝 재참여 불가. 특별 훈련 수당은 일부 과정만.",
+  "other_conditions": "국민 내일배움카드 발급 필요(카드 운영 규정상 개업 1년 미만 사업자 등 발급 제외 대상 있음). 훈련 장려금은 사업자 등록증 보유자 제외(자영업자 고용 보험 피보험자는 예외). 내일배움캠프 예시는 만 75세 미만, 월~금 12시간 참여·타 교육 및 직장 병행 불가. 중도 포기 시 K-디지털 트레이닝 재참여 불가. 특별 훈련 수당은 일부 과정만.",
   "summary": "국민 내일배움카드로 듣는 4~6개월짜리 IT·AI 부트캠프로, 프로젝트와 취업 지원이 포함됩니다. 출석률 80% 이상이면 조건에 따라 훈련 장려금과 일부 과정 특별 훈련 수당을 받습니다.",
   "sources": [
    {
@@ -2881,7 +2918,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "IT·AI 실무 프로젝트형 부트캠프",
   "duration": {
    "kind": "varies",
@@ -2904,7 +2941,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 월 최대 20만원"
+  "money_short": "훈련 장려금 월 최대 20만원",
+  "mode": "과정마다 다름",
+  "mode_quote": "네, 고려하고 계신 국비지원 부트캠프(K-디지털 트레이닝 부트캠프)의 경우엔 거주 지역과 상관없이 수강할 수 있어요. 모든 과정이 실시간 온라인으로 진행되기 때문에 인터넷 환경만 갖춰져 있다면 어디서든 참여할 수 있어요. 단, 심화과정(ex- AI심화 NLP)의 경우엔 오프라인 과정 입니다.",
+  "mode_url": "https://bootcamp.likelion.net/"
  },
  {
   "id": "ssafy",
@@ -2978,7 +3018,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "교육 지원금 최대 월 140만원"
+  "money_short": "교육 지원금 최대 월 140만원",
+  "mode": "오프라인",
+  "mode_quote": "오프라인 캠퍼스(서울·대전·광주·구미·부울경), 1년간 하루 8시간(총 1,725시간)",
+  "mode_url": ""
  },
  {
   "id": "posco-ai-bigdata",
@@ -3009,11 +3052,11 @@
   "cost": "무료(합숙 중 숙식 제공). 단 국민 내일배움카드 필수이고 2026년 카드 규정 개정으로 일부 참여자는 자기 부담금 발생 가능",
   "money": "교육 수당 월 100만원",
   "money_monthly_max_manwon": 100,
-  "format": "2주 온라인 + 10주 포항 합숙(주말 일부 교육)",
+  "format": "10주 포항 합숙(주말 일부 교육)",
   "recruit": "연 4회 기수별 모집(2026년 32~35기). 36기는 2027년 1월 모집 예상",
   "next_deadline": null,
   "other_conditions": "합숙 교육 전체 일정 합숙 가능해야 함. 전체 교육 기간 내 사업/사업장 소속 근로자 제외. 입과 시 국민 내일배움카드(K-디지털 트레이닝 수강 가능) 발급 필수. 타 교육 수강 중이면 지원 불가. 재학생은 2년 이내 졸업 예정자만. 현재 소개 페이지에 나이 제한 문구 없음(옛 페이지는 만 34세 이하).",
-  "summary": "2주 온라인과 10주 포항 합숙으로 AI·빅 데이터를 배우는 K-디지털 트레이닝 과정입니다. 합숙 중 숙식이 제공되고 교육 수당 월 100만원을 받습니다.",
+  "summary": "10주 포항 합숙으로 AI·빅 데이터를 배우는 K-디지털 트레이닝 과정입니다. 합숙 중 숙식이 제공되고 교육 수당 월 100만원을 받습니다.",
   "sources": [
    {
     "url": "https://youth.posco.com/posco/edu/index.php?mod=academy&pag=aca01",
@@ -3043,7 +3086,7 @@
    "days_max": 70,
    "hours_min": null,
    "hours_max": null,
-   "quote": "35기 ‘26.10.12 ~ ’26.12.18 10주",
+   "quote": "연간 4차수 운영 10주 합숙교육(※ 주말에도 일부 교육이 진행될 수 있음)",
    "source": "official_page",
    "source_url": "https://youth.posco.com/posco/edu/index.php?mod=academy&pag=aca02",
    "band": "중기",
@@ -3053,7 +3096,10 @@
   },
   "schedule": "혼합",
   "cost_type": "일부 자부담",
-  "money_short": "교육 수당 월 100만원"
+  "money_short": "교육 수당 월 100만원",
+  "mode": "오프라인",
+  "mode_quote": "10주 포항 합숙(주말 일부 교육)",
+  "mode_url": ""
  },
  {
   "id": "jungbu-broadcast-video-night",
@@ -3128,7 +3174,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자 훈련 수당 월 25만원"
+  "money_short": "우선 선발자 훈련 수당 월 25만원",
+  "mode": "오프라인",
+  "mode_quote": "오프라인 야간 6개월(서울 용산구), 평일 저녁",
+  "mode_url": ""
  },
  {
   "id": "kcmf-seoul-courses",
@@ -3199,7 +3248,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "(오프라인)(10월 상설) 어른을 위한 AI 동화 제작",
+  "mode_url": ""
  },
  {
   "id": "sesac-ai-video-courses",
@@ -3235,7 +3287,7 @@
   "recruit": "캠퍼스별 수시 모집(2026년 영상 과정은 5~8월에 모집). 2026-09-15 기준 모집 중인 영상·콘텐츠 과정 없음",
   "next_deadline": null,
   "other_conditions": "서울시 청년 구직자, 수료 후 취·창업 목표자. 서울 외 거주자는 정원 10% 이내 조건부. 오프라인 과정 2회 참여 후 1년간 참여 제한. 여러 과정에 합격해도 1개만 수강. 내일배움카드 불필요",
-  "summary": "서울시가 운영하는 약 3개월 주간 부트캠프로, 생성형 AI 숏폼 영상·AI 영상 디렉터 같은 과정을 무료로 배운다. 합격 후 예치금을 내지만 출석률 80% 이상 수료하면 돌려받는다.",
+  "summary": "서울시가 운영하는 약 3개월 주간 부트캠프로, 생성형 AI 숏폼 영상·AI 영상 디렉터 같은 과정을 무료로 배웁니다. 합격 후 예치금을 내지만 출석률 80% 이상 수료하면 돌려받습니다.",
   "sources": [
    {
     "url": "https://sesac.seoul.kr/sesac/faq/faqList.do",
@@ -3274,7 +3326,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "오프라인 주간 평일 09:50~18:00, 약 3개월(420~440시간), 캠퍼스별",
+  "mode_url": ""
  },
  {
   "id": "sba-creativeforce",
@@ -3310,7 +3365,7 @@
   "recruit": "2025년은 상반기 5~6월·하반기 8월경 모집(연 40팀). 2026년 신규 모집 공고는 아직 없음",
   "next_deadline": null,
   "other_conditions": "서울에서 활동 가능하고, 본인 채널에 영상 콘텐츠 10개 이상 게시한 1인 미디어 창작자(2025 기준)",
-  "summary": "선정된 1인 크리에이터에게 상암 스튜디오·장비를 무료로 빌려주고 교육·멘토링과 브랜디드 콘텐츠 제작 기회를 준다. 2026년 신규 모집 공고는 아직 나오지 않았다.",
+  "summary": "선정된 1인 크리에이터에게 상암 스튜디오·장비를 무료로 빌려주고 교육·멘토링과 브랜디드 콘텐츠 제작 기회를 줍니다. 2026년 신규 모집 공고는 아직 나오지 않았습니다.",
   "sources": [
    {
     "url": "https://news.seoul.go.kr/economy/archives/567024",
@@ -3349,7 +3404,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "캠페인 선정 시 제작비"
+  "money_short": "캠페인 선정 시 제작비",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "rapa-creator-new-job",
@@ -3384,7 +3442,7 @@
   "recruit": "매년 4~5월 모집(2026년은 4/21~5/18 마감, 25명). 2027년 모집은 미발표",
   "next_deadline": null,
   "other_conditions": "전체 사업 기간 참여 가능하고 교육 후 관련 분야 취업 의사가 있는 자. 대학생은 졸업 학기생에 한함. 전년도 참가자는 중복되지 않는 산출물로 증빙",
-  "summary": "크리에이터 미디어 기업에 매칭돼 3개월 현장 실습을 받고 취업 연계까지 받는 사업이다. 실습 기간에 세전 월 220만원의 교육 지원금이 나온다.",
+  "summary": "크리에이터 미디어 기업에 매칭돼 3개월 현장 실습을 받고 취업 연계까지 받는 사업입니다. 실습 기간에 세전 월 220만원의 교육 지원금이 나옵니다.",
   "sources": [
    {
     "url": "https://www.inu.ac.kr/bbs/shinbang/327/423268/artclView",
@@ -3423,7 +3481,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "교육 지원금 월 220만원"
+  "money_short": "교육 지원금 월 220만원",
+  "mode": "오프라인",
+  "mode_quote": "오프라인 기업 현장 실습 3개월(7~9월), 이후 10~12월 취업 연계. 근무지는 참여 기업 소재지",
+  "mode_url": ""
  },
  {
   "id": "rapa-miraeplus-jobseeker",
@@ -3458,7 +3519,7 @@
   "recruit": "매년 4~5월 모집(2026년은 4/20~5/15 마감). 2027년 모집은 미발표",
   "next_deadline": null,
   "other_conditions": "취업 의사가 있는 구직자. 대한민국 국적. 군필자는 복무 기간만큼 나이 연장(최고 39세). 무단 불참·중도 이탈 시 향후 참여 제한 가능",
-  "summary": "방송·영상·미디어 분야 구직 청년에게 직무 컨설팅, 온라인 직무 교육, 현직자 멘토링, 일 경험을 무료로 제공한다. 수료하면 기프티콘과 온라인 강의 이용권을 준다.",
+  "summary": "방송·영상·미디어 분야 구직 청년에게 직무 컨설팅, 온라인 직무 교육, 현직자 멘토링, 일 경험을 무료로 제공합니다. 수료하면 기프티콘과 온라인 강의 이용권을 줍니다.",
   "sources": [
    {
     "url": "https://www.miraeplus.rapa.or.kr/manage_notice/1968",
@@ -3497,7 +3558,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "NCS 직무 역량 검사·1:1 컨설팅, 온라인 직무 교육 16시간, 현직자 멘토링 3회, 일 경험 등 취업 연계",
+  "mode_url": ""
  },
  {
   "id": "kocca-educoca-online",
@@ -3532,7 +3596,7 @@
   "recruit": "상시",
   "next_deadline": null,
   "other_conditions": "14세 미만은 보호자 인증 필요",
-  "summary": "방송·영상·VR·게임·웹툰 같은 콘텐츠 제작 강의를 회원 가입만 하면 온라인으로 무료로 들을 수 있다. 정규 과정은 30일 안에 진도 60%를 채우면 수료증이 나온다.",
+  "summary": "방송·영상·VR·게임·웹툰 같은 콘텐츠 제작 강의를 회원 가입만 하면 온라인으로 무료로 들을 수 있습니다. 정규 과정은 30일 안에 진도 60%를 채우면 수료증이 나옵니다.",
   "sources": [
    {
     "url": "https://edu.kocca.kr/testbed/main/contents.do?menuNo=700133",
@@ -3567,7 +3631,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "콘텐츠아카데미 온라인 교육은 모두 무료로 제공되고 있습니다.",
+  "mode_url": ""
  },
  {
   "id": "kocca-contents-plus-lecture",
@@ -3603,7 +3670,7 @@
   "recruit": "2026-09-14~10-05 신청, 좌석 한정, 참석 확정자는 문자 안내",
   "next_deadline": "2026-10-05",
   "other_conditions": "신청 후 참석 확정자에 한해 참여 가능",
-  "summary": "방송사 국장·PD가 방송 제작 현장의 AI 협업 사례와 AI 제작 방식을 소개하는 2시간 오프라인 특강이다. 좌석이 한정돼 신청 후 확정 문자를 받은 사람만 참석할 수 있다.",
+  "summary": "방송사 국장·PD가 방송 제작 현장의 AI 협업 사례와 AI 제작 방식을 소개하는 2시간 오프라인 특강입니다. 좌석이 한정돼 신청 후 확정 문자를 받은 사람만 참석할 수 있습니다.",
   "sources": [
    {
     "url": "https://edu.kocca.kr/edu/bbs/B0000048/view.do?nttId=76084&delCode=0&menuNo=500205&pageIndex=1",
@@ -3642,7 +3709,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "오프라인 1회 2시간, 2026-10-23(금) 14:00~16:00, 콘텐츠인재캠퍼스(홍릉, 서울 동대문구)",
+  "mode_url": ""
  },
  {
   "id": "seoul-film-center-youth",
@@ -3678,7 +3748,7 @@
   "recruit": "강좌별 수시 모집. AI 포트폴리오 과정 2026년 회차(6~7월 모집)는 마감, 다음 회차 미공고. AI·VP 특강은 2026-09-03~09-20 선착순 모집",
   "next_deadline": "2026-09-20",
   "other_conditions": "확정 후 무단 불참 시 향후 교육 신청 제한 가능",
-  "summary": "서울영화센터가 예비 영화인에게 생성형 AI 영상 포트폴리오 과정과 AI·VP 제작 특강 같은 강좌를 무료로 연다. 영화·영상 교육 수료증, 작품, 재학 증명서 같은 예비 영화인 증빙이 필요하다.",
+  "summary": "서울영화센터가 예비 영화인에게 생성형 AI 영상 포트폴리오 과정과 AI·VP 제작 특강 같은 강좌를 무료로 엽니다. 영화·영상 교육 수료증, 작품, 재학 증명서 같은 예비 영화인 증빙이 필요합니다.",
   "sources": [
    {
     "url": "https://www.seoulfilmcenter.com/edu/view.do?key=2508270013&eduSn=2606110001",
@@ -3717,7 +3787,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "오프라인 단기. AI 포트폴리오 과정은 금요일 3회(13:00~18:00), AI·VP 특강은 2026-09-29(화) 19:00~21:00",
+  "mode_url": ""
  },
  {
   "id": "seoul-youth-ai-ladder",
@@ -3753,7 +3826,7 @@
   "recruit": "2026년 10월 시범 사업 시작 예정, 청년몽땅정보통에서 사전 신청(시작일 미공고)",
   "next_deadline": null,
   "other_conditions": "공식 공고 전. 나이는 8월 발표 기준 만 19~29세(7월 보도는 19~39세). 서울 거주 기준이 주민 등록인지 생활 인구 포함인지 미확정",
-  "summary": "서울 청년에게 챗GPT·제미나이 같은 유료 생성형 AI 이용권을 1년간 주고 교육·프로젝트·인턴십까지 연결하는 사업이다. 2026년 10월 시범 사업 예정이며 신청 공고는 아직 나오지 않았다.",
+  "summary": "서울 청년에게 챗GPT·제미나이 같은 유료 생성형 AI 이용권을 1년간 주고 교육·프로젝트·인턴십까지 연결하는 사업입니다. 2026년 10월 시범 사업 예정이며 신청 공고는 아직 나오지 않았습니다.",
   "sources": [
    {
     "url": "https://www.newspim.com/news/view/20260818001025",
@@ -3792,7 +3865,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "생성형 AI 이용권 1년"
+  "money_short": "생성형 AI 이용권 1년",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "sit-youth-tile-dongbu",
@@ -3827,7 +3903,7 @@
   "recruit": "2026년 7/6~9/23 모집(청년 특화 과정은 2026 하반기 신설). 2027년 운영 미발표",
   "next_deadline": "2026-09-23",
   "other_conditions": "서울시 주민 등록(1986.7.7.~2011.7.6. 출생). 훈련 중 서울 주민 등록이 없으면 입학 취소. 연간 훈련 일수 2할 이상 결석 또는 계속 5일 이상 무단결석 시 제적. 면접 9/28, 발표 10/1",
-  "summary": "타일 시공(떠붙임·압착·본드)과 시트 방수를 배우고 타일·방수 기능사 취득을 준비하는 120시간 무료 단기 과정이다. 압착 시멘트 포대와 타일을 나르고 쪼그려 앉는 작업이 많다.",
+  "summary": "타일 시공(떠붙임·압착·본드)과 시트 방수를 배우고 타일·방수 기능사 취득을 준비하는 120시간 무료 단기 과정입니다. 압착 시멘트 포대와 타일을 나르고 쪼그려 앉는 작업이 많습니다.",
   "sources": [
    {
     "url": "https://news.seoul.go.kr/economy/archives/573604",
@@ -3866,7 +3942,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자 훈련 수당 월 25만원"
+  "money_short": "우선 선발자 훈련 수당 월 25만원",
+  "mode": "오프라인",
+  "mode_quote": "장소: 서울특별시 기술교육원 동부캠퍼스(고덕로 183)",
+  "mode_url": "https://dbedu.or.kr/user/bbs/selectBbs.do?board_id=notice (POST board_no=7039, 2026 하반기 무료 교육생 모집)"
  },
  {
   "id": "sit-youth-forklift-dongbu",
@@ -3901,7 +3980,7 @@
   "recruit": "2026년 모집 7/6~8/21(마감), 교육 9/2~9/23. 2027년 운영 미발표(한다면 7월경 모집 예상)",
   "next_deadline": null,
   "other_conditions": "서울시 주민 등록(1986.7.7.~2011.7.6. 출생). 청년 특화 과정은 2026 하반기 신설",
-  "summary": "지게차 운전 기능사 필기·실기와 적재·하역 작업을 배우는 70시간 무료 단기 과정이다. 앉아서 조종하는 일이라 드는 무게는 적지만, 실제 현장은 상하차를 같이 하는 경우가 많다.",
+  "summary": "지게차 운전 기능사 필기·실기와 적재·하역 작업을 배우는 70시간 무료 단기 과정입니다. 앉아서 조종하는 일이라 드는 무게는 적지만, 실제 현장은 상하차를 같이 하는 경우가 많습니다.",
   "sources": [
    {
     "url": "https://news.seoul.go.kr/economy/archives/573604",
@@ -3940,7 +4019,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자 훈련 수당 월 25만원"
+  "money_short": "우선 선발자 훈련 수당 월 25만원",
+  "mode": "오프라인",
+  "mode_quote": "장소: 서울특별시 기술교육원 동부캠퍼스(고덕로 183)",
+  "mode_url": "https://dbedu.or.kr/user/bbs/selectBbs.do?board_id=notice (POST board_no=7039, 2026 하반기 무료 교육생 모집)"
  },
  {
   "id": "sit-youth-aircon-jungbu",
@@ -3975,7 +4057,7 @@
   "recruit": "2회차 모집 2026-08-24~10-13. 2027년 운영 미발표",
   "next_deadline": "2026-10-13",
   "other_conditions": "서울시 주민 등록(1986.7.7.~2011.7.6. 출생). 정원 15명 미달 시 청년 외 선발 가능. 연간 훈련 일수 2할 이상 결석 시 제적",
-  "summary": "시스템 에어컨 기초 이론·수리 실습·전기 기초를 배우는 140시간 무료 청년 단기 과정이다. 천장형 실내기 작업은 사다리 위에서 팔과 고개를 드는 자세가 많다.",
+  "summary": "시스템 에어컨 기초 이론·수리 실습·전기 기초를 배우는 140시간 무료 청년 단기 과정입니다. 천장형 실내기 작업은 사다리 위에서 팔과 고개를 드는 자세가 많습니다.",
   "sources": [
    {
     "url": "https://news.seoul.go.kr/economy/archives/573604",
@@ -4014,7 +4096,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자만 훈련 수당"
+  "money_short": "우선 선발자만 훈련 수당",
+  "mode": "오프라인",
+  "mode_quote": "중부 | 청년 시스템에어컨 유지관리(2회차) | 15 | '26.8.24.~10.13. | '26.10.19.~11.13. | 월~금 9:00~16:30(140시간)",
+  "mode_url": ""
  },
  {
   "id": "sit-youth-wallpaper-bukbu",
@@ -4049,7 +4134,7 @@
   "recruit": "2026년 모집 7/6~9/18(마감). 2027년 운영 미발표",
   "next_deadline": "2026-09-18",
   "other_conditions": "서울시 주민 등록. 계속 5일 이상 무단결석 또는 연간 훈련 일수 2할 이상 결석 시 제적. 지각·조퇴·외출 3회는 결석 1일로 간주",
-  "summary": "도배 시공 실무를 배우는 200시간 무료 청년 단기 과정이다. 도배지는 가볍지만 천장 도배는 발판 위에서 팔을 계속 드는 자세가 필요하다.",
+  "summary": "도배 시공 실무를 배우는 200시간 무료 청년 단기 과정입니다. 도배지는 가볍지만 천장 도배는 발판 위에서 팔을 계속 드는 자세가 필요합니다.",
   "sources": [
    {
     "url": "https://news.seoul.go.kr/economy/archives/573604",
@@ -4084,7 +4169,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자만 훈련 수당"
+  "money_short": "우선 선발자만 훈련 수당",
+  "mode": "오프라인",
+  "mode_quote": "북부 | 청년 도배사 | 15 | '26.7.6.~9.18. | '26.10.1.~11.12. | 월~금 9:00~16:30(200시간)",
+  "mode_url": ""
  },
  {
   "id": "sit-youth-fire-mech-bukbu",
@@ -4158,7 +4246,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자만 훈련 수당"
+  "money_short": "우선 선발자만 훈련 수당",
+  "mode": "오프라인",
+  "mode_quote": "주간 월~금 09:00~16:30, 340시간, 서울 북부캠퍼스 집체 교육, 정원 20명",
+  "mode_url": ""
  },
  {
   "id": "sit-youth-welding-bukbu",
@@ -4232,7 +4323,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "야간 화·목 18:30~21:40, 100시간, 서울 북부캠퍼스, 정원 15명",
+  "mode_url": ""
  },
  {
   "id": "sit-regular-facility-2027",
@@ -4265,9 +4359,9 @@
   "money_monthly_max_manwon": null,
   "recruit": "매년 두 번 모집: 상반기(3월 개강) 1월~2월 중순, 하반기(9월 개강) 7월~8월 중순. 2027 상반기 공고는 아직 없음",
   "next_deadline": null,
-  "format": "주간 5개월 09:00~16:30 / 야간 6개월 18:30~21:40(또는 22:10), 서울 캠퍼스 집체 교육",
+  "format": "주간 10개월(상반기만)·5개월 09:00~16:30 / 야간 6개월 18:30~21:40(또는 22:10), 서울 캠퍼스 집체 교육",
   "other_conditions": "서울시 주민 등록 필수(위장 전입·훈련 중 전출 시 입학 취소). 재입학 제한: 5개월 이상 과정 입학자는 3년간 재입학 1회, 350시간 이하 단기 과정 입학자는 3년간 2회. 사업자·고용 보험 가입자 지원 불가 조항은 별도의 지역 산업 맞춤형 과정에만 해당",
-  "summary": "서울 시민이면 누구나 전기·설비 보전·소방·용접·건물 보수 등을 5~6개월 동안 무료로 배우는 정규 직업 교육입니다. 낮반과 저녁반이 있고 교재비·실습비·실기 검정료 1회도 지원됩니다.",
+  "summary": "서울 시민이면 누구나 전기·설비 보전·소방·용접·건물 보수 등을 5~10개월 동안 무료로 배우는 정규 직업 교육입니다. 낮반과 저녁반이 있고 교재비·실습비·실기 검정료 1회도 지원됩니다.",
   "sources": [
    {
     "url": "https://www.sitedu.or.kr/apply/seoul.do",
@@ -4296,7 +4390,7 @@
    "days_max": 300,
    "hours_min": null,
    "hours_max": null,
-   "quote": "교육기간 구분 상반기 하반기 주간 10개월 3월 ~ 12월 주간 5개월 3월 ~ 7월 9월 ~ 1월(익년) 야간 6개월 3월 ~ 8월 9월 ~ 2월(익년)",
+   "quote": "주간 10개월 3월 ~ 12월 주간 5개월 3월 ~ 7월 9월 ~ 1월(익년) 야간 6개월 3월 ~ 8월 9월 ~ 2월(익년)",
    "source": "official_page",
    "source_url": "https://www.sitedu.or.kr/apply/seoul.do",
    "band": "중기~장기",
@@ -4306,7 +4400,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": "우선 선발자만 훈련 수당"
+  "money_short": "우선 선발자만 훈련 수당",
+  "mode": "오프라인",
+  "mode_quote": "주간 5개월 09:00~16:30 / 야간 6개월 18:30~21:40(또는 22:10), 서울 캠퍼스 집체 교육",
+  "mode_url": ""
  },
  {
   "id": "polytech-gangseo-specialist-2027",
@@ -4383,7 +4480,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 수당·교통비 지급"
+  "money_short": "훈련 수당·교통비 지급",
+  "mode": "오프라인",
+  "mode_quote": "주간 월~금 09:00~17:40, 1년, 서울 강서구 캠퍼스 집체 교육, 면접 100% 선발",
+  "mode_url": ""
  },
  {
   "id": "cwma-skill-upgrade-training",
@@ -4458,7 +4558,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": "훈련 장려금 1일 16,000원"
+  "money_short": "훈련 장려금 1일 16,000원",
+  "mode": "오프라인",
+  "mode_quote": "전국 선정 훈련 기관 집체 교육(서울 소재 기관 없음, 수도권은 경기 광주·안산·수원 등)",
+  "mode_url": ""
  },
  {
   "id": "construction-basic-safety-edu",
@@ -4532,7 +4635,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "건설업 기초안전·보건교육은 인력·시설 및 장비를 갖춘 교육기관에서 집체교육으로 실시하는 것을 원칙으로 하고 있습니다.",
+  "mode_url": "https://www.moel.go.kr/local/seoulseobu/common/downloadFile.do?file_seq=21171284284&bbs_seq=1339566162660&bbs_id=LOCAL1"
  },
  {
   "id": "keca-electrical-new-workforce",
@@ -4607,7 +4713,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 매월 지급"
+  "money_short": "훈련 지원금 매월 지급",
+  "mode": "오프라인",
+  "mode_quote": "교육기간 5~6개월(700시간) 집체교육",
+  "mode_url": ""
  },
  {
   "id": "kmooc",
@@ -4682,7 +4791,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "누구나, 어디서나, 원하는 강의를 무료로 들을 수 있는 온라인 공개강좌 서비스",
+  "mode_url": ""
  },
  {
   "id": "step-free-elearning",
@@ -4757,7 +4869,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "스마트 직업훈련 플랫폼(STEP)에서 운영하는 다양한 분야의 온라인 교육과정을 무료로 수강할 수 있습니다.",
+  "mode_url": ""
  },
  {
   "id": "ai-digital-baeumteo",
@@ -4831,7 +4946,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "각 지역에서 운영되고 있는 상설배움터에서 대면교육을 받으시거나, 온라인 교육(비대면 영상회의 솔루션 사용)을 신청하셔서 집에서 교육을 들으실 수 있습니다.",
+  "mode_url": "https://www.xn--2z1bw8k1pjz5ccumkb.kr/cmm/spt/faq.do"
  },
  {
   "id": "seoul-sll-cert-online",
@@ -4907,7 +5025,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온라인, 수강 신청일부터 90일",
+  "mode_url": ""
  },
  {
   "id": "knou-modu-ai",
@@ -4942,7 +5063,7 @@
   "next_deadline": null,
   "format": "온라인(U-KNOU캠퍼스)·방송대학TV(OUN) 시청. 기초 과정 AI4A 6강(강당 50분 내외)",
   "other_conditions": "활용 과정 AI4B·확장 과정 AI4X는 제작 중. 수료증 발급 여부와 회원 가입 필요 여부는 원문 미확인",
-  "summary": "교육부와 방송대가 함께 만든 AI 기초 강의(6강)를 누구나 온라인이나 방송대학TV로 무료로 들을 수 있다. 신청 기간 없이 언제든 수강한다.",
+  "summary": "교육부와 방송대가 함께 만든 AI 기초 강의(6강)를 누구나 온라인이나 방송대학TV로 무료로 들을 수 있습니다. 신청 기간 없이 언제든 수강합니다.",
   "sources": [
    {
     "url": "https://www.knou.ac.kr/knou/14297/subview.do",
@@ -4981,7 +5102,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "방송대 온라인 학습 플랫폼 유노캠퍼스 및 방송대학TV(OUN)를 통해 전 국민 누구나 상시 수강할 수 있다.",
+  "mode_url": ""
  },
  {
   "id": "boostcourse",
@@ -5016,7 +5140,7 @@
   "next_deadline": null,
   "format": "온라인 자율 수강(일부 강좌는 수강 기간 있음)",
   "other_conditions": "회원 가입 필요. 연계 부트캠프 '부스트캠프'(웹·모바일, AI Tech)는 2026년 미운영. 현재 열린 강좌 전체 목록은 원문 미확인",
-  "summary": "네이버 커넥트재단이 운영하는 비영리 온라인 강좌 사이트로, 파이썬 등 AI 엔지니어 입문 강좌를 무료로 들을 수 있다. 선발 없이 회원 가입만 하면 누구나 수강한다.",
+  "summary": "네이버 커넥트재단이 운영하는 비영리 온라인 강좌 사이트로, 파이썬 등 AI 엔지니어 입문 강좌를 무료로 들을 수 있습니다. 선발 없이 회원 가입만 하면 누구나 수강합니다.",
   "sources": [
    {
     "url": "https://www.boostcourse.org/",
@@ -5055,7 +5179,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "부스트코스(boostcourse)는 모두 함께 배우고 성장하는 비영리 SW 온라인 플랫폼입니다.",
+  "mode_url": ""
  },
  {
   "id": "lifelong-voucher-ai-digital",
@@ -5090,7 +5217,7 @@
   "next_deadline": null,
   "format": "선정 후 등록된 사용 기관(온라인 포함)의 강좌를 골라 수강",
   "other_conditions": "주민 등록상 서울 거주. 일반형 19세 이상, AI·디지털형 30세 이상(2026년 기준 1996.12.31 이전 출생)이며 AI·디지털 강좌 전용. 전산 추첨 선정(2026 2차 경쟁률 일반 37.5:1, AI·디지털 25.2:1). 같은 해 서울·자치구·타 지역 평생 교육 이용권 선정자는 중복 불가. 자격증 응시·발급료, 검정료 결제 불가. 공고문에 재직·재학·사업자 조항 없음",
-  "summary": "서울에 사는 성인이 추첨으로 뽑히면 강좌 수강료·교재비로 쓸 수 있는 35만원 포인트를 카드로 받는다. 일반형(19세 이상)과 AI·디지털형(30세 이상)이 있고 매년 봄·여름에 모집한다.",
+  "summary": "서울에 사는 성인이 추첨으로 뽑히면 강좌 수강료·교재비로 쓸 수 있는 35만원 포인트를 카드로 받습니다. 일반형(19세 이상)과 AI·디지털형(30세 이상)이 있고 매년 봄·여름에 모집합니다.",
   "sources": [
    {
     "url": "https://www.lllcard.kr/reg/seoul/cop/bbs/selectBoardArticle.do?nttId=26506&menuNo=45100000&bbsId=BBSMSTR_000000000141",
@@ -5129,7 +5256,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "수강료 포인트 35만원"
+  "money_short": "수강료 포인트 35만원",
+  "mode": "과정마다 다름",
+  "mode_quote": "평생교육이용권 사용기관으로 등록된 기관(온/오프라인)에서 카드(NH농협 채움카드)를 결제하여 사용 가능",
+  "mode_url": "https://www.lllcard.kr/reg/seoul/cop/bbs/selectBoardArticle.do?nttId=26506&menuNo=45100000&bbsId=BBSMSTR_000000000141"
  },
  {
   "id": "hope-return-job-transition",
@@ -5165,7 +5295,7 @@
   "next_deadline": "2026-11-30",
   "format": "기초: 지식 배움터 온라인 e러닝 10시간. 심화: 대면 2~3주·30시간 이상(교육 기관별 일정, 회차당 최대 20명)",
   "other_conditions": "사업 공고일 기준 폐업(예정) 소상공인으로, 사업 운영 기간 60일이 지난 사업체 대표만 신청. 폐업 예정자는 교육·참여 수당만 가능하고, 전직 장려 수당·연계 수당은 폐업 신고를 해야 받음(본인 명의 모든 사업자 대상). 수당 지급 전 재창업·업종 전환하면 제외. 재직자 참여 가능 여부는 원문에 명확한 조항 없음(심화 수료 전 이미 취업한 경우 전직 장려 수당 제외)",
-  "summary": "폐업했거나 폐업을 앞둔 소상공인이 온라인 기초 교육과 대면 심화 교육을 들으며 취업을 준비하는 과정이다. 심화 수료 시 35만원을 받고, 폐업 신고 등 조건을 채우면 전직 장려 수당 최대 100만원과 연계 수당을 더 받는다.",
+  "summary": "폐업했거나 폐업을 앞둔 소상공인이 온라인 기초 교육과 대면 심화 교육을 들으며 취업을 준비하는 과정입니다. 심화 수료 시 35만원을 받고, 폐업 신고 등 조건을 채우면 전직 장려 수당 최대 100만원과 연계 수당을 더 받습니다.",
   "sources": [
    {
     "url": "https://grant-documents.thevc.kr/287697_(%EB%B6%99%EC%9E%841)+%E3%80%8C2026%EB%85%84+%ED%9D%AC%EB%A7%9D%EB%A6%AC%ED%84%B4%ED%8C%A8%ED%82%A4%EC%A7%80+%ED%8A%B9%ED%99%94%EC%B7%A8%EC%97%85%EC%A7%80%EC%9B%90%E3%80%8D+%EC%86%8C%EC%83%81%EA%B3%B5%EC%9D%B8_%EB%AA%A8%EC%A7%91%EA%B3%B5%EA%B3%A0.pdf",
@@ -5204,7 +5334,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": "심화 수료 시 수당 35만원"
+  "money_short": "심화 수료 시 수당 35만원",
+  "mode": "혼합",
+  "mode_quote": "기초: 지식 배움터 온라인 e러닝 10시간. 심화: 대면 2~3주·30시간 이상(교육 기관별 일정, 회차당 최대 20명)",
+  "mode_url": ""
  },
  {
   "id": "sbiz-visit-digital-1on1",
@@ -5240,7 +5373,7 @@
   "next_deadline": "2026-11-30",
   "format": "선정 후 전화 사전 진단, 멘토가 사업장을 찾아가 2시간×2회(총 4시간) 1:1 교육. 날짜는 멘토 매칭 뒤 연락",
   "other_conditions": "신청일 현재 정상 영업 중인 소상공인만(사업자 등록이 없거나 휴업·폐업이면 제한·취소). 우선 지원: 희망 플랫폼에 입점하지 않은 신규 진출자로 만 50세 이상, 1인 사업장 등 요건 중 하나 이상 해당. 대표자당 같은 해 1회. 2024~25 DT 수혜자 제외. 전화 3회 이상 불응 시 선정 취소",
-  "summary": "영업 중인 소상공인의 사업장에 멘토가 찾아가 스마트스토어·톡스토어·인스타그램 등 플랫폼 1개의 입점과 활용법을 1:1로 무료로 가르친다. 2시간씩 2번, 총 4시간이다.",
+  "summary": "영업 중인 소상공인의 사업장에 멘토가 찾아가 스마트스토어·톡스토어·인스타그램 등 플랫폼 1개의 입점과 활용법을 1:1로 무료로 가르칩니다. 2시간씩 2번, 총 4시간입니다.",
   "sources": [
    {
     "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/view.do?pblancId=PBLN_000000000122273",
@@ -5279,7 +5412,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육 멘토가 선정자 사업장을 방문하여 2시간씩 총 2회 방문 멘토링 실시 * 총 4시간 방문교육을 지원하며 전액 무료로 진행",
+  "mode_url": ""
  },
  {
   "id": "sbiz-field-ai-edu-seoul",
@@ -5315,7 +5451,7 @@
   "next_deadline": "2026-10-27",
   "format": "서울 교육장 오프라인. 4시간 단발 과정 또는 20시간 과정(구글클라우드는 오프라인+온라인 병행)",
   "other_conditions": "소상공인24를 통해 신청하는 소상공인 대상 교육. 상생 협업 AI 과정 상세의 교육 대상 칸은 비어 있고, 다른 과정은 '소상공인 및 예비소상공인'으로 표기. 거주 요건 원문 없음(교육장 지역만 선택). 교육 2일 전까지 취소 없이 불참하면 노쇼로 1개월 참여 제한",
-  "summary": "소상공인시장진흥공단이 구글클라우드·어도비 등과 함께 서울 교육장에서 AI 홍보 영상, SNS 콘텐츠, 상세 페이지, 업무 자동화를 가르친다. 4시간짜리 짧은 과정과 20시간 과정이 수시로 열린다.",
+  "summary": "소상공인시장진흥공단이 구글클라우드·어도비 등과 함께 서울 교육장에서 AI 홍보 영상, SNS 콘텐츠, 상세 페이지, 업무 자동화를 가르칩니다. 4시간짜리 짧은 과정과 20시간 과정이 수시로 열립니다.",
   "sources": [
    {
     "url": "https://edu.sbiz.or.kr/edu/user/spt/atnlcReqst/atnlcProgrmViewSbiz24.do (POST bsnsNo=13, crclmSn=4212/4213/4218/5702)",
@@ -5354,7 +5490,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "서울 교육장 오프라인. 4시간 단발 과정 또는 20시간 과정(구글클라우드는 오프라인+온라인 병행)",
+  "mode_url": ""
  },
  {
   "id": "sbiz-knowledge-online",
@@ -5390,7 +5529,7 @@
   "next_deadline": null,
   "format": "온라인 상시 수강, 강의당 18~28분, 배속 재생 가능, 수료증 발급",
   "other_conditions": "소상공인24 통합 회원(개인 회원)으로 로그인해 수강, 기관 회원은 학습·수료증 불가. 사업자가 없는 일반인이 가입·수강할 수 있는지는 원문에 없음",
-  "summary": "소상공인시장진흥공단이 AI 활용, 생성형 AI 홍보 영상, 노무·세무 같은 짧은 온라인 강의를 무료로 제공한다. 언제든 들을 수 있고 수료증이 나온다.",
+  "summary": "소상공인시장진흥공단이 AI 활용, 생성형 AI 홍보 영상, 노무·세무 같은 짧은 온라인 강의를 무료로 제공합니다. 언제든 들을 수 있고 수료증이 나옵니다.",
   "sources": [
    {
     "url": "https://edu.sbiz.or.kr/edu/main/main.do",
@@ -5425,7 +5564,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온라인 상시 수강, 강의당 18~28분, 배속 재생 가능, 수료증 발급",
+  "mode_url": ""
  },
  {
   "id": "seoul-sbdc-academy",
@@ -5461,7 +5603,7 @@
   "next_deadline": null,
   "format": "온라인 상시 강의(과정별 하루 수강 차시 제한, 시험 있는 과정 있음) + 자치구별 오프라인 1~2일 과정",
   "other_conditions": "신청 대상 예비 창업자·소상공인·업종 전환자. 자치구 과정은 해당 구민 우선 선발 사례 있음(도봉구). 서울 거주·사업장 요건은 원문 미확인",
-  "summary": "서울시와 서울신용보증재단이 예비 창업자와 소상공인에게 사업 계획서·세무·상권 분석·스마트스토어·AI 마케팅을 무료로 가르친다. 온라인 강의는 언제든 듣고, 자치구 오프라인 과정은 1~2일짜리로 수시 모집한다.",
+  "summary": "서울시와 서울신용보증재단이 예비 창업자와 소상공인에게 사업 계획서·세무·상권 분석·스마트스토어·AI 마케팅을 무료로 가르칩니다. 온라인 강의는 언제든 듣고, 자치구 오프라인 과정은 1~2일짜리로 수시 모집합니다.",
   "sources": [
    {
     "url": "https://www.nextunicorn.kr/support-programs/4f4a22a829f32d88",
@@ -5496,7 +5638,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "온라인 상시 강의(과정별 하루 수강 차시 제한, 시험 있는 과정 있음) + 자치구별 오프라인 1~2일 과정",
+  "mode_url": ""
  },
  {
   "id": "kstartup-changup-edu",
@@ -5532,7 +5677,7 @@
   "next_deadline": null,
   "format": "온라인 상시 수강(강좌 678개·패키지 과정)",
   "other_conditions": "(예비) 창업자 대상 포털. 일부 노후 강의는 2026년 5월 31일 제공 종료",
-  "summary": "창업진흥원이 운영하는 온라인 창업 교육 사이트로, 창업 단계별 이론·실무 강좌를 무료로 제공한다. 예비 창업자와 창업자가 언제든 들을 수 있다.",
+  "summary": "창업진흥원이 운영하는 온라인 창업 교육 사이트로, 창업 단계별 이론·실무 강좌를 무료로 제공합니다. 예비 창업자와 창업자가 언제든 들을 수 있습니다.",
   "sources": [
    {
     "url": "https://www.k-startup.go.kr/edu/home/main/index",
@@ -5567,7 +5712,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "(예비)창업자의 성공창업을 지원하기 위한 온라인 창업교육 포털로 창업의 단계별로 이론 및 실무 중심의 창업 강좌 서비스를 무료로 제공하는 서비스입니다.",
+  "mode_url": ""
  },
  {
   "id": "seoul-online-market-support",
@@ -5603,7 +5751,7 @@
   "next_deadline": null,
   "format": "선정 후 5~12월 진행. AI 상품 진단·전문가 컨설팅(방문·온라인)·유통 MD 상담, 일부 상세 페이지·라이브 커머스·홍보 영상 제작과 판로 입점 지원",
   "other_conditions": "사업자 등록증상 서울 소재 소상공인(상시 근로자 10인(5인) 미만)만 신청. 공고 마감일에 휴·폐업 중이면 제외. 사업자 등록증·통신 판매업 신고증·소상공인 확인서 필요. 평가는 상품 경쟁력 40점, 판매 준비도 40점(후기·회원 수 등). 300곳 선정",
-  "summary": "서울 소상공인 300곳을 뽑아 AI 상품 진단, 전문가 컨설팅, 유통 MD 상담을 무료로 제공하고 일부는 상세 페이지·홍보 영상 제작과 판로 입점까지 돕는다. 매년 5월경 모집한다.",
+  "summary": "서울 소상공인 300곳을 뽑아 AI 상품 진단, 전문가 컨설팅, 유통 MD 상담을 무료로 제공하고 일부는 상세 페이지·홍보 영상 제작과 판로 입점까지 돕습니다. 매년 5월경 모집합니다.",
   "sources": [
    {
     "url": "https://seoulboard.seoul.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=457461&fileTy=ATTACH&fileNo=1&bbsNo=277",
@@ -5642,7 +5790,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "해당없음",
+  "mode_quote": "선정 후 5~12월 진행. AI 상품 진단·전문가 컨설팅(방문·온라인)·유통 MD 상담, 일부 상세 페이지·라이브 커머스·홍보 영상 제작과 판로 입점 지원",
+  "mode_url": ""
  },
  {
   "id": "nsc-new-business-academy",
@@ -5678,7 +5829,7 @@
   "next_deadline": "2026-09-17",
   "format": "온라인 신청 → 1:1 초기 멘토링(기관별 최소 4회)·기초 교육·AI 솔루션 → 지역 오디션(~11월) → 파이널(~12월)",
   "other_conditions": "일반/기술 트랙: 예비 창업자 또는 기창업자 중 업력 제한 안(2차 7년 이내)에서 기존 사업과 다른 업종으로 창업하려는 사람. 로컬 트랙: 사업 공고일부터 선정일까지 사업자 등록이 없는 예비 창업자만. 선발의 80% 이상 예비 창업자, 70% 이상 비수도권. 미성년자는 법정 대리인 동의 필요. 개인 사업자 폐업 후 같은 업종 재창업은 폐업 1년이 지나야 창업으로 인정",
-  "summary": "아이디어로 지원하는 정부 창업 오디션으로, 1라운드에 뽑히면 멘토링·기초 교육과 창업 활동 자금 200만원을 받는다. 이후 오디션을 통과하면 최대 2천만~3천만원의 사업화 자금을 받는다.",
+  "summary": "아이디어로 지원하는 정부 창업 오디션으로, 1라운드에 뽑히면 멘토링·기초 교육과 창업 활동 자금 200만원을 받습니다. 이후 오디션을 통과하면 최대 2천만~3천만원의 사업화 자금을 받습니다.",
   "sources": [
    {
     "url": "https://stationc.kr/announce/download/file/4405",
@@ -5717,7 +5868,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "창업 활동 자금 200만원"
+  "money_short": "창업 활동 자금 200만원",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "kosmes-youth-startup-academy",
@@ -5792,7 +5946,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": "사업화 자금 최대 1억원"
+  "money_short": "사업화 자금 최대 1억원",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "seoul-creative-pd",
@@ -5866,7 +6023,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": "우수 6명 상금 2,000만원"
+  "money_short": "우수 6명 상금 2,000만원",
+  "mode": "혼합",
+  "mode_quote": "교육은 기초·심화·우수 등 3단계 과정으로 운영된다. 기초과정은 온라인으로 진행되며 유튜브 플랫폼 이해와 콘텐츠 기획, 대본 작성 등을 중심으로 교육한다. 심화과정에서는 웹예능과 웹드라마 트랙으로 나눠 촬영·편집 실무와 콘텐츠 제작, 수익화 전략 등을 다룬다. 우수과정은 스튜디오 견학과 장비 실습, 현장 교육, 전문가 멘토링 등 실무 중심 프로그램으로 구성된다.",
+  "mode_url": "https://www.dhnews.co.kr/news/view/1065578261348512"
  },
  {
   "id": "seoul-restart-project",
@@ -5942,7 +6102,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": "재도전 초기 자금 최대 200만원"
+  "money_short": "재도전 초기 자금 최대 200만원",
+  "mode": "혼합",
+  "mode_quote": "재도전·경영개선 필수교육을 오프라인 집합 교육에서 온라인 교육으로 전환하는 등 지원 방식을 전면 개편했다. 필수교육 수료 후 오프라인 특강도 선택해 들을 수 있어 수강생에게 다양한 교육 기회를 제공한다.",
+  "mode_url": "https://mediahub.seoul.go.kr/archives/2017316"
  },
  {
   "id": "kocca-creative-mentee",
@@ -6017,7 +6180,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": "창작 지원금 월 150만원"
+  "money_short": "창작 지원금 월 150만원",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "google-ai-youth",
@@ -6052,7 +6218,7 @@
   "next_deadline": "2026-12-31",
   "format": "100% 온라인(코세라), 원하는 시간에 수강, 7개 모듈 약 8~10시간. 3개월 이상 미수강 시 수강권 회수",
   "other_conditions": "'청년' 대상이나 구체 연령 명시 없음. 대학 이메일이 있으면 대학일자리플러스센터 초대 링크로, 없으면 센터에 개별 문의 후 신청",
-  "summary": "Gemini·NotebookLM 등 구글 AI 도구로 콘텐츠 제작, 데이터 분석, 앱 개발을 실습하는 약 10시간짜리 무료 온라인 과정입니다. 대학일자리플러스센터를 통해 선착순으로 수강권을 받습니다.",
+  "summary": "Gemini·NotebookLM 등 구글 AI 도구로 콘텐츠 제작, 데이터 분석, 앱 개발을 실습하는 약 8~10시간짜리 무료 온라인 과정입니다. 대학일자리플러스센터를 통해 선착순으로 수강권을 받습니다.",
   "sources": [
    {
     "url": "https://grow.google/intl/ko_kr/ai-upskilling/",
@@ -6072,7 +6238,7 @@
   "age_unknown": true,
   "one_liner": "생성형 AI 도구로 콘텐츠 제작·데이터 분석 실습",
   "duration": {
-   "kind": "fixed",
+   "kind": "range",
    "min": null,
    "max": null,
    "unit": "",
@@ -6081,18 +6247,21 @@
    "days_min": null,
    "days_max": null,
    "hours_min": 8,
-   "hours_max": 8,
-   "quote": "강의 수강: Coursera 플랫폼을 통한 100% 온라인 실습 중심 교육 (약 8시간 내외)",
+   "hours_max": 10,
+   "quote": "강의 수강: Coursera 플랫폼을 통한 100% 온라인 실습 중심 교육 (약 8시간 내외) … 본 과정은 약 10시간 이내로 수강이 가능한 프로그램입니다.",
    "source": "official_page",
    "source_url": "https://grow.google/intl/ko_kr/ai-upskilling/",
    "band": "",
-   "text": "총 8시간",
+   "text": "총 8~10시간",
    "dates_text": "",
-   "hours_text": "총 8시간"
+   "hours_text": "총 8~10시간"
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "강의 수강: Coursera 플랫폼을 통한 100% 온라인 실습 중심 교육 (약 8시간 내외)",
+  "mode_url": ""
  },
  {
   "id": "seocho-ai-academy",
@@ -6167,7 +6336,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "AICE 응시료 지원"
+  "money_short": "AICE 응시료 지원",
+  "mode": "오프라인",
+  "mode_quote": "서초 스마트 에듀센터(강남대로 221)에서 전액 무료로 진행되는 이번 교육은 ‘기초반’과 ‘심화반’ 2개 과정으로 나눠 운영된다.",
+  "mode_url": "https://biz.heraldcorp.com/article/10828360"
  },
  {
   "id": "game-institute",
@@ -6242,7 +6414,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육 장소 : 게임인재원 2캠퍼스 (판교 제2테크노밸리 기업지원허브 1~2층)",
+  "mode_url": "https://www.kocca.kr/kocca/pims/view.do?intcNo=326D00034001&menuNo=204104"
  },
  {
   "id": "univ-job-plus-center",
@@ -6317,7 +6492,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": "활동 수당 월 최대 20만원"
+  "money_short": "활동 수당 월 최대 20만원",
+  "mode": "과정마다 다름",
+  "mode_quote": "센터별 단기 프로그램(상담, 취업 특강, AI 교육 등). 온라인·오프라인 병행",
+  "mode_url": ""
  },
  {
   "id": "x-d9fce171",
@@ -6391,7 +6569,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 월 최대 30만원"
+  "money_short": "훈련 장려금 월 최대 30만원",
+  "mode": "혼합",
+  "mode_quote": "약 6개월, 약 1개월 실시간 온라인 + 약 5개월 판교(경기 성남시 분당구 유스페이스1) 오프라인, 주 5일 09:00~18:00",
+  "mode_url": ""
  },
  {
   "id": "x-6ff03c99",
@@ -6465,7 +6646,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "장소: 전국 어디서나 참여할 수 있는 온라인 교육 (프로젝트 기간 중 교육생 필요 시, 권역 내 교육장 사용 가능)",
+  "mode_url": "https://scc.tu.ac.kr/tuhome/sub07_01_05.do?mode=view&articleNo=153965&article.offset=0&articleLimit=10"
  },
  {
   "id": "x-392f0348",
@@ -6539,14 +6723,17 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 월 최대 30만원"
+  "money_short": "훈련 장려금 월 최대 30만원",
+  "mode": "혼합",
+  "mode_quote": "온라인 교육(비대면 실시간)을 약 3개월간 진행한 후, 약 2개월 반동안 오프라인 교육이 이어집니다.",
+  "mode_url": "https://www.ssra.kr/"
  },
  {
   "id": "x-4b2361a9",
-  "name": "신한DS 금융 SW 아카데미",
-  "operator": "신한DS",
-  "official_url": "https://shinhanacademy.com/",
-  "apply_url": "https://shinhanacademy.com/",
+  "name": "신한커리어넥스트",
+  "operator": "신한금융그룹(K-뉴딜 아카데미, 고용노동부), 운영 신한DS",
+  "official_url": "https://shinhancareer.co.kr/",
+  "apply_url": "https://shinhancareer.co.kr/",
   "kinds": [
    "돈받는교육"
   ],
@@ -6556,32 +6743,32 @@
   "regions": [
    "서울"
   ],
-  "age_min": null,
-  "age_max": null,
+  "age_min": 15,
+  "age_max": 34,
   "education": "제한없음",
-  "education_note": "신청 자격에 학력 조건 없음",
+  "education_note": "전공·학력 무관, 코딩 경험 없어도 가능. 고교·대학(원) 재학생은 불가(휴학생·졸업 예정자는 가능)",
   "income": "제한없음",
   "income_note": "신청 자격에 소득 조건 없음",
   "allow_job_seeker": "가능",
-  "allow_employed": "확인필요",
-  "allow_business": "확인필요",
+  "allow_employed": "불가",
+  "allow_business": "불가",
   "allow_student": "확인필요",
   "cost": "교육비 전액 무료, 교재 무료, 노트북 무상 제공",
   "money": "청년 훈련 수당 월 최대 60만원",
   "money_monthly_max_manwon": 60,
-  "format": "오프라인, 서울 스페이스쉐어 을지로입구센터, 약 3개월",
-  "recruit": "2026년 차수 7/21~8/4 지원 마감, 교육 2026.9.1~11.27 진행. 다음 차수 일정 공고 없음",
+  "format": "오프라인, 평일 9~18시, 서울 스페이스쉐어 을지로입구센터, 3개월 472시간",
+  "recruit": "2026년 모집 7/21~8/4 마감(최종 발표 8/19), 교육 2026.9.1~11.27 진행. 다음 모집 공고 없음",
   "next_deadline": null,
-  "other_conditions": "금융 IT·AI 분야 취업 희망자. 수당 명칭이 '청년훈련수당'이라 나이 조건이 있을 수 있음",
-  "summary": "신한DS가 금융 IT·AI 개발자를 키우는 약 3개월 무료 과정으로, 풀스택 기초와 금융 AI를 배웁니다. 교육비·노트북이 무료이고 매달 최대 60만원의 훈련 수당이 나오지만, 2026년 모집은 끝났습니다.",
+  "other_conditions": "만 15~34세 미취업 청년, 금융 IT·AI 분야 취업 희망자. 고교·대학(원) 재학생, 고용 보험 가입자(재직자), 사업자 등록증 소지자는 불가. 휴학생(휴학 기간 무관)과 졸업 예정자(4학년 2학기 이상 또는 마지막 학기 등록자)는 가능. 수당은 월 출석률 80% 이상일 때 지급",
+  "summary": "신한금융그룹이 K-뉴딜 아카데미로 여는 3개월 무료 과정으로, 풀스택 기초부터 금융 AI 서비스 개발까지 배웁니다. 만 15~34세 미취업 청년이 대상이고 매달 최대 60만원 훈련 수당이 나오지만, 2026년 모집은 끝났습니다.",
   "sources": [
    {
-    "url": "https://shinhanacademy.com/",
-    "quote": "모집 대상 : 금융IT, AI 분야 취업 희망자"
+    "url": "https://shinhancareer.co.kr/",
+    "quote": "만 15세 이상 34세 이하 미취업 청년"
    },
    {
-    "url": "https://shinhanacademy.com/",
-    "quote": "교육 기간 : 2026년 9월 1일(화) ~11월 27일(금)"
+    "url": "https://shinhancareer.co.kr/",
+    "quote": "26.09.01 ~ 26.11.27 (3개월) · 총 472시간"
    },
    {
     "url": "https://shinhanacademy.com/",
@@ -6590,31 +6777,33 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
-  "age_unknown": true,
+  "checked_at": "2026-09-19",
   "one_liner": "풀스택 기초와 금융 AI 서비스 개발 실무",
   "duration": {
    "kind": "fixed",
    "min": 3,
    "max": 3,
    "unit": "개월",
-   "start": "",
-   "end": "",
-   "days_min": 90,
-   "days_max": 90,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "신한커리어넥스트는 신한금융그룹이 직접 설계한 3개월 단기 완성 실무형 교육입니다.",
+   "start": "2026-09-01",
+   "end": "2026-11-27",
+   "days_min": 88,
+   "days_max": 88,
+   "hours_min": 472,
+   "hours_max": 472,
+   "quote": "26.09.01 ~ 26.11.27 (3개월) · 총 472시간",
    "source": "official_page",
-   "source_url": "https://shinhanacademy.com/",
+   "source_url": "https://shinhancareer.co.kr/",
    "band": "중기",
-   "text": "3개월",
-   "dates_text": "",
-   "hours_text": ""
+   "text": "약 3개월",
+   "dates_text": "9.1~11.27",
+   "hours_text": "총 472시간"
   },
-  "schedule": "확인필요",
+  "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "청년 훈련 수당 월 최대 60만원"
+  "money_short": "청년 훈련 수당 월 최대 60만원",
+  "mode": "오프라인",
+  "mode_quote": "교육 장소 : 서울 스페이스쉐어 을지로입구센터 (을지로입구역)",
+  "mode_url": "https://shinhanacademy.com/"
  },
  {
   "id": "x-fec15978",
@@ -6645,9 +6834,9 @@
   "money": "훈련 장려금 최대 월 30만원",
   "money_monthly_max_manwon": 30,
   "format": "오프라인 6개월 1,000시간, 평일 9~18시, 서울 금천구 LG 가산디지털센터 12층 DX캠퍼스 2센터",
-  "recruit": "4기 ~2026.7.6 마감, 교육 2026.7.6~12.28(웹/앱·스마트 팩토리·클라우드·IT 보안 각 35명). 5기 일정 공고 없음",
-  "next_deadline": null,
-  "other_conditions": "국민 내일배움카드 보유·발급 가능, K-디지털 트레이닝 수강 이력 없는 자, 전일 오프라인 참여 가능, 병역필 또는 면제자로 해외 출장 결격 사유 없는 자",
+  "recruit": "5기 2026.10.2~11.1 23:59 신청, CS·코딩 테스트 11.19, 비대면 면접 12.1~12.4, 교육 2026.12.30~2027.7.5(웹/앱·스마트 팩토리·클라우드·IT 보안 각 35명)",
+  "next_deadline": "2026-11-01",
+  "other_conditions": "국민 내일배움카드 보유·발급 가능(12월 29일까지 발급 완료), K-디지털 트레이닝 수강 이력 없는 자, 전일 오프라인 참여 가능, 병역필 또는 면제자로 해외 출장 결격 사유 없는 자. 일부 공휴일·토요일 수업이 있을 수 있음",
   "summary": "현대오토에버와 함께 모빌리티·클라우드·보안 SW를 6개월간 가산에서 배우는 국비 과정입니다. 4년제 재학생이나 대졸 미취업자가 대상이며, K-디지털 트레이닝을 들은 적이 없어야 합니다.",
   "sources": [
    {
@@ -6665,30 +6854,33 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "모빌리티·클라우드·보안 SW 개발 실무",
   "duration": {
    "kind": "fixed",
    "min": 6,
    "max": 6,
    "unit": "개월",
-   "start": "",
-   "end": "",
-   "days_min": 180,
-   "days_max": 180,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "'26.7.6.(월)~'26.12.28.(월) (1일 8시간, 총 6개월/1,000시간)",
+   "start": "2026-12-30",
+   "end": "2027-07-05",
+   "days_min": 188,
+   "days_max": 188,
+   "hours_min": 1000,
+   "hours_max": 1000,
+   "quote": "'26.12.30.(수)~'27.07.05.(월) (1일 8시간, 총 6개월/1,000시간)",
    "source": "official_page",
    "source_url": "https://edu.rapa.or.kr/recruitment/428",
-   "band": "중기",
-   "text": "6개월",
-   "dates_text": "",
-   "hours_text": ""
+   "band": "장기",
+   "text": "약 6개월",
+   "dates_text": "12.30~7.5",
+   "hours_text": "총 1,000시간"
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 최대 월 30만원"
+  "money_short": "훈련 장려금 최대 월 30만원",
+  "mode": "오프라인",
+  "mode_quote": "교육 기간 내 전일 9시~18시 오프라인 교육 참여 가능한 자",
+  "mode_url": "https://edu.rapa.or.kr/recruitment/428"
  },
  {
   "id": "x-d31fe28d",
@@ -6719,10 +6911,10 @@
   "money": "확인필요(공고에 훈련 장려금 명시 없음)",
   "money_monthly_max_manwon": null,
   "format": "오프라인 126일 1,000시간, 서울 금천구 가산 DX캠퍼스 1센터(가산어반워크2 14층)",
-  "recruit": "5기 2026년 9월 모집(신청 2026.9.1~9.30), 10월 개강 예정",
-  "next_deadline": "2026-09-30",
+  "recruit": "5기 2026년 9월 모집(신청 2026.9.16~9.28 09:00), 10월 20일 개강 예정",
+  "next_deadline": "2026-09-28",
   "other_conditions": "국민 내일배움카드 발급 가능자. 장애인·보훈 대상자 우대. 수료생 LIG D&A 채용 전형 혜택",
-  "summary": "방산 기업 LIG D&A와 함께 임베디드 SW를 약 4개월 배우는 국비 과정입니다. 학사 이상(졸업 예정 포함)이 대상이고 최대 60만원 자부담이 있으며, 9월 30일까지 신청합니다.",
+  "summary": "방산 기업 LIG D&A와 함께 임베디드 SW를 약 6개월 배우는 국비 과정입니다. 학사 이상(졸업 예정 포함)이 대상이고 최대 60만원 자부담이 있으며, 9월 28일 오전 9시까지 신청합니다.",
   "sources": [
    {
     "url": "https://edu.rapa.or.kr/recruitment/11921",
@@ -6750,19 +6942,22 @@
    "end": "2027-04-16",
    "days_min": 179,
    "days_max": 179,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 1000,
+   "hours_max": 1000,
    "quote": "교육일정 2026. 10. 20.~2027. 4. 16. (126일/1,000시간)",
    "source": "official_page",
    "source_url": "https://edu.rapa.or.kr/recruitment/11921",
    "band": "중기",
    "text": "약 6개월",
    "dates_text": "10.20~4.16",
-   "hours_text": ""
+   "hours_text": "총 1,000시간"
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "가산 DX캠퍼스 1센터(가산어반워크2)",
+  "mode_url": "https://edu.rapa.or.kr/recruitment/11921"
  },
  {
   "id": "x-ecb81904",
@@ -6836,7 +7031,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "훈련 장려금 월 30만원 수준"
+  "money_short": "훈련 장려금 월 30만원 수준",
+  "mode": "오프라인",
+  "mode_quote": "에이콘아카데미(강남) 예정",
+  "mode_url": "https://edu.rapa.or.kr/recruitment/1473"
  },
  {
   "id": "x-8abc4e6c",
@@ -6910,7 +7108,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금 최대 월 80만원"
+  "money_short": "훈련 장려금 최대 월 80만원",
+  "mode": "오프라인",
+  "mode_quote": "한국전파진흥협회 DX캠퍼스 1센터 5강의실",
+  "mode_url": "https://edu.rapa.or.kr/recruitment/29143"
  },
  {
   "id": "x-da63a5c6",
@@ -6984,7 +7185,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금 최대 월 80만원"
+  "money_short": "훈련 장려금 최대 월 80만원",
+  "mode": "오프라인",
+  "mode_quote": "한국전파진흥협회 DX캠퍼스 1센터 4강의실",
+  "mode_url": "https://edu.rapa.or.kr/recruitment/28942"
  },
  {
   "id": "x-b4d9ca9f",
@@ -7058,7 +7262,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금 매월 지급"
+  "money_short": "훈련 장려금 매월 지급",
+  "mode": "오프라인",
+  "mode_quote": "본 과정은 전 과정 대면 교육으로 운영되며,",
+  "mode_url": "https://www.mlaicampus.com/"
  },
  {
   "id": "x-07c6029f",
@@ -7128,7 +7335,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 지급"
+  "money_short": "훈련 장려금 지급",
+  "mode": "과정마다 다름",
+  "mode_quote": "대부분 실시간 온라인, 주 5일 하루 약 8시간(해외 수강 불가). 일부 대면 과정 있음",
+  "mode_url": ""
  },
  {
   "id": "x-9e6d46b0",
@@ -7204,7 +7414,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": "매월 훈련 장려금 최대 30만원"
+  "money_short": "매월 훈련 장려금 최대 30만원",
+  "mode": "온라인",
+  "mode_quote": "온라인 100%",
+  "mode_url": "https://nbcamp.spartaclub.kr/secure"
  },
  {
   "id": "x-2c0ba7cb",
@@ -7279,7 +7492,10 @@
   },
   "schedule": "온라인",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 최대 210만원"
+  "money_short": "훈련 장려금 최대 210만원",
+  "mode": "온라인",
+  "mode_quote": "100% 실시간 온라인",
+  "mode_url": "https://sprint.codeit.kr/track/ai"
  },
  {
   "id": "x-459ae30c",
@@ -7353,7 +7569,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "크래프톤 정글 캠퍼스에서 진행되는 5개월 합숙 교육에 참여합니다.",
+  "mode_url": ""
  },
  {
   "id": "x-0fe45c87",
@@ -7424,7 +7643,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "매월 수당 지급"
+  "money_short": "매월 수당 지급",
+  "mode": "오프라인",
+  "mode_quote": "실습과 프로젝트 중심의 전면 대면 과정입니다.",
+  "mode_url": "https://www.kccistc.net/education/professionalSkillEduDetail.do?rootMenuId=3917&menuId=3922&gaebalwon_cd=09000&gwajeong_no=M2026013 (POST)"
  },
  {
   "id": "x-822f281a",
@@ -7498,7 +7720,10 @@
   },
   "schedule": "혼합",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "혼합",
+  "mode_quote": "정보보호 기초・교양・필수 교육을 위한 온・오프라인 교육",
+  "mode_url": ""
  },
  {
   "id": "x-0c2e4697",
@@ -7572,7 +7797,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "현장 집체교육",
+  "mode_url": "https://bobedu.kr/home/kor/M621391440/board.do?deleteAt=N&act=detail&idx=cb00d1a0008a85e71a41b8741facbffe47b8ebba4d050106b9866095500d2284"
  },
  {
   "id": "x-dd9d2a50",
@@ -7647,7 +7875,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "프로젝트 개발비 최대 160만원"
+  "money_short": "프로젝트 개발비 최대 160만원",
+  "mode": "혼합",
+  "mode_quote": "ICT 관련 온라인 블렌디드 러닝 e-러닝 콘텐츠를 제공합니다.",
+  "mode_url": "https://www.hanium.or.kr/portal/business/sprtPolicy/sprtPolicyInfoView.do"
  },
  {
   "id": "x-d2a4d35e",
@@ -7717,7 +7948,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "혼합",
+  "mode_quote": "기본적인 AI 기초지식 및 역량검증을 위한 온라인 기초역량 강화 교육과정",
+  "mode_url": "https://gj-aischool.or.kr/fo/prm/program/EDU_AI_SCHOOL/info"
  },
  {
   "id": "x-c82fef0e",
@@ -7791,7 +8025,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육장소 : 센텀벤처타운 5층 '남항대교' 교육장",
+  "mode_url": "https://bipa.kr/board/training/view?seq=84983"
  },
  {
   "id": "x-7338a9c4",
@@ -7862,7 +8099,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온국민평생배움터는 국민의 삶에 배움을 더하는 체계적인 평생교육 서비스입니다. 다양한 평생교육·훈련 온라인 학습 콘텐츠를 제공하고 있으며, 흩어져 있는 학습 이력을 통합 관리할 수도 있도록 연계하여 체계적인 학습결과 활용이 가능합니다.",
+  "mode_url": "https://www.all.go.kr/intrd/viewLifApolOvrvw.do"
  },
  {
   "id": "x-8efa72ce",
@@ -7935,7 +8175,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "경기도와 시군에서 운영하는 도민대상 오프라인 강좌 정보를 확인할 수 있습니다.",
+  "mode_url": "https://www.gseek.kr/user/service/intro"
  },
  {
   "id": "x-7a9cce78",
@@ -8010,7 +8253,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "시·공간 제약없는 테마별 온라인 컨텐츠 제공 109개 강좌",
+  "mode_url": "https://lll.busan.go.kr/onln/index.do?menu_id=00005340"
  },
  {
   "id": "x-6f154ad6",
@@ -8080,7 +8326,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "대전시민에게 시·공간 제약 없는 학습기회를 제공하기 위해 대전평생교육진흥원이 운영하는 온라인 평생학습 플랫폼",
+  "mode_url": ""
  },
  {
   "id": "x-bb568d43",
@@ -8155,7 +8404,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "평생 교육 이용권 350,000원"
+  "money_short": "평생 교육 이용권 350,000원",
+  "mode": "과정마다 다름",
+  "mode_quote": "오프라인 기관은 기관 방문하여 결제하며, 온라인 기관은 온라인 결제",
+  "mode_url": "https://www.lllcard.kr/reg/daejeon/guide/useVcMethod.do"
  },
  {
   "id": "x-f6e57ca6",
@@ -8230,7 +8482,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "평생교육 오프라인 강좌",
+  "mode_url": "https://lms.gie.kr/"
  },
  {
   "id": "x-62231526",
@@ -8305,7 +8560,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "오프라인 강좌",
+  "mode_url": "https://dle.study.daegu.kr/learning/main"
  },
  {
   "id": "x-defc8a30",
@@ -8379,7 +8637,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "충청남도 온라인 온통배움터",
+  "mode_url": "https://edu.clehrd.or.kr/el/main/main_form.acl"
  },
  {
   "id": "x-e369b007",
@@ -8450,7 +8711,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육방법 오프라인",
+  "mode_url": "https://cbitlelms.or.kr/sub.php?code=63&lno=642"
  },
  {
   "id": "x-a1db4f2b",
@@ -8524,7 +8788,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "해당 사이트는 제주도민 여러분들이 무료로 사이버 외국어 어학 강좌를 이용할 수 있는 사이트로",
+  "mode_url": ""
  },
  {
   "id": "x-09539531",
@@ -8598,7 +8865,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "인천 온라인 공개강좌",
+  "mode_url": ""
  },
  {
   "id": "x-2508fbcc",
@@ -8670,7 +8940,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온라인 강좌는 별도 사이트에서 운영됩니다. 홈페이지 바로가기를 눌러주세요.",
+  "mode_url": ""
  },
  {
   "id": "x-ffd65123",
@@ -8744,7 +9017,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "이솦은 SW에 관심 있는 분들이라면 누구나 시간과 장소에 구애 받지 않고 수준별 맞춤형 자기주도 학습을 할 수 있도록 지원하는 전국민 무료 SW교육 온라인 플랫폼입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-a15af9bd",
@@ -8818,7 +9094,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "KOCW는 국내.외 대학 및 기관에서 자발적으로 공개한 강의 동영상, 강의자료를 무료로 제공하는 서비스로, 대학생, 교수자는 물론 배움을 필요로 하는 누구든지 언제 어디서나 이용 가능합니다.",
+  "mode_url": "http://www.kocw.net/home/introduce/intro1.do"
  },
  {
   "id": "x-11ddb427",
@@ -8884,7 +9163,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "(오프라인)(10월 상설) 어른을 위한 AI 동화 제작",
+  "mode_url": "https://edu.kcmf.or.kr/EDU/main/index.do"
  },
  {
   "id": "x-c320fc66",
@@ -8921,11 +9203,11 @@
   "allow_student": "확인필요",
   "cost": "강좌 수강료 문구는 확인필요. 교육 시설·미디어 장비는 무료 개방·대여",
   "money": "없음",
-  "format": "오프라인(주간·퇴근길 저녁 특강 등)",
+  "format": "대부분 센터 대면(일부 센터는 미디온플러스 온라인 강좌), 주간·퇴근길 저녁 특강 등",
   "recruit": "센터별 수시(예: 부산센터 10월 강좌 2026.9.4~9.30 접수)",
   "next_deadline": "2026-09-30",
   "other_conditions": "정원 선착순(15~25명 등). 서울센터는 기존 목록에 있어 제외",
-  "summary": "서울 외 11개 지역 시청자미디어센터에서 여는 영상 제작·AI 디자인 등 대면 강좌입니다. 센터 시설과 촬영 장비도 무료로 빌려 쓸 수 있습니다.",
+  "summary": "서울 외 11개 지역 시청자미디어센터에서 여는 영상 제작·AI 디자인 등 강좌로, 대부분 센터에서 대면으로 듣습니다. 센터 시설과 촬영 장비도 무료로 빌려 쓸 수 있습니다.",
   "sources": [
    {
     "url": "https://edu.kcmf.or.kr/EDU/contents/EDU070100.do",
@@ -8942,7 +9224,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "영상 제작·AI 디자인 등 미디어 제작 강좌",
   "duration": {
    "kind": "varies",
@@ -8965,7 +9247,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "이 강의는 센터 홈페이지가 아닌 온라인플랫폼 '미디온플러스'에서 수강 가능한 온라인 교육입니다!",
+  "mode_url": "https://kcmf.or.kr/KCMF/contents/KCMF10000004.do?page=1&viewCount=12&schM=view&pcode=10008846"
  },
  {
   "id": "x-74a2fb83",
@@ -9030,7 +9315,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "*회원가입 없이 온라인 과정를 이용할 수 있으나 교육 이력과 수료증이 필요한 경우는 회원가입 후 과정을 수료해야 함",
+  "mode_url": "https://edu.korean.go.kr/kires/info/info_01.html"
  },
  {
   "id": "x-a43e9837",
@@ -9095,7 +9383,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "스스로 공부하는 온라인 학습",
+  "mode_url": "https://www.fss.or.kr/edu/fem/eduProgram/view.do?programSlno=1&menuNo=300020"
  },
  {
   "id": "x-790f72fb",
@@ -9164,7 +9455,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": "기프티콘 3만원 또는 5만원 상당"
+  "money_short": "기프티콘 3만원 또는 5만원 상당",
+  "mode": "온라인",
+  "mode_quote": "3. 방식 : 실시간 비대면 방식(1인당 비대면 상담 기본 2회 제공)",
+  "mode_url": ""
  },
  {
   "id": "x-fcfe5a59",
@@ -9234,7 +9528,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "금융교육을 희망하는 기관 또는 단체가 원하는 시간과 장소에 전문강사 출강",
+  "mode_url": "https://www.kinfa.or.kr/financialLife/financialEducation.do"
  },
  {
   "id": "x-bc115d77",
@@ -9299,7 +9596,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온라인교육은 협력기관 교육, 대출이용자교육, 생애주기별교육, 생활금융교육으로 구성되어 있습니다.",
+  "mode_url": ""
  },
  {
   "id": "x-2a6f654a",
@@ -9364,7 +9664,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "「한은금요강좌」는 한국은행 별관 1층 대강당에서 금요일 오후 2시에 진행됩니다. (전화 02-759-5325)",
+  "mode_url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=200496"
  },
  {
   "id": "x-68db0a39",
@@ -9429,7 +9732,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온라인 교육과정",
+  "mode_url": "https://www.econedu.go.kr/user/learnEcon/ALL/menu/list"
  },
  {
   "id": "x-a0ff3be7",
@@ -9455,7 +9761,7 @@
   "allow_student": "확인필요",
   "cost": "확인필요(목록 페이지에 비용 표기 없음)",
   "money": "없음",
-  "format": "오프라인(작가 강연은 금요일 저녁 등)",
+  "format": "대부분 도서관 대면(일부 프로그램은 Zoom 온라인), 작가 강연은 금요일 저녁 등",
   "recruit": "월별 수시 접수",
   "next_deadline": "2026-09-16",
   "other_conditions": "프로그램마다 대상 다름: 청소년 이상, 초등학생 이상, 서울도서관 회원 등. 정원 30~40명",
@@ -9472,7 +9778,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "작가 강연·책방 연계 독서 프로그램",
   "duration": {
    "kind": "fixed",
@@ -9495,7 +9801,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "온라인(Zoom)",
+  "mode_url": "https://lib.seoul.go.kr/lecture/applyList"
  },
  {
   "id": "x-9f9e110d",
@@ -9566,7 +9875,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금(해당자) 지급"
+  "money_short": "훈련 장려금(해당자) 지급",
+  "mode": "오프라인",
+  "mode_quote": "교육비, 실습재료비, 기숙사비 등 전액 국가 지원",
+  "mode_url": "https://ipsi.kopo.ac.kr/poly/m_94/content.do"
  },
  {
   "id": "x-110518d5",
@@ -9636,7 +9948,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금(해당자) 지급"
+  "money_short": "훈련 장려금(해당자) 지급",
+  "mode": "오프라인",
+  "mode_quote": "교육비, 실습재료비, 기숙사비, 식비 등 전액 국가 지원",
+  "mode_url": "https://ipsi.kopo.ac.kr/poly/m_93/content.do"
  },
  {
   "id": "x-beb77bce",
@@ -9708,7 +10023,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금(해당자) 지급"
+  "money_short": "훈련 장려금(해당자) 지급",
+  "mode": "오프라인",
+  "mode_quote": "교육비, 실습재료비, 기숙사비 등 전액 국가 지원",
+  "mode_url": "https://ipsi.kopo.ac.kr/poly/m_132/content.do"
  },
  {
   "id": "x-69f6e1e0",
@@ -9776,7 +10094,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금(해당자) 지급"
+  "money_short": "훈련 장려금(해당자) 지급",
+  "mode": "오프라인",
+  "mode_quote": "교육비, 실습재료비, 기숙사비, 식비 등 전액 국가 지원",
+  "mode_url": "https://ipsi.kopo.ac.kr/poly/m_147/content.do"
  },
  {
   "id": "x-893995e1",
@@ -9846,7 +10167,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 월 30만원"
+  "money_short": "훈련 지원금 월 30만원",
+  "mode": "오프라인",
+  "mode_quote": "○ 교육장소 : 경기도기술학교 내 교육장(기계기술관)",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202343"
  },
  {
   "id": "x-87c28792",
@@ -9920,80 +10244,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 월 최대 40만원"
- },
- {
-  "id": "x-cde9c7db",
-  "name": "경기도기술학교 청년 스마트 용접 취업 과정",
-  "operator": "경기도일자리재단 경기도기술학교",
-  "official_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202832",
-  "apply_url": "https://apply.jobaba.net",
-  "kinds": [
-   "무료교육",
-   "돈받는교육"
-  ],
-  "fields": [
-   "기술·현장"
-  ],
-  "regions": [
-   "경기"
-  ],
-  "age_min": 18,
-  "age_max": 39,
-  "education": "제한없음",
-  "education_note": "신청 자격에 학력 조건 없음",
-  "income": "제한없음",
-  "allow_job_seeker": "확인필요",
-  "allow_employed": "확인필요",
-  "allow_business": "확인필요",
-  "allow_student": "확인필요",
-  "cost": "0원(교육비·재료비 등 전액 지원)",
-  "money": "훈련 지원금 월 30만원(월 교육 일수 10일 이상, 출석 80% 이상)",
-  "money_monthly_max_manwon": 30,
-  "format": "약 4개월 주간 월~금(2026.8.18~12.11)",
-  "recruit": "2026.7.2~8.5 모집(마감)",
-  "other_conditions": "공고일 기준 경기도민. 1987.2.2~2008.2.1 출생자. 실업 급여 수급자 제외. 생활관(거리순 선발)·중식 무료·통학 버스",
-  "summary": "경기도에 사는 청년이 약 4개월 동안 용접 기술을 무료로 배우는 청년 전용 과정입니다. 출석을 채우면 매달 30만원을 받고, 실업 급여를 받는 사람은 신청할 수 없습니다.",
-  "sources": [
-   {
-    "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202832",
-    "quote": "1987.2.2. ~ 2008.2.1. 출생자"
-   },
-   {
-    "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202832",
-    "quote": "실업급여 수급자 제외"
-   },
-   {
-    "url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202832",
-    "quote": "훈련지원금 월 30만원 지급 ※ 월 교육일수 10일 이상 해당 시, 월 80% 이상 출석 시"
-   }
-  ],
-  "income_pct_max": null,
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "청년 대상 스마트 용접 기술과 취업 준비",
-  "duration": {
-   "kind": "fixed",
-   "min": null,
-   "max": null,
-   "unit": "",
-   "start": "2026-08-18",
-   "end": "2026-12-11",
-   "days_min": 116,
-   "days_max": 116,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "3) 교육기간 : '26.8.18.~12.11. (월~금)",
-   "source": "official_page",
-   "source_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202832",
-   "band": "중기",
-   "text": "약 4개월",
-   "dates_text": "8.18~12.11",
-   "hours_text": ""
-  },
-  "schedule": "주간",
-  "cost_type": "무료",
-  "money_short": "훈련 지원금 월 30만원"
+  "money_short": "훈련 지원금 월 최대 40만원",
+  "mode": "오프라인",
+  "mode_quote": "○ 교육장소 : 경기도일자리재단 경기도기술학교 북부캠퍼스",
+  "mode_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202692"
  },
  {
   "id": "x-f825acb2",
@@ -10026,7 +10280,7 @@
   "cost": "0원(교육비·재료비 등 전액 지원)",
   "money": "훈련 지원금 지원(금액 원문 미기재)",
   "money_monthly_max_manwon": null,
-  "format": "기간·시간 원문 미기재",
+  "format": "2026.10.6~11.19(27일), 월~목 10:00~16:00, 총 162시간",
   "recruit": "2026.9.1 9시~9.22 16시, 20명",
   "next_deadline": "2026-09-22",
   "other_conditions": "공고일 기준 만 15세 이상 경기도민. 재직자·사업자·학생 참여 가능 여부는 원문에 따로 없음",
@@ -10057,26 +10311,29 @@
    "end": "2026-11-19",
    "days_min": 45,
    "days_max": 45,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "10.6.(화) ~ 11.19.(목)(27일, 162H)월~목10:00~16:00 / 총 162H",
+   "hours_min": 162,
+   "hours_max": 162,
+   "quote": "이륜자동차 정비 20명 10.6.(화) ~ 11.19.(목) (27일, 162H) 월~목 10:00~16:00 / 총 162H",
    "source": "official_page",
    "source_url": "https://www.gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22827&key=403AECB057D373D",
    "band": "중기",
    "text": "약 6주",
    "dates_text": "10.6~11.19",
-   "hours_text": ""
+   "hours_text": "총 162시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금·응시료 지원"
+  "money_short": "훈련 지원금·응시료 지원",
+  "mode": "오프라인",
+  "mode_quote": "경기도기술학교 : 경기도 화성시 병점구 기산로 31-6 첨단기술관",
+  "mode_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025"
  },
  {
   "id": "x-478ca190",
   "name": "경기도기술학교 북부 3D 프린팅 굿즈 제작",
   "operator": "경기도일자리재단 경기도기술학교 북부캠퍼스",
   "official_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203027",
-  "apply_url": "https://apply.jobaba.net/",
+  "apply_url": "https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=5900",
   "kinds": [
    "무료교육"
   ],
@@ -10144,7 +10401,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육장소 : 경기도기술학교 북부캠퍼스 SW실1",
+  "mode_url": "https://www.gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203027"
  },
  {
   "id": "x-c5059efe",
@@ -10220,7 +10480,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 지급(과정별 상이)"
+  "money_short": "훈련 장려금 지급(과정별 상이)",
+  "mode": "오프라인",
+  "mode_quote": "교육실시 장소 대한상공회의소 경기인력개발원",
+  "mode_url": "https://kg.korchamhrd.net/cms/cmsDetail.do?rootMenuId=3402&menuId=3411&cms_id=59"
  },
  {
   "id": "x-bd2782bc",
@@ -10295,7 +10558,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": "훈련 장려금 지급(과정별 상이)"
+  "money_short": "훈련 장려금 지급(과정별 상이)",
+  "mode": "오프라인",
+  "mode_quote": "교육실시 장소 대한상공회의소 인천인력개발원 (인천광역시 남동구 남동서로205번길 32)",
+  "mode_url": "https://ic.korchamhrd.net/cms/cmsDetail.do?rootMenuId=3402&menuId=3411&cms_id=59"
  },
  {
   "id": "x-e4021d93",
@@ -10371,7 +10637,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 지급(과정별 상이)"
+  "money_short": "훈련 장려금 지급(과정별 상이)",
+  "mode": "오프라인",
+  "mode_quote": "교육실시 장소 대한상공회의소 광주인력개발원",
+  "mode_url": "https://gj.korchamhrd.net/cms/cmsDetail.do?rootMenuId=3402&menuId=3411&cms_id=59"
  },
  {
   "id": "x-64c5e6ee",
@@ -10446,7 +10715,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 장려금 지급(과정별 상이)"
+  "money_short": "훈련 장려금 지급(과정별 상이)",
+  "mode": "오프라인",
+  "mode_quote": "교육실시 장소 전북인력개발원",
+  "mode_url": "https://jb.korchamhrd.net/cms/cmsDetail.do?rootMenuId=3402&menuId=3411&cms_id=59"
  },
  {
   "id": "x-62490a22",
@@ -10522,7 +10794,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 장려금 지급(과정별 상이)"
+  "money_short": "훈련 장려금 지급(과정별 상이)",
+  "mode": "오프라인",
+  "mode_quote": "교육실시 장소 충남인력개발원 / 천안기술교육센터",
+  "mode_url": "https://cn.korchamhrd.net/cms/cmsDetail.do?rootMenuId=3402&menuId=3411&cms_id=59"
  },
  {
   "id": "x-a5994d43",
@@ -10597,7 +10872,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육장소 천안기술교육센터",
+  "mode_url": "https://www.korchamhrd.net/education/professionalSkillEduDetail.do?gaebalwon_cd=07000&gwajeong_no=M2026023"
  },
  {
   "id": "x-41af1c8f",
@@ -10672,7 +10950,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 수당 최대 130만원/월"
+  "money_short": "훈련 수당 최대 130만원/월",
+  "mode": "오프라인",
+  "mode_quote": "숙식제공(기숙사, 조/중/석식 포함)",
+  "mode_url": "https://edu.daehanship.com/apply_guide"
  },
  {
   "id": "x-86d33a03",
@@ -10747,7 +11028,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 수당 매월 100만원"
+  "money_short": "훈련 수당 매월 100만원",
+  "mode": "오프라인",
+  "mode_quote": "교육장소 기술교육원",
+  "mode_url": "https://tei.hshi.co.kr/education/train_list.do"
  },
  {
   "id": "x-479bd9c6",
@@ -10825,7 +11109,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": "참여 수당 4주 최대 150만원"
+  "money_short": "참여 수당 4주 최대 150만원",
+  "mode": "오프라인",
+  "mode_quote": "* 운영기관에서 실시하는 기본교육의 경우 대면 실시를 원칙으로 하나, 필요한 경우실시간 화상 교육도 인정",
+  "mode_url": "https://m.work24.go.kr/wk/m/m/0200/retrieveMasBusiIntro.do"
  },
  {
   "id": "x-b01e4681",
@@ -10900,7 +11187,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "- 국내 또는 해외 연수",
+  "mode_url": "https://www.worldjob.or.kr/ovsea/sdytrn.do"
  },
  {
   "id": "x-2582f914",
@@ -10972,9 +11262,9 @@
    "days_max": 600,
    "hours_min": null,
    "hours_max": null,
-   "quote": "○교육기간 :총 20개월(’25. 9. ~ ’27. 4.예정)",
+   "quote": "이번 보육 과정은 단순한 단기 체험을 넘어, 총 20개월에 걸친 단계별 커리큘럼으로 구성된다.",
    "source": "official_page",
-   "source_url": "https://www.rda.go.kr/young/custom/edu/view.do?sId=45937",
+   "source_url": "https://sangju.smartfarmkorea.net/bbsArticle/view.do?bbsId=notice&seq=99",
    "band": "장기",
    "text": "20개월",
    "dates_text": "",
@@ -10982,7 +11272,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "실습비 1인 월 70만원 한도"
+  "money_short": "실습비 1인 월 70만원 한도",
+  "mode": "오프라인",
+  "mode_quote": "교육방식 집합 대면 실습",
+  "mode_url": "https://www.rda.go.kr/young/custom/edu/view.do?sId=45937"
  },
  {
   "id": "x-3d4180c0",
@@ -11067,7 +11360,10 @@
   },
   "schedule": "주간",
   "cost_type": "일부 자부담",
-  "money_short": "훈련 수당 최대 20만원(맞춤형)"
+  "money_short": "훈련 수당 최대 20만원(맞춤형)",
+  "mode": "오프라인",
+  "mode_quote": "실습과 프로젝트 중심의 전면 대면 과정입니다. 원활한 학습을 위해 교육시간에 지속적으로 참여할 수 있어야 합니다.",
+  "mode_url": "https://www.korchamhrd.net/education/professionalSkillEduDetail.do?gaebalwon_cd=09000&gwajeong_no=M2026013"
  },
  {
   "id": "x-3947c201",
@@ -11149,97 +11445,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": "훈련 수당 차등 지급"
- },
- {
-  "id": "x-78553b6e",
-  "name": "장애인 직업능력개발원(기숙형)",
-  "operator": "한국장애인고용공단",
-  "official_url": "https://www.kead.or.kr/vcnintrd/cntntsPage.do?menuId=MENU0725",
-  "apply_url": "https://www.kead.or.kr/bbs/traininginfo/bbsPage.do?menuId=MENU2208",
-  "kinds": [
-   "무료교육",
-   "돈받는교육"
-  ],
-  "fields": [
-   "IT·AI",
-   "기술·현장",
-   "사무·회계·경영",
-   "요리·서비스"
-  ],
-  "regions": [
-   "경기",
-   "부산",
-   "대구",
-   "대전",
-   "전남"
-  ],
-  "age_min": null,
-  "age_max": null,
-  "education": "확인필요",
-  "education_note": "원문에 훈련 대상 상세 없음. 선발 평가를 거쳐 입학",
-  "income": "확인필요",
-  "income_note": "원문 미기재",
-  "income_pct_max": null,
-  "allow_job_seeker": "확인필요",
-  "allow_employed": "확인필요",
-  "allow_business": "확인필요",
-  "allow_student": "확인필요",
-  "cost": "무료(훈련비 전액 국비, 교재·실습 재료 무상), 생활관·급식 무료",
-  "money": "훈련 수당·교통비(선정된 사람에게 지급, 금액은 원문에 없음)",
-  "money_monthly_max_manwon": null,
-  "format": "기숙형 연중 수시 훈련",
-  "recruit": "연중 수시(입학 상담 → 선발 평가 → 합격자 발표 → 입학), 기관별 모집 공고",
-  "next_deadline": null,
-  "other_conditions": "장애인 전용. 경기남부·일산·부산·대구·대전·전남 6개 기관. AI 데이터 분석·인테리어 리모델링·반도체 품질 분석, 발달 장애인 제조 기술·스마트 사무 행정·서비스 산업 등. 나이·장애 정도 요건은 원문에서 확인 안 됨",
-  "summary": "장애인이 기숙사에서 먹고 자며 AI 데이터·제조·사무 같은 직업 기술을 무료로 배우는 공공 훈련 기관입니다. 선정된 사람은 훈련 수당과 교통비를 받습니다.",
-  "sources": [
-   {
-    "url": "https://www.kead.or.kr/vcnintrd/cntntsPage.do?menuId=MENU0725",
-    "quote": "국내 유일의 기숙형 장애인 전용 공공 직업훈련 기관"
-   },
-   {
-    "url": "https://www.kead.or.kr/campus/vcn/cntntsPage.do?menuId=MENU1082",
-    "quote": "훈련수당 및 교통비 지급(해당자 선정 후 지급)"
-   },
-   {
-    "url": "https://www.kead.or.kr/campus/vcn/cntntsPage.do?menuId=MENU1082",
-    "quote": "생활관 및 급식 제공(숙식 무상제공)"
-   },
-   {
-    "url": "https://www.kead.or.kr/bbs/traininginfo/bbsPage.do?menuId=MENU2208",
-    "quote": "[일산직업능력개발원] AI 디지털 튜터 훈련생 모집 공고(~9.30, 18시까지)"
-   }
-  ],
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "target_groups": [
-   "장애인"
-  ],
-  "age_unknown": true,
-  "one_liner": "기숙사에서 지내며 배우는 장애인 직업 훈련",
-  "duration": {
-   "kind": "range",
-   "min": 1,
-   "max": 24,
-   "unit": "개월",
-   "start": "",
-   "end": "",
-   "days_min": 30,
-   "days_max": 720,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "교육기간 1개월 이상 ~ 최대 24개월* (직종 마다 훈련기간 다름)",
-   "source": "official_page",
-   "source_url": "https://www.kead.or.kr/campus/cnvrgtrnng/cntntsPage.do?menuId=MENU0962",
-   "band": "단기~장기",
-   "text": "1~24개월",
-   "dates_text": "",
-   "hours_text": ""
-  },
-  "schedule": "주간",
-  "cost_type": "무료",
-  "money_short": "훈련 수당·교통비 지급"
+  "money_short": "훈련 수당 차등 지급",
+  "mode": "오프라인",
+  "mode_quote": "기숙사(숙식) 제공",
+  "mode_url": "https://www.korchamhrd.net/cms/contents.do?rootMenuId=5424&menuId=5426&cms_id=injured_worker_edu"
  },
  {
   "id": "x-0933f5d0",
@@ -11326,7 +11535,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "참여 수당 월 최대 28.4만원"
+  "money_short": "참여 수당 월 최대 28.4만원",
+  "mode": "오프라인",
+  "mode_quote": "훈련비(전액), 훈련수당 및 교통비(25만원), 중식 제공, 원거리훈련생 기숙사 제공, 상해보험가입, 수어통역, 심리치료 등",
+  "mode_url": "https://www.kead.or.kr/campus/cacttrngd/cntntsPage.do?menuId=MENU1029"
  },
  {
   "id": "x-19cbf840",
@@ -11403,7 +11615,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "참여 수당 월 최대 28.4만원"
+  "money_short": "참여 수당 월 최대 28.4만원",
+  "mode": "오프라인",
+  "mode_quote": "훈련교재 및 식사 무료 제공(교통비 월 최대 5만원 지급)",
+  "mode_url": "https://www.kead.or.kr/campus/trcdvdsblt/cntntsPage.do?menuId=MENU1087"
  },
  {
   "id": "x-0777ecd5",
@@ -11475,7 +11690,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "장애인에게 시·공간제약을 극복한 온라인 교육(E-LEARNING)서비스를 무료로 제공",
+  "mode_url": ""
  },
  {
   "id": "x-97a5511a",
@@ -11554,7 +11772,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "- 높은 학습 접근성: 실시간 화상교육(Zoom)을 20시간 운영하여 육아나 가사를 병행하는 여성의 학습 편의성 증대.",
+  "mode_url": "https://saeil.mogef.go.kr/hom/edu/eduView.do?course_id=34166"
  },
  {
   "id": "x-7e4eea13",
@@ -11631,7 +11852,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "고용 유지 장려금 60만원"
+  "money_short": "고용 유지 장려금 60만원",
+  "mode": "해당없음",
+  "mode_quote": "일을 쉬었던 여성이 새일센터 연결로 기업에서 3개월 인턴을 하는 제도입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-9e40d811",
@@ -11718,7 +11942,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "근속 청년 최대 720만원"
+  "money_short": "근속 청년 최대 720만원",
+  "mode": "해당없음",
+  "mode_quote": "교육 아님(정규직 채용 후 근속 지원)",
+  "mode_url": ""
  },
  {
   "id": "x-bf87d218",
@@ -11793,7 +12020,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "훈련 장려금 해당자 지급"
+  "money_short": "훈련 장려금 해당자 지급",
+  "mode": "오프라인",
+  "mode_quote": "교육비, 실습재료비, 기숙사비, 식비 등 전액 국가 지원",
+  "mode_url": ""
  },
  {
   "id": "x-9e91fb1d",
@@ -11863,7 +12093,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "온라인(실시간)",
+  "mode_url": "https://www.work24.go.kr/wk/u/b/1000/seniorChgJobSchoolPgmPost.do?srchEduGbcd=08"
  },
  {
   "id": "x-a8021df2",
@@ -11937,7 +12170,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "서울시50플러스 남부캠퍼스 3층 배움실 3-1",
+  "mode_url": "https://www.50plus.or.kr/in_appView.do?ANN_NO=2036"
  },
  {
   "id": "x-0b3b40eb",
@@ -11968,8 +12204,8 @@
   "money": "직무 체험형은 재단이 참여자 활동비 직접 지급(금액 원문 미기재)",
   "money_monthly_max_manwon": null,
   "format": "채용형 주 30시간 이상 / 직무 체험형 월 57시간 이내",
-  "recruit": "차수별 모집(2026년 중장년 전문 인력 역량 진단 서비스 3차 2026-09-14~09-23)",
-  "next_deadline": "2026-09-23",
+  "recruit": "캠퍼스·기업별 수시 모집(예: 2026년 북부캠퍼스 채용형 참여자 모집 2026-02-03~12-31). 같은 경력 인재 지원 메뉴의 '중장년 전문 인력 역량 진단 서비스'(3차 2026-09-14~09-23)는 활동비 없는 역량 진단·컨설팅이라 채용형·직무 체험형과 다름",
+  "next_deadline": null,
   "other_conditions": "40~64세 서울시 중장년. 채용형은 3개월 근로 시 기업에 고용 안정화 지원금",
   "summary": "서울 40~64세 중장년이 기업에서 일을 체험하거나 채용되도록 연결해 주는 사업입니다. 직무 체험형은 월 57시간 이내로 활동하고 재단에서 활동비를 받습니다.",
   "sources": [
@@ -12011,7 +12247,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "직무 체험 활동비 지급"
+  "money_short": "직무 체험 활동비 지급",
+  "mode": "오프라인",
+  "mode_quote": "서울시50플러스 동부캠퍼스 3층 3-1강의실",
+  "mode_url": "https://www.50plus.or.kr/in_appView.do?ANN_NO=1847"
  },
  {
   "id": "x-b43309ad",
@@ -12081,7 +12320,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "서울시50플러스 동부캠퍼스 3층 강의실 3-2",
+  "mode_url": "https://www.50plus.or.kr/in_appView.do?ANN_NO=2086"
  },
  {
   "id": "x-a18b3905",
@@ -12158,7 +12400,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": "수강료 80% 지원"
+  "money_short": "수강료 80% 지원",
+  "mode": "과정마다 다름",
+  "mode_quote": "원격평생교육시설로 등록된 기관에서 개설한 과정",
+  "mode_url": "https://www.vnet.go.kr/gud/GudCv004.do"
  },
  {
   "id": "x-7d248759",
@@ -12236,7 +12481,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": "교육비 90% 환급"
+  "money_short": "교육비 90% 환급",
+  "mode": "오프라인",
+  "mode_quote": "○ 교육장소 : 김포중장비자동차정비학원(경기도 김포시 양촌읍 김포한강4로 247)",
+  "mode_url": "https://www.vnet.go.kr/edc/EdcCnsg002.do"
  },
  {
   "id": "x-f1c063c2",
@@ -12310,7 +12558,10 @@
   },
   "schedule": "온라인",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "제대군인 및 전역예정자를 대상으로 온라인을 통해 취업 및 직무역량 강화에 필요한 전문적 지식을 습득하여 취창업 능력을 배양할 수 있도록 지원합니다.",
+  "mode_url": "https://www.vnet.go.kr/gud/GudCv003.do"
  },
  {
   "id": "x-7a84eb4f",
@@ -12379,7 +12630,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "x-5003dc66",
@@ -12395,13 +12649,15 @@
    "IT·AI",
    "영상·디자인",
    "기술·현장",
-   "사무·회계·경영"
+   "사무·회계·경영",
+   "요리·서비스"
   ],
   "regions": [
    "경기",
    "부산",
    "대전",
-   "전남"
+   "전남",
+   "대구"
   ],
   "age_min": 15,
   "age_max": null,
@@ -12414,13 +12670,13 @@
   "allow_business": "확인필요",
   "allow_student": "확인필요",
   "cost": "0원(교육 훈련비 전액 국비, 교재·실습 재료·숙식 무상)",
-  "money": "훈련 수당 및 교통비(해당자 선정 후 지급), 금액은 개발원 원문 미기재",
-  "money_monthly_max_manwon": null,
+  "money": "훈련 수당 월 최대 28.4만원, 교통비를 포함하면 월 최대 33.4만원(해당자 선정 후 지급)",
+  "money_monthly_max_manwon": 33.4,
   "format": "주간·기숙형(생활관·급식 제공)",
   "recruit": "기관·과정별 수시 공고(입학 상담→선발 평가→합격자 발표→입학)",
   "next_deadline": null,
-  "other_conditions": "15세 이상 구직 장애인. 기관: 경기남부·일산(경기), 부산, 대전, 전남 직업능력개발원",
-  "summary": "직업 훈련을 원하는 15세 이상 구직 장애인이 생활관에 머물며 AI·설계·자격증 등 직종을 무료로 배우는 공단 직영 훈련 기관입니다. 해당자는 훈련 수당과 교통비도 받습니다.",
+  "other_conditions": "취업을 희망하는 만 15세 이상 등록 장애인 또는 국가 유공자·보훈 보상 대상자(상이 등급 해당자) 본인. 기관: 경기남부·일산(경기), 부산, 대구, 대전, 전남 직업능력개발원 6곳. 과정 예: AI 데이터 분석·인테리어 리모델링·반도체 품질 분석, 발달 장애인 제조 기술·스마트 사무 행정·서비스 산업 등",
+  "summary": "취업을 원하는 만 15세 이상 장애인과 상이 등급 국가 유공자가 생활관에 머물며 AI·설계·자격증 등 직종을 무료로 배우는 공단 직영 훈련 기관입니다. 해당자는 훈련 수당과 교통비를 합쳐 매달 최대 33.4만원 받습니다.",
   "sources": [
    {
     "url": "https://www.kead.or.kr/campus/vcn/cntntsPage.do?menuId=MENU1084",
@@ -12431,13 +12687,21 @@
     "quote": "생활관 및 급식 제공(숙식 무상제공)"
    },
    {
-    "url": "https://www.kead.or.kr/crprtspvct/cntntsPage.do?menuId=MENU0200",
-    "quote": "15세 이상의 장애인으로 직업훈련을 희망하는 구직 장애인"
+    "url": "https://www.kead.or.kr/bbs/traininginfo/bbsView.do?menuId=MENU2208&bbsCnId=216274",
+    "quote": "지원자격 - 만 15세 이상 - 등록장애인, 국가유공자 상이등급 해당자"
+   },
+   {
+    "url": "https://www.kead.or.kr/bbs/traininginfo/bbsView.do?menuId=MENU2208&bbsCnId=216273",
+    "quote": "○ 훈련수당 지급 (매월 최대 33.4만원, 교통비 포함)"
+   },
+   {
+    "url": "https://www.kead.or.kr/vcnintrd/cntntsPage.do?menuId=MENU0725",
+    "quote": "국내 유일의 기숙형 장애인 전용 공공 직업훈련 기관"
    }
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "target_groups": [
    "장애인"
   ],
@@ -12463,7 +12727,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 수당·교통비 지급"
+  "money_short": "훈련 수당·교통비 지급",
+  "mode": "오프라인",
+  "mode_quote": "직업능력개발원은 국내 유일의 기숙형 장애인 전용 공공 직업훈련 기관으로 장애정도 및 학습능력에 맞춘 다양한 직업훈련 과정과 재활 서비스를 제공합니다.",
+  "mode_url": "https://www.kead.or.kr/vcnintrd/cntntsPage.do?menuId=MENU0725"
  },
  {
   "id": "x-2bca587d",
@@ -12543,7 +12810,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": "훈련 참여 수당 월 200천원"
+  "money_short": "훈련 참여 수당 월 200천원",
+  "mode": "오프라인",
+  "mode_quote": "민간훈련 : 거주지 인근 민간직업훈련기관을 통하여 직업훈련을 받을 수 있도록 훈련수당 지원",
+  "mode_url": "https://www.kead.or.kr/crprtspvct/cntntsPage.do?menuId=MENU0200"
  },
  {
   "id": "x-5fec4ace",
@@ -12576,11 +12846,11 @@
   "cost": "원문에 훈련비 명시 없음(하나증권 과정은 중식·교재·재료 제공)",
   "money": "취업 성공 패키지 대상자 훈련 수당 월 284,000원+교통비 50,000원, 그 외 해당자 최대 25만원 이내",
   "money_monthly_max_manwon": 33.4,
-  "format": "주간 약 1개월(예: 하나증권 138시간, 1일 6시간) 후 기업 채용",
-  "recruit": "기업별 수시(신세계백화점 9/23 마감, 리앤델의원 네일케어 ~9/27, 하나증권 3/9~3/15 종료)",
-  "next_deadline": "2026-09-23",
+  "format": "주간 1~12개월(직종마다 다름, 예: 신세계백화점 10.7~11.9, 1일 6시간) 후 기업 채용",
+  "recruit": "기업별 수시(신세계백화점 9/28 마감, 리앤델의원 네일케어 ~9/27, 하나증권 3/9~3/15 종료)",
+  "next_deadline": "2026-09-27",
   "other_conditions": "등록 장애인(과정에 따라 국가 유공자 상이 등급자 포함), 만 19세 이상. 서류·면접 선발 후 훈련, 수료 뒤 해당 기업 채용 전형",
-  "summary": "신세계백화점·하나증권 같은 특정 기업 채용을 전제로 장애인에게 한 달 안팎 직무 훈련을 해주는 과정입니다. 훈련 중 수당과 교통비가 나오고, 서류·면접으로 뽑습니다.",
+  "summary": "신세계백화점·하나증권 같은 특정 기업 채용을 전제로 장애인에게 1~12개월(직종마다 다름) 직무 훈련을 해주는 과정입니다. 훈련 중 수당과 교통비가 나오고, 서류·면접으로 뽑습니다.",
   "sources": [
    {
     "url": "https://www.kead.or.kr/bbs/traininginfo/bbsView.do?bbsCode=traininginfo&bbsCnId=211509&bbsNm=%ED%9B%88%EB%A0%A8%EC%A0%95%EB%B3%B4&menuId=MENU2208",
@@ -12622,7 +12892,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 수당·교통비 지급"
+  "money_short": "훈련 수당·교통비 지급",
+  "mode": "오프라인",
+  "mode_quote": "○ 훈련장소: 구로디지털훈련센터(서울 구로구 디지털로 300 지밸리비즈프라자 11층)",
+  "mode_url": "https://www.kead.or.kr/bbs/traininginfo/bbsView.do?bbsCode=traininginfo&bbsCnId=211509&bbsNm=%ED%9B%88%EB%A0%A8%EC%A0%95%EB%B3%B4&menuId=MENU2208"
  },
  {
   "id": "x-2c2cb8cf",
@@ -12702,7 +12975,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": "훈련 수당 8만원(2주 초과)"
+  "money_short": "훈련 수당 8만원(2주 초과)",
+  "mode": "오프라인",
+  "mode_quote": "안성 하나원 숙박 및 남녀 신청 가능",
+  "mode_url": ""
  },
  {
   "id": "x-ab0b72aa",
@@ -12781,7 +13057,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "운전면허 최대 100만원"
+  "money_short": "운전면허 최대 100만원",
+  "mode": "해당없음",
+  "mode_quote": "서울에 사는 북한 이탈 주민이 일에 필요한 운전면허나 자격증을 따면 든 비용을 돌려주는 사업입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-c07728e1",
@@ -12852,7 +13131,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "사업화 자금 최대 8천만원"
+  "money_short": "사업화 자금 최대 8천만원",
+  "mode": "해당없음",
+  "mode_quote": "아직 사업자 등록을 하지 않은 사람이 사업 계획으로 선정되면 시제품·마케팅 비용을 최대 8천만원까지 지원받는 사업입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-49f36b06",
@@ -12923,7 +13205,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "사업화 자금 최대 1억원"
+  "money_short": "사업화 자금 최대 1억원",
+  "mode": "해당없음",
+  "mode_quote": "창업한 지 3년이 안 된 사업자에게 사업화 비용을 최대 1억원(딥테크 1.5억원)까지 주는 사업입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-b64529bf",
@@ -12994,7 +13279,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "사업화 자금 최대 3억원"
+  "money_short": "사업화 자금 최대 3억원",
+  "mode": "해당없음",
+  "mode_quote": "창업한 지 3~7년 된 사업자가 제품과 사업 모델을 키우도록 최대 3억원의 사업화 비용을 주는 사업입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-d75ec647",
@@ -13069,7 +13357,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "사업화 자금 최대 1억원"
+  "money_short": "사업화 자금 최대 1억원",
+  "mode": "해당없음",
+  "mode_quote": "• (공통 프로그램) 심리치유, 실패원인분석, 맞춤형 멘토링, 투자연계",
+  "mode_url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000118399"
  },
  {
   "id": "x-7536a996",
@@ -13140,7 +13431,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "유형별 사업화 자금"
+  "money_short": "유형별 사업화 자금",
+  "mode": "해당없음",
+  "mode_quote": "사업화 자금 및 성장 프로그램 지원",
+  "mode_url": "https://www.kised.or.kr/menu.es?mid=a10205150000"
  },
  {
   "id": "x-06620789",
@@ -13214,7 +13508,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "- 장소: 인천중장년기술창업센터 강의실",
+  "mode_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-deadline.do?schM=view&pbancSn=178156"
  },
  {
   "id": "x-74108e9e",
@@ -13284,7 +13581,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "해당없음",
+  "mode_quote": "1인 창조기업 지원센터 사무공간 제공과 법률·회계 등 전문가 자문, 네트워킹, 마케팅, 판로·투자유치 등을 지원",
+  "mode_url": "https://www.kised.or.kr/menu.es?mid=a10211050000"
  },
  {
   "id": "x-ed555cfc",
@@ -13354,7 +13654,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "·운영방법 : 온라인(ZOOM) ※ 신청자 대상 참여 링크 개별 발송",
+  "mode_url": "https://www.k-startup.go.kr/web/contents/bizpbanc-deadline.do?schM=view&pbancSn=178373"
  },
  {
   "id": "x-7788f69c",
@@ -13428,7 +13731,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "점포 철거비 최대 600만원"
+  "money_short": "점포 철거비 최대 600만원",
+  "mode": "해당없음",
+  "mode_quote": "가게를 접으려는 소상공인에게 점포 철거비와 사업 정리 컨설팅, 변호사 법률 자문, 채무 조정 상담을 지원합니다.",
+  "mode_url": ""
  },
  {
   "id": "x-ca5fa27a",
@@ -13504,7 +13810,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "일부 자부담",
-  "money_short": "사업화 자금 최대 2천만원"
+  "money_short": "사업화 자금 최대 2천만원",
+  "mode": "혼합",
+  "mode_quote": "교육은 대면 8시간+비대면 16시간을 결합한 총 24시간 복합 과정으로 운영됐다.",
+  "mode_url": "https://www.ccdn.co.kr/news/articleView.html?idxno=1080333"
  },
  {
   "id": "x-df67b06d",
@@ -13581,7 +13890,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "예비창업자 및 소상공인이 경영환경 변화에 대처하고 경쟁력을 높일 수 있도록 온·오프라인 교육 지원",
+  "mode_url": "https://www.semas.or.kr/web/SUP01/SUP0123/SUP012305.kmdc"
  },
  {
   "id": "x-6d1cbd29",
@@ -13655,7 +13967,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "1.1억원 포상+사업화 자금"
+  "money_short": "1.1억원 포상+사업화 자금",
+  "mode": "해당없음",
+  "mode_quote": "여성 예비 창업 팀이나 창업 7년 미만 여성 기업이 사업 아이디어로 겨루어 상금과 사업화 자금을 받는 대회입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-57c47374",
@@ -13732,7 +14047,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": "입주 기업 사업화 지원금"
+  "money_short": "입주 기업 사업화 지원금",
+  "mode": "해당없음",
+  "mode_quote": "여성 예비 창업자나 창업 7년 미만 여성 기업이 전국 18개 지역 센터의 사무실에 입주해 컨설팅과 멘토링을 받는 곳입니다.",
+  "mode_url": ""
  },
  {
   "id": "x-45ba6d20",
@@ -13806,7 +14124,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "* 프로그램 운영 및 평가는 고교·대학 각 그룹 별도로, 비대면(화상회의·유선·메일 등) 진행되며,",
+  "mode_url": "https://kwbiz.or.kr/idea/main"
  },
  {
   "id": "x-efe5f160",
@@ -13880,7 +14201,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": "창업 자금 지원"
+  "money_short": "창업 자금 지원",
+  "mode": "해당없음",
+  "mode_quote": "센터 교육을 이수한 장애인 예비 창업자나 업종을 바꾸려는 장애인에게 창업 자금을 지원합니다.",
+  "mode_url": ""
  },
  {
   "id": "x-4b5edf8e",
@@ -13961,7 +14285,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육장소 : 한경국립대학교 장애인 기업가 역량강화센터 등",
+  "mode_url": "https://www.debc.or.kr/bbs/board.php?bo_table=s2_2&wr_id=1715"
  },
  {
   "id": "x-1f23b8f5",
@@ -14036,7 +14363,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육장소 : 한경국립대학교 평택캠퍼스 인학관 211호(경기도 평택시 삼남로 283)",
+  "mode_url": "https://www.debc.or.kr/bbs/board.php?bo_table=s2_2&wr_id=1753"
  },
  {
   "id": "x-f9ac96cf",
@@ -14110,7 +14440,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "행사장소 : 소상공인시장진흥공단 부산전용교육장 혁신실, 희망실",
+  "mode_url": "https://www.debc.or.kr/bbs/board.php?bo_table=s2_2&wr_id=1757"
  },
  {
   "id": "x-def0a9c4",
@@ -14184,7 +14517,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "해당없음",
+  "mode_quote": "장애인 예비 창업자와 재기·초기 창업자가 창업 단계에 맞춰 전문가에게 1:1 컨설팅을 받습니다.",
+  "mode_url": ""
  },
  {
   "id": "x-5028439d",
@@ -14263,7 +14599,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "혼합",
+  "mode_quote": "◦ (교육장소) 온라인 창업넷, 외부 교육장 및 실습장, 익산 가치만드소",
+  "mode_url": "https://www.debc.or.kr/bbs/board.php?bo_table=s2_2&wr_id=1769"
  },
  {
   "id": "x-3d6dd0b6",
@@ -14337,7 +14676,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": "사업화 지원"
+  "money_short": "사업화 지원",
+  "mode": "해당없음",
+  "mode_quote": "경북에 소재지를 둔 발달 장애인 가족 공동 창업 기업이나 예비 창업자를 6곳 정도 뽑아 사업화를 지원합니다.",
+  "mode_url": ""
  },
  {
   "id": "x-fbbb48fd",
@@ -14369,9 +14711,9 @@
   "money": "없음",
   "money_monthly_max_manwon": null,
   "format": "입주형(전남 무안군 삼향읍 전남지역센터)",
-  "recruit": "2026.8.24~9.18 17시, 2개 기업",
+  "recruit": "2026.8.24~9.18 17시(마감), 2개 기업",
   "next_deadline": "2026-09-18",
-  "summary": "장애인 예비 창업자나 창업 7년 미만 장애인 기업이 전남지역센터 창업 보육실에 입주할 곳을 2곳 모집합니다. 접수는 9월 18일 17시까지입니다.",
+  "summary": "장애인 예비 창업자나 창업 7년 미만 장애인 기업 가운데 전남지역센터 창업 보육실에 입주할 2곳을 모집합니다. 이번 접수는 9월 18일 17시에 끝났습니다.",
   "other_conditions": "장애인 한정. 장애인 예비 창업자 또는 사업 개시 7년 미만 장애인 기업. 2개 기업 모집",
   "sources": [
    {
@@ -14410,7 +14752,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "해당없음",
+  "mode_quote": "장애인 예비 창업자나 창업 7년 미만 장애인 기업이 전남지역센터 창업 보육실에 입주할 곳을 2곳 모집합니다.",
+  "mode_url": ""
  },
  {
   "id": "x-9346fd50",
@@ -14482,7 +14827,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 지원"
+  "money_short": "훈련 지원금 지원",
+  "mode": "오프라인",
+  "mode_quote": "경기도기술학교 : 경기도 화성시 병점구 기산로 31-6 첨단기술관",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203025"
  },
  {
   "id": "x-76d888f5",
@@ -14517,7 +14865,7 @@
   "recruit": "2기 2026.8.24~9.11(마감). 기수제",
   "next_deadline": null,
   "other_conditions": "공고일 기준 만 15세 이상 미취업 경기도민. 사업자 등록자가 미취업으로 인정되는지는 게시 글에 없음",
-  "summary": "에어컨·냉난방기 설치를 두 달 넘게 무료로 배우는 과정입니다. 출석을 80% 넘게 하면 하루 2만원씩, 한 달에 최대 40만원을 받습니다.",
+  "summary": "에어컨·냉난방기 설치를 두 달 넘게 무료로 배우는 과정입니다. 출석률이 80% 이상이면 하루 2만원씩, 한 달에 최대 40만원을 받습니다.",
   "sources": [
    {
     "url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202998",
@@ -14553,7 +14901,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 월 최대 40만원"
+  "money_short": "훈련 지원금 월 최대 40만원",
+  "mode": "오프라인",
+  "mode_quote": "교육장소 : 경기도일자리재단 경기도기술학교 북부캠퍼스",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202998"
  },
  {
   "id": "x-a661d25a",
@@ -14587,7 +14938,7 @@
   "format": "주간 월~금, 2026.8.18~12.11, 병점·망포역 통학 버스",
   "recruit": "2026.7.2~8.5(마감)",
   "next_deadline": null,
-  "other_conditions": "공고일 기준 경기도민, 1987.2.2.~2008.2.1. 출생자. 실업 급여 수급자 제외. 취업 상태 조건은 게시 글에 없으나 평일 전일 '취업과정'",
+  "other_conditions": "공고일 기준 경기도민, 1987.2.2.~2008.2.1. 출생자. 실업 급여 수급자는 훈련 지원금만 받지 못함. 취업 상태 조건은 게시 글에 없으나 평일 전일 '취업과정'",
   "summary": "청년을 뽑아 넉 달 동안 평일에 용접을 가르치는 기술학교 과정입니다. 교육비는 들지 않고 매달 30만원 훈련 지원금과 점심이 나옵니다.",
   "sources": [
    {
@@ -14628,7 +14979,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 월 30만원"
+  "money_short": "훈련 지원금 월 30만원",
+  "mode": "오프라인",
+  "mode_quote": "경기도기술학교 용접기술관 (경기도 화성시 기산로 31-6)",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202832"
  },
  {
   "id": "x-d52b8fe7",
@@ -14703,7 +15057,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 월 30만원"
+  "money_short": "훈련 지원금 월 30만원",
+  "mode": "오프라인",
+  "mode_quote": "경기도기술학교 기계기술관 2층 (경기도 화성시 기산로 31-6)",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202862"
  },
  {
   "id": "x-5a727f71",
@@ -14733,7 +15090,7 @@
   "cost": "교육비·재료비 전액 무료",
   "money": "게시 글에 훈련 지원금 언급 없음(중식 무료, 병점역·망포역 통학 버스)",
   "money_monthly_max_manwon": null,
-  "format": "교육 기간은 게시 글에 없음(첨부 공고문 확인)",
+  "format": "4일(2026.8.18~8.21), 화~금 10:00~16:00, 총 24시간",
   "recruit": "2026.7.10~8.4(마감), 20명, 5배수 초과 시 조기 마감",
   "next_deadline": null,
   "other_conditions": "공고일 기준 만 15세 이상 경기도민",
@@ -14758,97 +15115,29 @@
   "one_liner": "태양광 발전 설비 구성·시공·보수와 현장 견학",
   "duration": {
    "kind": "fixed",
-   "min": null,
-   "max": null,
-   "unit": "",
+   "min": 4,
+   "max": 4,
+   "unit": "일",
    "start": "2026-08-18",
    "end": "2026-08-21",
    "days_min": 4,
    "days_max": 4,
-   "hours_min": null,
-   "hours_max": null,
+   "hours_min": 24,
+   "hours_max": 24,
    "quote": "신재생에너지발전설비(태양광) 20명 ’26.8.18.(화) ~ 8.21.(금) [4일] 화~금 10:00~16:00. 총 24H",
    "source": "official_page",
    "source_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22625&key=6E4159FE3796703",
    "band": "단기",
    "text": "4일",
    "dates_text": "8.18~8.21",
-   "hours_text": ""
+   "hours_text": "총 24시간"
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
- },
- {
-  "id": "x-69c17517",
-  "name": "경기도기술학교 북부 3D 프린팅 굿즈 제작 1일 교육",
-  "operator": "경기도일자리재단(경기도기술학교 북부캠퍼스)",
-  "official_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203027",
-  "apply_url": "https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=5900",
-  "kinds": [
-   "무료교육"
-  ],
-  "fields": [
-   "영상·디자인",
-   "기술·현장"
-  ],
-  "regions": [
-   "경기"
-  ],
-  "age_min": 15,
-  "age_max": null,
-  "education": "제한없음",
-  "education_note": "신청 자격에 학력 조건 없음",
-  "income": "제한없음",
-  "income_note": "신청 자격에 소득 조건 없음",
-  "allow_job_seeker": "가능",
-  "allow_employed": "가능",
-  "allow_business": "가능",
-  "allow_student": "가능",
-  "cost": "교육비 전액 무료",
-  "money": "없음",
-  "money_monthly_max_manwon": null,
-  "format": "1일 과정 9~16시(2026.9.15)",
-  "recruit": "2026.9.1~9.10(마감). 단기 체험 과정은 수시 공고",
-  "next_deadline": null,
-  "other_conditions": "공고일 기준 만 15세 이상 경기도민",
-  "summary": "하루 동안 3D 모델링과 프린팅으로 굿즈를 직접 만들어 보는 체험 교육입니다. 교육비는 들지 않습니다.",
-  "sources": [
-   {
-    "url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203027",
-    "quote": "공고일 기준 만 15세 이상 경기도민"
-   },
-   {
-    "url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203027",
-    "quote": "교육비 전액 무료"
-   }
-  ],
-  "income_pct_max": null,
-  "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "입체 모델링과 프린팅으로 굿즈 만들기 체험",
-  "duration": {
-   "kind": "fixed",
-   "min": null,
-   "max": null,
-   "unit": "",
-   "start": "2026-09-15",
-   "end": "2026-09-15",
-   "days_min": 1,
-   "days_max": 1,
-   "hours_min": null,
-   "hours_max": null,
-   "quote": "3) 교육기간 : 9.15.(화) 9시~16시",
-   "source": "official_page",
-   "source_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203027",
-   "band": "하루",
-   "text": "9.15",
-   "dates_text": "9.15",
-   "hours_text": ""
-  },
-  "schedule": "주간",
-  "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "경기도기술학교 : 경기도 화성시 병점구 기산로 31-6 첨단기술관",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202841"
  },
  {
   "id": "x-c0e9e402",
@@ -14923,7 +15212,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "훈련 지원금 1일 2만원"
+  "money_short": "훈련 지원금 1일 2만원",
+  "mode": "오프라인",
+  "mode_quote": "○ 교육장소 : 경기도기술학교 및 외부교육장",
+  "mode_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22739&key=3D9B8AA383161DF"
  },
  {
   "id": "x-7be42831",
@@ -14997,7 +15289,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 최대 30만원"
+  "money_short": "응시료 최대 30만원",
+  "mode": "해당없음",
+  "mode_quote": "1인 최대 30만원, 어학·자격시험 응시료 실비 지원",
+  "mode_url": ""
  },
  {
   "id": "x-b71ce840",
@@ -15071,7 +15366,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "3. 교육기간 2026. 9. 28.(월) ~ 10. 16.(금) [대면교육] ※ 매주 월~금 13:00~17:00 운영 (총 12회 / 48시간, 공휴일 및 10. 8.(목) 휴강)",
+  "mode_url": ""
  },
  {
   "id": "x-bc4444d0",
@@ -15146,7 +15444,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "- 장소: 비대면 진행(링크 전송 예정)",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202940"
  },
  {
   "id": "x-5072c4f3",
@@ -15221,7 +15522,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "3. 교육기간 2026. 8. 19.(수) ~ 9. 15.(화) [대면교육] ※ 매주 월~금 13:00~17:00 운영 (총 20회 / 80시간)",
+  "mode_url": ""
  },
  {
   "id": "x-30b3925d",
@@ -15296,7 +15600,10 @@
   },
   "schedule": "혼합",
   "cost_type": "무료",
-  "money_short": "총상금 300만원"
+  "money_short": "총상금 300만원",
+  "mode": "혼합",
+  "mode_quote": "2026. 9. 21.(월) ~ 10. 21.(수) [대면+비대면 병행]",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=203062"
  },
  {
   "id": "x-22ae4c9a",
@@ -15370,7 +15677,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육기간 2026. 8. 31.(월) ~ 10. 12.(월) [대면교육] ※ 매주월·화·목· 금13:00~17:00 운영( 총21 회/ 84시간)",
+  "mode_url": ""
  },
  {
   "id": "x-ab68ba21",
@@ -15440,7 +15750,10 @@
   },
   "schedule": "혼합",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "현장강의(경기도일자리재단 남부사업본부_경기도 수원시 권선구 권중로 46)",
+  "mode_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22654&key=164A75667D22C1F"
  },
  {
   "id": "x-52db4feb",
@@ -15515,7 +15828,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "ADsP 응시료 1회 지원"
+  "money_short": "ADsP 응시료 1회 지원",
+  "mode": "오프라인",
+  "mode_quote": "경기도일자리재단 남부사업본부(수원시 권선구 권중로 46)",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202967"
  },
  {
   "id": "x-fd6fc8ee",
@@ -15546,7 +15862,7 @@
   "cost": "게시 글에 교육비 명시 없음(확인필요)",
   "money": "없음(게시 글 기준)",
   "money_monthly_max_manwon": null,
-  "format": "3회차 단기 과정(일정은 첨부 공고문)",
+  "format": "매주 토요일 9:30~16:30, 3회(총 18시간) ZOOM 실시간 온라인",
   "recruit": "2026.7.31 공고. 모집 기간은 게시 글에 없음(첨부 공고문)",
   "next_deadline": null,
   "other_conditions": "여성만. 디자인·마케팅·영상 제작 관련 업무를 하는 IT 분야 재직자. 거주·근무지 요건은 첨부 공고문 확인필요",
@@ -15563,7 +15879,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "target_groups": [
    "여성"
   ],
@@ -15587,9 +15903,12 @@
    "dates_text": "9.5~9.19",
    "hours_text": ""
   },
-  "schedule": "온라인",
+  "schedule": "야간·주말",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "ZOOM을 이용한 온라인 실시간(ZOOM) 강의(100% 온라인 강의)",
+  "mode_url": "https://gjf.or.kr/other/attach/process.file.do?TP=dn&sn=22716&key=0606A92B1A4F1B5"
  },
  {
   "id": "x-9947f018",
@@ -15659,7 +15978,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "- 취업특강, 면접캠프, 모의면접, 현직자 멘토링 등",
+  "mode_url": "https://gjf.or.kr/main/pst/view.do?pst_id=notice_ap&pst_sn=202899"
  },
  {
   "id": "x-3fe3eec6",
@@ -15734,7 +16056,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "자격 취득 시 최대 30만원"
+  "money_short": "자격 취득 시 최대 30만원",
+  "mode": "해당없음",
+  "mode_quote": "인턴십 3개월(4대보험 가입)",
+  "mode_url": ""
  },
  {
   "id": "x-f8ba201c",
@@ -15810,7 +16135,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "온라인 학습은 회원가입이나 로그인 없이도 누구나 무료로 바로 학습할 수 있습니다.",
+  "mode_url": ""
  },
  {
   "id": "x-2f10bae0",
@@ -15884,7 +16212,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 연 최대 10만원"
+  "money_short": "응시료 연 최대 10만원",
+  "mode": "해당없음",
+  "mode_quote": "1인 1회, 연 최대 10만원 범위 자격증시험 응시료 지원",
+  "mode_url": ""
  },
  {
   "id": "x-60bf60c8",
@@ -15958,7 +16289,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "월 50만원씩 최대 6개월"
+  "money_short": "월 50만원씩 최대 6개월",
+  "mode": "해당없음",
+  "mode_quote": "1인 월 50만원씩 최대 6개월(최대 300만원 지원)",
+  "mode_url": ""
  },
  {
   "id": "x-3b5eede1",
@@ -16032,7 +16366,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "□ 교육장소 : K-하이테크 플랫폼, 인천스타트업파크 등 상이(신청서 참조)",
+  "mode_url": "https://www.itp.or.kr/common/COM_FILEDOWN.ASP?a=bbs&b=2604011653320999614893.pdf"
  },
  {
   "id": "x-b6d03147",
@@ -16102,7 +16439,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "청년 콘텐츠 우수인재 양성 콘텐츠 제작 교육(25명)",
+  "mode_url": "https://youth.incheon.go.kr/education/content.jsp"
  },
  {
   "id": "x-71cb156f",
@@ -16176,7 +16516,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "인턴 시 인건비 지원"
+  "money_short": "인턴 시 인건비 지원",
+  "mode": "오프라인",
+  "mode_quote": "오프라인",
+  "mode_url": "https://linkareer.com/activity/318002"
  },
  {
   "id": "x-89739bf4",
@@ -16250,7 +16593,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": ""
+  "money_short": "",
+  "mode": "해당없음",
+  "mode_quote": "정장 세트(셔츠/블라우스, 치마/바지) + 구두",
+  "mode_url": ""
  },
  {
   "id": "x-67ff9b20",
@@ -16280,11 +16626,11 @@
   "cost": "원문에 비용 명시 없음(확인필요)",
   "money": "없음(원문 기준)",
   "money_monthly_max_manwon": null,
-  "format": "분야별 전문가 온·오프라인 강의",
+  "format": "분야별 전문가 강의(2026년 회차는 유유기지 인천에서 대면)",
   "recruit": "2026.6~11, 인천광역시 청년지원센터(유유기지 인천) 홈페이지에 신청 기간 별도 게시",
   "next_deadline": null,
   "other_conditions": "원문에 거주 요건 없음(인천 청년지원센터 운영)",
-  "summary": "청년에게 자산·재무 설계, 재테크와 부동산·근로 계약 상식을 가르치는 강의입니다. 온라인과 오프라인으로 열리며 신청은 유유기지 인천 홈페이지에서 합니다.",
+  "summary": "청년에게 자산·재무 설계, 재테크와 부동산·근로 계약 상식을 가르치는 강의입니다. 2026년 회차는 유유기지 인천에서 대면으로 열리고 신청은 유유기지 인천 홈페이지에서 합니다.",
   "sources": [
    {
     "url": "https://youth.incheon.go.kr/education/upclass.jsp",
@@ -16301,7 +16647,7 @@
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "재무 설계·재테크·부동산·근로 계약 상식 강의",
   "duration": {
    "kind": "fixed",
@@ -16324,7 +16670,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "2026.9.22.(화) 19:00 ~ 20:50(오프라인 강의)",
+  "mode_url": "https://youth.incheon.go.kr/program/programInfoDetail.do?prgm_seq=2116&prgmdiv=all"
  },
  {
   "id": "x-cee7deac",
@@ -16395,7 +16744,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "혼합",
+  "mode_quote": "교육생은 먼저 온라인 입문과정(14시간)을 통해 금융 기본지식을 습득한 뒤, 공통과정(30시간) 및 전문과정(34시간) 집합교육을 수강한다.",
+  "mode_url": "https://mediahub.seoul.go.kr/archives/2018471"
  },
  {
   "id": "x-1dd320cf",
@@ -16470,7 +16822,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "서울시50플러스서부캠퍼스",
+  "mode_url": "https://rpt.50plus.or.kr/in_appView.do?ANN_NO=2062"
  },
  {
   "id": "x-cdae43bb",
@@ -16552,7 +16907,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "월 30만원 × 6개월"
+  "money_short": "월 30만원 × 6개월",
+  "mode": "해당없음",
+  "mode_quote": "사회진입활동비 최대 180만원(월 30만원 × 6개월) 지원",
+  "mode_url": ""
  },
  {
   "id": "x-4c064ee3",
@@ -16582,9 +16940,9 @@
   "cost": "없음",
   "money": "원문에 연수비 금액 없음(확인필요)",
   "money_monthly_max_manwon": null,
-  "format": "공공 기관 등에서 6주 연수(근로자 아닌 연수생 신분, 4대 보험 미적용)",
-  "recruit": "반기별(상반기 2월 중, 하반기 9월 중). 2026 하반기: 신청 8.20~9.2(마감), 연수 9.21~10.30, 30명. 연 320여 명",
-  "next_deadline": null,
+  "format": "공공 기관 등에서 8주 연수(근로자 아닌 연수생 신분, 4대 보험 미적용)",
+  "recruit": "반기별(상반기 2월 중, 하반기 9월 중). 2026 하반기: 신청 9.15~9.28 18시, 연수 10.26~12.18, 125명. 연 320여 명",
+  "next_deadline": "2026-09-28",
   "other_conditions": "공고일 기준 부산 주민 등록. 취약 계층(저소득층·장애인 등)·국가 유공자·최근 졸업(예정)자·부산시/정부 일자리 사업 미경험자 우선",
   "summary": "부산에 사는 29세 이하 미취업 청년이 공공 기관에서 연수생으로 행정 일을 체험하는 사업입니다. 고등학교 이상을 졸업하고 3년이 안 지난 사람이 대상이며 2월과 9월에 뽑습니다.",
   "sources": [
@@ -16607,9 +16965,9 @@
   "one_liner": "공공 기관 부서에서 행정 업무를 체험하는 연수",
   "duration": {
    "kind": "fixed",
-   "min": null,
-   "max": null,
-   "unit": "",
+   "min": 8,
+   "max": 8,
+   "unit": "주",
    "start": "2026-10-26",
    "end": "2026-12-18",
    "days_min": 54,
@@ -16626,7 +16984,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "해당없음",
+  "mode_quote": "행정업무지원, 자료정리, 민원응대 등",
+  "mode_url": "https://www.busanjob.net/yjob/view.do?no=1118&pgMode=show"
  },
  {
   "id": "x-2fe42684",
@@ -16696,7 +17057,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "부산 동구 초량중로 29 한국방송통신전파진흥원 부산본부에서 오프라인으로 교육이 이루어질 예정입니다.",
+  "mode_url": "https://bootcamp.theuniongraphix.com/"
  },
  {
   "id": "x-09a353d9",
@@ -16770,7 +17134,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 최대 7만원"
+  "money_short": "응시료 최대 7만원",
+  "mode": "해당없음",
+  "mode_quote": "자격시험 응시료 실비를 돌려받는 지원",
+  "mode_url": ""
  },
  {
   "id": "x-14de5bfd",
@@ -16836,7 +17203,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "■ 장소 : 해운대청년JOB카페 1층 (해운대구 반여로 120)",
+  "mode_url": "https://young.busan.go.kr/policySupport/view.nm?menuCd=13&bizSid=SUP0000003752"
  },
  {
   "id": "x-c04450ad",
@@ -16906,7 +17276,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "부산 클라우드 혁신센터 교육장(동서대 센텀캠퍼스 12층)",
+  "mode_url": "https://bipa.kr/board/training/view?seq=85274"
  },
  {
   "id": "x-8663bc19",
@@ -16980,7 +17353,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 연 최대 10만원"
+  "money_short": "응시료 연 최대 10만원",
+  "mode": "해당없음",
+  "mode_quote": "어학 및 자격증 시험 응시료 지원(1회 최대 10만원/연)",
+  "mode_url": ""
  },
  {
   "id": "x-d04f1b2c",
@@ -17055,7 +17431,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "자기 개발비 최대 100만원"
+  "money_short": "자기 개발비 최대 100만원",
+  "mode": "해당없음",
+  "mode_quote": "자격증 시험응시료, 학원 수강료(온라인 강의 포함), 교재비 실비 지원",
+  "mode_url": ""
  },
  {
   "id": "x-851e2e76",
@@ -17130,7 +17509,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 최대 10만원 등"
+  "money_short": "응시료 최대 10만원 등",
+  "mode": "해당없음",
+  "mode_quote": "응시료·취업 사진·헤어 메이크업·정장 대여 지원",
+  "mode_url": ""
  },
  {
   "id": "x-af1be11c",
@@ -17200,7 +17582,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "교육·훈련비 최대 50만원"
+  "money_short": "교육·훈련비 최대 50만원",
+  "mode": "해당없음",
+  "mode_quote": "직무수행에 필요한 교육‧훈련비 지원(인당 최대 50만원)",
+  "mode_url": ""
  },
  {
   "id": "x-28b38c3a",
@@ -17270,7 +17655,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "- (A반)울산정보산업진흥원강의실(종하이노베이션센터 3층)",
+  "mode_url": "https://www.ulsan.go.kr/s/ulsanyouth/bbs/FileDown.do?bbsId=BBS_0000000000000309&atchFileId=FILE_000000000179017&fileSn=1"
  },
  {
   "id": "x-5a795d7d",
@@ -17340,7 +17728,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "-오프라인 실습교육장소 : 울산시청자미디어재단",
+  "mode_url": "https://www.ulsan.go.kr/s/ulsanyouth/bbs/FileDown.do?bbsId=BBS_0000000000000309&atchFileId=FILE_000000000171043&fileSn=1"
  },
  {
   "id": "x-470095d2",
@@ -17410,7 +17801,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "울산시는 10월 7일과 8일 양일간 울산대학교 학생회관(4층 미니워크스페이스 강의실)에서 지역 청년들의 울산혁신도시 이전공공기관 취업을 지원하기 위한 ‘2026년 이전공공기관 취업 강좌(아카데미)’를 개최한다고 밝혔다.",
+  "mode_url": "https://www.anewsa.com/detail.php?number=3199921"
  },
  {
   "id": "x-46e97b93",
@@ -17480,7 +17874,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "미정",
+  "mode_url": "https://www.uctf.or.kr/business/tour-mice/mice-arcademy"
  },
  {
   "id": "x-c227f6ef",
@@ -17550,7 +17947,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "울산콘텐츠코리아랩 2F 세미나실 또는 3F SW교육실",
+  "mode_url": "https://www.uipa.or.kr/webuser/business/view.html?bd_id=24029"
  },
  {
   "id": "x-eeb69f4e",
@@ -17620,7 +18020,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "○ 장 소 : 울산웹툰캠퍼스(울산광역시 중구 종가로 406-21 6층)",
+  "mode_url": "https://www.uipa.or.kr/webuser/business/download.html?bd_id=23722&fi_id=11434"
  },
  {
   "id": "x-f651403c",
@@ -17692,7 +18095,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "❍ 교육장소 : 울산정보산업진흥원 교육장(변경시 신청자 개별 통보)",
+  "mode_url": "https://www.uipa.or.kr/webuser/business/download.html?bd_id=24824&fi_id=12287"
  },
  {
   "id": "x-6736edc2",
@@ -17763,7 +18169,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "급여·주거비·왕복 항공료 지원"
+  "money_short": "급여·주거비·왕복 항공료 지원",
+  "mode": "확인필요",
+  "mode_quote": "국제개발협력 분야 교육 및 해외(국제기구 등) 인턴십 파견",
+  "mode_url": "https://www.ulsanidcc.com/post/%EA%B3%B5%EA%B3%A0-2026%EB%85%84-%EC%83%81%EB%B0%98%EA%B8%B0-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%9D%B8%EC%9E%AC-%EC%9C%A1%EC%84%B1%EC%82%AC%EC%97%85-u-fly-4%EA%B8%B0-%EB%AA%A8%EC%A7%91-%EB%B0%8F-%EC%84%A4%EB%AA%85%ED%9A%8C-%EC%95%88%EB%82%B4"
  },
  {
   "id": "x-a182fce4",
@@ -17833,7 +18242,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "창업 활동비 지원"
+  "money_short": "창업 활동비 지원",
+  "mode": "혼합",
+  "mode_quote": "• 창업관련 온‧오프라인 교육 : 라이브커머스, 브랜딩, 챗GPT 활용 등",
+  "mode_url": "https://www.ubpi.or.kr/_Inc/download.php?gb=supportdata&f_idx=50150"
  },
  {
   "id": "x-4b68d0dc",
@@ -17908,7 +18320,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "남구 일자리종합세터 4층 교육장",
+  "mode_url": "https://www.ulsan.go.kr/s/ulsanyouth/bbs/view.do?mId=008001002000000000&bbsId=BBS_0000000000000309&dataId=60508"
  },
  {
   "id": "x-34634227",
@@ -17978,7 +18393,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "사업화 자금 지원"
+  "money_short": "사업화 자금 지원",
+  "mode": "오프라인",
+  "mode_quote": "❍ 사업장소 : 청년창업지원센터",
+  "mode_url": "https://www.ulsan.go.kr/s/ulsanyouth/bbs/view.do?mId=008001001000000000&bbsId=BBS_0000000000000316&dataId=56664"
  },
  {
   "id": "x-b7d02d6b",
@@ -18048,7 +18466,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "○ 장 소: 남구 대학로 130, 2층(무거동)",
+  "mode_url": "https://www.ulsan.go.kr/s/ulsanyouth/bbs/view.do?mId=008001001000000000&bbsId=BBS_0000000000000316&dataId=56426"
  },
  {
   "id": "x-93f63d10",
@@ -18118,7 +18539,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "○ 장 소: 중회의실 또는 대회의실",
+  "mode_url": "https://www.ulsan.go.kr/s/ulsanyouth/bbs/view.do?mId=008001001000000000&bbsId=BBS_0000000000000316&dataId=56268"
  },
  {
   "id": "x-136647a2",
@@ -18188,7 +18612,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "청년들의 수요에 맞는 취업․문화․예술 특강 진행",
+  "mode_url": ""
  },
  {
   "id": "x-0b751333",
@@ -18258,7 +18685,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "운영기간 : 9월 ~ 12월",
+  "mode_url": "https://www.ulju.ulsan.kr/lll/info/youth_edu.do"
  },
  {
   "id": "x-ae6b6d73",
@@ -18332,7 +18762,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "쿠폰 월 50만원·최대 300만원"
+  "money_short": "쿠폰 월 50만원·최대 300만원",
+  "mode": "해당없음",
+  "mode_quote": "취업준비 쿠폰 : 월 50만원씩 6개월간 최대 300만원 (포인트)지원",
+  "mode_url": ""
  },
  {
   "id": "x-90db450c",
@@ -18407,7 +18840,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "수료 시 교육 수당 30만원"
+  "money_short": "수료 시 교육 수당 30만원",
+  "mode": "오프라인",
+  "mode_quote": "춘천 ICT벤처센터 2층 중회의실(춘천시 후석로 462번길 7)",
+  "mode_url": "https://gwep.or.kr/data/editor/2609/309d878d04d14c0a3a47487b480297a4_1788309453_1664.jpg"
  },
  {
   "id": "x-f41362f3",
@@ -18488,7 +18924,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": "훈련 수당 월 최대 50만원"
+  "money_short": "훈련 수당 월 최대 50만원",
+  "mode": "오프라인",
+  "mode_quote": "본 프로그램은 오프라인 강의장에서 집합(대면) 형태로 교육이 진행됩니다.",
+  "mode_url": "https://www.career-hope.com/ko/faq"
  },
  {
   "id": "x-2b50e43b",
@@ -18576,7 +19015,10 @@
   },
   "schedule": "혼합",
   "cost_type": "확인필요",
-  "money_short": "90% 이상 참여 75만원"
+  "money_short": "90% 이상 참여 75만원",
+  "mode": "혼합",
+  "mode_quote": "오프라인 사전 교육 : 10월 6일(화) ~ 10월 7일(수)",
+  "mode_url": "https://www.ulsan.go.kr/s/ulsanyouth/bbs/view.do?mId=008001002000000000&bbsId=BBS_0000000000000309&dataId=60361"
  },
  {
   "id": "x-e5fd773d",
@@ -18646,7 +19088,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "대구공연예술연습공간(남구 명덕로 42)",
+  "mode_url": "http://dgyouth.kr/pds/notice/0260518274429814/dg_2026_대구청년학교_딴길_학생모집_안내문.pdf"
  },
  {
   "id": "x-058fd83a",
@@ -18716,7 +19161,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "[장소] 대구광역시청년센터 공감그래 (중구 국채보상로 541, 9층)",
+  "mode_url": "http://dgyouth.kr/board/notice.asp?num=2610&pmode=VIEW&board=notice"
  },
  {
   "id": "x-8f99b46e",
@@ -18790,7 +19238,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "구직 활동비 월 50만원"
+  "money_short": "구직 활동비 월 50만원",
+  "mode": "해당없음",
+  "mode_quote": "구직활동비 월 50만원 x 6개월(1인당 최대 300만원)",
+  "mode_url": ""
  },
  {
   "id": "x-5b508ba4",
@@ -18860,7 +19311,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "참여 청년은 국가자격증, 한국사·어학, 공무원 시험, 국가직무능력표준, 자기계발 등 취업 준비에 필요한 다양한 온라인 강의를 수강할 수 있다.",
+  "mode_url": "https://www.fieldnews.co.kr/news/articleView.html?idxno=229694"
  },
  {
   "id": "x-03ee7e64",
@@ -18935,7 +19389,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "응시료 최대 10만원"
+  "money_short": "응시료 최대 10만원",
+  "mode": "해당없음",
+  "mode_quote": "자격증·어학 시험 응시료 실비 환급",
+  "mode_url": ""
  },
  {
   "id": "x-496e5d67",
@@ -19002,7 +19459,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "학과별 자체 공간에서 수업 진행",
+  "mode_url": "https://www.daejeonyouthportal.kr/board/BBSMSTR_000000000239/articleView.do?searchSeq=15360"
  },
  {
   "id": "x-0fd2a921",
@@ -19072,7 +19532,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": "직무 연수비 월 2,156,880원"
+  "money_short": "직무 연수비 월 2,156,880원",
+  "mode": "혼합",
+  "mode_quote": "직무별 맞춤 교육(온.오프라인)",
+  "mode_url": "https://www.hit.ac.kr/square_hitnews_employment/view/id/46674"
  },
  {
   "id": "x-1cfb1677",
@@ -19142,7 +19605,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "해커스 온라인 강의 및 교재 제공(1권, 우편제공)",
+  "mode_url": ""
  },
  {
   "id": "x-2c101355",
@@ -19216,7 +19682,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "자격증 응시료 회당 10만원"
+  "money_short": "자격증 응시료 회당 10만원",
+  "mode": "해당없음",
+  "mode_quote": "자격증 응시료 100천원 내 실비(원단위 절삭), 최대 4번",
+  "mode_url": ""
  },
  {
   "id": "x-f26bb1b6",
@@ -19233,9 +19702,7 @@
   ],
   "regions": [
    "광주",
-   "전북 군산시",
-   "강원 춘천시",
-   "강원 강릉시"
+   "강원 춘천시"
   ],
   "age_min": 15,
   "age_max": 34,
@@ -19249,13 +19716,13 @@
   "allow_business": "불가",
   "allow_student": "확인필요",
   "cost": "교육비 전액 무료",
-  "money": "참여 수당 월 최대 50만원, 직무 교육 수료 시 CJ ONE 기프트 카드 10만원, 최종 수료 시 팀별 지원금 30만원",
+  "money": "참여 수당 월 최대 50만원, 1단계 수료 시 올리브영 기프트 카드 5만원·최종 수료 시 CJ ONE 상품권 10만원(전원). 우수 수료생은 2027년 CJ 베트남 법인 방문 지원",
   "money_monthly_max_manwon": 50,
-  "format": "전일 대면 월~금 09:00~18:00, 2026.10.1~12.18. 교육장 광주·군산·춘천·강릉 중 택1",
+  "format": "전일 대면 월~금 09:00~18:00, 2026.10.1~12.16. 교육장 광주·춘천 중 택1",
   "recruit": "서류 마감 2026.9.22(화) 23:00, 이후 온라인 면접",
   "next_deadline": "2026-09-22",
-  "other_conditions": "거주지 제한 없음. 군필자 최대 만 39세. 정부 지원 타 직업 훈련·훈련 수당 참여 중이면 불가. 선발일~교육일 재직 또는 사업자 등록 보유 시 불가(개시 전 해소하면 가능). 고졸 이하 미취업자 등 우대",
-  "summary": "미취업 청년이 약 11주간 평일 전일 대면으로 AI 서비스 기획과 웹·앱 시제품 제작을 배우는 무료 교육입니다. 월 최대 50만원 참여 수당이 있고, 광주·군산·춘천·강릉 중 한 곳에 매일 다녀야 합니다.",
+  "other_conditions": "거주지 제한 없음. 군필자 최대 만 39세. 정부 지원 타 직업 훈련·훈련 수당 참여 중이면 불가. 선발일~교육일 재직 또는 사업자 등록 보유 시 불가(개시 전 해소하면 가능). 대학(원) 재학생은 졸업까지 남은 학점이 있으면 불가(휴학생·마지막 학기 등록자·2027년 2월 졸업 예정자는 가능). 고교 졸업 예정자도 지원 가능(재학생은 학교장 승인 증빙 필요). 고졸 이하 미취업자 등 우대",
+  "summary": "미취업 청년이 약 11주간 평일 전일 대면으로 AI 서비스·콘텐츠를 기획하고 만들어 포트폴리오를 완성하는 무료 교육입니다. 월 최대 50만원 참여 수당이 있고, 광주·춘천 중 한 곳에 매일 다녀야 합니다.",
   "sources": [
    {
     "url": "https://form.naver.com/response/EvHD9cyzwOX",
@@ -19271,7 +19738,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "AI 서비스 기획과 웹·앱 시제품 제작",
   "duration": {
    "kind": "fixed",
@@ -19279,22 +19746,25 @@
    "max": null,
    "unit": "",
    "start": "2026-10-01",
-   "end": "2026-12-18",
-   "days_min": 79,
-   "days_max": 79,
+   "end": "2026-12-16",
+   "days_min": 77,
+   "days_max": 77,
    "hours_min": null,
    "hours_max": null,
-   "quote": "전일 대면 월~금 09:00~18:00, 2026.10.1~12.18",
-   "source": "db_text",
-   "source_url": "",
+   "quote": "기간 | 2026. 10. 01. ~ 12. 16.",
+   "source": "official_page",
+   "source_url": "https://form.naver.com/response/EvHD9cyzwOX",
    "band": "중기",
    "text": "약 3개월",
-   "dates_text": "10.1~12.18",
+   "dates_text": "10.1~12.16",
    "hours_text": ""
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "참여 수당 월 최대 50만원"
+  "money_short": "참여 수당 월 최대 50만원",
+  "mode": "오프라인",
+  "mode_quote": "월~금 09:00~18:00 전일 대면 교육 참여 필수",
+  "mode_url": "https://form.naver.com/response/EvHD9cyzwOX"
  },
  {
   "id": "x-e4c9fc2e",
@@ -19368,7 +19838,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "· 장 소 : 전주 한국전통문화전당 열림동 4층 세미나실",
+  "mode_url": "https://form.naver.com/response/3TV0ijQCUwZ"
  },
  {
   "id": "x-74376cf7",
@@ -19445,7 +19918,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육장소: 김제청년공간 E:DA(이다) 1층 오픈라운지",
+  "mode_url": "https://www.jb2030.or.kr/policy/p2_pol_view.html?&id=522"
  },
  {
   "id": "x-c7dd613f",
@@ -19470,52 +19946,64 @@
   "allow_employed": "확인필요",
   "allow_business": "확인필요",
   "allow_student": "확인필요",
-  "cost": "확인필요",
-  "money": "확인필요(원문에 지원 내용 없음)",
+  "cost": "무료(교육·멘토링 무료 지원)",
+  "money": "현금 지원 금액은 공고에 없음(경진 대회 시상식 있음)",
   "money_monthly_max_manwon": null,
-  "format": "확인필요",
-  "recruit": "2026.9.1~9.18 23:00",
+  "format": "9~11월 1:1 컨설팅(온·오프라인 교육·멘토링 무료) + 11.12~13 집체 캠프(창업 아이디어 경진 대회·시상식·팀 빌딩). 운영 장소 군산시 청년뜰(세부 내용은 선발 후 개별 통지)",
+  "recruit": "2026.9.1~9.18 23:00 접수 끝, 결과 발표 9월 넷째 주(개별 안내)",
   "next_deadline": "2026-09-18",
-  "summary": "전북창조경제혁신센터가 여는 2026년 창업 프로그램으로 9월 18일 밤 11시까지 접수합니다. 누구를 뽑고 무엇을 지원하는지는 게시 원문에 없어 센터에 확인해야 합니다.",
-  "other_conditions": "지원 대상·지원 내용·신청 방법이 원문에 없음. 문의 063-446-9228",
+  "summary": "전북 청년과 대학생의 창업 아이디어 12개를 뽑아 9~11월 1:1 컨설팅과 온·오프라인 교육·멘토링을 무료로 지원하는 예비 창업자 프로그램입니다. 11월 12~13일에는 군산에서 경진 대회 캠프를 엽니다. 2026년 신청은 9월 18일에 끝났습니다.",
+  "other_conditions": "전북 청년, 예비 창업자 또는 창업에 관심 있는 사람. 팀·개인 모두 참여 가능, 최종 12개 창업 아이템 선발(신청이 많으면 서면 심사로 독창성·사업성 평가). 결과 발표 9월 넷째 주. 문의 063-446-9228 (주)청기와",
   "age_min": null,
   "age_max": null,
   "sources": [
    {
     "url": "https://www.jb2030.or.kr/policy/p2_pol_view.html?&id=540",
-    "quote": "2026 창업챌린지 RISE-UP"
+    "quote": "2026-09-01 1:00: ~ 2026-09-18 23:00"
    },
    {
     "url": "https://www.jb2030.or.kr/policy/p2_pol_view.html?&id=540",
-    "quote": "2026-09-01 1:00: ~ 2026-09-18 23:00"
+    "quote": "(포스터) 참여자격 전북 청년, 예비창업자 또는 창업에 관심있는 자"
+   },
+   {
+    "url": "https://www.jb2030.or.kr/policy/p2_pol_view.html?&id=540",
+    "quote": "(포스터) 운영기간 2026년 9월 ~ 11월 ★1:1컨설팅 온오프라인 교육/멘토링 무료지원 ★집체캠프 2026년 11월 12일(목) ~ 11월 13일(금)"
+   },
+   {
+    "url": "https://www.jb2030.or.kr/policy/p2_pol_view.html?&id=540",
+    "quote": "(포스터) 선발규모 최종 12개 창업아이템(팀/개인 구분없이 참여 가능)"
    }
   ],
   "income_pct_max": null,
   "origin": "manual",
-  "checked_at": "2026-09-15",
-  "one_liner": "창업 챌린지 프로그램(세부 내용 미공개)",
+  "checked_at": "2026-09-19",
+  "one_liner": "예비 창업자 1:1 컨설팅·멘토링과 경진 대회 캠프",
   "duration": {
-   "kind": "unknown",
-   "min": null,
-   "max": null,
-   "unit": "",
+   "kind": "fixed",
+   "min": 3,
+   "max": 3,
+   "unit": "개월",
    "start": "",
    "end": "",
-   "days_min": null,
-   "days_max": null,
+   "days_min": 90,
+   "days_max": 90,
    "hours_min": null,
    "hours_max": null,
-   "quote": "",
-   "source": "none",
-   "source_url": "",
-   "band": "",
-   "text": "",
+   "quote": "운영기간 2026년 9월 ~ 11월",
+   "source": "official_page",
+   "source_url": "https://www.jb2030.or.kr/policy/p2_pol_view.html?&id=540",
+   "band": "중기",
+   "text": "3개월",
    "dates_text": "",
    "hours_text": ""
   },
   "schedule": "확인필요",
-  "cost_type": "확인필요",
-  "money_short": ""
+  "cost_type": "무료",
+  "money_short": "",
+  "age_unknown": true,
+  "mode": "혼합",
+  "mode_quote": "온오프라인 교육/멘토링 무료지원",
+  "mode_url": "https://www.jb2030.or.kr/policy/p2_pol_view.html?&id=540"
  },
  {
   "id": "x-535df5e5",
@@ -19592,7 +20080,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "○ 온라인 진행",
+  "mode_url": "https://ict-is.cbist.or.kr/education/view.do?educationKey=392&menuKey=79&searchCategory=ai"
  },
  {
   "id": "x-4a33807c",
@@ -19663,7 +20154,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "x-3d8fba47",
@@ -19738,7 +20232,10 @@
   },
   "schedule": "온라인",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "온라인",
+  "mode_quote": "도내 미취업자‧구직자 취업연계 미래기술 원격 직업훈련 지원",
+  "mode_url": ""
  },
  {
   "id": "x-51868306",
@@ -19812,7 +20309,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "혼합",
+  "mode_quote": "2026년 기준 신규 강사는 총 170시간, 경력 강사는 118시간의 온·오프라인 교육을 연말까지 이수",
+  "mode_url": ""
  },
  {
   "id": "x-09901ae6",
@@ -19886,7 +20386,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "실제 프로그램은 신청자가 선택한 각 거점지역(신청지역)에서 진행될 예정이며, 세부 장소와 일정은 개별 안내드립니다.",
+  "mode_url": "https://www.work24.go.kr/wk/v/b/1000/youngGrowPgmList.do?srchOperIscd=P8189"
  },
  {
   "id": "x-eafb20ab",
@@ -19957,7 +20460,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "천안사랑카드 50만원"
+  "money_short": "천안사랑카드 50만원",
+  "mode": "오프라인",
+  "mode_quote": "교육프로그램(대면교육)",
+  "mode_url": "https://www.ch2030youth.kr/bbs/board.php?bo_table=notice&wr_id=582"
  },
  {
   "id": "x-3be408f5",
@@ -20031,7 +20537,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "(4) 신규채용자 교육: 6. 29. ~ 6. 30. (충남교통연수원)",
+  "mode_url": "https://www.ch2030youth.kr/bbs/board.php?bo_table=notice&wr_id=606"
  },
  {
   "id": "x-17ed4fa9",
@@ -20105,7 +20614,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "확인필요",
+  "mode_quote": "",
+  "mode_url": ""
  },
  {
   "id": "x-020f3867",
@@ -20179,7 +20691,10 @@
   },
   "schedule": "혼합",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "- 취업스터디, 온라인 컨설팅, 취업역량강화프로그램, 개별 취업상담",
+  "mode_url": ""
  },
  {
   "id": "x-976b36e4",
@@ -20254,7 +20769,10 @@
   },
   "schedule": "주간",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "※ 각 교육장으로 각자 이동(교통비 100,000원 지원)",
+  "mode_url": "https://www.kongju.ac.kr/bbs/KNU/2132/425871/artclView.do"
  },
  {
   "id": "x-48197b7f",
@@ -20328,7 +20846,10 @@
   },
   "schedule": "야간·주말",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "교육은 7월 27일부터 8월 4일까지 계룡복합문화센터 3층 디지털학습실에서 총 7일간 21시간 과정으로 운영된다.",
+  "mode_url": "https://www.kisnews.net/709992"
  },
  {
   "id": "x-fe44da6a",
@@ -20402,7 +20923,10 @@
   },
   "schedule": "혼합",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "장소: 청년타운 나래 R2층 컨퍼런스홀",
+  "mode_url": "https://www.dangjin.go.kr/cop/bbs/BBSMSTR_000000000395/selectBoardArticle.do?nttId=1135123"
  },
  {
   "id": "x-5add13b1",
@@ -20476,7 +21000,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "- (1단계) 스마트팜 기본역량 이론과정(1개월) / 농업기술원(예산)",
+  "mode_url": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/497"
  },
  {
   "id": "m-lllcard",
@@ -20550,7 +21077,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "수강료 바우처 연 35만원"
+  "money_short": "수강료 바우처 연 35만원",
+  "mode": "과정마다 다름",
+  "mode_quote": "오프라인 기관은 기관 방문하여 결제하며, 온라인 기관은 온라인 결제",
+  "mode_url": "https://www.lllcard.kr/guide/bizVcUser.do"
  },
  {
   "id": "m-kdream",
@@ -20627,7 +21157,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "응시 청소년들은 꿈드림의 'LET'S STUDY' 교육지원 프로그램을 통해 인터넷 강의와 교재를 지원받고 학습지원단 멘토들과 검정고시를 준비해 왔다.",
+  "mode_url": "https://m.news.nate.com/view/20260811n29537"
  },
  {
   "id": "m-literacy",
@@ -20660,7 +21193,7 @@
   "money_monthly_max_manwon": null,
   "recruit": "문해 교육 기관별 수시 모집(국가문해교육센터 '기관안내'에서 프로그램 운영 기관·학력 인정 기관 검색)",
   "next_deadline": null,
-  "format": "지역 문해 교육 기관(평생 교육 시설·지자체·야학 등) 대면 수업, 초등·중학 과정 각 3단계",
+  "format": "지역 문해 교육 기관(평생 교육 시설·지자체·야학 등) 대면 수업(따로 온라인 강좌도 있음), 초등·중학 과정 각 3단계",
   "other_conditions": "학력 인정 문해 교육은 시도 교육청이 지정한 프로그램을 이수해야 학력 인정",
   "summary": "글을 읽고 쓰기 어렵거나 초·중학교를 마치지 못한 성인이 지역 문해 교육 기관에서 배우는 과정입니다. 학력 인정 프로그램을 마치면 초등학교·중학교 학력을 인정받을 수 있습니다.",
   "sources": [
@@ -20678,7 +21211,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "한글 읽기·쓰기와 초·중학교 학력 인정 과정",
   "duration": {
    "kind": "range",
@@ -20701,7 +21234,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "학습자 맞춤형 문해교육 강의를 온라인 채널을 통해 제공",
+  "mode_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105178&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N"
  },
  {
   "id": "m-seoullearn",
@@ -20734,7 +21270,7 @@
   "money_monthly_max_manwon": null,
   "recruit": "상시 회원 가입(온라인 자격 검증, 해당 안 되면 증빙 서류 제출)",
   "next_deadline": null,
-  "format": "온라인 강의(초·중·고 교과, 검정고시, 어학·자격증, AI·진로, 독서) 및 멘토링·진로 진학 상담",
+  "format": "온라인 강의(초·중·고 교과, 검정고시, 어학·자격증, AI·진로, 독서) 및 멘토링(화상·대면)·진로 진학 상담",
   "other_conditions": "서울시 거주 필수. 소득 기준 또는 자격 기준 중 하나를 충족해야 함",
   "summary": "서울에 사는 만 6~24세 중 중위 소득 80% 이하이거나 학교 밖·다문화·다자녀 등 자격 기준에 맞으면 가입할 수 있습니다. 가입하면 교과·검정고시·어학·자격증 인터넷 강의와 멘토링을 이용할 수 있습니다.",
   "sources": [
@@ -20752,7 +21288,7 @@
    }
   ],
   "origin": "manual",
-  "checked_at": "2026-09-15",
+  "checked_at": "2026-09-19",
   "one_liner": "교과·검정고시·어학·자격증 인터넷 강의와 멘토링",
   "duration": {
    "kind": "self_paced",
@@ -20775,7 +21311,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "올해는 입시 트렌드 변화에 대비하기 위한 '1대1 오프라인 논술 멘토링' 지원 규모를 지난해 대비 2배(50명)로 확대한다.",
+  "mode_url": "https://www.newspim.com/news/view/20260402000314"
  },
  {
   "id": "m-digital-saessak",
@@ -20850,7 +21389,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "디지털새싹은 방문형과 집합형, 두 가지 방식으로 운영됩니다.",
+  "mode_url": "https://newsac.tistory.com/147"
  },
  {
   "id": "m-yaca",
@@ -20925,7 +21467,10 @@
   },
   "schedule": "혼합",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "2025년 12월 기준 전국의 청소년수련관, 청소년문화의집 등의 공공시설에서 355개의 청소년방과후아카데미가 운영되고 있습니다.",
+  "mode_url": "https://www.youth.go.kr/yaca/about/about.do"
  },
  {
   "id": "m-gwinong-edu",
@@ -21000,7 +21545,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "교육일정, 형태 및 시간은 과정별 상이",
+  "mode_url": "https://www.greendaero.go.kr/svc/rfph/edc/offline/front/intensificationIntro1.do"
  },
  {
   "id": "m-youth-farm-long",
@@ -21069,13 +21617,16 @@
    "source": "official_page",
    "source_url": "https://www.greendaero.go.kr/svc/rfph/edc/offline/front/intensificationIntro2.do",
    "band": "",
-   "text": "총 300~1000시간",
+   "text": "총 300~1,000시간",
    "dates_text": "",
-   "hours_text": "총 300~1000시간"
+   "hours_text": "총 300~1,000시간"
   },
   "schedule": "확인필요",
   "cost_type": "일부 자부담",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "영농 경험이 부족한 청년들에게 실습 중심의 장기 체류형 교육을 제공하여 안정적인 농업·농촌 정착과 역량 강화를 지원합니다.",
+  "mode_url": "https://www.greendaero.go.kr/svc/rfph/edc/offline/front/intensificationIntro2.do"
  },
  {
   "id": "m-rural-living",
@@ -21150,7 +21701,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": "이수 시 참가 연수비 지급"
+  "money_short": "이수 시 참가 연수비 지급",
+  "mode": "오프라인",
+  "mode_quote": "귀농귀촌을 희망하는 도시민에게 농촌에서 직접 거주하며, 농촌생활과 일자리 등을 체험하고 주민들과의 교류 기회를 제공하여 성공적으로 정착할 수 있도록 지원합니다.",
+  "mode_url": "https://www.greendaero.go.kr/svc/rfph/edc/live/front/program.do"
  },
  {
   "id": "m-agriedu",
@@ -21219,7 +21773,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "[100% 대면교육] 2026년 10월 임업후계자 양성과정 안내 (한국산림발전연구원)",
+  "mode_url": "https://agriedu.net"
  },
  {
   "id": "m-youngfarmer",
@@ -21294,7 +21851,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "영농 정착 지원금 월 최대 110만원"
+  "money_short": "영농 정착 지원금 월 최대 110만원",
+  "mode": "해당없음",
+  "mode_quote": "최장 3년간 월 최대 110만 원의 영농정착지원금",
+  "mode_url": ""
  },
  {
   "id": "m-gwieo-edu",
@@ -21364,7 +21924,10 @@
   },
   "schedule": "과정마다 다름",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "2026년 귀어귀촌 정기교육 7차(귀어귀촌 입문2-연안·내륙편)(대면교육)",
+  "mode_url": "https://www.sealife.go.kr/subject/education/list.do?GUBUN=15"
  },
  {
   "id": "m-familycenter-korean",
@@ -21436,7 +21999,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "다문화가족지원센터 또는 지자체 위탁기관",
+  "mode_url": "https://www.liveinkorea.kr/web/lay1/S1T118C120/contents.do"
  },
  {
   "id": "m-dream-orchestra",
@@ -21506,7 +22072,10 @@
   },
   "schedule": "확인필요",
   "cost_type": "확인필요",
-  "money_short": ""
+  "money_short": "",
+  "mode": "오프라인",
+  "mode_quote": "수업 장소: 영등포구민회관 내",
+  "mode_url": "https://culture.seoul.go.kr/culture/bbs/B0000002/view.do?nttId=15617&menuNo=200052&pageIndex=1"
  },
  {
   "id": "m-kshield-jr",
@@ -21578,7 +22147,10 @@
   },
   "schedule": "온라인",
   "cost_type": "무료",
-  "money_short": ""
+  "money_short": "",
+  "mode": "과정마다 다름",
+  "mode_quote": "기초 과정 온라인(80시간), 정규 과정 오프라인",
+  "mode_url": ""
  },
  {
   "id": "m-apple-academy",
@@ -21651,7 +22223,10 @@
   },
   "schedule": "주간",
   "cost_type": "무료",
-  "money_short": "학습 지원 장학금 매월 110만원"
+  "money_short": "학습 지원 장학금 매월 110만원",
+  "mode": "오프라인",
+  "mode_quote": "모든 프로그램은 대면으로 진행되며 참여 기간 동안에는 대한민국 경상북도 포항, 포스텍 (POSTECH)에 위치한 Apple 디벨로퍼 아카데미로 현장 출석해야 해요.",
+  "mode_url": "https://developeracademy.postech.ac.kr/faq"
  },
  {
   "id": "m-se-startup",
@@ -21725,7 +22300,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "창업 지원금(유형별 상이)"
+  "money_short": "창업 지원금(유형별 상이)",
+  "mode": "확인필요",
+  "mode_quote": "- (교육) 사회적기업 진입에 필요한 교육 제공(9시간 이상 이수 필수)",
+  "mode_url": "https://www.socialenterprise.or.kr/homepage/bbs/boardView.do?bsIdx=10002&bIdx=11090&page=1&menuId=822"
  },
  {
   "id": "m-kosaf-national1",
@@ -21795,7 +22373,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "학기당 최대 등록금 전액"
+  "money_short": "학기당 최대 등록금 전액",
+  "mode": "해당없음",
+  "mode_quote": "소득 구간에 따라 대학 등록금을 지원하는 장학금",
+  "mode_url": ""
  },
  {
   "id": "m-kosaf-work",
@@ -21869,7 +22450,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "시급 10,320~12,790원"
+  "money_short": "시급 10,320~12,790원",
+  "mode": "해당없음",
+  "mode_quote": "(‘26년 시급단가) 교내근로 10,320원, 교외근로 12,790원",
+  "mode_url": ""
  },
  {
   "id": "m-kosaf-ladder1",
@@ -21939,7 +22523,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "등록금 전액 + 지원금 200만원"
+  "money_short": "등록금 전액 + 지원금 200만원",
+  "mode": "해당없음",
+  "mode_quote": "매 학기 대학 등록금(입학금, 수업료) 전액",
+  "mode_url": ""
  },
  {
   "id": "m-kosaf-ladder2",
@@ -22013,7 +22600,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "등록금 전액 또는 50%"
+  "money_short": "등록금 전액 또는 50%",
+  "mode": "해당없음",
+  "mode_quote": "중소·중견기업 재직자: 등록금 전액 지원",
+  "mode_url": ""
  },
  {
   "id": "m-comwel-trainloan",
@@ -22087,7 +22677,10 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "생계비 대부 월 50~200만원"
+  "money_short": "생계비 대부 월 50~200만원",
+  "mode": "해당없음",
+  "mode_quote": "총 대부한도 : 1인당 1천만원 이내",
+  "mode_url": ""
  },
  {
   "id": "m-ei-trainext",
@@ -22161,6 +22754,9 @@
   },
   "schedule": "해당없음",
   "cost_type": "해당없음",
-  "money_short": "구직 급여 일액 100% 연장 지급"
+  "money_short": "구직 급여 일액 100% 연장 지급",
+  "mode": "해당없음",
+  "mode_quote": "제51조에 따라 훈련연장급여를 지급하는 경우에 그 일액은 해당 수급자격자의 구직급여일액의 100분의 100으로 하고",
+  "mode_url": ""
  }
 ]

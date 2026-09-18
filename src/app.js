@@ -60,7 +60,9 @@
     '코딩': ['프로그래밍', '개발자', '소프트웨어'], '프로그래밍': ['코딩', '개발자', '소프트웨어'],
     'ai': ['인공지능'], '인공지능': ['ai'], '유튜브': ['영상'], '요리': ['조리', '제과', '제빵'], '조리': ['요리'],
     '포크리프트': ['지게차'], '포크레인': ['굴착기', '굴삭기'], '굴삭기': ['굴착기'], '컴활': ['컴퓨터활용'],
-    '빅데이터': ['데이터'], '웹개발': ['웹', '프론트엔드', '백엔드']
+    '빅데이터': ['데이터'], '웹개발': ['웹', '프런트엔드', '백엔드'],
+    // 맞춤법 검토로 외래어 표기를 고친 말: 흔히 쓰는 꼴로 찾아도 걸리게
+    '숏폼': ['쇼트폼'], '쇼트폼': ['숏폼'], '프론트엔드': ['프런트엔드'], '프런트엔드': ['프론트엔드'], '크레딧': ['크레디트']
   };
   P.forEach(function (p) { p._n = norm(p.n); p._o = norm(p.ol); p._h = (p.s || '') + norm(p.sm); p._c = norm(chosung(p.n)); });
 
@@ -169,7 +171,7 @@
     ageEl.setAttribute('aria-invalid', bad ? 'true' : 'false');
     return {
       q: qEl ? qEl.value.trim() : '',
-      kind: checked('kind'), field: checked('field'), tg: checked('tg'), du: checked('du'),
+      kind: checked('kind'), field: checked('field'), tg: checked('tg'), du: checked('du'), md: checked('md'),
       age: (isNaN(age) || bad) ? null : age,
       region: regionEl.value,
       edu: radio('edu'), work: radio('work'), inc: radio('inc'),
@@ -179,7 +181,7 @@
 
   function writeState(s) {
     form.querySelectorAll('input[type="checkbox"], input[type="radio"]').forEach(function (i) {
-      if (i.name === 'kind' || i.name === 'field' || i.name === 'tg' || i.name === 'du') i.checked = (s[i.name] || []).indexOf(i.value) >= 0;
+      if (i.name === 'kind' || i.name === 'field' || i.name === 'tg' || i.name === 'du' || i.name === 'md') i.checked = (s[i.name] || []).indexOf(i.value) >= 0;
       else if (i.type === 'radio') i.checked = (s[i.name] || '') === i.value;
     });
     ageEl.value = s.age == null ? '' : s.age;
@@ -196,7 +198,7 @@
     if (!Array.from(q.keys()).length) return null;
     var o = {};
     if (q.has('q')) o.q = q.get('q') || '';
-    ['kind', 'field', 'tg', 'du'].forEach(function (k) { if (q.has(k)) o[k] = (q.get(k) || '').split(',').filter(Boolean); });
+    ['kind', 'field', 'tg', 'du', 'md'].forEach(function (k) { if (q.has(k)) o[k] = (q.get(k) || '').split(',').filter(Boolean); });
     if (q.has('age')) { var a = parseInt(q.get('age'), 10); o.age = isNaN(a) ? null : a; }
     ['region', 'edu', 'work', 'inc', 'sort'].forEach(function (k) { if (q.has(k)) o[k] = q.get(k) || ''; });
     if (q.has('no')) o.no = q.get('no') === '1';
@@ -205,7 +207,7 @@
   function toQuery(s) {
     var q = new URLSearchParams();
     if (s.q) q.set('q', s.q);
-    ['kind', 'du', 'field', 'tg'].forEach(function (k) { if (s[k].length) q.set(k, s[k].join(',')); });
+    ['kind', 'du', 'md', 'field', 'tg'].forEach(function (k) { if (s[k] && s[k].length) q.set(k, s[k].join(',')); });
     if (s.age != null) q.set('age', s.age);
     ['region', 'edu', 'work', 'inc'].forEach(function (k) { if (s[k]) q.set(k, s[k]); });
     if (s.sort && s.sort !== 'rec') q.set('sort', s.sort);
@@ -297,7 +299,9 @@
       var sc = toks.length ? score(p, toks) : 0;
       var show = (!toks.length || sc > 0) &&
         (!s.kind.length || p.k.some(function (k) { return s.kind.indexOf(k) >= 0; })) &&
-        (!s.field.length || p.f.indexOf('all') >= 0 || p.f.some(function (f) { return s.field.indexOf(f) >= 0; }));
+        (!s.field.length || p.f.indexOf('all') >= 0 || p.f.some(function (f) { return s.field.indexOf(f) >= 0; })) &&
+        // 수업 방식: 과정마다 방식이 다른 제도(var)는 어느 쪽을 골라도 보인다
+        (!s.md.length || p.md === 'var' || s.md.indexOf(p.md) >= 0);
       var g = 0;
       var dk = li.getAttribute('data-dk');
       if (show && byDu) {
@@ -341,6 +345,7 @@
       if (s.sort === 'name') return byName(a, b);
       if (s.sort === 'deadline') return a.dd - b.dd || (b.p.m || 0) - (a.p.m || 0) || byName(a, b);
       if (a.sc !== b.sc) return b.sc - a.sc;   // 검색어가 이름에 든 제도부터
+      if (s.md.length && (a.p.md === 'var') !== (b.p.md === 'var')) return a.p.md === 'var' ? 1 : -1;   // 고른 수업 방식 그대로인 제도를 '과정마다 다름'보다 먼저
       return a.cls - b.cls || b.fx - a.fx || a.dd - b.dd || (b.p.m || 0) - (a.p.m || 0) || byName(a, b);
     });
 
@@ -414,7 +419,7 @@
     emptyEl.hidden = !isEmpty;
     var emptyHtml = emptyDefault;
     if (isEmpty && toks.length) {
-      var narrowed = any || s.kind.length || s.field.length || byDu;
+      var narrowed = any || s.kind.length || s.field.length || s.md.length || byDu;
       emptyHtml = '<p><b>‘' + esc(s.q) + '’</b> 검색 결과가 없습니다.' + (narrowed ? ' 고른 조건을 풀어 보거나 다른 말로 찾아보세요.' : ' 다른 말로 찾아보세요.') + '</p>' +
         (SX.words.length ? '<p class="em-words">' + SX.words.map(function (w) { return '<button type="button" class="em-w" data-q="' + esc(w) + '">' + esc(w) + '</button>'; }).join('') + '</p>' : '') +
         '<button type="button" class="linkbtn" data-q="">검색어 지우기</button>';
@@ -451,7 +456,7 @@
       if (i && i.value) add(labelOf(i), function () { form.querySelector('input[name="' + name + '"][value=""]').checked = true; });
     }
     if (toks.length) add('‘' + s.q + '’', function () { qEl.value = ''; syncHero(); }, 'pick-q');
-    boxes('kind'); boxes('du');
+    boxes('kind'); boxes('du'); boxes('md');
     if (s.age != null) add('만 ' + s.age + '세', function () { ageEl.value = ''; });
     if (s.region) add(SIDO[s.region], function () { regionEl.value = ''; });
     radios('edu'); radios('work'); radios('inc'); boxes('tg'); boxes('field');

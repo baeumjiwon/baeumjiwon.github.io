@@ -77,6 +77,9 @@ ICON = {
 TARGETS = [('장애인', 'dis'), ('북한 이탈 주민', 'nk'), ('제대 군인·보훈', 'vet'), ('산재 근로자', 'inj'), ('여성', 'women'),
            ('결혼 이민자·다문화', 'mig'), ('자립 준비 청년', 'care'), ('학교 밖 청소년', 'oos'), ('농어업인', 'farm'), ('기초 생활 수급자·차상위', 'low')]
 TARGET_SLUG = dict(TARGETS)
+# 수업 방식(T15, 9/16 사용자 '온라인·오프라인 분류'): 데이터 mode → 검색용 코드. '과정마다 다름'은 어느 방식을 골라도 보인다(app.js)
+MODES = [('온라인', 'on'), ('오프라인', 'off'), ('혼합', 'mix')]
+MODE_CODE = {**dict(MODES), '과정마다 다름': 'var', '확인필요': 'unk', '해당없음': 'na'}
 EDU_CODE = {'제한없음': 'none', '고졸이상': 'hs', '대학재학': 'uni', '대졸이상': 'grad', '기타': 'etc', '확인필요': 'unk'}
 INC_CODE = {'제한없음': 'none', '기준있음': 'yes', '확인필요': 'unk'}
 TRI_CODE = {'가능': 'y', '불가': 'n', '확인필요': 'u'}
@@ -593,7 +596,7 @@ compact = [{
     'id': p['id'], 'n': p['name'],
     'k': [KIND_SLUG[k] for k in p['kinds']], 'f': [FIELD_SLUG[f] for f in p['fields']], 'r': p['regions'],
     'a0': p.get('age_min'), 'a1': p.get('age_max'), 'au': bool(p.get('age_unknown')),
-    'tg': [TARGET_SLUG[t] for t in p.get('target_groups', [])],
+    'tg': [TARGET_SLUG[t] for t in p.get('target_groups', [])], 'md': MODE_CODE.get(p.get('mode'), 'unk'),
     'ed': EDU_CODE[p['education']], 'inc': INC_CODE[p['income']], 'ip': p.get('income_pct_max'),
     'w': {'job': TRI_CODE[p['allow_job_seeker']], 'emp': TRI_CODE[p['allow_employed']],
           'biz': TRI_CODE[p['allow_business']], 'stu': TRI_CODE[p['allow_student']]},
@@ -615,6 +618,18 @@ for p in programs:
     desc = f'{p["name"]}: {p["summary"]}'[:150]
     # 자동 수집분은 검토 전까지 검색엔진 색인에서 뺀다(자동 생성 콘텐츠로 보이지 않게)
     write_page(f'p/{p["id"]}.html', f'{p["name"]} 신청 조건 — {SITE}', desc, program_body(p), index=(p['origin'] == 'manual'))
+# 같은 공고를 두 번 실어 뺀 제도(db/merged.json 옛 id → 남긴 id)의 옛 주소는 남긴 쪽으로 넘겨준다(사이트맵 밖, noindex)
+_merged_path = os.path.join(BASE, 'db', 'merged.json')
+if os.path.exists(_merged_path) and not SAMPLE:
+    _ids = {p['id'] for p in programs}
+    for _old, _new in json.load(open(_merged_path, encoding='utf-8')).items():
+        if _old in _ids or _new not in _ids:
+            continue
+        _to = f'{_new}.html'
+        open(os.path.join(OUT, 'p', f'{_old}.html'), 'w', encoding='utf-8').write(
+            f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex">'
+            f'<link rel="canonical" href="{E(page_url("p/" + _to))}"><meta http-equiv="refresh" content="0; url={_to}">'
+            f'<title>옮긴 쪽 — {E(SITE)}</title></head><body><p><a href="{_to}">옮긴 쪽으로 가기</a></p></body></html>')
 
 
 def cat_page(path, title, lead, ps, finder_q):
@@ -622,7 +637,7 @@ def cat_page(path, title, lead, ps, finder_q):
     write_page(path, f'{title} — {SITE}', f'{title}: {lead}', cat_body(title, lead, ps, finder_q), nav='cat')
 
 
-cat_links = {'kind': [], 'field': [], 'region': []}
+cat_links = {'kind': [], 'field': [], 'region': [], 'mode': []}
 for k, s, label, lead in KINDS:
     ps = [p for p in programs if k in p['kinds']]
     if ps:
@@ -636,6 +651,11 @@ for label, s in FIELDS:
                        else (f'{label} 분야', f'{label} 분야를 배울 수 있는 제도입니다.'))
         cat_page(f'c/field-{s}.html', title, lead, ps, f'field={s}' if s != 'all' else '')
         cat_links['field'].append((f'field-{s}', f'{label}', len(ps)))
+# 수업 방식: 온라인으로만 듣는 교육 모음(T15)
+online = [p for p in programs if p.get('mode') == '온라인']
+if online:
+    cat_page('c/online.html', '온라인으로 듣는 교육', '교육장에 가지 않고 온라인으로 들을 수 있는 교육입니다.', online, 'md=on')
+    cat_links['mode'].append(('online', '온라인 교육', len(online)))
 nat = [p for p in programs if '전국' in p['regions']]
 cat_page('c/region-national.html', '전국 누구나', '사는 곳과 관계없이 신청할 수 있는 제도입니다.', nat, '')
 cat_links['region'].append(('region-national', '전국', len(nat)))

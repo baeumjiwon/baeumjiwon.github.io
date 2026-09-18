@@ -51,6 +51,10 @@ PHOTO_FOCUS = {
 RATIO = {'43': 4 / 3, '32': 3 / 2, '169': 16 / 9, '31': 3 / 1}
 SRC_NAME = {'unsplash': 'Unsplash', 'pexels': 'Pexels'}
 SCHED_SHOW = {'주간': '주간', '야간·주말': '야간·주말', '온라인': '온라인', '혼합': '온·오프라인 혼합'}
+# 수업 방식(T15): mode가 있으면 방식 + 시간대, 없으면 예전 schedule 표시
+MODE_SHOW = {'온라인': '온라인', '오프라인': '오프라인', '혼합': '온·오프라인 혼합'}
+TIME_SHOW = {'주간': '주간', '야간·주말': '야간·주말'}
+ONLINE_PHOTO = 'online-unsplash-q3zZHY5GHu0'
 COST_SHOW = ('무료', '일부 자부담')
 DUR_DATE_RE = re.compile(r'^\d{1,2}\.\d{1,2}$')
 
@@ -156,6 +160,14 @@ def _dk(p):
 
 
 BAND_WORDS = ('하루', '단기', '중기', '장기')
+
+
+def _how(p):
+    """수업 방식과 시간대 ['오프라인', '주간']. 과정마다 다름·확인필요·해당없음은 목록에 쓰지 않는다"""
+    mode = p.get('mode')
+    if mode is None:
+        return [SCHED_SHOW[p['schedule']]] if p.get('schedule') in SCHED_SHOW else []
+    return ([MODE_SHOW[mode]] if mode in MODE_SHOW else []) + ([TIME_SHOW[p['schedule']]] if p.get('schedule') in TIME_SHOW else [])
 
 
 def _dur_parts(p):
@@ -313,6 +325,16 @@ def _fold(name, label, body):
             f'<fieldset class="fd-in"><legend class="sr">{E(label)}</legend>{body}</fieldset></details>')
 
 
+def _mode_fs():
+    """조건 틀 '수업 방식'(T15). 데이터에 mode가 없으면 칸을 두지 않는다"""
+    n = {s: sum(1 for p in programs if p.get('mode') == l) for l, s in MODES}
+    if not any(n.values()):
+        return ''
+    opts = _opts('md', [(s, MODE_SHOW[l], n[s]) for l, s in MODES])
+    return (f'<fieldset class="fs"><legend>수업 방식</legend>{opts}'
+            '<p class="hint">여러 과정을 묶어 과정마다 방식이 다른 제도는 어느 쪽을 골라도 보입니다.</p></fieldset>')
+
+
 def _entry():
     tiles = ''
     for k, s, label, _ in KINDS:
@@ -334,6 +356,7 @@ def home_body():
   <fieldset class="fs fs-kind"><legend>원하는 것</legend>{_opts('kind', [(s, l, kind_n[s]) for _, s, l, _ in KINDS])}</fieldset>
   <fieldset class="fs"><legend>교육 기간</legend>{_opts('du', [(c, l, du_n[c]) for c, l, _, _ in DURATION_BUCKETS])}
     <p class="hint">기간을 구간으로 가를 수 없는 교육은 아래에 따로 모읍니다.</p></fieldset>
+  {_mode_fs()}
   <div class="fs pair">
     <div class="pair-a"><label class="lg" for="f-age">나이</label><span class="age">만 <input type="number" id="f-age" inputmode="numeric" min="10" max="99" autocomplete="off" aria-describedby="age-bad"> 세</span></div>
     <div class="pair-r"><label class="lg" for="f-region">사는 곳</label><select id="f-region">{region_opts}</select></div>
@@ -509,6 +532,8 @@ def _cat_photo(title, finder_q):
     if finder_q.startswith('field='):
         lab = next((l for l, s in FIELDS if s == finder_q[6:]), None)
         return FIELD_PHOTO.get(lab)
+    if finder_q.startswith('md='):
+        return ONLINE_PHOTO
     if title.startswith('전 분야'):
         return FIELD_PHOTO['전 분야']
     return None
@@ -538,6 +563,13 @@ def cat_grid(items):
     return '<ul class="reg-grid">' + ''.join(f'<li><a href="{s}.html"><span>{E(l)}</span><span class="n">{n}</span></a></li>' for s, l, n in items) + '</ul>'
 
 
+def _mode_tiles(cat_links):
+    tiles = ''.join(f'<a class="tile" href="{s}.html">{photo(ONLINE_PHOTO, "(max-width: 860px) 45vw, 260px", "32")}'
+                    f'<span class="tile-tx"><span class="tile-t">{E(l)}</span><span class="tile-n">{n}</span></span></a>'
+                    for s, l, n in cat_links.get('mode', []))
+    return f'<section class="sec-block"><h2>수업 방식</h2><div class="tiles t4">{tiles}</div></section>' if tiles else ''
+
+
 def cat_index_body(cat_links):
     kind_by_slug = {s: k for k, s, _, _ in KINDS}
     kt = ''.join(
@@ -551,7 +583,7 @@ def cat_index_body(cat_links):
     return f'''<header class="page-head"><h1>분류</h1></header>
 <section class="sec-block"><h2>원하는 것</h2><div class="tiles t5">{kt}</div></section>
 <section class="sec-block"><h2>분야</h2><div class="tiles t4">{ft}</div></section>
-<section class="sec-block"><h2>지역</h2>{cat_grid(cat_links["region"])}</section>'''
+{_mode_tiles(cat_links)}<section class="sec-block"><h2>지역</h2>{cat_grid(cat_links["region"])}</section>'''
 
 
 # ---------- 안내 글 ----------
