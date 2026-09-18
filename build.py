@@ -656,7 +656,8 @@ if BASE_URL:
     urls = ''.join(f'<url><loc>{E(page_url(u))}</loc><lastmod>{TODAY.isoformat()}</lastmod></url>' for u in written)
     open(os.path.join(OUT, 'sitemap.xml'), 'w', encoding='utf-8').write(
         f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
-    open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8').write(f'User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n')
+    daum = f'#DaumWebMasterTool:{cfg["daum_webmaster_tool"]}\n' if cfg.get('daum_webmaster_tool') else ''  # 다음 웹마스터도구 인증은 robots.txt 끝줄로
+    open(os.path.join(OUT, 'robots.txt'), 'w', encoding='utf-8').write(f'User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n{daum}')
 if cfg.get('adsense_client'):
     pub = cfg['adsense_client'].replace('ca-', '')
     open(os.path.join(OUT, 'ads.txt'), 'w', encoding='utf-8').write(f'google.com, {pub}, DIRECT, f08c47fec0942fa0\n')
