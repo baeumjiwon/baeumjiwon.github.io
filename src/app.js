@@ -38,7 +38,7 @@
   var EDU = { mid: 0, hs: 1, uni: 2, grad: 3 };
   var INC = { '60': [0, 60], '100': [60, 100], '150': [100, 150], 'over': [150, 9999] };
   var WORK = { job: '구직자', emp: '재직자', biz: '사업자', stu: '학생' };
-  var TG = { dis: '장애인', nk: '북한이탈주민', vet: '제대군인·보훈', inj: '산재근로자', women: '여성', mig: '결혼이민자·다문화', care: '자립준비청년', oos: '학교밖청소년', farm: '농어업인', low: '기초생활수급자·차상위' };
+  var TG = { dis: '장애인', nk: '북한 이탈 주민', vet: '제대 군인·보훈', inj: '산재 근로자', women: '여성', mig: '결혼 이민자·다문화', care: '자립 준비 청년', oos: '학교 밖 청소년', farm: '농어업인', low: '기초 생활 수급자·차상위' };
   var KEY = 'bj-proto-d';
   var PAGE = 40;
   var limit = PAGE;
@@ -91,25 +91,29 @@
   }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function reEsc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  // 글자 사이에 띄어쓰기·가운뎃점이 끼어도 걸리는 정규식 조각: '일학습병행'으로 찾아도 '일·학습 병행'을 칠한다(캡처 묶음 없음)
+  function loose(w) { return norm(w).split('').map(reEsc).join('[\\s·ㆍ\\-–—_]*'); }
   function marked(text, toks) {
     var words = [];
     toks.forEach(function (t) { if (!t.cho) { words.push(t.raw); (SYN[norm(t.raw)] || []).forEach(function (a) { words.push(a); }); } });
+    words = words.filter(function (w) { return norm(w); });
     if (!words.length) return esc(text);
-    words.sort(function (a, b) { return b.length - a.length; });
-    var re = new RegExp('(' + words.map(reEsc).join('|') + ')', 'gi');
+    words.sort(function (a, b) { return norm(b).length - norm(a).length; });
+    var re = new RegExp('(' + words.map(loose).join('|') + ')', 'gi');
     return String(text).split(re).map(function (part, i) { return i % 2 ? '<mark>' + esc(part) + '</mark>' : esc(part); }).join('');
   }
   // 제목에 없는 낱말이 있으면, 그 낱말이 든 한 줄 설명이나 요약 문장을 보여 준다
   function snippet(p, toks) {
     var need = toks.filter(function (t) { return !t.cho && !t.alts.some(function (a) { return p._n.indexOf(a) >= 0; }); });
     if (!need.length) return '';
-    var pieces = [p.ol || ''].concat(String(p.sm || '').split(/\.\s+/));
+    // 숫자 뒤 마침표('2008.12.31. 출생')에서는 문장을 나누지 않는다(옛 사파리가 못 읽는 뒤보기 정규식 대신 치환)
+    var pieces = [p.ol || ''].concat(String(p.sm || '').replace(/(\D)\.\s+/g, '$1\u0001').split('\u0001'));
     for (var i = 0; i < pieces.length; i++) {
       var s = pieces[i], h = norm(s);
       if (!s || !need.some(function (t) { return t.alts.some(function (a) { return h.indexOf(a) >= 0; }); })) continue;
       if (s.length > 90) {
         var at = -1;
-        need.forEach(function (t) { t.alts.forEach(function (a) { var k = s.toLowerCase().indexOf(a); if (k >= 0 && (at < 0 || k < at)) at = k; }); });
+        need.forEach(function (t) { t.alts.forEach(function (a) { var m = new RegExp(loose(a), 'i').exec(s), k = m ? m.index : -1; if (k >= 0 && (at < 0 || k < at)) at = k; }); });
         var from = Math.max(0, at - 30);
         s = (from ? '…' : '') + s.substr(from, 80) + '…';
       }
@@ -243,13 +247,13 @@
     }
     if (s.inc) {
       if (p.inc === 'yes') {
-        if (p.ip == null) unk.push('가구소득');
+        if (p.ip == null) unk.push('가구 소득');
         else {
           var b = INC[s.inc];
-          if (b[0] >= p.ip) fails.push('기준중위소득 ' + p.ip + '% 이하');
-          else if (b[1] > p.ip) unk.push('가구소득');
+          if (b[0] >= p.ip) fails.push('기준 중위 소득 ' + p.ip + '% 이하');
+          else if (b[1] > p.ip) unk.push('가구 소득');
         }
-      } else if (p.inc === 'unk') unk.push('가구소득');
+      } else if (p.inc === 'unk') unk.push('가구 소득');
     }
     return { fails: fails, unk: unk, st: fails.length ? 'no' : (unk.length ? 'check' : 'ok') };
   }
@@ -262,7 +266,7 @@
     if (/ 주민$|만 해당$/.test(r)) return '사는 곳';
     if (/^(고졸 이상|대학 재학생|대졸 이상|학력)$/.test(r)) return '학력';
     if (/참여/.test(r)) return '일 상태';
-    if (/소득/.test(r)) return '가구소득';
+    if (/소득/.test(r)) return '가구 소득';
     return r;
   }
 
@@ -398,7 +402,7 @@
 
     var rest = listed.length - limit;
     moreBtn.hidden = rest <= 0;
-    if (rest > 0) moreBtn.textContent = Math.min(PAGE, rest) + '개 더 보기 (남은 ' + rest + '개)';
+    if (rest > 0) moreBtn.textContent = Math.min(PAGE, rest) + '개 더 보기(남은 ' + rest + '개)';
 
     var qLabel = toks.length ? '<span class="cn-q">‘' + esc(s.q) + '’</span> ' : '';
     if (byDu) countEl.innerHTML = qLabel + '기간 맞는 교육 <b>' + gc[0] + '</b>개' + (any ? ' <span class="cn-sub">조건 맞음 ' + g0.ok + ' · 확인 필요 ' + g0.check + '</span>' : '');
@@ -482,7 +486,7 @@
       box.hidden = !chips.length;
     });
     var nCond = chips.filter(function (c) { return c.cls !== 'pick-q'; }).length;
-    openBtn.textContent = nCond ? '조건 고르기 (' + nCond + '개 선택됨)' : '조건 고르기';
+    openBtn.textContent = nCond ? '조건 고르기(' + nCond + '개 선택됨)' : '조건 고르기';
     if (byDu) {
       applyMain.textContent = gc[0] + '개 보기';
       var other = listed.length - gc[0];

@@ -5,7 +5,7 @@ KIND_PHOTO = {'무료교육': 'classroom-unsplash-YRMWVcdyhmI', '돈받는교육
               '지원금': 'office-pexels-8297220', '응시료': 'exam-pexels-31115182', '창업': 'startup-pexels-31892097'}
 FIELD_PHOTO = {'IT·AI': 'it-unsplash-Hl1stIQkVRw', '영상·디자인': 'media-pexels-16313664', '기술·현장': 'tech-unsplash-kBKOaghy8mU',
                '사무·회계·경영': 'office-unsplash-O2GCr83qCdg', '외국어': 'lang-unsplash-QVrBu1MqJYU',
-               '요리·서비스': 'food-unsplash-h_s7AUBPss8', '돌봄·보건': 'care-pexels-7551634', '전분야': 'exam-pexels-6683391'}
+               '요리·서비스': 'food-unsplash-h_s7AUBPss8', '돌봄·보건': 'care-pexels-7551634', '전 분야': 'exam-pexels-6683391'}
 # 안내 글 표지: 목록 안에서 같은 사진을 두 번 쓰지 않는다. 돈·소득 관련 글은 얼굴 없는 사물 사진만
 GUIDE_PHOTO = {
     'median-income': 'office-pexels-8297220', 'naeil-card-eligibility': 'office-unsplash-O2GCr83qCdg',
@@ -127,7 +127,7 @@ def _tx(v, empty='공고에서 확인'):
         return f'<span class="dim">{E(empty)}</span>'
     if v == '해당없음':
         return '<span class="dim">해당 없음</span>'
-    return E(v.replace('확인필요', '공고에서 확인').replace('해당없음', '해당 없음'))
+    return E(re.sub(r'(?:공고\s*)?확인필요', '공고에서 확인', v).replace('해당없음', '해당 없음'))
 
 
 def _org_short(p):
@@ -167,9 +167,12 @@ def _dur_parts(p):
     return [x for x in (band, length) if x]
 
 
+PRIORITY_RE = re.compile(r'우선\s*선발')  # 맞춤법대로 띄운 '우선 선발'도 잡는다(f-문자열 안에는 역슬래시를 못 쓴다)
+
+
 def _money_partial(p):
     ms, m = p.get('money_short') or '', (p.get('money') or '').strip()
-    return bool(re.search(r'우선선발|선발자만|일부만', ms)) or (bool(ms or p.get('money_monthly_max_manwon')) and m.startswith('없음'))
+    return bool(re.search(r'우선\s*선발|선발자만|일부만', ms)) or (bool(ms or p.get('money_monthly_max_manwon')) and m.startswith('없음'))
 
 
 def _money_value(p):
@@ -178,7 +181,7 @@ def _money_value(p):
     if not m:
         return '', False
     if _money_partial(p):
-        m = re.sub(r'^우선선발(대상)?자만?\s*', '', m)
+        m = re.sub(r'^우선\s*선발\s*(대상)?\s*자만?\s*', '', m)
         return f'일부만 · {m}', True
     return m, False
 
@@ -320,8 +323,8 @@ def home_body():
   </div>
   {_fold('edu', '최종 학력', _opts('edu', [('', '상관없음', None), ('mid', '중졸 이하', None), ('hs', '고졸', None), ('uni', '대학 재학·휴학', None), ('grad', '대졸 이상', None)], 'radio'))}
   {_fold('work', '지금 상태', _opts('work', [('', '상관없음', None), ('job', '구직 중', None), ('emp', '재직 중', None), ('biz', '사업자', None), ('stu', '학생', None)], 'radio'))}
-  {_fold('inc', '가구소득', _opts('inc', [('', '모름·상관없음', None), ('60', '기준중위 60% 이하', None), ('100', '100% 이하', None), ('150', '150% 이하', None), ('over', '150% 넘음', None)], 'radio') + '<p class="hint">함께 사는 가족 모두의 소득 합계 기준. <a href="{{ROOT}}g/median-income.html">내 구간 알아보기</a></p>')}
-  {_fold('tg', '해당하는 것', _opts('tg', [(s, l, None) for l, s in TARGETS]) + '<p class="hint">장애인·제대군인처럼 대상이 정해진 제도는 여기서 고른 경우에만 맞음으로 표시합니다.</p>')}
+  {_fold('inc', '가구 소득', _opts('inc', [('', '모름·상관없음', None), ('60', '기준 중위 60% 이하', None), ('100', '100% 이하', None), ('150', '150% 이하', None), ('over', '150% 넘음', None)], 'radio') + '<p class="hint">함께 사는 가족 모두의 소득 합계 기준. <a href="{{ROOT}}g/median-income.html">내 구간 알아보기</a></p>')}
+  {_fold('tg', '해당하는 것', _opts('tg', [(s, l, None) for l, s in TARGETS]) + '<p class="hint">장애인·제대 군인처럼 대상이 정해진 제도는 여기서 고른 경우에만 맞음으로 표시합니다.</p>')}
   {_fold('field', '분야', _opts('field', [(s, l, None) for l, s in FIELDS if s != 'all']))}
 </form>'''
     ps = sort_default(programs)
@@ -341,7 +344,7 @@ def home_body():
     <div class="res-head" id="res-top">
       <h2 class="sr" id="res-h">결과</h2>
       <p class="res-count" id="res-count" aria-live="polite">제도 <b>{len(programs)}</b>개</p>
-      <select id="f-sort" aria-label="정렬"><option value="rec">추천 순</option><option value="deadline">마감 가까운 순</option><option value="money">받는 돈 많은 순</option><option value="name">이름순</option></select>
+      <select id="f-sort" aria-label="정렬"><option value="rec">추천순</option><option value="deadline">마감 가까운 순</option><option value="money">받는 돈 많은 순</option><option value="name">이름순</option></select>
       <div class="res-sub" id="res-sub">
         <label class="toggle" id="toggle-no" hidden><input type="checkbox" id="f-showno"> <span id="showno-t">안 맞는 것도 보기</span></label>
         <button type="button" class="linkbtn soon-btn" id="soon-btn"{"" if urgent_n else " hidden"}>3일 안에 마감 {urgent_n}개 먼저 보기</button>
@@ -386,7 +389,7 @@ def program_body(p):
     if m:
         v = E(m)
         if partial:
-            v += f'<span class="note">{"일반 선발자는 받는 돈 없음" if "우선선발" in (p.get("money") or "") + (p.get("money_short") or "") else "대부분은 받는 돈 없음"}</span>'
+            v += f'<span class="note">{"일반 선발자는 받는 돈 없음" if PRIORITY_RE.search((p.get("money") or "") + (p.get("money_short") or "")) else "대부분은 받는 돈 없음"}</span>'
         summ.append(('받는 돈', v))
     ct = p.get('cost_type')
     if ct in COST_SHOW:
@@ -488,8 +491,8 @@ def _cat_photo(title, finder_q):
     if finder_q.startswith('field='):
         lab = next((l for l, s in FIELDS if s == finder_q[6:]), None)
         return FIELD_PHOTO.get(lab)
-    if title.startswith('전분야'):
-        return FIELD_PHOTO['전분야']
+    if title.startswith('전 분야'):
+        return FIELD_PHOTO['전 분야']
     return None
 
 
@@ -573,11 +576,11 @@ def about_body():
 <div class="g-body">
 <p>{E(SITE)}는 무료 교육, 교육 수당, 자격증 응시료 지원, 창업 지원을 한곳에 모아 <b>내 상황에서 신청할 수 있는지</b>를 빠르게 가려 볼 수 있게 만든 민간 안내 사이트입니다.</p>
 <h2>정보를 모으는 방법</h2>
-<p>공공데이터포털에서 개방한 정부 서비스 정보와 각 기관의 모집 공고 원문을 읽고, 나이·지역·학력·가구소득·취업 상태 조건을 같은 기준으로 정리합니다. 제도마다 근거가 된 공고 문장과 확인한 날짜를 함께 적습니다.</p>
+<p>공공 데이터 포털에서 개방한 정부 서비스 정보와 각 기관의 모집 공고 원문을 읽고, 나이·지역·학력·가구 소득·취업 상태 조건을 같은 기준으로 정리합니다. 제도마다 근거가 된 공고 문장과 확인한 날짜를 함께 적습니다.</p>
 <h2>한계</h2>
-<p>공고에 조건이 적혀 있지 않으면 "확인 필요"로 표시합니다. 조건은 해마다 바뀌므로 신청하기 전에 반드시 공식 안내를 확인하세요. 이 사이트는 정부·공공기관과 관계없는 개인이 운영합니다.</p>
+<p>공고에 조건이 적혀 있지 않으면 제도 쪽에는 "공고 확인"으로, 목록에서 내 조건과 맞춰 볼 때는 "확인 필요"로 표시합니다. 조건은 해마다 바뀌므로 신청하기 전에 반드시 공식 안내를 확인하세요. 이 사이트는 정부·공공 기관과 관계없는 개인이 운영합니다.</p>
 <h2>광고</h2>
-<p>운영비는 '광고' 표시를 단 광고(카카오 애드핏·Google 애드센스)로 충당합니다. 광고는 넓은 화면에서는 본문 양옆 여백에, 좁은 화면에서는 목록이나 글이 끝난 뒤에 한 곳만 싣고, 읽는 도중에 끼워 넣지 않습니다. 광고주는 어떤 제도를 싣고 어떤 순서로 보여 줄지에 관여하지 않습니다. 광고와 쿠키에 대해서는 <a href="{{{{ROOT}}}}privacy.html">개인정보처리방침</a>에 적었습니다.</p>
+<p>운영비는 '광고' 표시를 단 광고(카카오 애드핏·Google 애드센스)로 충당합니다. 광고는 넓은 화면에서는 본문 양옆 여백에, 좁은 화면에서는 목록이나 글이 끝난 뒤에 한 곳만 싣고, 읽는 도중에 끼워 넣지 않습니다. 광고주는 어떤 제도를 싣고 어떤 순서로 보여 줄지에 관여하지 않습니다. 광고와 쿠키에 대해서는 <a href="{{{{ROOT}}}}privacy.html">개인 정보 처리 방침</a>에 적었습니다.</p>
 {_about_contact()}<section id="photos" class="credits">{credits_html()}</section>
 </div>
 </article>'''

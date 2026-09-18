@@ -115,7 +115,7 @@ def main():
             'official_url': s.get('상세조회URL') or 'https://www.gov.kr',
             'apply_url': '',
             'kinds': kinds_of(text),
-            'fields': ['전분야'],
+            'fields': ['전 분야'],
             'regions': region_of(s.get('소관기관명')),
             'age_min': int(a0) if str(a0 or '').isdigit() and int(a0) > 0 else None,
             'age_max': int(a1) if str(a1 or '').isdigit() and 0 < int(a1) < 120 else None,

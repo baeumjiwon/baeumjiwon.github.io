@@ -62,7 +62,7 @@ KINDS = [('무료교육', 'free', '무료 교육', '본인이 내는 돈 없이 
 KIND_SLUG = {k: s for k, s, _, _ in KINDS}
 KIND_LABEL = {k: l for k, _, l, _ in KINDS}
 FIELDS = [('IT·AI', 'it'), ('영상·디자인', 'media'), ('기술·현장', 'tech'), ('사무·회계·경영', 'office'),
-          ('외국어', 'lang'), ('요리·서비스', 'service'), ('돌봄·보건', 'care'), ('전분야', 'all')]
+          ('외국어', 'lang'), ('요리·서비스', 'service'), ('돌봄·보건', 'care'), ('전 분야', 'all')]
 FIELD_SLUG = dict(FIELDS)
 ICON = {
     'it': '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M9.5 8 7.5 10l2 2M14.5 8l2 2-2 2"/>',
@@ -74,8 +74,8 @@ ICON = {
     'care': '<path d="M12 20s-7-4.3-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.7-7 10-7 10z"/><path d="M12 9.5v5M9.5 12h5"/>',
     'all': '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
 }
-TARGETS = [('장애인', 'dis'), ('북한이탈주민', 'nk'), ('제대군인·보훈', 'vet'), ('산재근로자', 'inj'), ('여성', 'women'),
-           ('결혼이민자·다문화', 'mig'), ('자립준비청년', 'care'), ('학교밖청소년', 'oos'), ('농어업인', 'farm'), ('기초생활수급자·차상위', 'low')]
+TARGETS = [('장애인', 'dis'), ('북한 이탈 주민', 'nk'), ('제대 군인·보훈', 'vet'), ('산재 근로자', 'inj'), ('여성', 'women'),
+           ('결혼 이민자·다문화', 'mig'), ('자립 준비 청년', 'care'), ('학교 밖 청소년', 'oos'), ('농어업인', 'farm'), ('기초 생활 수급자·차상위', 'low')]
 TARGET_SLUG = dict(TARGETS)
 EDU_CODE = {'제한없음': 'none', '고졸이상': 'hs', '대학재학': 'uni', '대졸이상': 'grad', '기타': 'etc', '확인필요': 'unk'}
 INC_CODE = {'제한없음': 'none', '기준있음': 'yes', '확인필요': 'unk'}
@@ -85,7 +85,7 @@ DURATION_BUCKETS = [('d7', '1주 이하', 1, 7), ('m1', '1개월 이하', 8, 31)
                     ('m6', '3~6개월', 93, 183), ('lg', '6개월 넘게', 184, 10 ** 6)]
 PHOTO_SET_BY_KIND = {'무료교육': 'classroom', '돈받는교육': 'tech', '지원금': 'office', '응시료': 'exam', '창업': 'startup'}
 PHOTO_SET_BY_FIELD = {'IT·AI': 'it', '영상·디자인': 'media', '기술·현장': 'tech', '사무·회계·경영': 'office',
-                      '외국어': 'lang', '요리·서비스': 'food', '돌봄·보건': 'care', '전분야': 'classroom'}
+                      '외국어': 'lang', '요리·서비스': 'food', '돌봄·보건': 'care', '전 분야': 'classroom'}
 WEEKDAYS = '월화수목금토일'
 
 
@@ -631,7 +631,10 @@ for k, s, label, lead in KINDS:
 for label, s in FIELDS:
     ps = [p for p in programs if label in p['fields']]
     if ps:
-        cat_page(f'c/field-{s}.html', f'{label} 분야', f'{label} 분야를 배울 수 있는 제도입니다.', ps, f'field={s}' if s != 'all' else '')
+        # '전 분야'는 '전 분야 분야'가 되지 않게 제목·설명을 따로 쓴다
+        title, lead = ((label, '분야를 가리지 않고 쓸 수 있는 제도입니다.') if s == 'all'
+                       else (f'{label} 분야', f'{label} 분야를 배울 수 있는 제도입니다.'))
+        cat_page(f'c/field-{s}.html', title, lead, ps, f'field={s}' if s != 'all' else '')
         cat_links['field'].append((f'field-{s}', f'{label}', len(ps)))
 nat = [p for p in programs if '전국' in p['regions']]
 cat_page('c/region-national.html', '전국 누구나', '사는 곳과 관계없이 신청할 수 있는 제도입니다.', nat, '')
@@ -650,7 +653,7 @@ write_page('g/index.html', f'안내 글 — {SITE}', '무료 교육과 지원금
            guide_index_body(), nav='guide', index=bool(guides))
 
 write_page('about.html', f'소개 — {SITE}', f'{SITE}가 무엇이고 정보를 어떻게 모으는지 설명합니다.', about_body())
-write_page('privacy.html', f'개인정보처리방침 — {SITE}', f'{SITE}의 개인정보처리방침입니다.', privacy_body())
+write_page('privacy.html', f'개인 정보 처리 방침 — {SITE}', f'{SITE}의 개인 정보 처리 방침입니다.', privacy_body())
 
 # 검색엔진·광고 파일
 open(os.path.join(OUT, '.nojekyll'), 'w').write('')

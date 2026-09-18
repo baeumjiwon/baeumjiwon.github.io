@@ -44,7 +44,7 @@
       .sort(function (a, b) { return b.sc - a.sc || a.p.n.localeCompare(b.p.n, 'ko'); });
     var html;
     if (!hits.length) {
-      html = '<li class="sx-none" role="option" id="sx-o-0" data-act="all" aria-selected="false">‘' + BJ.esc(q) + '’ 검색 결과가 없습니다. <span>Enter를 누르면 비슷한 말을 보여 드립니다.</span></li>';
+      html = '<li class="sx-none" role="option" id="sx-o-0" data-act="all" aria-selected="false">‘' + BJ.esc(q) + '’ 검색 결과가 없습니다. <span>Enter를 누르면 찾아볼 만한 낱말을 보여 드립니다.</span></li>';
     } else {
       html = '<li class="sx-all" role="option" id="sx-o-0" data-act="all" aria-selected="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>' +
         '<span><b>‘' + BJ.esc(q) + '’</b> 제도 ' + hits.length + '개 모두 보기</span></li>';

@@ -421,10 +421,20 @@ def _row_pool_key(p):
     return 'startup' if f == 'all' and '창업' in ks else f
 
 
+def _sq(t, dots=True):
+    return re.sub(r'[\s·ㆍ]+' if dots else r'\s+', '', t or '')
+
+
+def _has(w, text):
+    """낱말 규칙은 띄어쓰기·가운뎃점을 빼고 맞춰 본다 — 맞춤법대로 '일학습병행'을 '일·학습 병행'으로 띄워도 같은 사진이 붙게.
+    '개발·'처럼 가운뎃점으로 끝나는 낱말은 늘어놓은 꼴('개발·PM·커머스')만 잡으려는 것이라 가운뎃점을 남겨 본다"""
+    return _sq(w, False) in _sq(text, False) if w.endswith('·') else _sq(w) in _sq(text)
+
+
 def _rule_hit(rules, text, whole):
     """건너뛸 낱말은 이름과 한 줄 설명을 합쳐서 본다(이름에 '방송대'가 있으면 설명의 '방송'도 안 건다)"""
     for slug, words, skip in rules:
-        if any(w in text for w in words) and not any(w in whole for w in skip):
+        if any(_has(w, text) for w in words) and not any(_has(w, whole) for w in skip):
             return slug
     return None
 
@@ -435,9 +445,9 @@ def row_subject(p):
     '대전 평생교육이용권(일반·AI디지털·노인)'이 'AI' 때문에 코딩 사진을 달던 것을 막는다.
     '청년월세 지원'처럼 돈 낱말이 없으면 내용 규칙이 살아 있어 열쇠 사진이 그대로 붙는다."""
     texts = (p['name'], p.get('one_liner') or '')
-    whole = ' '.join(texts)
+    whole = ' | '.join(texts)  # 띄어쓰기를 빼고 볼 때 이름 끝과 설명 앞이 한 낱말로 붙지 않게
     kinds = set(p['kinds'])
-    if kinds <= {'지원금', '응시료'} and any(w in whole for w in ROW_MONEY_WORDS):
+    if kinds <= {'지원금', '응시료'} and any(_has(w, whole) for w in ROW_MONEY_WORDS):
         return 'exam' if '응시료' in kinds else 'coin'
     for rules in (ROW_CONTENT_RULES, ROW_KIND_RULES):
         for text in texts:
@@ -641,7 +651,7 @@ def _quick():
 
 
 def _notice():
-    return (f'<aside class="notice"><div><p class="nt-t">{E(SITE)}는 정부·공공기관 사이트가 아닙니다.</p>'
+    return (f'<aside class="notice"><div><p class="nt-t">{E(SITE)}는 정부·공공 기관 사이트가 아닙니다.</p>'
             '<p class="nt-s">여러 기관의 공고를 모아 요약한 민간 안내 사이트입니다. 신청은 각 기관의 공식 페이지에서 합니다.</p></div>'
             '<a class="btn-line sm" href="{{ROOT}}about.html">운영 방식 보기</a></aside>')
 
@@ -702,7 +712,7 @@ HOME_SCRIPTS = ('<script src="assets/programs.js"></script><script src="assets/d
                 '<script src="assets/app.js"></script><script src="assets/search.js"></script>')
 
 ROW_PH_NOTE = ('<p class="res-ph-note">사진은 무엇을 배우는지 보여 주는 분야 예시이며 기관 사진이 아닙니다. '
-               '수당·취업지원처럼 배우는 내용이 없는 제도는 그림으로 표시합니다.</p>')
+               '수당·취업 지원처럼 배우는 내용이 없는 제도는 그림으로 표시합니다.</p>')
 _A_cat_body = cat_body
 
 
@@ -740,8 +750,8 @@ def privacy_body():
     사실과 맞아야 한다 — 고른 조건만 localStorage에 저장(app.js, 검색어는 빼고), 방문 통계 도구 없음, 글꼴은 jsDelivr,
     설문지는 메일 주소를 자동으로 모으지 않고(설정 '수집하지 않음') 답장받을 메일 칸은 선택"""
     form = cfg.get('contact_url')
-    intro = ('회원가입과 로그인이 없고, 문의 양식에 스스로 적어 보낸 내용 말고는 이름·연락처 같은 개인 정보를 받지 않습니다.'
-             if form else '회원가입과 로그인이 없고, 이름·연락처 같은 개인정보를 직접 받지 않습니다.')
+    intro = ('회원 가입과 로그인이 없고, 문의 양식에 스스로 적어 보낸 내용 말고는 이름·연락처 같은 개인 정보를 받지 않습니다.'
+             if form else '회원 가입과 로그인이 없고, 이름·연락처 같은 개인 정보를 직접 받지 않습니다.')
     contact = (f'<h2>문의 양식</h2><p>문의는 <a href="{E(form)}" target="_blank" rel="noopener">문의 양식</a>(Google 설문지)으로 받습니다. '
                '보내 주신 내용과, 답장을 원할 때 적은 메일 주소는 답장과 사이트를 고치는 데만 쓰고 다른 곳에 넘기지 않으며, 처리를 마치면 지웁니다. '
                '양식은 Google LLC가 운영하므로, 보내는 과정에는 '
@@ -749,14 +759,14 @@ def privacy_body():
                '<p>보낸 문의를 지워 달라는 요청과 개인 정보에 관한 그 밖의 문의도 같은 양식으로 받아 운영자가 직접 처리합니다.</p>'
                if form else '')
     return f'''<article class="prose">
-<header class="g-head"><h1>개인정보처리방침</h1><p class="g-meta">시행일 {PRIVACY_SINCE}</p></header>
+<header class="g-head"><h1>개인 정보 처리 방침</h1><p class="g-meta">시행일 {PRIVACY_SINCE}</p></header>
 <div class="g-body">
 <p>{E(SITE)}는 {intro}</p>
 <h2>이 사이트가 처리하는 정보</h2>
-<p>첫 화면에서 고른 나이·사는 곳·학력 같은 조건은 서버로 보내지 않습니다. 다음에 들어왔을 때 다시 쓰도록 이용자 브라우저의 저장공간(localStorage)에만 남기고, 검색어는 남기지 않습니다. 브라우저에서 사이트 데이터를 지우면 함께 지워집니다.</p>
+<p>첫 화면에서 고른 나이·사는 곳·학력 같은 조건은 서버로 보내지 않습니다. 다음에 들어왔을 때 다시 쓰도록 이용자 브라우저의 저장 공간(localStorage)에만 남기고, 검색어는 남기지 않습니다. 브라우저에서 사이트 데이터를 지우면 함께 지워집니다.</p>
 <p>방문자 수를 세는 통계 도구는 쓰지 않습니다.</p>
 <h2>광고와 쿠키</h2>
-<p>이 사이트에는 카카오 애드핏(주식회사 카카오)과 Google 애드센스(Google LLC) 광고가 실릴 수 있습니다. 광고 사업자는 이용자에게 맞는 광고를 보여 주려고 쿠키나 광고 식별자로 웹사이트 방문 기록 같은 행태정보를 자동으로 수집할 수 있습니다. 이 정보는 각 광고 사업자가 자기 방침에 따라 처리하며, 이 사이트 운영자에게는 전달되지 않습니다.</p>
+<p>이 사이트에는 카카오 애드핏(주식회사 카카오)과 Google 애드센스(Google LLC) 광고가 실릴 수 있습니다. 광고 사업자는 이용자에게 맞는 광고를 보여 주려고 쿠키나 광고 식별자로 웹사이트 방문 기록 같은 행태 정보를 자동으로 수집할 수 있습니다. 이 정보는 각 광고 사업자가 자기 방침에 따라 처리하며, 이 사이트 운영자에게는 전달되지 않습니다.</p>
 <ul>
 <li>수집하는 곳: 주식회사 카카오, Google LLC</li>
 <li>수집 항목: 쿠키, 광고 식별자, 방문한 쪽 주소 같은 방문 기록</li>
@@ -777,7 +787,8 @@ def privacy_body():
 
 # ---------- 상세(내일배움캠프 과정 상세 구성: 색 띠 머리 → 큰 숫자 칸 → 본문 → 아래 고정 신청 줄) ----------
 def _sentences(t):
-    return [x.strip().rstrip('.') for x in re.split(r'\.\s+|;\s*|\n+', (t or '').strip()) if x.strip(' .')]
+    # 숫자 뒤 마침표('2008.12.31. 출생')에서는 나누지 않는다
+    return [x.strip().rstrip('.') for x in re.split(r'(?<!\d)\.\s+|;\s*|\n+', (t or '').strip()) if x.strip(' .')]
 
 
 # 본문은 핵심만 한눈에(9/17 사용자: '공고에 나이 조건 없음'을 보고 "나이 - 조건 없음, 이런 식으로. 너무 주저리주저리, 핵심만 딱딱 한눈에").
@@ -786,7 +797,7 @@ EDU_SHORT = {'제한없음': '조건 없음', '확인필요': '공고 확인', '
              '고졸이상': '고졸 이상', '대졸이상': '대졸 이상', '대학재학': '대학 재학생'}
 INC_SHORT = {'제한없음': '조건 없음', '기준있음': '기준 있음', '확인필요': '공고 확인'}
 # '신청자격에 학력 조건 없음(학력 '제한없음' 표기)'처럼 값을 되풀이할 뿐인 괄호
-_RESTATE_PAREN = re.compile(r"\((?:학력|소득)?\s*'?제한\s*없음'?\s*표기\)|\(학력요건 제한없음\)")
+_RESTATE_PAREN = re.compile(r"\((?:학력|소득)?\s*'?제한\s*없음'?\s*표기\)|\(학력\s*요건\s*제한\s*없음\)")
 
 
 def _only_says_none(note):
@@ -804,7 +815,7 @@ def _elig_rows(p):
         rows.append(('대상', E(', '.join(p['target_groups'])) + '만'))
     rows += [('사는 곳', E('전국' if '전국' in p['regions'] else region_text(p) + ' 주민')),
              ('학력', E(EDU_SHORT.get(p['education'], p['education']))),
-             ('가구소득', E(INC_SHORT[p['income']]))]
+             ('가구 소득', E(INC_SHORT[p['income']]))]
     works = [('구직자', p['allow_job_seeker']), ('재직자', p['allow_employed']), ('사업자', p['allow_business']), ('학생', p['allow_student'])]
     ws = ''
     for v, lbl, cls in (('가능', '가능', 'ok'), ('확인필요', '확인 필요', 'warn'), ('불가', '불가', 'no')):
@@ -885,7 +896,7 @@ def program_body(p):
         note = ''
         if partial:
             src = (p.get('money') or '') + (p.get('money_short') or '')
-            note = f'<p class="note">{"일반 선발자는 받는 돈 없음" if "우선선발" in src else "대부분은 받는 돈 없음"}</p>'
+            note = f'<p class="note">{"일반 선발자는 받는 돈 없음" if PRIORITY_RE.search(src) else "대부분은 받는 돈 없음"}</p>'
         money_bits += f'<p class="pc-lb">받는 돈</p><p class="pc-big money">{E(m)}</p>{note}'
 
     # 핵심 칸: 교육 기간 · 수업 · 마감 · 대상
