@@ -559,6 +559,14 @@ def guide_index_body():
             f'<ul class="glist">{items or "<li>준비 중입니다.</li>"}</ul>')
 
 
+def _about_contact():
+    """문의 양식(contact_url)이 있을 때만 소개 쪽에 '문의' 한 단락"""
+    if not cfg.get('contact_url'):
+        return ''
+    return (f'<h2>문의</h2><p>틀린 정보나 빠진 제도를 알려 주시면 확인해서 고칩니다. '
+            f'<a href="{E(cfg["contact_url"])}" target="_blank" rel="noopener">문의 양식</a>으로 보내 주세요.</p>\n')
+
+
 def about_body():
     return f'''<article class="prose">
 <header class="g-head"><h1>소개</h1></header>
@@ -569,7 +577,7 @@ def about_body():
 <h2>한계</h2>
 <p>공고에 조건이 적혀 있지 않으면 "확인 필요"로 표시합니다. 조건은 해마다 바뀌므로 신청하기 전에 반드시 공식 안내를 확인하세요. 이 사이트는 정부·공공기관과 관계없는 개인이 운영합니다.</p>
 <h2>광고</h2>
-<p>운영비는 쪽 사이사이에 '광고' 표시를 달고 싣는 광고(카카오 애드핏·Google 애드센스)로 충당합니다. 광고주는 어떤 제도를 싣고 어떤 순서로 보여 줄지에 관여하지 않습니다. 광고와 쿠키에 대해서는 <a href="{{{{ROOT}}}}privacy.html">개인정보처리방침</a>에 적었습니다.</p>
-<section id="photos" class="credits">{credits_html()}</section>
+<p>운영비는 '광고' 표시를 단 광고(카카오 애드핏·Google 애드센스)로 충당합니다. 광고는 넓은 화면에서는 본문 양옆 여백에, 좁은 화면에서는 목록이나 글이 끝난 뒤에 한 곳만 싣고, 읽는 도중에 끼워 넣지 않습니다. 광고주는 어떤 제도를 싣고 어떤 순서로 보여 줄지에 관여하지 않습니다. 광고와 쿠키에 대해서는 <a href="{{{{ROOT}}}}privacy.html">개인정보처리방침</a>에 적었습니다.</p>
+{_about_contact()}<section id="photos" class="credits">{credits_html()}</section>
 </div>
 </article>'''

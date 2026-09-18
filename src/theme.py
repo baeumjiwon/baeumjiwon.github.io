@@ -731,18 +731,27 @@ def credits_html():
     return _EMOJI_RE.sub('', _B_credits_html())
 
 
-PRIVACY_SINCE = '2026년 9월 17일'  # 내용을 바꾸면 시행일도 바꾼다
+PRIVACY_SINCE = '2026년 9월 19일'  # 내용을 바꾸면 시행일도 바꾼다
 
 
 def privacy_body():
-    """개인정보처리방침: 이 사이트가 직접 받는 정보는 없다. 광고 사업자의 행태정보 수집과 거부 방법, 외부 서비스를 적는다.
-    사실과 맞아야 한다 — 고른 조건만 localStorage에 저장(app.js, 검색어는 빼고), 방문 통계 도구 없음, 글꼴은 jsDelivr"""
-    contact = (f'<h2>문의</h2><p>개인정보와 관련한 문의는 <a href="{E(cfg["contact_url"])}" target="_blank" rel="noopener">문의하기</a>로 보내 주세요.</p>'
-               if cfg.get('contact_url') else '')
+    """개인정보처리방침: 이 사이트가 직접 받는 정보는 문의 양식(contact_url, 구글 설문지)에 이용자가 적어 보낸 것뿐이다.
+    광고 사업자의 행태정보 수집과 거부 방법, 외부 서비스를 적는다.
+    사실과 맞아야 한다 — 고른 조건만 localStorage에 저장(app.js, 검색어는 빼고), 방문 통계 도구 없음, 글꼴은 jsDelivr,
+    설문지는 메일 주소를 자동으로 모으지 않고(설정 '수집하지 않음') 답장받을 메일 칸은 선택"""
+    form = cfg.get('contact_url')
+    intro = ('회원가입과 로그인이 없고, 문의 양식에 스스로 적어 보낸 내용 말고는 이름·연락처 같은 개인 정보를 받지 않습니다.'
+             if form else '회원가입과 로그인이 없고, 이름·연락처 같은 개인정보를 직접 받지 않습니다.')
+    contact = (f'<h2>문의 양식</h2><p>문의는 <a href="{E(form)}" target="_blank" rel="noopener">문의 양식</a>(Google 설문지)으로 받습니다. '
+               '보내 주신 내용과, 답장을 원할 때 적은 메일 주소는 답장과 사이트를 고치는 데만 쓰고 다른 곳에 넘기지 않으며, 처리를 마치면 지웁니다. '
+               '양식은 Google LLC가 운영하므로, 보내는 과정에는 '
+               '<a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener">Google의 개인 정보 처리 방침</a>도 적용됩니다.</p>'
+               '<p>보낸 문의를 지워 달라는 요청과 개인 정보에 관한 그 밖의 문의도 같은 양식으로 받아 운영자가 직접 처리합니다.</p>'
+               if form else '')
     return f'''<article class="prose">
 <header class="g-head"><h1>개인정보처리방침</h1><p class="g-meta">시행일 {PRIVACY_SINCE}</p></header>
 <div class="g-body">
-<p>{E(SITE)}는 회원가입과 로그인이 없고, 이름·연락처 같은 개인정보를 직접 받지 않습니다.</p>
+<p>{E(SITE)}는 {intro}</p>
 <h2>이 사이트가 처리하는 정보</h2>
 <p>첫 화면에서 고른 나이·사는 곳·학력 같은 조건은 서버로 보내지 않습니다. 다음에 들어왔을 때 다시 쓰도록 이용자 브라우저의 저장공간(localStorage)에만 남기고, 검색어는 남기지 않습니다. 브라우저에서 사이트 데이터를 지우면 함께 지워집니다.</p>
 <p>방문자 수를 세는 통계 도구는 쓰지 않습니다.</p>
