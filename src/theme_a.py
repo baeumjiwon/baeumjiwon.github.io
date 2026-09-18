@@ -155,16 +155,34 @@ def _dk(p):
     return 'loose'
 
 
+BAND_WORDS = ('하루', '단기', '중기', '장기')
+
+
 def _dur_parts(p):
+    """기간 [말]. 9/16 사용자 "1~12개월 이건 뭔지 모르겠어. 정확한 기간들을 적어주자" — '중기' 같은 구간 말이 애매하다:
+    길이가 있으면 구간 말은 빼고 실제 길이만, 여러 과정을 묶어 범위가 넓은 것은 '과정마다 1~12개월'로.
+    길이 없이 '하루'·'과정마다 다름'·'자유 수강'만 있으면 그 말을 쓴다."""
     lab = duration_label(p)
     if lab is None:
         return None
     band, length = lab
-    if DUR_DATE_RE.match(length or ''):   # '9.19' 같은 날짜 조각은 길이가 아니다(날짜는 상세에)
+    if DUR_DATE_RE.match(length or ''):   # '9.19' 같은 날짜 조각은 길이가 아니다(날짜는 _dur_dates·상세에)
         length = ''
     if (not band and not length) or length == '공고 확인':
         return []
+    du = p.get('duration') or {}
+    if length and band and all(b in BAND_WORDS for b in band.split('~')):
+        band = ''
+    if length and du.get('kind') == 'range' and du.get('min') is not None and du.get('max') not in (None, du.get('min')):
+        length = f'과정마다 {length}'
     return [x for x in (band, length) if x]
+
+
+def _dur_dates(p):
+    """아직 끝나지 않은 교육 날짜('10.6~10.30'). 이미 끝난 기수의 날짜는 목록에서 헷갈리니 쓰지 않는다(상세에는 나온다)"""
+    du = p.get('duration') or {}
+    end = du.get('end') or ''
+    return du['dates_text'] if du.get('dates_text') and len(end) == 10 and end >= TODAY.isoformat() else ''
 
 
 PRIORITY_RE = re.compile(r'우선\s*선발')  # 맞춤법대로 띄운 '우선 선발'도 잡는다(f-문자열 안에는 역슬래시를 못 쓴다)

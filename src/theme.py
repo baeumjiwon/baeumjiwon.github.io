@@ -127,7 +127,7 @@ def card(p, used, eager=False):
     if not _is_na(p):
         parts = _dur_parts(p)
         if parts:
-            rest = ''.join(' · ' + E(x) for x in parts[1:])
+            rest = ''.join(' · ' + E(x) for x in parts[1:] + ([_dur_dates(p)] if _dur_dates(p) else []))
             lines += f'<span class="c-ln">{ico("cal")}<span><b>{E(parts[0])}</b>{rest}</span></span>'
     m, partial = _money_value(p)
     if m:
@@ -177,6 +177,8 @@ def _dur_line(p):
     if not parts:
         return f'<p class="r-dur dim">{ico("cal")}<span>기간 공고 확인</span></p>'
     out = [f'<b>{E(parts[0])}</b>'] + [E(x) for x in parts[1:]]
+    if _dur_dates(p):
+        out.append(E(_dur_dates(p)))
     if p.get('schedule') in SCHED_SHOW:
         out.append(E(SCHED_SHOW[p['schedule']]))
     return f'<p class="r-dur">{ico("cal")}<span>{" · ".join(out)}</span></p>'
